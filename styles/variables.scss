@@ -1,0 +1,49 @@
+/**************/
+/* Variables */
+/************/
+
+// Colors
+$black: #101828;
+$dark-gray: #344054;
+$gray: #475467;
+$light-gray: #667085;
+$lightest-gray: #d0d5dd;
+$off-white: #f9fafb;
+$white: #ffffff;
+
+$darker-blue: #021b39;
+$dark-blue: #083161;
+$blue: #2365b0; //#175BD1;
+$icon-blue: #3577c4; //#4881EE;
+$light-blue: #beddff;
+$backdrop-blue: #f0f8ff;
+$glass-blue: #fafdff;
+
+$yellow: #f8a441;
+$red: #ff7c75;
+
+// Borders
+$br: 10px;
+
+// Widths
+$max-width-large: 1440px;
+$max-width: 1216px;
+
+// Box Shadows
+$container-shadow: 0 12px 24px -4px rgba(16, 24, 40, 0.04),
+	2px 4px 12px -2px rgba(16, 24, 40, 0.02);
+
+// Transitions
+$linear: 0.2s linear;
+
+// Section Gaps
+$section-gap-sml: 96px;
+$section-gap-med: 140px;
+$section-gap-lrg: 192px;
+
+.no-select {
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
+}

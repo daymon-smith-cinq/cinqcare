@@ -1,0 +1,61 @@
+@use "sass:map";
+
+/***************/
+/* Responsive */
+/*************/
+
+// Breakpoints defined to be used in mixin
+$breakpoints: (
+	"mobile": 431px,
+	"mobile-landscape": 640px,
+	"tablet": 768px,
+	"tablet-landscape": 1024px,
+	"laptop": 1256px
+		// 1256px is the $max-width variable (1216px) plus the 20px padding on each side (1216 + 40),,,,
+);
+
+@mixin respond-to($breakpoint, $type: min) {
+	$breakpoint-value: if(
+		map.has-key($breakpoints, $breakpoint),
+		map.get($breakpoints, $breakpoint),
+		$breakpoint
+	);
+	@media (#{if($type == min, 'min-width', 'max-width')}: $breakpoint-value) {
+		@content;
+	}
+}
+
+@mixin debug-layout() {
+	* {
+		outline: 2px dotted red;
+		outline-offset: -15px;
+	}
+	* * {
+		outline: 2px dotted green;
+		outline-offset: -15px;
+	}
+	* * * {
+		outline: 2px dotted orange;
+		outline-offset: -15px;
+	}
+	* * * * {
+		outline: 2px dotted blue;
+		outline-offset: -15px;
+	}
+	* * * * * {
+		outline: 1px solid red;
+		outline-offset: -15px;
+	}
+	* * * * * * {
+		outline: 1px solid green;
+		outline-offset: -15px;
+	}
+	* * * * * * * {
+		outline: 1px solid orange;
+		outline-offset: -15px;
+	}
+	* * * * * * * * {
+		outline: 1px solid blue;
+		outline-offset: -15px;
+	}
+}
