@@ -1,100 +1,54 @@
 @use "tailwindcss";
-@use "./styles/utilities.scss" as *;
-@use "./styles/variables.scss" as *;
-
-/* Font imports */
-
-@font-face {
-	font-family: "Instrument Sans";
-	src: local("Instrument Sans Regular"), local("InstrumentSans-Regular"),
-		url("/fonts/InstrumentSans-Regular.woff2") format("woff2"),
-		url("/fonts/InstrumentSans-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Instrument Sans";
-	src: local("Instrument Sans Italic"), local("InstrumentSans-Italic"),
-		url("/fonts/InstrumentSans-Italic.woff2") format("woff2"),
-		url("/fonts/InstrumentSans-Italic.woff") format("woff");
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Instrument Sans";
-	src: local("Instrument Sans Medium"), local("InstrumentSans-Medium"),
-		url("/fonts/InstrumentSans-Medium.woff2") format("woff2"),
-		url("/fonts/InstrumentSans-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Instrument Sans";
-	src: local("Instrument Sans Medium Italic"),
-		local("InstrumentSans-MediumItalic"),
-		url("/fonts/InstrumentSans-MediumItalic.woff2") format("woff2"),
-		url("/fonts/InstrumentSans-MediumItalic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Instrument Sans";
-	src: local("Instrument Sans SemiBold Italic"),
-		local("InstrumentSans-SemiBoldItalic"),
-		url("/fonts/InstrumentSans-SemiBoldItalic.woff2") format("woff2"),
-		url("/fonts/InstrumentSans-SemiBoldItalic.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Instrument Sans";
-	src: local("Instrument Sans SemiBold"), local("InstrumentSans-SemiBold"),
-		url("/fonts/InstrumentSans-SemiBold.woff2") format("woff2"),
-		url("/fonts/InstrumentSans-SemiBold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Instrument Sans";
-	src: local("Instrument Sans Bold"), local("InstrumentSans-Bold"),
-		url("/fonts/InstrumentSans-Bold.woff2") format("woff2"),
-		url("/fonts/InstrumentSans-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Instrument Sans";
-	src: local("Instrument Sans Bold Italic"), local("InstrumentSans-BoldItalic"),
-		url("/fonts/InstrumentSans-BoldItalic.woff2") format("woff2"),
-		url("/fonts/InstrumentSans-BoldItalic.woff") format("woff");
-	font-weight: 700;
-	font-style: italic;
-	font-display: swap;
-}
+@use "./styles/abstracts" as *;
 
 /***********/
 /* Resets */
 /*********/
 
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, small, 
+strike, strong, sub, sup, tt, var, b, u, i, 
+center, dl, dt, dd, ol, ul, li, fieldset, form, 
+label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td, article, aside, canvas, 
+details, embed,  figure, figcaption, footer, 
+header, hgroup,  menu, nav, output, ruby, 
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
 	box-sizing: border-box;
-	font-family: "Instrument Sans", sans-serif;
-	padding: 0;
-	margin: 0;
 }
 
 // 1. Correct the line height in all browsers.
@@ -118,53 +72,69 @@ main {
 /* Globals */
 /**********/
 
+body {
+	font-family: "Sohne", sans-serif;
+}
+
 h1 {
-	font-size: 52px;
+	font-size: 72px;
 	font-size: clamp(1rem, 4vw + 1rem, 3.25rem);
-	font-weight: 500;
+	font-weight: 400;
 	text-wrap: balance;
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 48px;
 	font-size: clamp(1.875rem, 2vw + 1rem, 2.25rem);
-	font-weight: 500;
+	font-weight: 400;
 	text-wrap: balance;
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 36px;
 	font-size: clamp(1.125rem, 1vw + 1rem, 1.5rem);
-	font-weight: 500;
+	font-weight: 400;
+	text-wrap: balance;
+}
+
+h4 {
+	font-size: 24px;
+	font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+	font-weight: 400;
 	text-wrap: balance;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	color: $black;
 	line-height: 1.15;
 
 	@media screen and (max-width: 431px) {
 		text-wrap: pretty;
 	}
+
+	em,
+	i {
+		font-family: "PP Editorial New", serif;
+	}
 }
 
-h4,
 h5,
 h6 {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 600;
-	color: $dark-blue;
+	color: $black;
 	line-height: 1.15;
 }
 
 p,
 a,
 span {
-	font-size: 20px;
+	font-size: 18px;
 	font-size: clamp(1.125rem, 1vw + 1rem, 1.25rem);
-	color: $gray;
+	color: $black;
 	line-height: 1.5;
 	text-wrap: pretty;
 }
@@ -207,7 +177,7 @@ img {
 	@apply bg-blue-700;
 }
 
-/*Loading states*/
+/* Loading states */
 
 .loading {
 	min-height: 100vh;
