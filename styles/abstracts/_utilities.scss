@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:math";
 
 /***************/
 /* Responsive */
@@ -14,7 +15,7 @@ $breakpoints: (
 		// 1256px is the $max-width variable (1216px) plus the 20px padding on each side (1216 + 40),,,,
 );
 
-@mixin respond-to($breakpoint, $type: min) {
+@mixin respond-to($breakpoint, $type: max) {
 	$breakpoint-value: if(
 		map.has-key($breakpoints, $breakpoint),
 		map.get($breakpoints, $breakpoint),
@@ -58,4 +59,28 @@ $breakpoints: (
 		outline: 1px solid blue;
 		outline-offset: -15px;
 	}
+}
+
+/// Convert to EMs function
+/// @param {number} target - The value to be converted
+/// @param {number} context [$suit-font-size] The base font size
+/// @return {em} value
+@function toem($target, $context: 16px) {
+  @if $target == 0 {
+    @return 0
+  }
+
+  @return math.div($target, $context)+0em;
+}
+
+/// Convert to REMs function
+/// @param {number} target - The value to be converted
+/// @param {number} context [16px] - The base font size
+/// @return {rem} value
+@function torem($target, $context: 16px) {
+  @if $target == 0 {
+    @return 0
+  }
+
+  @return math.div($target, $context)+0em;
 }

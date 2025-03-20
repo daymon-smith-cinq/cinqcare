@@ -1,0 +1,32 @@
+@use "./styles/abstracts" as *;
+@use "sass:color";
+
+.button {
+  display: flex;
+  appearance: none;
+  width: fit-content;
+  padding: toem(15px) toem(32px);
+  font-size: toem(18px);
+  border-radius: 9999px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color .25s ease;
+}
+
+.primary {
+  background-color: $button--primary;
+  color: $white;
+
+  &:hover {
+    background-color: color.mix($button--primary, black, 80%);
+  }
+}
+
+.small {
+  font-size: toem(16px);
+}
+
+.large {
+  font-size: toem(21px);
+}

@@ -189,3 +189,10 @@ img {
 .loaded {
 	opacity: 1;
 }
+
+.wrapper {
+	box-sizing: content-box;
+	max-width: $max-width;
+	margin: 0 auto;
+	padding-inline: 20px;
+}
