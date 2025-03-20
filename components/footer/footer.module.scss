@@ -10,37 +10,70 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 10vw;
+  gap: 12vw;
   max-width: 1520px;
+
+  @include respond-to("laptop") {
+    gap: 7vw;
+  }
 }
 
 .footer__logo {
   max-width: 284px;
+
+  @include respond-to("tablet-landscape") {
+    max-width: 200px;
+  }
 }
 
 .footer__content {
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  .footer__hero {
+    display: none;
+
+    @include respond-to("tablet-landscape") {
+      display: flex;
+    }
+  }
 }
 
 .footer__nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 30px;
   margin-top: 140px;
+
+  @include respond-to("tablet-landscape") {
+    margin-top: 80px;
+  }
+
+  @include respond-to("mobile-landscape") {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
 
   header {
     padding-bottom: 22px;
     font-size: 17px;
     color: white;
     opacity: 0.6;
+
+    @include respond-to("mobile-landscape") {
+      padding-bottom: 15px;
+    }
   }
 
   ul {
     display: flex;
     flex-direction: column;
     gap: 22px;
+
+    @include respond-to("mobile-landscape") {
+      gap: 5px;
+    }
   }
 
   a {
@@ -55,22 +88,34 @@
   p {
     font-size: 16px;
     color: white;
+
+    @include respond-to("tablet-landscape") {
+      text-align: center;
+    }
   }
 
   nav:has(> a) {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 15px;
     padding-block: 40px;
 
     a {
       font-size: 16px;
       color: white;
+      text-align: center;
+    }
+
+    @include respond-to("tablet-landscape") {
+      justify-content: center;
     }
   }
 }
 
 .footer__subnav {
   display: flex;
+  align-items: center;
   gap: 100px;
   max-width: fit-content;
 
@@ -103,6 +148,12 @@
       
     }
   }
+
+  @include respond-to("tablet-landscape") {
+    max-width: unset;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .footer__hero {
@@ -111,18 +162,27 @@
   justify-content: flex-end;
   overflow: clip;
   width: 100%;
-  max-width: 570px;
+  max-width: calc(100% / 2.65);
   min-height: 825px;
-  padding: 60px;
+  padding: toem(60px);
   border-radius: 22px;
   background: url(../../public/footer__hero.png) center / cover no-repeat;
 
   h2 {
-    font-size: 42px;
+    font-size: toem(42px);
     color: white;
   }
 
   header {
-    margin-bottom: 35px;
+    margin-bottom: toem(35px);
+  }
+
+  @include respond-to("tablet-landscape") {
+    display: none;
+
+    max-width: 100%;
+    min-height: unset;
+    margin-block: 60px;
+    font-size: 80%;
   }
 }

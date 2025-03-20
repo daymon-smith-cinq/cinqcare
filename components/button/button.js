@@ -14,9 +14,9 @@ const Button = ( props ) => {
       href={ props.link } 
       target={ props.target } 
       className={`
-        ${styles.button} 
-        ${props.type ? styles[props.type] : styles.primary} 
-        ${props.size ? styles[props.size] : ''}
+        ${ styles.button } 
+        ${ props.type ? styles[ props.type ] : styles.primary } 
+        ${ props.size ? styles[ props.size ] : '' }
       `}>
         { props.text }
     </a>

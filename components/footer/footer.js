@@ -45,6 +45,16 @@ const Footer = () => {
             </div>
           </nav>
 
+          <div className={styles.footer__hero}>
+            <header>
+              <h2><em>More Than Healthcare</em> —  A Movement for Those Who Need It Most.</h2>
+            </header>
+            <Button 
+              link="/"
+              text="Join Our Family"
+            />
+          </div>
+
           <div className={styles.footer__info}>
             <nav className={styles.footer__subnav}>
               <div>

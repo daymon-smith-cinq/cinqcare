@@ -15,7 +15,7 @@ $breakpoints: (
 		// 1256px is the $max-width variable (1216px) plus the 20px padding on each side (1216 + 40),,,,
 );
 
-@mixin respond-to($breakpoint, $type: min) {
+@mixin respond-to($breakpoint, $type: max) {
 	$breakpoint-value: if(
 		map.has-key($breakpoints, $breakpoint),
 		map.get($breakpoints, $breakpoint),
