@@ -1,0 +1,63 @@
+@use "./styles/abstracts" as *;
+
+.cta__main {
+  position: relative;
+  overflow: clip;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 780px;
+  background: linear-gradient(to bottom, #DA6B07 0%, #E3600C 150%);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 9vw));
+    transform-origin: top center;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    width: 100%;
+    
+  }
+
+  &::before {
+    min-width: 815px;
+    max-width: 55%;
+    background: linear-gradient(to top,#EA730C 0%, #DF660A 65%,#E1620C 100%);
+  }
+
+  &::after {
+    min-width: 650px;
+    max-width: 45%;
+    background: linear-gradient(to bottom,#EA730C 0%, #DF660A 65%,#E1620C 100%);;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vw;
+    text-align: center;
+  }
+
+  h2,
+  p {
+    color: white;
+  }
+
+  h2 {
+    font-size: toem(48px);
+  }
+
+  p {
+    max-width: 430px;
+    margin-block: 40px 50px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
