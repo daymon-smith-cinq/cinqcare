@@ -21,6 +21,12 @@ $button--primary: #DA6B07 !default;
 // Borders
 $br: 10px;
 
+// Background Blur
+$blur: blur(10px);
+$blur-bg: rgba(0,0,0,.05);
+$blur-bg-light: rgba(0,0,0,.05);
+$blur-bg-dark: rgba(0,0,0,.5);
+
 // Widths
 $max-width-large: 1440px;
 $max-width: 1216px;
