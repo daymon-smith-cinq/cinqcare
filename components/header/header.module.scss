@@ -1,0 +1,200 @@
+
+@use "./styles/abstracts" as *;
+
+.no_scroll {
+	overflow: hidden;
+}
+
+.header {
+	color: $black;
+	background-color: $sand;
+
+	&.dark .headerNav nav > ul.menu {
+
+		@include respond-to("tablet-landscape") {
+			background-color: $blur-bg-dark;
+
+			&::before {
+				border-bottom-color: $blur-bg-dark;
+			}
+		}
+	
+		> li {
+			a {
+				color: $white;
+			}
+
+			ul.submenu {
+				background-color: $blur-bg-dark;
+			}
+		}
+	}
+
+	.headerNav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+		padding: 30px 0;
+
+		@include respond-to("tablet-landscape") {
+			justify-content: flex-start;
+		}
+
+		.logo {
+			@include respond-to("tablet-landscape") {
+				order: 2;
+				flex-grow: 5;
+				margin-left: 20px;
+			}
+		}
+
+		> a {
+			@include respond-to("tablet-landscape") {
+				order: 3;
+			}
+		}
+
+		nav > ul.menu {
+			display: flex;
+		
+			> li {
+				position: relative;
+
+				a {
+					padding: 10px 30px;
+					font-size: 18px;
+
+					@include respond-to("laptop") {
+						padding: 10px 15px;
+					}
+
+					@include respond-to("tablet-landscape") {
+						display: block;
+					}
+				}
+			
+				ul.submenu {
+					display: none;
+					position: absolute;
+					top: calc(100% + 10px);
+					min-width: 300px;
+					background-color: $blur-bg;
+					backdrop-filter: $blur;
+					-webkit-backdrop-filter: $blur;
+					border-radius: $br;
+					padding: 10px 0;
+
+					@include respond-to("tablet-landscape") {
+						position: static;
+						display: block;
+
+					}
+
+					li a {
+						display: block;
+						padding-top: 8px;
+						padding-bottom: 8px;
+
+						@include respond-to("tablet-landscape") {
+							font-size: 16px;
+
+						}
+					}
+				}
+
+				&:hover ul {
+					display: block;
+				}
+			}
+
+			@include respond-to("tablet-landscape") {
+				position: absolute;
+				left: 20px;
+				top: 110px;
+				display: none;
+				opacity: 0;
+				width: 50%;
+				height: auto;
+				padding: 20px;
+				background-color: $blur-bg;
+				backdrop-filter: $blur;
+				-webkit-backdrop-filter: $blur;
+				border-radius: $br;
+				z-index: 9;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: -20px;
+					left: 30px;
+					display: block;
+					width: 0;
+					height: 0;
+					border: 10px solid transparent;
+					border-bottom-color: $blur-bg;
+					backdrop-filter: $blur;
+					-webkit-backdrop-filter: $blur;
+				}
+			}
+
+		}
+
+		.responsiveMenuToggleInput {
+			display: none;
+
+			@include respond-to("tablet-landscape") {
+				&:checked ~ nav .menu {
+					display: block;
+					opacity: 1;
+				}
+			}
+		}
+
+		.responsiveMenuToggleLabel {
+			display: none; 
+
+			@include respond-to("tablet-landscape") {
+				order: 1;
+				display: block;
+				width: 60px;
+				height: 60px;
+				overflow: hidden;
+				position: relative;
+				cursor: pointer;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+
+				&:before {
+					content: '\2261';
+					display: block;
+					width: 100%;
+					height: 100%;
+					font-family: "Sohne", sans-serif;
+					font-size: 40px;
+					line-height: 60px;
+					text-align: center;
+					color: $white;
+					background-color: $button--primary;
+					border-radius: $br;
+					margin-right: 0.5em;
+				}
+
+				&:hover::before {
+					background-color: $dark-orange;
+				}
+			}
+		}
+
+	}
+}
+
+.sticky {
+	height: 100px;
+	@include respond-to("mobile-landscape", max) {
+		height: 64px;
+	}
+}
