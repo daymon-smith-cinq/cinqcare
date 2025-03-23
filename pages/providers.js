@@ -6,6 +6,10 @@ import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 
 export default function Providers() {
+
+  // Define current page
+  const currentPage = "providers";
+
   return (
     <>
       <Head>
@@ -16,13 +20,11 @@ export default function Providers() {
 
       <Header headerBg="dark" />
 
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-          <Hero />
-        </main>
-      </div>
-      
-      <CTA />
+      <main>
+        <Hero page={currentPage} />
+
+        <CTA />
+      </main>
 
       <Footer />
     </>

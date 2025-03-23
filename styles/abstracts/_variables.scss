@@ -18,14 +18,16 @@ $pink: #FF7D7A;
 
 $button--primary: #DA6B07 !default;
 
+$gradient-orange: linear-gradient(180deg, #DA6B07 0%, #E45F0C 100%);
+
 // Borders
 $br: 10px;
 
 // Background Blur
-$blur: blur(10px);
+$blur: blur(100px) contrast(60%);
 $blur-bg: rgba(0,0,0,.05);
-$blur-bg-light: rgba(0,0,0,.05);
-$blur-bg-dark: rgba(0,0,0,.5);
+$blur-bg-light: rgba(0,0,0,.5);
+$blur-bg-dark: rgba(0,0,0,.05);
 
 // Widths
 $max-width-large: 1440px;
