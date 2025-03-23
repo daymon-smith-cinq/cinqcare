@@ -2,7 +2,104 @@
 @use "./styles/abstracts" as *;
 
 .section_Hero {
+	background-color: $black;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 100px;
+	height: 90vh;
+	min-height: 800px;
+
+	@include respond-to("tablet-landscape") {
+		height: 100%;
+		padding-top: 150px;
+		padding-bottom: 80px;
+		position: relative;
+	}
+
+	@include respond-to("tablet") {
+		min-height: auto;
+		padding-top: 150px;
+		padding-bottom: 40px;
+	}
+
+	&::before {
+		content: '';
+
+		@include respond-to("tablet") {
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%);;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+
+		@include respond-to("mobile-landscape") {
+			background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,.2) 100%);;
+		}
+	}
+
+	h1, blockquote, span {
+		color: $white;
+	}
+
 	.container_Hero {
-		
+		height: 100%;
+
+		@include respond-to("tablet-landscape") {
+			position: relative;
+			z-index: 2;
+		}
+
+		.heroContent {
+			height: 100%;
+			max-width: 55%;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
+
+			@include respond-to("tablet") {
+				max-width: 65%;
+			}
+
+			@include respond-to("mobile-landscape") {
+				max-width: 80%;
+			}
+
+			@include respond-to("mobile") {
+				max-width: 100%;
+			}
+
+			h1 {
+				margin: 0.5em 0;
+			}
+
+			blockquote {
+				font-size: 24px;
+				line-height: 1.25em;
+				margin-top: 60px;
+
+				@include respond-to("tablet") {
+					font-size: 20px;	
+				}
+			}
+
+			blockquote span {
+				display: block;
+				font-size: 18px;
+				line-height: 1.25em;
+				margin-top: 20px;
+
+				@include respond-to("tablet") {
+					font-size: 16px;	
+				}
+			}
+	
+	
+		}
+
 	}
 }

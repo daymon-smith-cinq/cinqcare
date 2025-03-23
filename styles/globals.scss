@@ -78,21 +78,21 @@ body {
 
 h1 {
 	font-size: 72px;
-	font-size: clamp(1rem, 4vw + 1rem, 3.25rem);
+	font-size: clamp(1rem, 4vw + 1rem, 4.5rem);
 	font-weight: 400;
 	text-wrap: balance;
 }
 
 h2 {
 	font-size: 48px;
-	font-size: clamp(1.875rem, 2vw + 1rem, 2.25rem);
+	font-size: clamp(1.875rem, 2vw + 1rem, 2.75rem);
 	font-weight: 400;
 	text-wrap: balance;
 }
 
 h3 {
 	font-size: 36px;
-	font-size: clamp(1.125rem, 1vw + 1rem, 1.5rem);
+	font-size: clamp(1.125rem, 1vw + 1rem, 2rem);
 	font-weight: 400;
 	text-wrap: balance;
 }
@@ -110,6 +110,7 @@ h3,
 h4 {
 	color: $black;
 	line-height: 1.15;
+	margin-bottom: 1em;
 
 	@media screen and (max-width: 431px) {
 		text-wrap: pretty;
@@ -127,6 +128,11 @@ h6 {
 	font-weight: 600;
 	color: $black;
 	line-height: 1.15;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: 1em;
 }
 
 p,
@@ -161,20 +167,6 @@ main > section {
 
 img {
 	display: block;
-}
-
-/* Buttons */
-
-.btn {
-	@apply font-bold py-2 px-4 rounded;
-}
-
-.btn-blue {
-	@apply bg-blue-500 text-white;
-}
-
-.btn-blue:hover {
-	@apply bg-blue-700;
 }
 
 /* Loading states */

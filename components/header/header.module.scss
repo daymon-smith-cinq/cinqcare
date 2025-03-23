@@ -6,8 +6,10 @@
 }
 
 .header {
+	position: absolute;
+	width: 100%;
 	color: $black;
-	background-color: $sand;
+	z-index: 3;
 
 	&.dark .headerNav nav > ul.menu {
 

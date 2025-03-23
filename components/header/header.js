@@ -73,7 +73,6 @@ const Header = ({ headerBg }) => {
 					</div>
 				</div>
 			</header>
-			<div id="sticky-spacer" className={styles.sticky}></div>
 		</>
 	);
 };
