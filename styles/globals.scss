@@ -116,8 +116,7 @@ h4 {
 		text-wrap: pretty;
 	}
 
-	em,
-	i {
+	em {
 		font-family: "PP Editorial New", serif;
 	}
 }
@@ -167,6 +166,23 @@ main > section {
 
 img {
 	display: block;
+}
+
+/* Fancy Periods */
+
+.period::after {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background-color: $primary;
+}
+
+h1.period::after {
+	width: 14px;
+	height: 14px;
+	border-radius: 14px;
 }
 
 /* Loading states */
