@@ -12,26 +12,52 @@ const Hero = ({ page }) => {
 	// Homepage
 	if (page == "home") {
 		content = {
-			bgImgSrc: "images/hero-home.jpg",
+			bgImgSrc: "images/hero-home.jpg", // IMAGE NOT FINAL
 			h1: "<em>Care,</em> Where You Live",
 			h1Period: false,
 			buttonText: "Learn More",
-			buttonLink: "#",
+			buttonLink: "#",  // HYRULE IS IN DANGER! (NEED LINK)
 			quoteText: "“We see the community as our family…we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.”<span>- Deborah Forbes, VP of Operations, Doral Health and Wellness, part of the CINQCARE network</span>"
 		};
 	}
 
-	// Providers
+	// For Providers
 	if (page == "providers") {
 		content = {
-			bgImgSrc: "images/hero-providers.jpg",
-			h1: "<em>Strengthening</em> Community-Based Care, Together",
+			bgImgSrc: "images/hero-providers.jpg", // IMAGE NOT FINAL
+			h1: "Strengthening Community-Based Care, <em>Together</em>",
 			h1Period: true,
 			buttonText: "Learn More",
-			buttonLink: "#",
+			buttonLink: "#",  // NEED LINK
 			quoteText: "“CINQCARE isn’t just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- Dr. Wilfred Herard, MD — CEO of Proactive Care IPA</span>"
 		};
 	}
+
+	// For Patients
+	if (page == "patients") {
+		content = {
+			bgImgSrc: "images/hero-providers.jpg", // IMAGE NOT FINAL
+			h1: "Health and Care, <em>Right Where You Live</em>",
+			h1Period: false,
+			buttonText: "Find Support Near You",
+			buttonLink: "#",  // NEED LINK
+			quoteText: "“To care for you where you live, that’s our calling.”<span>— Tony Welters – Founder and CEO</span>"
+		};
+	}
+
+	// For Partners
+	if (page == "partners") {
+		content = {
+			bgImgSrc: "images/hero-providers.jpg", // IMAGE NOT FINAL
+			h1: "Experts in Health and Care, Leading a <em>New Way Forward</em>",
+			h1Period: false,
+			buttonText: "Become a Partner",
+			buttonLink: "#",  // NEED LINK
+			quoteText: "“It’s a pretty bold and audacious goal [CINQCARE has] set out, an opportunity to make some meaningful change with communities that need it..”<span>— Gary Bacher – XXX White House advisor and former CINQCARE Chief Strategy Officer</span>"
+		};
+	}
+
+	const fancyPeriod = content.h1Period == true ? "period" : "";
 
 	return (
 		<section 
@@ -44,7 +70,7 @@ const Hero = ({ page }) => {
 				<div className={styles.heroContent}>
 					<div>
 						<h1 
-							className={styles.heroH1} 
+							className={fancyPeriod} 
 							dangerouslySetInnerHTML={{ __html: content.h1 }}
 						></h1>
 						<Button 
