@@ -22,7 +22,7 @@ const Masonry = () => {
       <div className="wrapper">
         <div className={styles.masonry}>
           <div className={styles.masonry__column}>
-            <div className={styles.masonry__item}>
+            <div className={styles.masonry__item} style={{'--item-bg': 'url(https://loremflickr.com/500/473)'}}>
               <div className={styles.item__content}>
                 <div className={styles.item__info}>
                   <div className={styles.item__data}>
