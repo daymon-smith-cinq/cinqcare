@@ -3,6 +3,7 @@ import Header from "../components/header/header";
 import Image from "next/image";
 import Hero from "../components/hero/hero";
 import OrangeBox from "../components/orangeBox/orangeBox";
+import Slidecordion from "../components/slidecordion/slidecordion";
 import CTA from "../components/cta/cta";
 import Footer from "../components/footer/footer";
 
@@ -11,11 +12,15 @@ export default function Home() {
   // Define current page
   const currentPage = "home";
 
+  // SEO
+  const title = "Home"; // TEMP COPY
+  const metaDescription = "Lorem ipsum dolor sit amet"; // TEMP COPY
+
   return (
     <>
       <Head>
-        <title>Home</title>
-        <meta name="description" content="Lorem ipsum dolor sit amet." />
+        <title>{title}</title>
+        <meta name="description" content={metaDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -24,6 +29,7 @@ export default function Home() {
       <main>
         <Hero page={currentPage} />
         <OrangeBox page={currentPage} />
+        <Slidecordion page={currentPage} />
 
         <CTA />
       </main>
