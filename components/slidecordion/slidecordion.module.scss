@@ -1,0 +1,178 @@
+
+@use "./styles/abstracts" as *;
+
+.accordion_toggle {
+	display: grid;
+	grid-template-rows: 0fr;
+	opacity: 0;
+	transition: all 0.5s;
+
+	&.show {
+		grid-template-rows: 1fr;
+		opacity: 1;
+	}
+
+	.accordion_toggle_show {
+		overflow: hidden;
+	}
+}
+
+.section_Slidecordion {
+	padding-bottom: 200px;
+
+	@include respond-to("tablet-landscape") {
+		padding-bottom: 100px;
+	}
+
+	@include respond-to("tablet") {
+		padding-bottom: 40px;
+	}
+
+	.slidecordion {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		gap: 150px;
+
+		@include respond-to("tablet-landscape") {
+			gap: 80px;
+		}
+	
+		@include respond-to("tablet") {
+			gap: 60px;
+		}
+
+		@include respond-to("mobile-landscape") {
+			gap: 20px;
+		}
+
+		@include respond-to("mobile") {
+			flex-direction: column;
+		}
+
+		> div {
+			flex-basis: 50%;
+			position: relative;
+
+			@include respond-to("tablet-landscape") {
+				&.slidecordionTextContainer {
+					flex-basis: 60%;
+				}
+
+				&.slidecordionImgContainer {
+					flex-basis: 40%;
+				}
+
+			}
+
+			@include respond-to("mobile") {
+				&.slidecordionTextContainer {
+					flex-basis: 100%;
+				}
+			}
+		}
+
+		.slidecordionSlide {
+			margin: 40px 0;
+
+			@include respond-to("tablet-landscape") {
+				margin: 30px 0;
+			}
+		
+			@include respond-to("tablet") {
+				margin: 20px 0;
+			}
+
+			@include respond-to("mobile-landscape") {
+				margin: 10px 0;
+			}
+
+			.accordion_button {
+				display: block;
+				cursor: pointer;
+				font-size: 48px;
+				color: rgba(49,49,49,.5);
+				padding: 10px 0;
+				margin: 10px 0;
+				transition: all 0.2s;
+
+				@include respond-to("tablet-landscape") {
+					font-size: 48px;
+				}
+			
+				@include respond-to("tablet") {
+					font-size: 36px;
+					margin: 0;
+				}
+
+				@include respond-to("mobile-landscape") {
+					font-size: 24px;
+				}
+
+				&[aria-expanded="true"] {
+					font-family: "PP Editorial New", serif;
+					font-size: 72px;
+					color: $dark-gray;
+
+					@include respond-to("tablet-landscape") {
+						font-size: 60px;
+					}
+				
+					@include respond-to("tablet") {
+						font-size: 48px;
+					}
+
+					@include respond-to("mobile-landscape") {
+						font-size: 36px;
+					}
+				}
+				
+				&:hover {
+					color: $dark-gray;
+				}
+			}
+
+			.slidecordionText {
+				+ a {
+					margin-top: 30px;
+				}
+
+				@include respond-to("tablet") {
+					+ a {
+						margin-top: 0;
+						margin-bottom: 10px;
+					}
+
+					p {
+						font-size: 16px;
+					}
+				}
+			}
+			
+		}
+
+		.slidecordionImage {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			img {
+				border-radius: $br;
+			}
+
+			@include respond-to("tablet-landscape") {
+				top: 30%;
+			}
+
+			@include respond-to("mobile") {
+				position: relative;
+				opacity: 1;
+				display: none;
+
+				&.show {
+					display: block;
+				}
+			}
+		}
+	}
+}
