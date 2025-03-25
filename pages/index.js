@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Header from "../components/header/header";
-import Image from "next/image";
+import Hero from "../components/hero/hero";
+import Footer from "../components/footer/footer";
+import Masonry from "../components/masonry/masonry";
 
 export default function Home() {
   return (
@@ -18,6 +20,10 @@ export default function Home() {
           
         </main>
       </div>
+
+      <Masonry />
+
+      <Footer />
     </>
   );
 }

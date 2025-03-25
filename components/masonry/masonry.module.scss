@@ -1,0 +1,94 @@
+@use "./styles/abstracts" as *;
+
+.masonry {
+  display: flex;
+  column-gap: 40px;
+  
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: end;
+    width: calc(100% / 3);
+  }
+
+  &__item {
+    position: relative;
+    overflow: clip;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .25s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      .item__content {
+        opacity: 1;
+      }
+    }
+  }
+
+  .item__content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    backdrop-filter: blur(45px) saturate(150%);
+    opacity: 0;
+    transition: all .25s ease;
+
+    p {
+      margin-top: auto;
+      color: white;
+      font-size: 25px;
+      line-height: 140%;
+    }
+
+    img {
+      width: auto;
+    }
+  }
+
+  .item__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .item__data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    p {
+      margin: 0;
+    }
+
+    strong {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.home__masonry {
+  .header {
+    &:first-of-type {
+      margin-right: 40px;
+    }
+  }
+}
+
+.masonry__header {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 10vw;
+
+  p {
+    margin-bottom: 30px;
+  }
+}
