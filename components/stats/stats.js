@@ -1,6 +1,8 @@
 import styles from "./stats.module.scss";
 import Image from "next/image";
-import ImgHome from "/public/images/orangeBox-temp.jpg";
+import Stat1 from "/public/images/stat-1.svg";
+import Stat2 from "/public/images/stat-2.svg";
+import Stat3 from "/public/images/stat-3.svg";
 
 const Stats = ({ page }) => {
 
@@ -12,36 +14,25 @@ const Stats = ({ page }) => {
 	// Homepage
 	if (page == "home") {
 		content = {
-			bgImgSrc: "images/orangeBox-stripes-home.png",
-			foregroundImg: "<Image priority={false} src='images/orangeBox-temp.jpg' alt='' />", // optional // IMAGE NOT FINAL
-			text: "<h4>Our vision</h4>" +
-				"<h3>People who need care, particularly at home, often never get it — <em>especially when they live in high-needs, urban and rural areas.</em> In our communities, we know it’s too hard to get in to see a primary care doctor, too expensive to get a nurse to visit at home, too complicated to qualify for support programs.</h3>" +
-				"<h3>That’s why we design new models to deliver health and care – better, easier and less expensively – to our communities, right where you live.</h3>" +
-				"<h3><em>We are in the health and care business.</em></h3>"
+			heading: "Health and care that treats you <em>like family</em> where you live",
+			headingPeriod: true,
+			stat1alt: "A graph of many dots, 50% of which are orange. The text reads: '1 in 2 Americans lives with chronic disease today - we need a change.'",
+			stat2alt: "A graph depicting an upward trend. The text reads: '80% of your health is tied to factors outside of a hospital or clinic.",
+			stat3alt: "A graph depicitng many orange dots. The text reads: 'Reducing repeat trips to the hospital for members by 52%.'",
 		};
 	}
 
-	// Render foreground image
-	const RenderForegroundImg = () => (
-		<Image priority={false} src={ImgHome} alt='' />
-	);
-
 	return (
-		<section className={styles.section_orangeBox}>
-			<div className={`${styles.container_orangeBox} ${" wrapper"}`}>
-				<div 
-					className={styles.orangeBox}
-					style={{
-						backgroundImage: `url(${content.bgImgSrc})`,
-					}}
-				>
-					<div className={styles.orangeBoxImage}>
-						<RenderForegroundImg />
-					</div>
-					<div
-						className={styles.orangeBoxContent} 
-						dangerouslySetInnerHTML={{ __html: content.text }}
-					></div>
+		<section className={styles.section_stats}>
+			<div className={`${styles.container_stats} ${" wrapper"}`}>
+				<h3 
+					className={content.headingPeriod ? ("period") : undefined}
+					dangerouslySetInnerHTML={{ __html: content.heading }}
+				></h3>
+				<div className={styles.stats} >
+					<Image priority={false} src={Stat1} alt={content.stat1alt} width={385} height={311} />
+					<Image priority={false} src={Stat2} alt={content.stat2alt} width={385} height={311} />
+					<Image priority={false} src={Stat3} alt={content.stat3alt} width={385} height={311} />
 				</div>
 			</div>
 		</section>

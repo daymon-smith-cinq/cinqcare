@@ -5,7 +5,7 @@
 	display: grid;
 	grid-template-rows: 0fr;
 	opacity: 0;
-	transition: all 0s;
+	transition: all 0s linear;
 	transition-delay: 0s;
 
 	@include respond-to("tablet") {
@@ -16,7 +16,7 @@
 		grid-template-rows: 1fr;
 		opacity: 1;
 		transition: all .5s;
-		transition-delay: .3s;
+		transition-delay: .4s;
 	}
 
 	.accordion_toggle_show {
