@@ -11,15 +11,36 @@
   line-height: 1;
   text-align: center;
   font-weight: 500;
-  transition: background-color .25s ease;
+  transition: all .25s ease;
 }
 
 .primary {
-  background-color: $button--primary;
   color: $white;
+  background-color: $button--primary;
 
   &:hover {
     background-color: color.mix($button--primary, black, 80%);
+  }
+}
+
+.secondary {
+  color: black;
+  background-color: white;
+
+  &:hover {
+    color: white;
+    background-color: color.mix($button--primary, black, 45%);
+  }
+}
+
+.outline {
+  color: white;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px white;
+
+  &:hover {
+    color: black;
+    background-color: white;
   }
 }
 
