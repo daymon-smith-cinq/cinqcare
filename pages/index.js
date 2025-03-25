@@ -31,7 +31,7 @@ export default function Home() {
         <Hero page={currentPage} />
         <OrangeBox page={currentPage} />
         <Slidecordion page={currentPage} />
-
+        <Masonry page={currentPage} />
         <CTA />
       </main>
 
