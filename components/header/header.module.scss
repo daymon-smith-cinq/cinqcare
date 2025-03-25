@@ -1,4 +1,3 @@
-
 @use "./styles/abstracts" as *;
 
 .no_scroll {
@@ -6,26 +5,29 @@
 }
 
 .header {
+	position: absolute;
+	width: 100%;
 	color: $black;
-	background-color: $sand;
+	z-index: 3;
 
 	&.dark .headerNav nav > ul.menu {
-
 		@include respond-to("tablet-landscape") {
-			background-color: $blur-bg-dark;
-
-			&::before {
-				border-bottom-color: $blur-bg-dark;
-			}
 		}
-	
+
 		> li {
 			a {
 				color: $white;
+				user-select: none;
+				transition: 0.2s linear;
+
+				&:hover {
+					color: #da6b07;
+				}
 			}
 
 			ul.submenu {
-				background-color: $blur-bg-dark;
+				backdrop-filter: blur(30px);
+				-webkit-backdrop-filter: blur(30px);
 			}
 		}
 	}
@@ -41,15 +43,64 @@
 			justify-content: flex-start;
 		}
 
+		// @include respond-to("mobile-landscape") {
+		// 	padding: 20px 0;
+		// }
+
 		.logo {
 			@include respond-to("tablet-landscape") {
-				order: 2;
-				flex-grow: 5;
+				order: 0;
 				margin-left: 20px;
+			}
+			@include respond-to("mobile-landscape") {
+				width: 140px;
+				margin-left: 0;
+			}
+			@include respond-to(360px) {
+				width: 100px;
 			}
 		}
 
-		> a {
+		.spacer {
+			display: none;
+			@include respond-to("tablet-landscape") {
+				order: 1;
+				display: flex;
+				flex-grow: 5;
+			}
+		}
+
+		/* CTA Button */
+		.menu_cta {
+			display: flex;
+			appearance: none;
+			width: fit-content;
+			padding: toem(15px) toem(32px);
+			font-size: toem(18px);
+			border-radius: 9999px;
+			line-height: 1;
+			text-align: center;
+			font-weight: 500;
+			transition: background-color 0.25s ease;
+			color: $white;
+			background-color: $dark-orange;
+			&:hover {
+				background-color: $orange;
+			}
+
+			@include respond-to("tablet-landscape") {
+				order: 2;
+			}
+			@include respond-to("mobile-landscape") {
+				font-size: 14px;
+			}
+			@include respond-to("mobile") {
+				font-size: 12px;
+				padding: 8px 12px;
+			}
+		}
+
+		> label {
 			@include respond-to("tablet-landscape") {
 				order: 3;
 			}
@@ -57,7 +108,7 @@
 
 		nav > ul.menu {
 			display: flex;
-		
+
 			> li {
 				position: relative;
 
@@ -73,7 +124,7 @@
 						display: block;
 					}
 				}
-			
+
 				ul.submenu {
 					display: none;
 					position: absolute;
@@ -88,7 +139,7 @@
 					@include respond-to("tablet-landscape") {
 						position: static;
 						display: block;
-
+						min-width: unset;
 					}
 
 					li a {
@@ -98,7 +149,6 @@
 
 						@include respond-to("tablet-landscape") {
 							font-size: 16px;
-
 						}
 					}
 				}
@@ -110,34 +160,25 @@
 
 			@include respond-to("tablet-landscape") {
 				position: absolute;
-				left: 20px;
+				right: 35px;
 				top: 110px;
 				display: none;
 				opacity: 0;
 				width: 50%;
+				width: fit-content;
 				height: auto;
 				padding: 20px;
-				background-color: $blur-bg;
-				backdrop-filter: $blur;
-				-webkit-backdrop-filter: $blur;
 				border-radius: $br;
+				backdrop-filter: blur(60px);
+				-webkit-backdrop-filter: blur(60px);
 				z-index: 9;
-
-				&::before {
-					content: '';
-					position: absolute;
-					top: -20px;
-					left: 30px;
-					display: block;
-					width: 0;
-					height: 0;
-					border: 10px solid transparent;
-					border-bottom-color: $blur-bg;
-					backdrop-filter: $blur;
-					-webkit-backdrop-filter: $blur;
-				}
 			}
 
+			@include respond-to("mobile-landscape") {
+				top: 80px;
+				right: 20px;
+				//width: calc(100% - 40px);
+			}
 		}
 
 		.responsiveMenuToggleInput {
@@ -152,10 +193,9 @@
 		}
 
 		.responsiveMenuToggleLabel {
-			display: none; 
+			display: none;
 
 			@include respond-to("tablet-landscape") {
-				order: 1;
 				display: block;
 				width: 60px;
 				height: 60px;
@@ -167,9 +207,10 @@
 				-moz-user-select: none;
 				-ms-user-select: none;
 				user-select: none;
+				z-index: 99;
 
 				&:before {
-					content: '\2261';
+					content: "\2261";
 					display: block;
 					width: 100%;
 					height: 100%;
@@ -178,17 +219,31 @@
 					line-height: 60px;
 					text-align: center;
 					color: $white;
-					background-color: $button--primary;
-					border-radius: $br;
-					margin-right: 0.5em;
 				}
 
 				&:hover::before {
-					background-color: $dark-orange;
+					color: $dark-orange;
+				}
+			}
+
+			@include respond-to("mobile-landscape") {
+				width: 30px;
+				height: 40px;
+
+				&:before {
+					line-height: 38px;
+				}
+			}
+
+			@include respond-to("mobile") {
+				width: 30px;
+				height: 40px;
+
+				&:before {
+					line-height: 35px;
 				}
 			}
 		}
-
 	}
 }
 
