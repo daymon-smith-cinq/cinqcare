@@ -57,8 +57,6 @@ const Hero = ({ page }) => {
 		};
 	}
 
-	const fancyPeriod = content.h1Period == true ? "period" : "";
-
 	return (
 		<section 
 			className={styles.section_Hero}
@@ -70,7 +68,7 @@ const Hero = ({ page }) => {
 				<div className={styles.heroContent}>
 					<div>
 						<h1 
-							className={fancyPeriod} 
+							className={content.h1Period ? ("period") : undefined}
 							dangerouslySetInnerHTML={{ __html: content.h1 }}
 						></h1>
 						<Button 
