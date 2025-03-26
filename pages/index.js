@@ -7,6 +7,7 @@ import Slidecordion from "../components/slidecordion/slidecordion";
 import ColumnAccordion from "../components/columnAccordion/columnAccordion";
 import Stats from "../components/stats/stats";
 import CTA from "../components/cta/cta";
+import Masonry from "../components/masonry/masonry";
 import Footer from "../components/footer/footer";
 
 export default function Home() {
@@ -34,7 +35,8 @@ export default function Home() {
         <Slidecordion page={currentPage} />
         <ColumnAccordion page={currentPage} />
         <Stats page={currentPage} />
-
+          
+        <Masonry page={currentPage} />
         <CTA />
       </main>
 
