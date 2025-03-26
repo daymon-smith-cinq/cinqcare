@@ -1,0 +1,56 @@
+
+@use "./styles/abstracts" as *;
+
+.section_sideBySide {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	@include respond-to("mobile-landscape") {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	&.gradient {
+		background: #FFCA8B;
+		background: linear-gradient(180deg, #FFE6C7 0%, #FFCA8B 100%);
+	}
+
+	.columnContainer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 100px;
+
+		@include respond-to("tablet-landscape") {
+			gap: 60px;
+		}
+
+		@include respond-to("tablet") {
+			gap: 40px;
+		}
+
+		@include respond-to("mobile-landscape") {
+			flex-direction: column;
+		}
+
+		.column {
+			flex: 1 0 40%;
+
+			big {
+				font-size: 60px;
+
+				@include respond-to("tablet-landscape") {
+					font-size: 48px;
+				}
+
+				@include respond-to("tablet") {
+					font-size: 36px;
+				}
+
+				@include respond-to("mobile") {
+					font-size: 28px;
+				}
+			}
+		}
+	}
+}
