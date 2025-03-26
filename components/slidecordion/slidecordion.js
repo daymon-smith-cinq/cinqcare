@@ -24,7 +24,7 @@ const Slidecordion = ({ page }) => {
 					buttonText: "See Providers",
 					buttonLink: "/providers",
 					imgSrc: ImgProviders,
-					imgAlt: "A graphic of a dotted line connecting a patient to a care provider. An example alert shows the text 'General Check-in'",
+					imgAlt: "A graphic of a dotted line connecting a patient to a care provider. An example alert shows the text 'General Check-in' with the date and time.",
 				},
 				{
 					title: "Patients",
@@ -32,7 +32,7 @@ const Slidecordion = ({ page }) => {
 					buttonText: "See Patients",
 					buttonLink: "/patients",
 					imgSrc: ImgPatients,
-					imgAlt: "An outline of a county with health center locations marked.",
+					imgAlt: "A simple illustrated map of a county with health center locations marked.",
 				},
 				{
 					title: "Partners",
@@ -40,7 +40,7 @@ const Slidecordion = ({ page }) => {
 					buttonText: "See Partners",
 					buttonLink: "/partners",
 					imgSrc: ImgPartners,
-					imgAlt: "A line graph illustrates a patient's blood pressure readings over time.",
+					imgAlt: "A line graph illustrating a patient's blood pressure readings over time.",
 				},
 			],
 		};
