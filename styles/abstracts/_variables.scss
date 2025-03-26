@@ -26,7 +26,7 @@ $gradient-orange: linear-gradient(180deg, #DA6B07 0%, #E45F0C 100%);
 $br: 10px;
 
 // Background Blur
-$blur: blur(100px) contrast(60%);
+$blur: blur(100px) contrast(90%) saturate(120%);
 $blur-bg: rgba(0,0,0,.05);
 $blur-bg-light: rgba(0,0,0,.5);
 $blur-bg-dark: rgba(0,0,0,.05);

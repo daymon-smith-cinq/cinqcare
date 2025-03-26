@@ -3,19 +3,18 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
-import Video from "../components/video/video";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 
-export default function Providers() {
+export default function Careers() {
 
   // Define current page
-  const currentPage = "providers";
+  const currentPage = "careers";
 
   // SEO
-  const title = "For Providers | CINQCARE";
-  const metaDescription = "Join CINQCARE’s network to enhance community-based care with expert support, value-based incentives, and data-driven tools for providers.";
-  const pageURL = "https://cinq.care/providers";
+  const title = "Careers | CINQCARE";
+  const metaDescription = "Join CINQCARE’s mission to deliver health and care to high-needs communities. Answer the call to make a difference—explore careers today.";
+  const pageURL = "https://cinq.care/careers";
 
   return (
     <>
@@ -34,8 +33,6 @@ export default function Providers() {
 
       <main>
         <Hero page={currentPage} />
-
-        <Video page={currentPage} />
 
         <CTA />
       </main>

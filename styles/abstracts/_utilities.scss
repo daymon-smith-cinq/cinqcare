@@ -7,10 +7,11 @@
 
 // Breakpoints defined to be used in mixin
 $breakpoints: (
-	"mobile": 431px,
+	"mobile": 500px,
 	"mobile-landscape": 640px,
 	"tablet": 768px,
 	"tablet-landscape": 1024px,
+	"masonry-desktop": 1100px,
 	"laptop": 1256px
 		// 1256px is the $max-width variable (1216px) plus the 20px padding on each side (1216 + 40),,,,
 );
