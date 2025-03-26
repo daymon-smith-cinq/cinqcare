@@ -7,6 +7,7 @@ import OrangeBox from "../components/orangeBox/orangeBox";
 import Slidecordion from "../components/slidecordion/slidecordion";
 import ColumnAccordion from "../components/columnAccordion/columnAccordion";
 import Stats from "../components/stats/stats";
+import Video from "../components/video/video";
 import CTA from "../components/cta/cta";
 import Masonry from "../components/masonry/masonry";
 import Footer from "../components/footer/footer";
@@ -43,6 +44,8 @@ export default function Home() {
         <ColumnAccordion page={currentPage} />
         <Stats page={currentPage} />
         
+        <Video page={currentPage} />
+        <div className="separator"></div>
         <Masonry page={currentPage} />
         <CTA />
       </main>

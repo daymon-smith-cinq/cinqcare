@@ -1,0 +1,36 @@
+
+@use "./styles/abstracts" as *;
+
+.section_video {
+	background: linear-gradient(180deg, #FBF2E3 0%, rgba(251, 242, 227, 0.00) 100%);
+	padding-bottom: 40px;
+
+	h3 {
+		text-align: center;
+		max-width: 80%;
+		margin: 0 auto;
+
+		@include respond-to("tablet-landscape") {
+			max-width: 90%;
+		}
+
+		@include respond-to("tablet") {
+			max-width: 100%;
+		}
+	}
+
+	.video {
+		border-radius: $br;
+		max-width: 90%;
+		margin: 80px auto;
+		overflow: hidden;
+
+		@include respond-to("tablet-landscape") {
+			max-width: 100%;
+		}
+
+		@include respond-to("tablet") {
+			margin: 60px auto;
+		}
+	}
+}
