@@ -6,15 +6,15 @@ import Hero from "../components/hero/hero";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 
-export default function Providers() {
+export default function ForMoms() {
 
   // Define current page
-  const currentPage = "providers";
+  const currentPage = "for-moms";
 
   // SEO
-  const title = "For Providers | CINQCARE";
-  const metaDescription = "Join CINQCARE’s network to enhance community-based care with expert support, value-based incentives, and data-driven tools for providers.";
-  const pageURL = "https://cinq.care/providers";
+  const title = "CINQCARE for Moms | CINQCARE";
+  const metaDescription = "CINQCARE for Moms offers pregnancy and postpartum care with dedicated support, from medical visits to social services, tailored for you.";
+  const pageURL = "https://cinq.care/for-moms";
 
   return (
     <>

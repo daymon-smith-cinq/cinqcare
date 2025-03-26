@@ -40,7 +40,7 @@ const Hero = ({ page }) => {
 			h1: "Health and Care, <em>Right Where You Live</em>",
 			h1Period: false,
 			buttonText: "Find Support Near You",
-			buttonLink: "#",  // NEED LINK
+			buttonLink: "/join-our-family",
 			quoteText: "“To care for you where you live, that’s our calling.”<span>— Tony Welters – Founder and CEO</span>"
 		};
 	}
@@ -52,7 +52,7 @@ const Hero = ({ page }) => {
 			h1: "Experts in Health and Care, Leading a <em>New Way Forward</em>",
 			h1Period: false,
 			buttonText: "Become a Partner",
-			buttonLink: "#",  // NEED LINK
+			buttonLink: "/join-our-family",
 			quoteText: "“It’s a pretty bold and audacious goal [CINQCARE has] set out, an opportunity to make some meaningful change with communities that need it..”<span>— Gary Bacher – XXX White House advisor and former CINQCARE Chief Strategy Officer</span>"
 		};
 	}

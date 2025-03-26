@@ -6,15 +6,15 @@ import Hero from "../components/hero/hero";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 
-export default function Providers() {
+export default function GraceAtHome() {
 
   // Define current page
-  const currentPage = "providers";
+  const currentPage = "grace-at-home";
 
   // SEO
-  const title = "For Providers | CINQCARE";
-  const metaDescription = "Join CINQCARE’s network to enhance community-based care with expert support, value-based incentives, and data-driven tools for providers.";
-  const pageURL = "https://cinq.care/providers";
+  const title = "Grace at Home | CINQCARE";
+  const metaDescription = "Grace at Home brings expert primary, urgent, and chronic care to you. Quality health support tailored to your needs, right at home.";
+  const pageURL = "https://cinq.care/grace-at-home";
 
   return (
     <>

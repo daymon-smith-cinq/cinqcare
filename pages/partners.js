@@ -6,15 +6,15 @@ import Hero from "../components/hero/hero";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 
-export default function Providers() {
+export default function Partners() {
 
   // Define current page
-  const currentPage = "providers";
+  const currentPage = "partners";
 
   // SEO
-  const title = "For Providers | CINQCARE";
-  const metaDescription = "Join CINQCARE’s network to enhance community-based care with expert support, value-based incentives, and data-driven tools for providers.";
-  const pageURL = "https://cinq.care/providers";
+  const title = "For Partners | CINQCARE";
+  const metaDescription = "CINQCARE works with healthcare leaders to improve care delivery, enhance outcomes, and reduce costs in high-need communities using value-based solutions.";
+  const pageURL = "https://cinq.care/partners";
 
   return (
     <>

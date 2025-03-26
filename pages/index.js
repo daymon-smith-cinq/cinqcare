@@ -1,4 +1,5 @@
 import Head from "next/head";
+import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Header from "../components/header/header";
 import Image from "next/image";
 import Hero from "../components/hero/hero";
@@ -16,15 +17,21 @@ export default function Home() {
   const currentPage = "home";
 
   // SEO
-  const title = "Home"; // TEMP COPY
-  const metaDescription = "Lorem ipsum dolor sit amet"; // TEMP COPY
+  const title = "CINQCARE - Care, Where You Live";
+  const metaDescription = "CINQCARE delivers health and care—better, simpler, and closer to home. Because your health shouldn’t depend on your zip code.";
+  const pageURL = "https://cinq.care/";
 
   return (
     <>
       <Head>
-        <title>{title}</title>
         <meta name="description" content={metaDescription} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content={OpengraphImg.src} />
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageURL} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@carecinq" />
+        <title>{title}</title>
       </Head>
 
       <Header headerBg="dark" />
@@ -35,7 +42,7 @@ export default function Home() {
         <Slidecordion page={currentPage} />
         <ColumnAccordion page={currentPage} />
         <Stats page={currentPage} />
-          
+        
         <Masonry page={currentPage} />
         <CTA />
       </main>

@@ -6,15 +6,15 @@ import Hero from "../components/hero/hero";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 
-export default function Providers() {
+export default function CareMedicalPractice() {
 
   // Define current page
-  const currentPage = "providers";
+  const currentPage = "care-medical-practice";
 
   // SEO
-  const title = "For Providers | CINQCARE";
-  const metaDescription = "Join CINQCARE’s network to enhance community-based care with expert support, value-based incentives, and data-driven tools for providers.";
-  const pageURL = "https://cinq.care/providers";
+  const title = "Care Medical Practice | CINQCARE";
+  const metaDescription = "Care Medical Practice offers primary, specialty, and mental health care in your community. Find expert, compassionate care near you.";
+  const pageURL = "https://cinq.care/care-medical-practice";
 
   return (
     <>
