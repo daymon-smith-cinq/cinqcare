@@ -1,0 +1,112 @@
+@use "./styles/abstracts" as *;
+
+.section_Accordion {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 250px 90px 230px 100px;
+	gap: 30px 90px;
+	height: 1000px; // Depends on the content..
+	background-color: white;
+	.container_Heading {
+		max-width: 390px;
+
+		h2 {
+			color: #020e0a;
+			font-family: "Test Söhne", Arial, sans-serif;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%; /* 50.4px */
+			margin-bottom: 20px;
+			text-wrap: wrap;
+
+			span {
+				color: inherit;
+				font-family: "Editorial New", Times, serif;
+				font-size: 36px;
+				font-style: italic;
+				font-weight: 400;
+				line-height: 140%; /* 50.4px */
+			}
+		}
+
+		p {
+			color: rgba(2, 14, 10, 0.8);
+			font-family: "Test Söhne", Arial, sans-serif;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 27px; /* 150% */
+		}
+	}
+
+	.container_Accordion {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+		.accordion {
+			position: relative;
+			border-radius: 10px;
+			padding: 30px 40px;
+			background-color: #ffce4c;
+			transition: height 0.2s linear;
+			cursor: pointer;
+
+			h3 {
+				display: inline-block;
+
+				//margin-right: 40px; // so the heading doesn't cross the + icon
+				text-wrap: wrap;
+				color: #020e0a;
+				font-family: "Test Söhne", Arial, sans-serif;
+				font-size: 22px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 27px; /* 122.727% */
+				margin-bottom: 0;
+				cursor: inherit;
+			}
+
+			.accordion_Content {
+				overflow: hidden;
+				height: 0;
+				transition: height 0.2s lienar;
+
+				p {
+					color: rgba(2, 14, 10, 0.6);
+					font-family: "Test Söhne", Arial, sans-serif;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 27px; /* 168.75% */
+					margin-top: 18px;
+					margin-bottom: 0;
+				}
+			}
+
+			.plusMinus {
+				position: absolute;
+				top: 39px;
+				right: 35px;
+				width: 19px;
+				height: 9px;
+				background-image: url("../../public/icons/caret-green.svg");
+				background-repeat: no-repeat;
+				background-size: contain;
+				cursor: inherit;
+				transition: transform 0.2s linear;
+			}
+
+			&.open {
+				background-color: #fff9e9;
+				.plusMinus {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}
