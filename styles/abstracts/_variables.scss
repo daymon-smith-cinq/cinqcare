@@ -3,35 +3,36 @@
 /************/
 
 // Colors
-$black: #020E0A;
+$black: #020e0a;
 $dark-gray: #313131;
-$sand: #F9ECD5;
-$ivory: #FDF9F1;
+$sand: #f9ecd5;
+$ivory: #fdf9f1;
 $white: #ffffff;
 
-$orange: #FF8B00;
-$yellow: #FFC11D;
+$orange: #ff8b00;
+$yellow: #ffc11d;
 
-$green: #16B17D;
-$dark-orange: #E45F0C;
-$blue: #2F90EA;
-$pink: #FF7D7A;
+$green: #16b17d;
+$dark-orange: #e45f0c;
+$blue: #2f90ea;
+$pink: #ff7d7a;
 
-$primary: #FF8B00;
-$button--primary: #DA6B07 !default;
+$primary: #ff8b00;
+$button--primary: #da6b07 !default;
 
-$gradient-orange: linear-gradient(180deg, #DA6B07 0%, #E45F0C 100%);
+$gradient-orange: linear-gradient(180deg, #da6b07 0%, #e45f0c 100%);
 
 // Borders
 $br: 10px;
 
 // Background Blur
 $blur: blur(100px) contrast(90%) saturate(120%);
-$blur-bg: rgba(0,0,0,.05);
-$blur-bg-light: rgba(0,0,0,.5);
-$blur-bg-dark: rgba(0,0,0,.05);
+$blur-bg: rgba(0, 0, 0, 0.05);
+$blur-bg-light: rgba(0, 0, 0, 0.5);
+$blur-bg-dark: rgba(0, 0, 0, 0.05);
 
 // Widths
+$max-width-largest: 1520px;
 $max-width-large: 1440px;
 $max-width: 1216px;
 

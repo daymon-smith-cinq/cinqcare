@@ -1,0 +1,114 @@
+@use "./styles/abstracts" as *;
+
+.section_Accordion {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 50px 70px 130px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center -10px;
+	height: 1000px; // Depends on the content..
+	.container_Heading {
+		max-width: 560px;
+		h2 {
+			color: #fff;
+			font-family: "Test Söhne", Arial, sans-serif;
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			margin-bottom: 0;
+
+			span {
+				font-family: "Editorial New", Times, serif;
+				color: inherit;
+				font-size: inherit;
+				font-style: italic;
+				font-weight: inherit;
+				line-height: inherit;
+			}
+		}
+	}
+
+	.container_Accordion {
+		max-width: 540px;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+
+		.accordion {
+			position: relative;
+			border-radius: 6px;
+			padding: 30px 40px;
+			backdrop-filter: blur(60px);
+			transition: height 0.2s linear;
+			cursor: pointer;
+
+			h3 {
+				display: inline-block;
+				max-width: 410px;
+				//margin-right: 40px; // so the heading doesn't cross the + icon
+				text-wrap: wrap;
+				color: #fff;
+				font-family: "Test Söhne", Arial, sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin-bottom: 0;
+				cursor: inherit;
+			}
+
+			.accordion_Content {
+				overflow: hidden;
+				height: 0;
+				transition: height 0.2s lienar;
+
+				p {
+					color: rgba(255, 255, 255, 0.7);
+					font-family: "Test Söhne", Arial, sans-serif;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 25px; /* 138.889% */
+					margin-top: 26px;
+				}
+			}
+
+			.plusMinus {
+				position: absolute;
+				top: 26px;
+				right: 30px;
+				width: 36px;
+				height: 36px;
+				background-color: $dark-orange;
+				border-radius: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: inherit;
+
+				&::before {
+					content: "\002B";
+					display: inline-block;
+					font-size: 28px;
+					color: white;
+					transform-origin: center;
+					will-change: transform;
+					transition: transform 0.3s ease;
+				}
+			}
+
+			&.open {
+				.plusMinus {
+					&::before {
+						content: "\2212";
+						font-size: 26px;
+					}
+				}
+			}
+		}
+	}
+}
