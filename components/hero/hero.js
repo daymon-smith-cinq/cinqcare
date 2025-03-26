@@ -12,7 +12,7 @@ const Hero = ({ page }) => {
 	// Homepage
 	if (page == "home") {
 		content = {
-			bgImgSrc: "images/hero-home.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-home-temp.jpg", // IMAGE NOT FINAL
 			h1: "<em>Care,</em> Where You Live",
 			h1Period: false,
 			buttonText: "Learn More",
@@ -24,10 +24,10 @@ const Hero = ({ page }) => {
 	// For Providers
 	if (page == "providers") {
 		content = {
-			bgImgSrc: "images/hero-providers.jpg", // IMAGE NOT FINAL
-			h1: "Strengthening Community-Based Care, <em>Together</em>",
+			bgImgSrc: "images/hero-providers-temp.jpg", // IMAGE NOT FINAL
+			h1: "Strengthening Community Care, <em>Together</em>",
 			h1Period: true,
-			buttonText: "Learn More",
+			buttonText: "Learn more about joining CINQCARE",
 			buttonLink: "#",  // NEED LINK
 			quoteText: "“CINQCARE isn’t just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- Dr. Wilfred Herard, MD — CEO of Proactive Care IPA</span>"
 		};
@@ -36,7 +36,7 @@ const Hero = ({ page }) => {
 	// For Patients
 	if (page == "patients") {
 		content = {
-			bgImgSrc: "images/hero-providers.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-patients-temp.jpg", // IMAGE NOT FINAL
 			h1: "Health and Care, <em>Right Where You Live</em>",
 			h1Period: false,
 			buttonText: "Find Support Near You",
@@ -48,7 +48,7 @@ const Hero = ({ page }) => {
 	// For Partners
 	if (page == "partners") {
 		content = {
-			bgImgSrc: "images/hero-providers.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-partners-temp.jpg", // IMAGE NOT FINAL
 			h1: "Experts in Health and Care, Leading a <em>New Way Forward</em>",
 			h1Period: false,
 			buttonText: "Become a Partner",
