@@ -3,10 +3,8 @@ import styles from "./header.module.scss";
 import Image from "next/image";
 import Logo from "../../public/cinqcare-logo.svg";
 import ReversedLogo from "../../public/cinqcare-logo-reverse.svg";
-import Button from "../button/button";
 
 const Header = ({ headerBg }) => {
-
 	// Dark bg
 	let bgColor = styles.light;
 	if (headerBg == "dark") {
@@ -18,11 +16,10 @@ const Header = ({ headerBg }) => {
 
 	// TODO: Add aria-expanded to menu dropdowns
 	const [ariaExpanded, setAria] = useState("false");
-    const toggleAriaExpanded = () => {
+	const toggleAriaExpanded = () => {
 		if (ariaExpanded !== "false") setAria("false");
 		else setAria("true");
 	};
-
 
 	return (
 		<>
@@ -32,44 +29,63 @@ const Header = ({ headerBg }) => {
 						<a href="/" className={styles.logo}>
 							<Image priority={true} src={logoSrc} alt="Cinqcare Logo" />
 						</a>
-						<label htmlFor="responsiveMenuToggle" className={styles.responsiveMenuToggleLabel}>Menu</label>
-						<input type="checkbox" id="responsiveMenuToggle" className={styles.responsiveMenuToggleInput}/>
+						<div className={styles.spacer}></div>
+						<label
+							htmlFor="responsiveMenuToggle"
+							className={styles.responsiveMenuToggleLabel}
+						>
+							Menu
+						</label>
+						<input
+							type="checkbox"
+							id="responsiveMenuToggle"
+							className={styles.responsiveMenuToggleInput}
+						/>
 						<nav id="nav" role="navigation" aria-label="Main">
 							<ul id="menu" className={styles.menu}>
-								<li 
+								<li
 									className={styles.hasSubmenu}
 									onMouseEnter={toggleAriaExpanded}
 									onMouseLeave={toggleAriaExpanded}
 								>
-									<a 
-										aria-expanded={ariaExpanded}
-									>
-										Who We Serve
-									</a>
+									<a aria-expanded={ariaExpanded}>Who We Serve</a>
 									<ul className={styles.submenu}>
-										<li><a href="/providers">For Providers</a></li>
-										<li><a href="#">For Patients</a></li>
-										<li><a href="#">For Partners</a></li>
+										<li>
+											<a href="/providers">For Providers</a>
+										</li>
+										<li>
+											<a href="#">For Patients</a>
+										</li>
+										<li>
+											<a href="#">For Partners</a>
+										</li>
 									</ul>
 								</li>
 								<li className={styles.hasSubmenu}>
-									<a aria-expanded="false">
-										Our Services
-									</a>
+									<a aria-expanded="false">Our Services</a>
 									<ul className={styles.submenu}>
-										<li><a href="#">Grace at Home</a></li>
-										<li><a href="#">CINQCARE for Moms</a></li>
-										<li><a href="#">Care Medical Practice</a></li>
+										<li>
+											<a href="#">Grace at Home</a>
+										</li>
+										<li>
+											<a href="#">CINQCARE for Moms</a>
+										</li>
+										<li>
+											<a href="#">Care Medical Practice</a>
+										</li>
 									</ul>
 								</li>
-								<li><a href="#">Community</a></li>
-								<li><a href="#">About</a></li>
+								<li>
+									<a href="#">Community</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
 							</ul>
 						</nav>
-						<Button 
-							link="#"
-							text="Join Our Family"
-						/>
+						<a className={styles.menu_cta} href="#">
+							Join Our Family
+						</a>
 					</div>
 				</div>
 			</header>
