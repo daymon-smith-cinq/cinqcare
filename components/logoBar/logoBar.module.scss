@@ -1,0 +1,33 @@
+@use "./styles/abstracts" as *;
+
+.section_LogoBar {
+	width: 100%;
+	padding: 60px 20px 90px 20px;
+	background-color: $dark-orange;
+
+	h4 {
+		color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		font-family: "Test Söhne", Arial, sans-serif;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 27px; /* 150% */
+		margin-bottom: 60px;
+	}
+
+	.container_LogoBar {
+		max-width: $max-width;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 60px 100px;
+
+		img {
+			max-width: 190px;
+			max-height: 55px;
+		}
+	}
+}
