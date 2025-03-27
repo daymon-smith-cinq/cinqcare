@@ -95,7 +95,7 @@ const ColumnAccordion = ({ page }) => {
 							role="button"
 							tabIndex="0"
 							aria-controls={`column-accordion-panel-${columnIndex}`}
-							aria-expanded={columnIndex === 1 ? "true" : "false"} // Set aria-expanded for the second item
+							aria-expanded={columnIndex === 0 ? "true" : "false"} // Set aria-expanded for the first item
 							onMouseEnter={toggleAccordion}
 							onMouseLeave={toggleAccordion}
 							onKeyUp={toggleAccordion}
@@ -114,8 +114,8 @@ const ColumnAccordion = ({ page }) => {
 									role="region"
 									aria-labelledby={`column-accordion-button-${columnIndex}`}
 									className={`${styles.accordion_toggle} ${
-										columnIndex === 1 ? styles.show : ""
-									}`} // Add show class for the second item
+										columnIndex === 0 ? styles.show : ""
+									}`} // Add show class for the first item
 								>
 									<div 
 										className={styles.columnText} 

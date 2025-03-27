@@ -103,7 +103,7 @@ const Slidecordion = ({ page }) => {
 									role="button"
 									tabIndex="0"
 									aria-controls={`accordion-panel-${slideIndex} accordion-image-${slideIndex}`}
-									aria-expanded={slideIndex === 1 ? "true" : "false"} // Set aria-expanded for the second item
+									aria-expanded={slideIndex === 0 ? "true" : "false"} // Set aria-expanded for the first item
 									onClick={toggleAccordion}
 									onKeyUp={toggleAccordion}
 									className={`no-select ${styles.accordion_button}`}
@@ -114,8 +114,8 @@ const Slidecordion = ({ page }) => {
 									role="region"
 									aria-labelledby={`accordion-button-${slideIndex}`}
 									className={`${styles.accordion_toggle} ${
-										slideIndex === 1 ? styles.show : ""
-									}`} // Add show class for the second item
+										slideIndex === 0 ? styles.show : ""
+									}`} // Add show class for the first item
 								>
 									<div className={styles.accordion_toggle_show}>
 										<div 
@@ -145,8 +145,8 @@ const Slidecordion = ({ page }) => {
 									role="region"
 									aria-labelledby={`accordion-button-${slideIndex}`}
 									className={`${styles.accordion_toggle} ${styles.slidecordionImage} ${
-										slideIndex === 1 ? styles.show : ""
-									}`} // Add show class for the second item
+										slideIndex === 0 ? styles.show : ""
+									}`} // Add show class for the first item
 								>
 								<Image 
 									src={slide.imgSrc}

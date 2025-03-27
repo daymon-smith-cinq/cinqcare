@@ -1,0 +1,198 @@
+@use "./styles/abstracts" as *;
+
+.section_Testimonials {
+	width: 100%;
+	padding: 10vw 20px;
+
+	h2 {
+		text-align: center;
+		color: #000;
+		font-family: "Sohne", Arial, sans-serif;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+
+		span {
+			color: inherit;
+			font-family: "PP Editorial New", Times, serif;
+			font-size: inherit;
+			font-style: italic;
+			font-weight: inherit;
+			line-height: inherit;
+		}
+	}
+
+	.container_Testimonials {
+		max-width: 1560px;
+		margin: 0 auto;
+		padding: 60px 90px;
+		border-radius: 10px;
+
+		@include respond-to("mobile-landscape") {
+			padding: 45px;
+		}
+
+		@include respond-to("mobile") {
+			padding: 30px 20px;
+		}
+
+		&.yellow {
+			background-color: $yellow;
+
+			.image_Testimonials {
+				background: linear-gradient(0deg, #ffc62d 0%, #edac00 100%);
+			}
+		}
+
+		&.orange {
+			background-color: $orange;
+
+			.image_Testimonials {
+				background: linear-gradient(0deg, #ffa941 0%, #e47600 100%);
+			}
+		}
+
+		.slideWrapper {
+			display: flex;
+			align-items: center;
+			gap: 100px;
+			animation: slideIn 0.4s ease;
+
+			@include respond-to("tablet-landscape") {
+				gap: 60px;
+			}
+
+			@include respond-to("tablet") {
+				flex-direction: column;
+				gap: 40px;
+			}
+
+			@include respond-to("mobile") {
+				gap: 20px;
+			}
+		}
+
+		@keyframes slideIn {
+			from {
+				opacity: 0;
+				transform: translateX(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		.image_Testimonials {
+			flex-shrink: 0;
+			max-width: 360px;
+			max-height: 360px;
+			width: 67vw;
+			height: 67vw;
+			//width: 100%;
+			//height: 100%;
+			border-radius: 100%;
+			overflow: hidden;
+
+			@include respond-to("tablet-landscape") {
+				max-width: 220px;
+				max-height: 220px;
+			}
+
+			img {
+				width: 100%;
+				width: auto;
+				object-position: center -40px;
+			}
+		}
+
+		.content_Testimonials {
+			flex-grow: 0;
+			flex-shrink: 1;
+			h3 {
+				color: var(--colors-text-text-primary-900, #101828);
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 32px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 42.152px; /* 131.723% */
+
+				@include respond-to("tablet") {
+					text-align: center;
+				}
+
+				@include respond-to("mobile") {
+					font-size: 26px;
+					line-height: 32px;
+				}
+
+				span {
+					color: inherit;
+					font-family: "PP Editorial New", Times, serif;
+					font-size: inherit;
+					font-style: italic;
+					font-weight: inherit;
+					line-height: inherit;
+				}
+			}
+
+			p {
+				color: var(--colors-text-text-primary-900, #101828);
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				margin-bottom: 0;
+
+				@include respond-to("tablet") {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.container_Navigation {
+		margin-top: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
+
+		button {
+			background: none;
+			border: none;
+			font-size: 1.5rem;
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+
+			&:first-of-type {
+				background: url("../../public/icons/left-caret-gray.svg");
+				background-repeat: no-repeat;
+				background-position: center;
+				padding-right: 50px;
+			}
+
+			&:last-of-type {
+				background: url("../../public/icons/right-caret-gray.svg");
+				background-repeat: no-repeat;
+				background-position: center;
+				padding-left: 50px;
+			}
+		}
+	}
+
+	.dot {
+		width: 15px;
+		height: 15px;
+		background-color: #fdead2;
+		border-radius: 50%;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.activeDot {
+		background-color: #f7941d;
+	}
+}

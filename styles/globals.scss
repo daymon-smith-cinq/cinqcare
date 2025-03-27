@@ -149,10 +149,16 @@ a {
 }
 
 main > section {
-	padding-left: 20px;
-	padding-right: 20px;
 	padding-top: clamp(80px, 10vw, 140px);
 	padding-bottom: 0;
+}
+
+main > section,
+body > div > header,
+body > div > footer {
+	padding-left: 20px;
+	padding-right: 20px;
+	
 	@include respond-to("mobile-landscape", max) {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -161,6 +167,29 @@ main > section {
 	&> .container {
 		max-width: $max-width;
 		margin: 0 auto;
+	}
+
+	.wrapper {
+		box-sizing: border-box;
+		max-width: 1520px;
+		margin: 0 auto;
+		padding-inline: 40px;
+	
+		@include respond-to("laptop") {
+			padding-inline: 30px;
+		}
+
+		@include respond-to("tablet-landscape") {
+			padding-inline: 20px;
+		}
+	
+		@include respond-to("tablet") {
+			padding-inline: 10px;
+		}
+
+		@include respond-to("mobile") {
+			padding-inline: 5px;
+		}
 	}
 }
 
@@ -216,11 +245,4 @@ h1.period::after {
 
 .loaded {
 	opacity: 1;
-}
-
-.wrapper {
-	box-sizing: content-box;
-	max-width: 1520px;
-	margin: 0 auto;
-	padding-inline: 20px;
 }

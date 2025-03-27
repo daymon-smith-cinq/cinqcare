@@ -37,6 +37,11 @@
 		padding-bottom: 60px;
 	}
 
+	@include respond-to("mobile-landscape") {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	.columnContainer {
 		display: flex;
 		flex-direction: row;
