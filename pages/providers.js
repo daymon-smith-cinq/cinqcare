@@ -6,6 +6,7 @@ import Hero from "../components/hero/hero";
 import Video from "../components/video/video";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
+import Map from "../components/map/map";
 
 export default function Providers() {
 
@@ -35,9 +36,20 @@ export default function Providers() {
       <main>
         <Hero page={currentPage} />
 
+        <Map page={currentPage} />
         <Video page={currentPage} />
 
-        <CTA />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
       </main>
 
       <Footer />
