@@ -39,7 +39,17 @@ export default function Providers() {
         <Map page={currentPage} />
         <Video page={currentPage} />
 
-        <CTA />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
       </main>
 
       <Footer />

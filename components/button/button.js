@@ -12,7 +12,7 @@ const Button = ( props ) => {
   return (
     <a 
       href={ props.link } 
-      target={ props.target } 
+      target={ props.target ?? "_self" } 
       className={`
         ${ styles.button } 
         ${ props.type ? styles[ props.type ] : styles.primary } 
