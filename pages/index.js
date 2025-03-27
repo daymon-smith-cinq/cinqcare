@@ -31,7 +31,18 @@ export default function Home() {
         <OrangeBox page={currentPage} />
         <Slidecordion page={currentPage} />
 
-        <CTA />
+
+        <CTA
+          type="primary"
+          buttonText="Connect with Us"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2>Join the <em>CINQCARE</em> Family.</h2>
+          </header>
+          <p>We’d love to explore opportunities for providers, patients, and partners in your area.</p>
+        </CTA>
       </main>
 
       <Footer />
