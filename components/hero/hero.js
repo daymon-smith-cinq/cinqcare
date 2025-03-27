@@ -71,11 +71,13 @@ const Hero = ({ page }) => {
 							className={content.h1Period ? ("period") : undefined}
 							dangerouslySetInnerHTML={{ __html: content.h1 }}
 						></h1>
-						<Button 
-							link={content.buttonLink}
-							text={content.buttonText}
-							type="outline"
-						/>
+						{content?.buttonLink && (
+							<Button 
+								link={content.buttonLink}
+								text={content.buttonText}
+								type="outline"
+							/>
+						)}
 					</div>
 					<blockquote
 						className={styles.heroQuote} 
