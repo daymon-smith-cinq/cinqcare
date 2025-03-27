@@ -1,0 +1,95 @@
+@use "./styles/abstracts" as *;
+
+.section_IconBlocks {
+	width: 100%;
+	padding: 150px;
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+
+	.heading_IconBlocks {
+		max-width: 480px;
+
+		h2 {
+			color: #000;
+			font-family: "Sohne", Arial, sans-serif;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%; /* 54px */
+			margin-bottom: 20px;
+
+			span {
+				color: #000;
+
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 150%; /* 54px */
+				margin-bottom: 20px;
+				font-family: "Editorial New", Times, serif;
+
+				font-style: italic;
+			}
+		}
+
+		p {
+			color: rgba(0, 0, 0, 0.7);
+			font-family: "Sohne", Arial, sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 26px; /* 162.5% */
+			margin-bottom: 0;
+		}
+	}
+
+	.subtext_IconBlocks {
+		color: rgba(0, 0, 0, 0.5);
+		font-family: "Sohne", Arial, sans-serif;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 26px; /* 162.5% */
+		max-width: 800px;
+	}
+
+	.container_IconBlocks {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 80px 160px;
+
+		.iconBlock {
+			max-width: 360px;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			img {
+				max-height: 75px;
+				width: fit-content;
+				margin-bottom: 20px;
+			}
+
+			h3 {
+				color: #000;
+				font-family: "Test Söhne", Arial, sans-serif;
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 130%; /* 46.8px */
+				margin-bottom: 0;
+			}
+
+			p {
+				color: rgba(0, 0, 0, 0.7);
+				font-family: "Test Söhne", Arial, sans-serif;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 26px; /* 162.5% */
+				margin-bottom: 0;
+			}
+		}
+	}
+}
