@@ -54,10 +54,10 @@ const Header = ({ headerBg }) => {
 											<a href="/providers">For Providers</a>
 										</li>
 										<li>
-											<a href="#">For Patients</a>
+											<a href="/patients">For Patients</a>
 										</li>
 										<li>
-											<a href="#">For Partners</a>
+											<a href="/partners">For Partners</a>
 										</li>
 									</ul>
 								</li>
@@ -65,25 +65,25 @@ const Header = ({ headerBg }) => {
 									<a aria-expanded="false">Our Services</a>
 									<ul className={styles.submenu}>
 										<li>
-											<a href="#">Grace at Home</a>
+											<a href="/grace-at-home">Grace at Home</a>
 										</li>
 										<li>
-											<a href="#">CINQCARE for Moms</a>
+											<a href="/for-moms">CINQCARE for Moms</a>
 										</li>
 										<li>
-											<a href="#">Care Medical Practice</a>
+											<a href="/care-medical-practice">Care Medical Practice</a>
 										</li>
 									</ul>
 								</li>
 								<li>
-									<a href="#">Community</a>
+									<a href="/communities">Community</a>
 								</li>
 								<li>
-									<a href="#">About</a>
+									<a href="/about">About</a>
 								</li>
 							</ul>
 						</nav>
-						<a className={styles.menu_cta} href="#">
+						<a className={styles.menu_cta} href="/join-our-family">
 							Join Our Family
 						</a>
 					</div>

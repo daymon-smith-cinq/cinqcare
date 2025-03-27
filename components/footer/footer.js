@@ -16,31 +16,33 @@ const Footer = () => {
             <div>
               <header>Who We Serve</header>
               <ul>
-                <li><a href="">Providers</a></li>
-                <li><a href="">Patients</a></li>
-                <li><a href="">Partners</a></li>
+                <li><a href="/providers">Providers</a></li>
+                <li><a href="/patients">Patients</a></li>
+                <li><a href="/partners">Partners</a></li>
               </ul>
             </div>
 
             <div>
               <header>Our Services</header>
               <ul>
-                <li><a href="">Services</a></li>
+                <li><a href="/grace-at-home">Grace at Home</a></li>
+                <li><a href="/for-moms">CINQCARE for Moms</a></li>
+                <li><a href="/care-medical-practice">Care Medical Practice</a></li>
               </ul>
             </div>
 
             <div>
               <header>Community</header>
               <ul>
-                <li><a href="">Community</a></li>
+                <li><a href="/communities">Community</a></li>
               </ul>
             </div>
 
             <div>
               <header>About the Company</header>
               <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Careers</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/careers">Careers</a></li>
               </ul>
             </div>
           </nav>
@@ -50,7 +52,7 @@ const Footer = () => {
               <h2><em>More Than Healthcare</em> —  A Movement for Those Who Need It Most.</h2>
             </header>
             <Button 
-              link="/"
+              link="/join-our-family"
               text="Join Our Family"
             />
           </div>
@@ -60,9 +62,9 @@ const Footer = () => {
               <div>
                 <header>Social</header>
                 <ul>
-                  <li><a href=""><img src={facebook.src} alt="Facebook logo" /></a></li>
-                  <li><a href=""><img src={linkedin.src} alt="Linkedin logo" /></a></li>
-                  <li><a href=""><img src={instagram.src} alt="Instgram logo" /></a></li>
+                  <li><a href="https://www.facebook.com/cinqcarewhereyoulive" target="_blank"><img src={facebook.src} alt="Facebook logo" /></a></li>
+                  <li><a href="https://www.linkedin.com/company/cinq-care/" target="_blank"><img src={linkedin.src} alt="Linkedin logo" /></a></li>
+                  <li><a href="https://www.instagram.com/cinq.care/" target="_blank"><img src={instagram.src} alt="Instagram logo" /></a></li>
                 </ul>
               </div>
 
@@ -75,7 +77,7 @@ const Footer = () => {
             </nav>
 
             <nav className={styles.footer__policy}>
-              <a href="">Privacy Policy</a>
+              <a href="/privacy-policy">Privacy Policy</a>
               <a href="">Terms & Conditions</a>
               <a href="">Cookie Preferences</a>
               <a href="">Accessibility</a>
@@ -91,7 +93,7 @@ const Footer = () => {
             <h2><em>More Than Healthcare</em> —  A Movement for Those Who Need It Most.</h2>
           </header>
           <Button 
-            link="/"
+            link="/join-our-family"
             text="Join Our Family"
           />
         </div>
