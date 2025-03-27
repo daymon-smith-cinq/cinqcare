@@ -4,16 +4,17 @@ import styles from "./glassAccordion.module.scss";
 const GlassAccordion = ({ page }) => {
 	let content = "";
 
-	if (page === "home") {
+	if (page === "providers") {
 		content = {
 			bgImgSrc: "images/Woman-helping-man-into-car.png",
 			heading:
 				"How can CINQCARE help deliver <span>health and care</span> where you live?",
+			paragraph: "",
 			accordionContent: [
 				{
 					heading: "Care coordination",
 					paragraph:
-						"We work alongside your practice, integrating our clinical team and practice facilitators to ensure smooth transitions, proactive patient engagement, and high-quality outcomes.",
+						"We work alongside your practice, integrating our clinical team and practice facilitators to ensure smooth transitions, proactive Family Member engagement, and high-quality outcomes.",
 				},
 				{
 					heading: "Advanced risk stratification and population health",
@@ -23,7 +24,7 @@ const GlassAccordion = ({ page }) => {
 				{
 					heading: "Home and alternative site-based care",
 					paragraph:
-						"We extend your practice's reach through in-home clinical teams (NPs, RNs, therapists) and hospital-at-home, urgent care, and SNF partnerships.",
+						"We extend your practice’s reach through in-home clinical teams (NPs, RNs, therapists) and hospital-at-home, urgent care, and skilled nursing facility partnerships.",
 				},
 				{
 					heading: "Enhanced patient engagement and retention",
@@ -33,7 +34,54 @@ const GlassAccordion = ({ page }) => {
 				{
 					heading: "Aligned payment and performance models",
 					paragraph:
-						"Whether you're in a traditional fee-for-service structure, IPA, or ACO REACH, we help maximize your practice's revenue by leveraging value-based care incentives.",
+						"Whether you’re in a traditional fee-for-service structure, IPA, or ACO REACH, we help tie value-based care incentives to measurable improvements in quality, outcomes, and the health of your Family Members.",
+				},
+			],
+		};
+	} else if (page === "patients") {
+		content = {
+			bgImgSrc: "images/Pregnant_Mother.png",
+			heading: "Who <span>we're</span> helping today",
+			paragraph:
+				"Our goal is simple: to help you stay healthier at home — with care that meets you where you are and makes a difference in your life. If you're doing your best to manage tough health issues, we want to be on your side.",
+			accordionContent: [
+				{
+					heading: "Lenay Gilliam's Story",
+					paragraph:
+						"An expecting mom in Buffalo gets home health visits, ongoing care from a doula, specialist advice, delivered diapers, groceries, and medications, and follow-ups through her baby's first 18 months for free, regardless of income, and with no insurance required.",
+				},
+				{
+					heading: "Alan Lee Jr's Story",
+					paragraph:
+						"A young entrepreneur navigates through alcohol abuse recovery to better health thanks to support from his care team. Over the course of his care, he stays sober, starts riding a bike, and ultimately opens a barbershop in his own city neighborhood.",
+				},
+				{
+					heading: "Ken Kurtz's Story",
+					paragraph:
+						"After suffering a spinal cord injury, an older member of a rural community is helped to navigate a hospital stay, recover at home, improve his chronic conditions, and heal enough to get out of his wheelchair thanks to a dedicated nurse, navigator, and physician care team.",
+				},
+			],
+		};
+	} else if (page === "partners") {
+		content = {
+			bgImgSrc: "images/Couple-Reviewing-Information.png",
+			heading: "How CINQCARE <span>works differently</span>",
+			paragraph: "",
+			accordionContent: [
+				{
+					heading: "Specialized expertise",
+					paragraph:
+						"Our approach is informed by decades of sector leadership and lived experience in high-need, urban, and rural communities.",
+				},
+				{
+					heading: "Sophisticated engagement engine",
+					paragraph:
+						"AI-driven, predictive and automated, our workflows help make sure we reach the right members, with the right interventions, at the right time.",
+				},
+				{
+					heading: "Caring for the caregivers",
+					paragraph:
+						"We elevate and support family caregivers as the backbone of whole-person care, including through a hub for coordination with care teams.",
 				},
 			],
 		};
@@ -48,72 +96,82 @@ const GlassAccordion = ({ page }) => {
 	return (
 		<section
 			className={styles.section_Accordion}
-			style={{ backgroundImage: `url(${content.bgImgSrc})` }}
+			style={
+				content.bgImgSrc
+					? { backgroundImage: `url(${content.bgImgSrc})` }
+					: undefined
+			}
 		>
-			<div className={styles.container_Heading}>
-				<h2
-					className={styles.heading_Accordion}
-					dangerouslySetInnerHTML={{ __html: content.heading }}
-				/>
-			</div>
+			{content.heading && (
+				<div className={styles.container_Heading}>
+					<h2
+						className={styles.heading_Accordion}
+						dangerouslySetInnerHTML={{ __html: content.heading }}
+					/>
+				</div>
+			)}
 
-			<div className={styles.container_Accordion}>
-				{content.accordionContent?.map((item, index) => {
-					const isOpen = activeIndex === index;
-					const contentRef = useRef(null);
+			{content.accordionContent?.length > 0 && (
+				<div className={styles.container_Accordion}>
+					{content.accordionContent.map((item, index) => {
+						const isOpen = activeIndex === index;
+						const contentRef = useRef(null);
 
-					const handleKeyDown = (e) => {
-						if (e.key === "Enter" || e.key === " ") {
-							e.preventDefault();
-							toggleAccordion(index);
-						}
-					};
-
-					useEffect(() => {
-						const el = contentRef.current;
-						if (el) {
-							if (isOpen) {
-								el.style.height = el.scrollHeight + "px";
-							} else {
-								el.style.height = "0px";
+						const handleKeyDown = (e) => {
+							if (e.key === "Enter" || e.key === " ") {
+								e.preventDefault();
+								toggleAccordion(index);
 							}
-						}
-					}, [isOpen]);
+						};
 
-					return (
-						<div
-							key={index}
-							className={`${styles.accordion} ${isOpen ? styles.open : ""}`}
-							onClick={() => toggleAccordion(index)}
-							onKeyDown={handleKeyDown}
-							role="button"
-							tabIndex="0"
-							aria-expanded={isOpen}
-							aria-controls={`accordion-panel-${index}`}
-							id={`accordion-button-${index}`}
-						>
-							<h3>{item.heading}</h3>
+						useEffect(() => {
+							const el = contentRef.current;
+							if (el) {
+								if (isOpen) {
+									el.style.height = el.scrollHeight + "px";
+								} else {
+									el.style.height = "0px";
+								}
+							}
+						}, [isOpen]);
 
+						return (
 							<div
-								id={`accordion-panel-${index}`}
-								ref={contentRef}
-								className={styles.accordion_Content}
-								role="region"
-								aria-labelledby={`accordion-button-${index}`}
-								style={{
-									overflow: "hidden",
-									height: isOpen ? "auto" : "0px",
-									transition: "height 0.2s linear",
-								}}
+								key={index}
+								className={`${styles.accordion} ${isOpen ? styles.open : ""}`}
+								onClick={() => toggleAccordion(index)}
+								onKeyDown={handleKeyDown}
+								role="button"
+								tabIndex="0"
+								aria-expanded={isOpen}
+								aria-controls={`accordion-panel-${index}`}
+								id={`accordion-button-${index}`}
 							>
-								<p>{item.paragraph}</p>
-							</div>
+								{item.heading && <h3>{item.heading}</h3>}
 
-							<div className={styles.plusMinus}></div>
-						</div>
-					);
-				})}
-			</div>
+								{item.paragraph && (
+									<div
+										id={`accordion-panel-${index}`}
+										ref={contentRef}
+										className={styles.accordion_Content}
+										role="region"
+										aria-labelledby={`accordion-button-${index}`}
+										style={{
+											overflow: "hidden",
+											height: isOpen ? "auto" : "0px",
+											transition: "height 0.2s linear",
+										}}
+									>
+										<p>{item.paragraph}</p>
+									</div>
+								)}
+
+								<div className={styles.plusMinus}></div>
+							</div>
+						);
+					})}
+				</div>
+			)}
 		</section>
 	);
 };

@@ -8,97 +8,139 @@ import Button from "../button/button";
 const Footer = () => {
 	return (
 		<footer className={styles.footer__main}>
-      <div className={`${styles.wrapper} ${" wrapper"}`}>
-        <div className={styles.footer__content}>
-          <img src={logo.src} alt="Footer logo" className={styles.footer__logo} />
+			<div className={`${styles.wrapper} ${" wrapper"}`}>
+				<div className={styles.footer__content}>
+					<img
+						src={logo.src}
+						alt="Footer logo"
+						className={styles.footer__logo}
+					/>
 
-          <nav className={styles.footer__nav}>
-            <div>
-              <header>Who We Serve</header>
-              <ul>
-                <li><a href="/providers">Providers</a></li>
-                <li><a href="/patients">Patients</a></li>
-                <li><a href="/partners">Partners</a></li>
-              </ul>
-            </div>
+					<nav className={styles.footer__nav}>
+						<div>
+							<header>Who We Serve</header>
+							<ul>
+								<li>
+									<a href="/providers">Providers</a>
+								</li>
+								<li>
+									<a href="/patients">Patients</a>
+								</li>
+								<li>
+									<a href="/partners">Partners</a>
+								</li>
+							</ul>
+						</div>
 
-            <div>
-              <header>Our Services</header>
-              <ul>
-                <li><a href="/grace-at-home">Grace at Home</a></li>
-                <li><a href="/for-moms">CINQCARE for Moms</a></li>
-                <li><a href="/care-medical-practice">Care Medical Practice</a></li>
-              </ul>
-            </div>
+						<div>
+							<header>Our Services</header>
+							<ul>
+								<li>
+									<a href="/grace-at-home">Grace at Home</a>
+								</li>
+								<li>
+									<a href="/for-moms">CINQCARE for Moms</a>
+								</li>
+								<li>
+									<a href="/care-medical-practice">Care Medical Practice</a>
+								</li>
+							</ul>
+						</div>
 
-            <div>
-              <header>Community</header>
-              <ul>
-                <li><a href="/communities">Community</a></li>
-              </ul>
-            </div>
+						<div>
+							<header>Community</header>
+							<ul>
+								<li>
+									<a href="/communities">Community</a>
+								</li>
+							</ul>
+						</div>
 
-            <div>
-              <header>About the Company</header>
-              <ul>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/careers">Careers</a></li>
-              </ul>
-            </div>
-          </nav>
+						<div>
+							<header>About the Company</header>
+							<ul>
+								<li>
+									<a href="/about">About Us</a>
+								</li>
+								<li>
+									<a href="/careers">Careers</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 
-          <div className={styles.footer__hero}>
-            <header>
-              <h2><em>More Than Healthcare</em> —  A Movement for Those Who Need It Most.</h2>
-            </header>
-            <Button 
-              link="/join-our-family"
-              text="Join Our Family"
-            />
-          </div>
+					<div className={styles.footer__hero}>
+						<header>
+							<h2>
+								<em>More Than Healthcare</em> — A Movement for Those Who Need It
+								Most.
+							</h2>
+						</header>
+						<Button link="/join-our-family" text="Join Our Family" />
+					</div>
 
-          <div className={styles.footer__info}>
-            <nav className={styles.footer__subnav}>
-              <div>
-                <header>Social</header>
-                <ul>
-                  <li><a href="https://www.facebook.com/cinqcarewhereyoulive" target="_blank"><img src={facebook.src} alt="Facebook logo" /></a></li>
-                  <li><a href="https://www.linkedin.com/company/cinq-care/" target="_blank"><img src={linkedin.src} alt="Linkedin logo" /></a></li>
-                  <li><a href="https://www.instagram.com/cinq.care/" target="_blank"><img src={instagram.src} alt="Instagram logo" /></a></li>
-                </ul>
-              </div>
+					<div className={styles.footer__info}>
+						<nav className={styles.footer__subnav}>
+							<div>
+								<header>Social</header>
+								<ul>
+									<li>
+										<a
+											href="https://www.facebook.com/cinqcarewhereyoulive"
+											target="_blank"
+										>
+											<img src={facebook.src} alt="Facebook logo" />
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.linkedin.com/company/cinq-care/"
+											target="_blank"
+										>
+											<img src={linkedin.src} alt="Linkedin logo" />
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.instagram.com/cinq.care/"
+											target="_blank"
+										>
+											<img src={instagram.src} alt="Instagram logo" />
+										</a>
+									</li>
+								</ul>
+							</div>
 
-              <div>
-                <header>Contact Us</header>
-                <ul>
-                  <li><a href="tel:(844) 401-4663">(844) 401-4663</a></li>
-                </ul>
-              </div>
-            </nav>
+							<div>
+								<header>Contact Us</header>
+								<ul>
+									<li>
+										<a href="tel:(844) 401-4663">(844) 401-4663</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
 
-            <nav className={styles.footer__policy}>
-              <a href="/privacy-policy">Privacy Policy</a>
-              <a href="">Terms & Conditions</a>
-              <a href="">Cookie Preferences</a>
-              <a href="">Accessibility</a>
-              <a href="">Cookie Preferences</a>
-            </nav>
+						<nav className={styles.footer__policy}>
+							<a href="/privacy-policy">Privacy Policy</a>
+							<a href="">Terms & Conditions</a>
+						</nav>
 
-            <p>© 2025 CINQCARE. All rights reserved.</p>
-          </div>
-        </div>
+						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>
+					</div>
+				</div>
 
-        <div className={styles.footer__hero}>
-          <header>
-            <h2><em>More Than Healthcare</em> —  A Movement for Those Who Need It Most.</h2>
-          </header>
-          <Button 
-            link="/join-our-family"
-            text="Join Our Family"
-          />
-        </div>
-      </div>
-    </footer>
+				<div className={styles.footer__hero}>
+					<header>
+						<h2>
+							<em>More Than Healthcare</em> — A Movement for Those Who Need It
+							Most.
+						</h2>
+					</header>
+					<Button link="/join-our-family" text="Join Our Family" />
+				</div>
+			</div>
+		</footer>
 	);
 };
 

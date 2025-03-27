@@ -3,7 +3,7 @@ import styles from "./logoBar.module.scss";
 const LogoBar = ({ page }) => {
 	let content = "";
 
-	if (page === "home") {
+	if (page === "providers") {
 		content = {
 			heading: "Featured Members",
 			logos: [
@@ -12,6 +12,21 @@ const LogoBar = ({ page }) => {
 				{ logo: "logos/cherokee_logo.svg" },
 				{ logo: "logos/mfc_logo.svg" },
 				{ logo: "logos/March_of_Dimes_logo.svg" },
+			],
+		};
+	} else if (page === "partners") {
+		content = {
+			heading: "Leadership experience from",
+			logos: [
+				{ logo: "logos/AARP.png" },
+				{ logo: "logos/CMS.png" },
+				{ logo: "logos/CITYBLOCK.png" },
+				{ logo: "logos/ALIGNMENTHEALTH.png" },
+				{ logo: "logos/OPTUM.png" },
+				{ logo: "logos/AMERICHOICE.png" },
+				{ logo: "logos/QUEST-ANALYTICS.png" },
+				{ logo: "logos/ENVISION.png" },
+				{ logo: "logos/UNITED-HEALTHCARE.png" },
 			],
 		};
 	}
