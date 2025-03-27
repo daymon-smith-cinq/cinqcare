@@ -36,6 +36,10 @@
 		.column {
 			flex: 1 0 40%;
 
+			img {
+				border-radius: $br;
+			}
+
 			big {
 				font-size: 60px;
 
