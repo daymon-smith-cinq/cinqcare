@@ -173,17 +173,13 @@ body > div > footer {
 		box-sizing: border-box;
 		max-width: 1520px;
 		margin: 0 auto;
-		padding-inline: 40px;
+		padding-inline: 30px;
 	
 		@include respond-to("laptop") {
-			padding-inline: 30px;
+			padding-inline: 20px;
 		}
 
 		@include respond-to("tablet-landscape") {
-			padding-inline: 20px;
-		}
-	
-		@include respond-to("tablet") {
 			padding-inline: 10px;
 		}
 
