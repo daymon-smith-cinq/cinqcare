@@ -3,6 +3,8 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
+import ScrollJacking from "../components/scrollJacking/scrollJacking";
+import circle from "/public/circle.svg";
 import Video from "../components/video/video";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
@@ -34,6 +36,18 @@ export default function Providers() {
 
       <main>
         <Hero page={currentPage} />
+        
+        <ScrollJacking page={currentPage} bg={circle}>
+          <div>
+            <h2>What if we made delivering care a <em>little easier</em> for the providers who know their communities best?</h2>
+          </div>
+          <div>
+            <h2>You're not just <em>treating symptoms</em> — you’re navigating a system that wasn’t built for high-needs, underserved populations.</h2>
+          </div>
+          <div>
+            <h2>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. <em>Yet, your commitment never wavers.</em></h2>
+          </div>
+        </ScrollJacking>
 
         <Video page={currentPage} />
 
