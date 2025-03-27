@@ -3,20 +3,18 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
-import Video from "../components/video/video";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
-import Map from "../components/map/map";
 
-export default function Providers() {
+export default function HowWeOperate() {
 
   // Define current page
-  const currentPage = "providers";
+  const currentPage = "how-we-operate";
 
   // SEO
-  const title = "For Providers | CINQCARE";
-  const metaDescription = "Join CINQCARE’s network to enhance community-based care with expert support, value-based incentives, and data-driven tools for providers.";
-  const pageURL = "https://cinq.care/providers";
+  const title = "How We Operate | CINQCARE";
+  const metaDescription = ""; // NEED META DESCRIPTION
+  const pageURL = "https://cinq.care/how-we-operate";
 
   return (
     <>
@@ -36,20 +34,7 @@ export default function Providers() {
       <main>
         <Hero page={currentPage} />
 
-        <Map page={currentPage} />
-        <Video page={currentPage} />
-
-        <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
-          link="/"
-          target="_blank"
-        >
-          <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
-          </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
-        </CTA>
+        <CTA />
       </main>
 
       <Footer />

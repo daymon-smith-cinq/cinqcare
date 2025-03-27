@@ -1,0 +1,56 @@
+
+@use "./styles/abstracts" as *;
+
+.section_map {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	@include respond-to("mobile-landscape") {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.mapContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 100px;
+
+		@include respond-to("tablet-landscape") {
+			gap: 60px;
+		}
+
+		@include respond-to("tablet") {
+			gap: 40px;
+		}
+
+		@include respond-to("mobile-landscape") {
+			flex-direction: column-reverse;
+		}
+
+		.textContainer {
+			flex: 1 0 30%;
+
+			@include respond-to("tablet-landscape") {
+				flex: 1 0 40%;
+			}
+
+			.finePrint {
+				margin-top: 60px;
+			}
+		}
+
+		.map {
+			flex: 1 0 60%;
+
+			@include respond-to("tablet-landscape") {
+				flex: 1 0 50%;
+			}
+
+			img {
+				max-width: 100%;
+			}
+		}
+		
+	}
+}

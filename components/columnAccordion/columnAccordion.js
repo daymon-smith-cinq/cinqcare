@@ -17,7 +17,7 @@ const ColumnAccordion = ({ page }) => {
 					title: "Care Medical Practice",
 					text: "<p>Delivering high-quality primary and specialty care—with compassion.</p>",
 					buttonText: "Learn More",
-					buttonLink: "#", // Need link
+					buttonLink: "/care-medical-practice",
 					imgSrc: "images/columns-for-moms-temp.webp", // Need expanded image
 					comingSoon: false,
 				},
@@ -25,7 +25,7 @@ const ColumnAccordion = ({ page }) => {
 					title: "CINQCARE for Moms",
 					text: "<p>Meeting women where they are and making sure they have the care, advocacy, and support they deserve.</p>",
 					buttonText: "Learn More",
-					buttonLink: "#", // Need link
+					buttonLink: "/for-moms",
 					imgSrc: "images/columns-for-moms-temp.webp",  // Need final image
 					comingSoon: false,
 				},
@@ -33,7 +33,7 @@ const ColumnAccordion = ({ page }) => {
 					title: "Grace at Home",
 					text: "<p>Connecting virtual and in-home care in coordination with your local primary care team.</p>",
 					buttonText: "Learn More",
-					buttonLink: "#", // Need link
+					buttonLink: "/grace-at-home",
 					imgSrc: "images/columns-for-moms-temp.webp", // Need expanded image
 					comingSoon: false,
 				},
