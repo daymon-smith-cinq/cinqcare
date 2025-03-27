@@ -6,6 +6,7 @@ import Hero from "../components/hero/hero";
 import Video from "../components/video/video";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
+import Map from "../components/map/map";
 
 export default function Providers() {
 
@@ -35,6 +36,7 @@ export default function Providers() {
       <main>
         <Hero page={currentPage} />
 
+        <Map page={currentPage} />
         <Video page={currentPage} />
 
         <CTA />

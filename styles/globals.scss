@@ -188,6 +188,12 @@ h1.period::after {
 	border-radius: 14px;
 }
 
+/* Fine Print */
+.fine-print p {
+	font-size: 16px;
+	color: $gray;
+}
+
 /* Separator */
 .separator {
 	width: 100%;

@@ -5,6 +5,7 @@ import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
+import Map from "../components/map/map";
 
 export default function GraceAtHome() {
 
@@ -34,6 +35,8 @@ export default function GraceAtHome() {
       <main>
         <Hero page={currentPage} />
 
+        <Map page={currentPage} />
+        
         <CTA />
       </main>
 
