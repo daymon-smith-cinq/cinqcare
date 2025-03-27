@@ -22,13 +22,11 @@
 			span {
 				color: #000;
 
-				font-size: 36px;
-				font-style: normal;
-				font-weight: 400;
-				line-height: 150%; /* 54px */
+				font-size: inherit;
+				font-weight: inherit;
+				line-height: inherit;
 				margin-bottom: 20px;
-				font-family: "Editorial New", Times, serif;
-
+				font-family: "PP Editorial New", Times, serif;
 				font-style: italic;
 			}
 		}
@@ -73,7 +71,7 @@
 
 			h3 {
 				color: #000;
-				font-family: "Test Söhne", Arial, sans-serif;
+				font-family: "Sohne", Arial, sans-serif;
 				font-size: 36px;
 				font-style: normal;
 				font-weight: 600;
@@ -83,7 +81,7 @@
 
 			p {
 				color: rgba(0, 0, 0, 0.7);
-				font-family: "Test Söhne", Arial, sans-serif;
+				font-family: "Sohne", Arial, sans-serif;
 				font-size: 16px;
 				font-style: normal;
 				font-weight: 400;

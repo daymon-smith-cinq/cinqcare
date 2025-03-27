@@ -14,6 +14,16 @@
 		font-weight: 500;
 		line-height: 27px; /* 150% */
 		margin-bottom: 60px;
+
+		span {
+			color: inherit;
+			font-size: inherit;
+			font-style: italic;
+			font-weight: inherit;
+			line-height: inherit;
+			font-family: "PP Editorial New", Times, serif;
+			margin-bottom: 60px;
+		}
 	}
 
 	.container_LogoBar {
