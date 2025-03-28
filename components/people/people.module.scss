@@ -4,10 +4,27 @@
 .section_people {
 	padding-top: 100px;
 	padding-bottom: 100px;
+	position: relative;
+	overflow: hidden;
 
 	@include respond-to("mobile-landscape") {
 		padding-top: 60px;
 		padding-bottom: 60px;
+	}
+
+	&.gradient::after {
+		content: '';
+		width: 1120px;
+		height: 1120px;
+		background: radial-gradient(circle, rgba(255,228,194,0.8) 0%, rgba(255,228,194,0.1) 63%, rgba(255,228,194,0) 80%);
+		position: absolute;
+		top: -750px;
+		right: -30%;
+		z-index: -1;
+	}
+
+	.container_people {
+		z-index: 1;
 	}
 
 	.headingContainer {
@@ -50,6 +67,10 @@
 			gap: 10px 12px;
 		}
 
+		@include respond-to("mobile") {
+			gap: 10px 8px;
+		}
+
 		.person {
 			flex: 0 1 calc(25% - 18px);
 
@@ -59,10 +80,6 @@
 
 			@include respond-to("mobile-landscape") {
 				flex: 0 1 calc(50% - 6px);
-			}
-
-			@include respond-to("mobile") {
-				flex: 0 1 100%;
 			}
 
 			.portrait img {
@@ -89,6 +106,8 @@
 					font-size: 18px;
 					
 					@include respond-to("mobile") {
+						font-size: 16px;
+
 						p {
 							margin: 10px 0 8px 0;
 						}

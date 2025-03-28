@@ -6,6 +6,10 @@ import Hero from "../components/hero/hero";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 import People from "../components/people/people";
+import GlassAccordion from "../components/glassAccordion/glassAccordion";
+import BackgroundContainer from "../components/backgroundContainer/backgroundContainer";
+import SideBySide from "../components/sideBySide/sideBySide";
+import Slidecordion from "../components/slidecordion/slidecordion";
 
 export default function About() {
 
@@ -34,10 +38,23 @@ export default function About() {
 
       <main>
         <Hero page={currentPage} />
-
+        <GlassAccordion page={currentPage} />
         <People page={currentPage} />
-
-        <CTA />
+        <BackgroundContainer page={currentPage}>
+          <SideBySide page={currentPage} />
+          <Slidecordion page={currentPage} />
+        </BackgroundContainer>
+        <CTA
+          type="primary"
+          buttonText="Connect on LinkedIn"
+          link="https://www.linkedin.com/company/cinq-care/"
+          target="_blank"
+        >
+          <header>
+            <h2>Follow our <em>health and care journey.</em></h2>
+          </header>
+          <p>Be a part of the conversation with our team as we deliver care, for you and your family, where you live.</p>
+        </CTA>
       </main>
 
       <Footer />

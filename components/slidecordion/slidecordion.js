@@ -4,6 +4,9 @@ import Button from "../button/button";
 import ImgProviders from "/public/images/slidecordion-providers.webp";
 import ImgPatients from "/public/images/slidecordion-patients.webp";
 import ImgPartners from "/public/images/slidecordion-partners.webp";
+import ImgPurpose from "/public/images/about-purpose.jpg"; // TEMP
+import ImgMission from "/public/images/about-mission.jpg"; // TEMP
+import ImgPromise from "/public/images/about-promise.jpg"; // TEMP
 
 const Slidecordion = ({ page }) => {
 
@@ -41,6 +44,36 @@ const Slidecordion = ({ page }) => {
 					buttonLink: "/partners",
 					imgSrc: ImgPartners,
 					imgAlt: "A line graph illustrating a patient's blood pressure readings over time.",
+				},
+			],
+		};
+	}
+
+	// About
+	if (page == "about") {
+		content = {
+			heading: "What makes CINQCARE <em>different</em>",
+			headingPeriod: false,
+			slides: [
+				{
+					title: "Purpose",
+					text: "<p>The health and well-being of those who need care the most, where they live–with a deep commitment to high-need, urban and rural communities.</p>",
+					imgSrc: ImgPurpose,
+					imgAlt: "",
+				},
+				{
+					title: "Mission",
+					text: "<ul><li>For insurers and government payors (through lower costs, quality care and better outcomes).</li>" +
+					"<li>For physicians, caregivers and caretakers (through quality care, supportive systems and better outcomes).</li>" +
+					"<li>For Family Members (through quality care and better outcomes).</li></ul>",
+					imgSrc: ImgMission,
+					imgAlt: "",
+				},
+				{
+					title: "Promise",
+					text: "<p>One promise with two meanings. It reflects our commitment to the community, the people, and traditions where our Family Members live. “Care, where you live” also reflects our commitment to provide care in our Family Members’ homes and communities. We believe deeply that both matter.</p>",
+					imgSrc: ImgPromise,
+					imgAlt: "",
 				},
 			],
 		};

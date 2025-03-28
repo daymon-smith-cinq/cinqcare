@@ -17,6 +17,13 @@ const BackgroundContainer = ({ page, children }) => {
 			background:
 				"url('/backgrounds/PathwayWithGradient.svg') center / cover no-repeat",
 		};
+	} else if (page === "about") {
+		content = {
+			margin: "0 auto",
+			padding: "0",
+			background:
+				"linear-gradient(0deg, rgba(251,242,227,0) 0%, rgba(251,242,227,1) 100%);",
+		};
 	}
 
 	console.log("Page:", page);
