@@ -2,9 +2,10 @@ import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
-import Hero from "../components/hero/hero";
+import HeroAbout from "../components/heroAbout/heroAbout";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import People from "../components/people/people";
 import GlassAccordion from "../components/glassAccordion/glassAccordion";
 import BackgroundContainer from "../components/backgroundContainer/backgroundContainer";
@@ -38,7 +39,8 @@ export default function About() {
       <Header headerBg="dark" />
 
       <main>
-        <Hero page={currentPage} />
+        <HeroAbout page={currentPage} />
+        <TestimonialSlider page={currentPage} />
         <GlassAccordion page={currentPage} />
         <People page={currentPage} />
         <BackgroundContainer page={currentPage}>

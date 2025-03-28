@@ -134,6 +134,17 @@
 					font-weight: inherit;
 					line-height: inherit;
 				}
+
+				small {
+					display: inline-block;
+					margin-top: 1.5em;
+					font-size: 24px;
+					line-height: 1.5;
+
+					@include respond-to("mobile") {
+						font-size: 20px;
+					}
+				}
 			}
 
 			p {
@@ -146,6 +157,10 @@
 
 				@include respond-to("tablet") {
 					text-align: center;
+				}
+
+				@include respond-to("mobile") {
+					font-size: 16px;
 				}
 			}
 		}

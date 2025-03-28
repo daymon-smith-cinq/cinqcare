@@ -63,6 +63,21 @@ const TestimonialSlider = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "about") {
+		content = {
+			heading: "",
+			paragraph: "",
+			subtext: "",
+			testimonials: [
+				{
+					color: "orange", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-tony.png",
+					quote:
+						'<em>The healthcare system didn’t work for my family.</em><small>“When I was 8 years old, my mother died from a preventable health-related cause. I created CINQCARE to answer the call to deliver health and care where people live. To make house calls and care for people where they live…We need care that treats members like family. That is my calling.”</small>',
+					name: "CINQCARE Founder & CEO, Tony Welters",
+				},
+			],
+		};
 	}
 
 	const [activeIndex, setActiveIndex] = useState(0);
