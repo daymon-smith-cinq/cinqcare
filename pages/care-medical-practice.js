@@ -5,6 +5,7 @@ import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
+import People from "../components/people/people";
 
 export default function CareMedicalPractice() {
 
@@ -33,6 +34,8 @@ export default function CareMedicalPractice() {
 
       <main>
         <Hero page={currentPage} />
+
+        <People page={currentPage} />
 
         <CTA />
       </main>
