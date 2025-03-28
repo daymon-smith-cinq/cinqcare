@@ -1,0 +1,108 @@
+
+@use "./styles/abstracts" as *;
+
+.section_people {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	@include respond-to("mobile-landscape") {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.headingContainer {
+		margin-bottom: 50px;
+
+		@include respond-to("tablet") {
+			margin-bottom: 30px;
+		}
+
+		&.centered {
+			text-align: center;
+		}
+
+		h3 {
+			margin-bottom: 20px;
+		}
+
+		.subheading {
+			max-width: 400px;
+
+			p {
+				font-size: 16px;
+				color: $gray;
+			}
+		}
+	}
+
+	.peopleContainer {
+		display: flex;
+		justify-content: flex-start;
+		align-items: stretch;
+		gap: 35px 24px;
+		flex-wrap: wrap;
+
+		@include respond-to("tablet") {
+			gap: 14px 12px;
+		}
+
+		@include respond-to("mobile-landscape") {
+			gap: 10px 12px;
+		}
+
+		.person {
+			flex: 0 1 calc(25% - 18px);
+
+			@include respond-to("tablet") {
+				flex: 0 1 calc(33% - 7px);
+			}
+
+			@include respond-to("mobile-landscape") {
+				flex: 0 1 calc(50% - 6px);
+			}
+
+			@include respond-to("mobile") {
+				flex: 0 1 100%;
+			}
+
+			.portrait img {
+				border-radius: $br;
+			}
+
+			.textContainer {
+				padding: 12px 8px;
+
+				@include respond-to("tablet-landscape") {
+					padding: 12px 0;
+				}
+
+				.name {
+					font-weight: 500;
+					margin-bottom: 5px;
+				}
+
+				p, blockquote {
+					font-size: 16px;
+				}
+	
+				.title {
+					font-size: 18px;
+					
+					@include respond-to("mobile") {
+						p {
+							margin: 10px 0 8px 0;
+						}
+					}
+				}
+
+				.info {
+					margin-bottom: 5px;
+				}
+	
+				.quote {
+					font-family: "PP Editorial New", serif;
+				}
+			}
+		}
+	}
+}
