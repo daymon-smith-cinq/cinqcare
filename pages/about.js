@@ -44,7 +44,17 @@ export default function About() {
           <SideBySide page={currentPage} />
           <Slidecordion page={currentPage} />
         </BackgroundContainer>
-        <CTA />
+        <CTA
+          type="primary"
+          buttonText="Connect on LinkedIn"
+          link="https://www.linkedin.com/company/cinq-care/"
+          target="_blank"
+        >
+          <header>
+            <h2>Follow our <em>health and care journey.</em></h2>
+          </header>
+          <p>Be a part of the conversation with our team as we deliver care, for you and your family, where you live.</p>
+        </CTA>
       </main>
 
       <Footer />
