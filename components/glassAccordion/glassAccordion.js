@@ -10,6 +10,7 @@ const GlassAccordion = ({ page }) => {
 			heading:
 				"How can CINQCARE help deliver <span>health and care</span> where you live?",
 			paragraph: "",
+			button: "",
 			accordionContent: [
 				{
 					heading: "Care coordination",
@@ -43,7 +44,8 @@ const GlassAccordion = ({ page }) => {
 			bgImgSrc: "images/Pregnant_Mother.png",
 			heading: "Who <span>we're</span> helping today",
 			paragraph:
-				"Our goal is simple: to help you stay healthier at home — with care that meets you where you are and makes a difference in your life. If you're doing your best to manage tough health issues, we want to be on your side.",
+				"Our goal is simple: to help you stay healthier at home — with care that meets you where you are and makes a difference in your life. If you're doing your best to manage tough health issues, <span>we want to be on your side</span>.",
+			button: "",
 			accordionContent: [
 				{
 					heading: "Lenay Gilliam's Story",
@@ -67,6 +69,7 @@ const GlassAccordion = ({ page }) => {
 			bgImgSrc: "images/Couple-Reviewing-Information.png",
 			heading: "How CINQCARE <span>works differently</span>",
 			paragraph: "",
+			button: "",
 			accordionContent: [
 				{
 					heading: "Specialized expertise",
@@ -108,6 +111,10 @@ const GlassAccordion = ({ page }) => {
 						className={styles.heading_Accordion}
 						dangerouslySetInnerHTML={{ __html: content.heading }}
 					/>
+					{content.paragraph && (
+						<p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
+					)}
+					{content.button && <a>{content.button}</a>}
 				</div>
 			)}
 
