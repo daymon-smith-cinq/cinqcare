@@ -10,6 +10,7 @@ import GlassAccordion from "../components/glassAccordion/glassAccordion";
 import BackgroundContainer from "../components/backgroundContainer/backgroundContainer";
 import SideBySide from "../components/sideBySide/sideBySide";
 import Slidecordion from "../components/slidecordion/slidecordion";
+import Spacer from "../components/spacer/spacer";
 
 export default function About() {
 
@@ -42,7 +43,9 @@ export default function About() {
         <People page={currentPage} />
         <BackgroundContainer page={currentPage}>
           <SideBySide page={currentPage} />
+          <Spacer />
           <Slidecordion page={currentPage} />
+          <Spacer />
         </BackgroundContainer>
         <CTA
           type="primary"

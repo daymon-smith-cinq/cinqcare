@@ -12,6 +12,7 @@ import Video from "../components/video/video";
 import CTA from "../components/cta/cta";
 import Masonry from "../components/masonry/masonry";
 import Footer from "../components/footer/footer";
+import Spacer from "../components/spacer/spacer";
 
 export default function Home() {
 
@@ -46,7 +47,7 @@ export default function Home() {
         <Stats page={currentPage} />
         <SideBySide page={currentPage} />
         <Video page={currentPage} />
-        <div className="separator"></div>
+        <Spacer separator="true" size="small" />
         <Masonry page={currentPage} />
         <CTA
           type="primary"
