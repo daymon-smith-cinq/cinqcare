@@ -44,7 +44,7 @@ const GlassAccordion = ({ page }) => {
 			bgImgSrc: "images/Pregnant_Mother.png",
 			heading: "Who <span>we're</span> helping today",
 			paragraph:
-				"Our goal is simple: to help you stay healthier at home — with care that meets you where you are and makes a difference in your life. If you're doing your best to manage tough health issues, <span>we want to be on your side</span>.",
+				"<p>Our goal is simple: to help you stay healthier at home — with care that meets you where you are and makes a difference in your life. If you're doing your best to manage tough health issues, <span>we want to be on your side</span>.</p>",
 			button: "",
 			accordionContent: [
 				{
@@ -88,6 +88,32 @@ const GlassAccordion = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "about") {
+		content = {
+			bgImgSrc: "images/about-accordion-temp.jpg", // pending final image
+			heading: "We were born <em>different</em>",
+			paragraph: "<p>We were created in 2020 to be on call to deliver health, care and well-being in the homes and communities of those who need care the most.</p>" + 
+			"<p>We are passionate about creating a world where health and care isn’t a burden. It is why we are committed to recruit, empower and equip physicians, nurses, practitioners and caregivers with the supportive technology they need to every day deliver care where people live.</p>" + 
+			"<p>We believe providing care is a privilege – one we are grateful to earn. That’s why we built a different way to care. Now more than ever, different is better.</p>",
+			button: "",
+			accordionContent: [
+				{
+					heading: "For Providers",
+					paragraph:
+						"Through a culture of care, state-of-art tools and technology, and administrative services.",
+				},
+				{
+					heading: "For Patients",
+					paragraph:
+						"Through quality care, personal engagement, and support services.",
+				},
+				{
+					heading: "For Partners",
+					paragraph:
+						"Through lower costs, increased Family Member satisfaction, and innovative care approaches.",
+				},
+			],
+		};
 	}
 
 	const [activeIndex, setActiveIndex] = useState(0);
@@ -112,7 +138,7 @@ const GlassAccordion = ({ page }) => {
 						dangerouslySetInnerHTML={{ __html: content.heading }}
 					/>
 					{content.paragraph && (
-						<p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
+						<div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
 					)}
 					{content.button && <a>{content.button}</a>}
 				</div>
