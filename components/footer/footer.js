@@ -10,11 +10,13 @@ const Footer = () => {
 		<footer className={styles.footer__main}>
 			<div className={`${styles.wrapper} ${" wrapper"}`}>
 				<div className={styles.footer__content}>
-					<img
-						src={logo.src}
-						alt="Footer logo"
-						className={styles.footer__logo}
-					/>
+					<a href="/">
+						<img
+							src={logo.src}
+							alt="Footer logo"
+							className={styles.footer__logo}
+						/>
+					</a>
 
 					<nav className={styles.footer__nav}>
 						<div>
@@ -57,7 +59,7 @@ const Footer = () => {
 						</div>
 
 						<div>
-							<header>About the Company</header>
+							<header>Company</header>
 							<ul>
 								<li>
 									<a href="/about">About Us</a>
@@ -123,7 +125,7 @@ const Footer = () => {
 
 						<nav className={styles.footer__policy}>
 							<a href="/privacy-policy">Privacy Policy</a>
-							<a href="">Terms & Conditions</a>
+							<a href="/privacy-policy-care-at-home">Privacy Policy</a>
 						</nav>
 
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>

@@ -11,14 +11,14 @@
 	background-position: center -10px;
 	height: 1000px; // Depends on the content..
 	.container_Heading {
-		max-width: 560px;
+		max-width: 600px;
 		h2 {
 			color: #fff;
 			font-family: "Sohne", Arial, sans-serif;
 			font-size: 48px;
 			font-style: normal;
 			font-weight: 400;
-			line-height: normal;
+			line-height: 1.3;
 			margin-bottom: 0;
 
 			span {
@@ -28,6 +28,49 @@
 				font-style: italic;
 				font-weight: inherit;
 				line-height: inherit;
+			}
+		}
+
+		p {
+			margin-top: 28px;
+			color: var(--Colors-Foreground-fg-white, #fff);
+			font-family: "Sohne", Arial, sans-serif;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+
+			span {
+				font-family: "PP Editorial New", Times, serif;
+				color: inherit;
+				font-size: inherit;
+				font-style: italic;
+				font-weight: inherit;
+				line-height: inherit;
+			}
+		}
+
+		a {
+			margin-top: 20px;
+			display: inline-flex;
+			height: 52px;
+			padding: 18.194px 24px;
+			justify-content: center;
+			align-items: center;
+			gap: 11.371px;
+			border-radius: 113.71px;
+			background-color: $dark-orange;
+			color: #fff;
+			font-family: "Sohne", Arial, sans-serif;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			transition: background-color 0.2s linear;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $orange;
 			}
 		}
 	}
