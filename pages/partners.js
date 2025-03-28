@@ -3,8 +3,14 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
-import Footer from "../components/footer/footer";
+import ScrollJacking from "../components/scrollJacking/scrollJacking";
+import circle from "/public/circle.svg";
+import IconBlocks from "../components/iconBlocks/iconBlocks";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
+import GlassAccordion from "../components/glassAccordion/glassAccordion";
+import LogoBar from "../components/logoBar/logoBar";
 import CTA from "../components/cta/cta";
+import Footer from "../components/footer/footer";
 
 export default function Partners() {
 
@@ -34,7 +40,33 @@ export default function Partners() {
       <main>
         <Hero page={currentPage} />
 
-        <CTA />
+        <ScrollJacking page={currentPage} bg={circle}>
+          <div>
+            <h2>What if we made delivering care a <em>little easier</em> for the providers who know their communities best?</h2>
+          </div>
+          <div>
+            <h2>You're not just <em>treating symptoms</em> — you’re navigating a system that wasn’t built for high-needs, underserved populations.</h2>
+          </div>
+          <div>
+            <h2>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. <em>Yet, your commitment never wavers.</em></h2>
+          </div>
+        </ScrollJacking>
+        <IconBlocks page={currentPage} />
+        <TestimonialSlider page={currentPage} />
+        <GlassAccordion page={currentPage} />
+        <LogoBar page={currentPage} />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
+
       </main>
 
       <Footer />

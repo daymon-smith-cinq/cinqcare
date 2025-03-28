@@ -30,7 +30,7 @@ const TestimonialSlider = ({ page }) => {
 		content = {
 			heading: "Real People, <span>Real Care</span>",
 			paragraph: "",
-			subtext: "",
+			subtext: "See More Stories",
 			testimonials: [
 				{
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
@@ -133,6 +133,11 @@ const TestimonialSlider = ({ page }) => {
 					))}
 					<button onClick={handleNext}></button>
 				</div>
+			)}
+			{content.subtext && (
+				<a className={styles.subtext_Testimonials} href="/community">
+					{content.subtext}
+				</a>
 			)}
 		</section>
 	);

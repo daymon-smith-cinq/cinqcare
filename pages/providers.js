@@ -5,10 +5,15 @@ import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
 import ScrollJacking from "../components/scrollJacking/scrollJacking";
 import circle from "/public/circle.svg";
-import Video from "../components/video/video";
-import Footer from "../components/footer/footer";
-import CTA from "../components/cta/cta";
+import IconBlocks from "../components/iconBlocks/iconBlocks";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import Map from "../components/map/map";
+import Video from "../components/video/video";
+import GlassAccordion from "../components/glassAccordion/glassAccordion";
+import LogoBar from "../components/logoBar/logoBar";
+import CTA from "../components/cta/cta";
+import Accordion from "../components/accordion/accordion";
+import Footer from "../components/footer/footer";
 
 export default function Providers() {
 
@@ -49,10 +54,12 @@ export default function Providers() {
             <h2>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. <em>Yet, your commitment never wavers.</em></h2>
           </div>
         </ScrollJacking>
-
+        <IconBlocks page={currentPage} />
+        <TestimonialSlider page={currentPage} />
         <Map page={currentPage} />
         <Video page={currentPage} />
-
+        <GlassAccordion page={currentPage} />
+        <LogoBar page={currentPage} />
         <CTA
           type="secondary"
           buttonText="Contact Us Today"
@@ -64,6 +71,7 @@ export default function Providers() {
           </header>
           <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
         </CTA>
+        <Accordion page={currentPage} />
       </main>
 
       <Footer />

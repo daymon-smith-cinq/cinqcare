@@ -1,36 +1,79 @@
-
 @use "./styles/abstracts" as *;
 
 .section_video {
-	background: linear-gradient(180deg, #FBF2E3 0%, rgba(251, 242, 227, 0.00) 100%);
+	background: linear-gradient(180deg, #fbf2e3 0%, rgba(251, 242, 227, 0) 100%);
 	padding-bottom: 40px;
 
-	h3 {
-		text-align: center;
-		max-width: 80%;
-		margin: 0 auto;
+	.container_video {
+		max-width: 1314px;
 
-		@include respond-to("tablet-landscape") {
-			max-width: 90%;
+		h2 {
+			text-align: center;
+			max-width: 80%;
+			margin: 0 auto;
+			color: #171717;
+			text-align: center;
+			font-family: "Sohne", Arial, sans-serif;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1.4;
+
+			@include respond-to("tablet-landscape") {
+				max-width: 90%;
+			}
+
+			@include respond-to("tablet") {
+				max-width: 100%;
+			}
 		}
 
-		@include respond-to("tablet") {
-			max-width: 100%;
+		.container_Quote {
+			h3 {
+				color: var(--colors-text-text-primary-900, #101828);
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+
+				span {
+					font-family: "PP Editorial New", Times, serif;
+					color: inherit;
+					font-size: inherit;
+					font-style: italic;
+					font-weight: inherit;
+					line-height: inherit;
+				}
+			}
+
+			p {
+				color: var(--colors-text-text-primary-900, #101828);
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
 		}
-	}
 
-	.video {
-		border-radius: $br;
-		max-width: 90%;
-		margin: 80px auto;
-		overflow: hidden;
+		.video {
+			border-radius: $br;
+			//max-width: 90%;
+			margin: 80px auto;
+			overflow: hidden;
 
-		@include respond-to("tablet-landscape") {
-			max-width: 100%;
-		}
+			&.hasQuote {
+				margin: 80px auto 40px auto;
+			}
 
-		@include respond-to("tablet") {
-			margin: 60px auto;
+			@include respond-to("tablet-landscape") {
+				max-width: 100%;
+			}
+
+			@include respond-to("tablet") {
+				margin: 60px auto;
+			}
 		}
 	}
 }

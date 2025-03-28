@@ -101,9 +101,8 @@
 			}
 
 			img {
-				width: 100%;
-				width: auto;
-				object-position: center -40px;
+				height: 100%;
+				object-position: center;
 			}
 		}
 
@@ -194,5 +193,21 @@
 
 	.activeDot {
 		background-color: #f7941d;
+	}
+
+	.subtext_Testimonials {
+		display: block;
+		width: fit-content;
+		margin: 30px auto 0 auto;
+		font-family: "PP Editorial New", Times, serif;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: inherit;
+		line-height: inherit;
+		transition: color 0.2s linear;
+
+		&:hover {
+			color: $dark-orange;
+		}
 	}
 }
