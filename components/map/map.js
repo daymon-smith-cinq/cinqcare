@@ -1,7 +1,7 @@
 import styles from "./map.module.scss";
 import Image from "next/image";
 import Button from "../button/button";
-import ProvidersMap from "/public/images/map-providers-temp.png";
+import ProvidersMap from "/public/images/map-providers.png";
 import PatientsMap from "/public/images/map-patients.png";
 import CareMap from "/public/images/map-grace-at-home.png";
 

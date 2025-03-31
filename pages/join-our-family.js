@@ -29,7 +29,7 @@ export default function JoinOurFamily() {
         <title>{title}</title>
       </Head>
 
-      <Header headerBg="dark" />
+      <Header headerBg="light" />
 
       <main>
         <Hero page={currentPage} />
