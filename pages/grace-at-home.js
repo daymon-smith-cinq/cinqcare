@@ -35,7 +35,7 @@ export default function GraceAtHome() {
 				<title>{title}</title>
 			</Head>
 
-			<Header headerBg="light" />
+			<Header headerBg="dark" />
 
 			<main>
 				<HeroAlt page={currentPage} />
