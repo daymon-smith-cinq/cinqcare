@@ -3,6 +3,7 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
+import Cards from "../components/cards/cards";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 import People from "../components/people/people";
@@ -35,9 +36,20 @@ export default function CareMedicalPractice() {
       <main>
         <Hero page={currentPage} />
 
+        <Cards page={currentPage} />
+
         <People page={currentPage} />
 
-        <CTA />
+        <CTA
+          type="primary"
+          buttonText="Book Care Now"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2>Take the <em>first step</em><br />toward better care.</h2>
+          </header>
+        </CTA>
       </main>
 
       <Footer />

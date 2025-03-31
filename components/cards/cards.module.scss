@@ -1,0 +1,78 @@
+@use "./styles/abstracts" as *;
+
+.cards {
+  padding-block: 13vw;
+  background: linear-gradient(to bottom, rgba(#FBF2E3, .7) 100%, rgba(#FBF2E3, 0) 0%);
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    @include respond-to("laptop") {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 60px;
+    }
+
+    @include respond-to("tablet") {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 30px;
+    }
+  }
+}
+
+.section__header {
+  padding-right: 20%;
+
+  @include respond-to("laptop") {
+    grid-column: 1 / -1;
+  }
+
+  p {
+    margin: 0 0 50px;
+  }
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8vw;
+  padding: 60px 40px 60px 60px;
+  overflow: clip;
+  background: linear-gradient(to top, rgba(#FFCB8D, .3), rgba(#FFE5C4, .3));
+  border-radius: 10px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  address {
+    font-size: 18px;
+    line-height: 1.3;
+    color: rgba(#101828, .6);
+  }
+
+  img {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
