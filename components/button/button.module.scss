@@ -2,52 +2,63 @@
 @use "sass:color";
 
 .button {
-  display: flex;
-  appearance: none;
-  width: fit-content;
-  padding: toem(15px) toem(32px);
-  font-size: toem(18px);
-  border-radius: 9999px;
-  line-height: 1;
-  text-align: center;
-  font-weight: 500;
-  transition: all .25s ease;
+	display: flex;
+	appearance: none;
+	width: fit-content;
+	padding: toem(15px) toem(32px);
+	font-size: toem(18px);
+	border-radius: 9999px;
+	line-height: 1;
+	text-align: center;
+	font-weight: 500;
+	transition: all 0.25s ease;
 }
 
 .primary {
-  color: $white;
-  background-color: $button--primary;
+	color: $white;
+	background-color: $button--primary;
 
-  &:hover {
-    background-color: color.mix($button--primary, black, 80%);
-  }
+	&:hover {
+		background-color: color.mix($button--primary, black, 80%);
+	}
 }
 
 .secondary {
-  color: black;
-  background-color: white;
+	color: black;
+	background-color: white;
 
-  &:hover {
-    color: white;
-    background-color: color.mix($button--primary, black, 45%);
-  }
+	&:hover {
+		color: white;
+		background-color: color.mix($button--primary, black, 45%);
+	}
 }
 
 .outline {
-  color: white;
-  background-color: transparent;
-  box-shadow: inset 0 0 0 1px white;
+	color: white;
+	background-color: transparent;
+	box-shadow: inset 0 0 0 1px white;
 
-  &:hover {
-    color: black;
-    background-color: white;
-  }
+	&:hover {
+		color: black;
+		background-color: white;
+	}
+}
+
+.outline-black {
+	color: $black;
+	background-color: transparent;
+	box-shadow: inset 0 0 0 1px $black;
+
+	&:hover {
+		color: $orange;
+		box-shadow: inset 0 0 0 1px $orange;
+	}
 }
 
 .small {
-  font-size: toem(16px);
+	font-size: toem(16px);
 }
 
 .large {
-  font-size: toem(21px);
+	font-size: toem(21px);
 }
