@@ -1,174 +1,175 @@
 @use "./styles/abstracts" as *;
 
 .masonry {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 40px;
+	margin-bottom: clamp(80px, 10vw, 10vw);
 
-  @include respond-to("tablet-landscape") {
-    display: block;
-    columns: 2;
-  }
+	@include respond-to("tablet-landscape") {
+		display: block;
+		columns: 2;
+	}
 
-  @include respond-to("tablet") {
-    column-gap: 20px;
-  }
+	@include respond-to("tablet") {
+		column-gap: 20px;
+	}
 
-  @include respond-to("mobile-landscape") {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
-    columns: unset;
-  }
-  
-  &__column {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    justify-content: end;
+	@include respond-to("mobile-landscape") {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 20px;
+		columns: unset;
+	}
 
-    @include respond-to("tablet-landscape") {
-      justify-content: start;
-    }
+	&__column {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		justify-content: end;
 
-    &:last-of-type {
-      @include respond-to("tablet-landscape") {
-        margin-top: 40px;
-      }
+		@include respond-to("tablet-landscape") {
+			justify-content: start;
+		}
 
-      @include respond-to("tablet") {
-        margin-top: 20px;
-      }
+		&:last-of-type {
+			@include respond-to("tablet-landscape") {
+				margin-top: 40px;
+			}
 
-      @include respond-to("mobile-landscape") {
-        margin-top: unset;
-      }
-    }
+			@include respond-to("tablet") {
+				margin-top: 20px;
+			}
 
-    @include respond-to("tablet") {
-      row-gap: 20px;
-    }
+			@include respond-to("mobile-landscape") {
+				margin-top: unset;
+			}
+		}
 
-    @include respond-to("mobile-landscape") {
-      display: contents;
-    }
-  }
+		@include respond-to("tablet") {
+			row-gap: 20px;
+		}
 
-  &__item {
-    display: grid;
-    position: relative;
-    overflow: clip;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all .25s ease;
-    isolation: isolate;
-    //background-image: var(--item-bg);
+		@include respond-to("mobile-landscape") {
+			display: contents;
+		}
+	}
 
-    &:hover {
-      transform: translateY(-5px);
-      .item__content {
-        opacity: 1;
-      }
-    }
+	&__item {
+		display: grid;
+		position: relative;
+		overflow: clip;
+		border-radius: 10px;
+		cursor: pointer;
+		transition: all 0.25s ease;
+		isolation: isolate;
+		//background-image: var(--item-bg);
 
-    @include respond-to("masonry-desktop") {
-      font-size: 80%;
-    }
-  }
+		&:hover {
+			transform: translateY(-5px);
+			.item__content {
+				opacity: 1;
+			}
+		}
 
-  .item__content {
-    top: 0;
-    position: relative;
-    z-index: 1;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-height: fit-content;
-    padding: toem(35px);
-    backdrop-filter: blur(45px) saturate(150%);
-    opacity: 0;
-    transition: all .25s ease;
-    grid-area: 1 / 1;
+		@include respond-to("masonry-desktop") {
+			font-size: 80%;
+		}
+	}
 
-    p {
-      margin-top: auto;
-      margin-bottom: 0;
-      color: white;
-      font-size: toem(25px);
-      line-height: 140%;
-    }
+	.item__content {
+		top: 0;
+		position: relative;
+		z-index: 1;
+		inset: 0;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		min-height: fit-content;
+		padding: toem(35px);
+		backdrop-filter: blur(45px) saturate(150%);
+		opacity: 0;
+		transition: all 0.25s ease;
+		grid-area: 1 / 1;
 
-    img {
-      position: unset;
-      width: auto;
-      margin: unset;
-      max-height: toem(180px);
-      
-      @include respond-to("mobile-landscape") {
-        max-height: toem(140px);
-      }
-    }
-  }
+		p {
+			margin-top: auto;
+			margin-bottom: 0;
+			color: white;
+			font-size: toem(25px);
+			line-height: 140%;
+		}
 
-  .item__info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    gap: 20px;
-  }
+		img {
+			position: unset;
+			width: auto;
+			margin: unset;
+			max-height: toem(180px);
 
-  .item__data {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+			@include respond-to("mobile-landscape") {
+				max-height: toem(140px);
+			}
+		}
+	}
 
-    p {
-      margin: 0;
-    }
+	.item__info {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+		gap: 20px;
+	}
 
-    strong {
-      font-size: toem(12px);
-      font-weight: 700;
-    }
-  }
+	.item__data {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
 
-  img {
-    position: relative;
-    inset: 0;
-    z-index: 0;
-    object-fit: cover;
-    height: 100%;
-    grid-area: 1 / 1;
+		p {
+			margin: 0;
+		}
 
-    @include respond-to("mobile-landscape") {
-      width: 100%;
-    }
+		strong {
+			font-size: toem(12px);
+			font-weight: 700;
+		}
+	}
 
-    @include respond-to("mobile-landscape") {
-      height: 360px;
-    }
+	img {
+		position: relative;
+		inset: 0;
+		z-index: 0;
+		object-fit: cover;
+		height: 100%;
+		grid-area: 1 / 1;
 
-    @include respond-to("mobile") {
-      height: 510px;
-    }
-  }
+		@include respond-to("mobile-landscape") {
+			width: 100%;
+		}
+
+		@include respond-to("mobile-landscape") {
+			height: 360px;
+		}
+
+		@include respond-to("mobile") {
+			height: 510px;
+		}
+	}
 }
 
 .home__masonry {
-  .header {
-    &:first-of-type {
-      margin-right: 40px;
-    }
-  }
+	.header {
+		&:first-of-type {
+			margin-right: 40px;
+		}
+	}
 }
 
 .masonry__header {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 10vw;
+	display: flex;
+	gap: 40px;
+	margin-bottom: 10vw;
 
-  p {
-    margin-bottom: 30px;
-  }
+	p {
+		margin-bottom: 30px;
+	}
 }
