@@ -3,6 +3,7 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import HeroAlt from "../components/heroAlt/heroAlt";
+import Cards from "../components/cards/cards";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
 import People from "../components/people/people";
 import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
@@ -37,9 +38,13 @@ export default function CareMedicalPractice() {
 
       <main>
         <HeroAlt page={currentPage} />
+
+        <Cards page={currentPage} />
         
         <IconBlocks page={currentPage} />
+        
         <People page={currentPage} />
+
         <CTA
           type="tertiary"
           buttonText="Learn More"
@@ -56,7 +61,9 @@ export default function CareMedicalPractice() {
             <h3>Ready to see if <em>Care Medical Practice</em> is right for you?</h3>
           </header>
         </CTA>
+
         <TestimonialSlider page={currentPage} />
+
         <CTA
           type="primary"
           buttonText="Find a Care Medical Practice Near You"
