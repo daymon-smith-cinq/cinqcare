@@ -1,0 +1,23 @@
+@use "./styles/abstracts" as *;
+
+.jobBoard {
+	max-width: 1580px;
+	margin: 0 auto;
+	padding: 40px 60px;
+
+	@include respond-to("laptop") {
+		padding: 40px 40px;
+	}
+
+	@include respond-to("tablet-landscape") {
+		padding: 40px 30px;
+	}
+
+	@include respond-to("mobile-landscape") {
+		padding: 40px 20px;
+	}
+
+	@include respond-to("mobile") {
+		padding: 40px 10px;
+	}
+}

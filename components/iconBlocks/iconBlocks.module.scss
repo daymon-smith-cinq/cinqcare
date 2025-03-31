@@ -56,12 +56,28 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 80px 160px;
+		//gap: 80px 40px;
+		//justify-content: space-between;
 
 		.iconBlock {
 			max-width: 360px;
+			//max-width: 25%;
+			//min-width: 360px;
 			display: flex;
 			flex-direction: column;
 			gap: 20px;
+
+			&.fourBlocks {
+				max-width: 240px;
+
+				img {
+					margin-bottom: 0;
+				}
+
+				h3 {
+					font-size: 24px;
+				}
+			}
 
 			img {
 				max-height: 75px;
