@@ -49,6 +49,7 @@ export default function Home() {
 				<Video page={currentPage} />
 				<Spacer separator="true" size="small" />
 				<Masonry page={currentPage} />
+				<Spacer size="medium" />
 				<CTA
 					type="primary"
 					buttonText="Connect with Us"
