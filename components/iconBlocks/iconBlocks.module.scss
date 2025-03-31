@@ -59,16 +59,12 @@
 		//gap: 80px 40px;
 		//justify-content: space-between;
 
-		.iconBlock {
-			max-width: 360px;
-			//max-width: 25%;
-			//min-width: 360px;
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
-
-			&.fourBlocks {
-				max-width: 240px;
+		&.fourBlocks {
+			gap: 80px 40px;
+			justify-content: space-between;
+		
+			.iconBlock {
+				max-width: 280px;
 
 				img {
 					margin-bottom: 0;
@@ -78,6 +74,15 @@
 					font-size: 24px;
 				}
 			}
+		}
+
+		.iconBlock {
+			max-width: 360px;
+			//max-width: 25%;
+			//min-width: 360px;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
 
 			img {
 				max-height: 75px;

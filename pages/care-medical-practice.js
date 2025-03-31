@@ -8,6 +8,7 @@ import People from "../components/people/people";
 import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import CTA from "../components/cta/cta";
 import Footer from "../components/footer/footer";
+import logoCareMedical from "/public/logo-care-medical-practice.svg";
 
 export default function CareMedicalPractice() {
 
@@ -40,27 +41,30 @@ export default function CareMedicalPractice() {
         <IconBlocks page={currentPage} />
         <People page={currentPage} />
         <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
-          link="/"
-          target="_blank"
+          type="tertiary"
+          buttonText="Learn More"
+          link="/join-our-family"
         >
+          <Image 
+            priority={false} 
+            src={logoCareMedical} 
+            alt="Care Medical Practice logo"
+            width="141" 
+            height="58"
+          />
           <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
+            <h3>Ready to see if <em>Care Medical Practice</em> is right for you?</h3>
           </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
         </CTA>
         <TestimonialSlider page={currentPage} />
         <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
-          link="/"
-          target="_blank"
+          type="primary"
+          buttonText="Find a Care Medical Practice Near You"
+          link="/join-our-family"
         >
           <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
+            <h2>Take the <em>first step</em> toward better care.</h2>
           </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
         </CTA>
       </main>
 

@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./glassAccordion.module.scss";
+import Button from "../button/button";
 
 const GlassAccordion = ({ page }) => {
 	let content = "";
@@ -10,7 +11,8 @@ const GlassAccordion = ({ page }) => {
 			heading:
 				"How can CINQCARE help deliver <span>health and care</span> where you live?",
 			paragraph: "",
-			button: "",
+			buttonLink: "",
+			buttonText: "",
 			accordionContent: [
 				{
 					heading: "Care coordination",
@@ -45,7 +47,8 @@ const GlassAccordion = ({ page }) => {
 			heading: "Who <span>we're</span> helping today",
 			paragraph:
 				"<p>Our goal is simple: to help you stay healthier at home — with care that meets you where you are and makes a difference in your life. If you're doing your best to manage tough health issues, <span>we want to be on your side</span>.</p>",
-			button: "",
+			buttonLink: "",
+			buttonText: "",
 			accordionContent: [
 				{
 					heading: "Lenay Gilliam's Story",
@@ -69,7 +72,8 @@ const GlassAccordion = ({ page }) => {
 			bgImgSrc: "images/Couple-Reviewing-Information.png",
 			heading: "How CINQCARE <span>works differently</span>",
 			paragraph: "",
-			button: "",
+			buttonLink: "",
+			buttonText: "",
 			accordionContent: [
 				{
 					heading: "Specialized expertise",
@@ -95,7 +99,8 @@ const GlassAccordion = ({ page }) => {
 			paragraph: "<p>We were created in 2020 to be on call to deliver health, care and well-being in the homes and communities of those who need care the most.</p>" + 
 			"<p>We are passionate about creating a world where health and care isn’t a burden. It is why we are committed to recruit, empower and equip physicians, nurses, practitioners and caregivers with the supportive technology they need to every day deliver care where people live.</p>" + 
 			"<p>We believe providing care is a privilege – one we are grateful to earn. That’s why we built a different way to care. Now more than ever, different is better.</p>",
-			button: "",
+			buttonLink: "",
+			buttonText: "",
 			accordionContent: [
 				{
 					heading: "For Providers",
@@ -111,6 +116,41 @@ const GlassAccordion = ({ page }) => {
 					heading: "For Partners",
 					paragraph:
 						"Through lower costs, increased Family Member satisfaction, and innovative care approaches.",
+				},
+			],
+		};
+	} else if (page === "for-moms") {
+		content = {
+			bgImgSrc: "images/about-accordion-temp.jpg", // pending final image
+			heading: "Care for Every Stage of <em>Motherhood</em>",
+			paragraph: "<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
+			buttonLink: "/join-our-family",
+			buttonText: "See How CINQCARE Supports Moms",
+			accordionContent: [
+				{
+					heading: "A Dedicated Team by Your Side",
+					paragraph:
+						"Nurse practitioners, doulas, social workers, and community health workers partner with you to help every step of the way.",
+				},
+				{
+					heading: "Care Where You Need It",
+					paragraph:
+						"Virtual visits, home check-ins, and in-person appointments that fit your life — not the other way around.",
+				},
+				{
+					heading: "Support Beyond Medical Care",
+					paragraph:
+						"Need help with food, transportation, mental health, breastfeeding, or something else? We’re here for that, too.",
+				},
+				{
+					heading: "Culturally Competent Care",
+					paragraph:
+						"Caregivers who listen, respect your experience, and honor your life, your history, your story.",
+				},
+				{
+					heading: "Strong Partnerships",
+					paragraph:
+						"We work with OB/GYNs, pediatricians, and health plans to ensure coordinated, high-quality care.",
 				},
 			],
 		};
@@ -140,7 +180,12 @@ const GlassAccordion = ({ page }) => {
 					{content.paragraph && (
 						<div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
 					)}
-					{content.button && <a>{content.button}</a>}
+					{content.buttonLink && (
+						<Button 
+							link={content.buttonLink}
+							text={content.buttonText}
+						/>
+					)}
 				</div>
 			)}
 
