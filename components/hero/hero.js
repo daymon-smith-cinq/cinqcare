@@ -3,7 +3,6 @@ import Image from "next/image";
 import Button from "../button/button";
 
 const Hero = ({ page }) => {
-
 	// *******
 	// Content
 	// *******
@@ -16,8 +15,10 @@ const Hero = ({ page }) => {
 			h1: "<em>Care,</em> Where You Live",
 			h1Period: false,
 			buttonText: "Learn More",
-			buttonLink: "#",  // HYRULE IS IN DANGER! (NEED LINK)
-			quoteText: "“We see the community as our family…we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.”<span>- Deborah Forbes, VP of Operations, Doral Health and Wellness, part of the CINQCARE network</span>"
+			buttonLink: "#", // HYRULE IS IN DANGER! (NEED LINK)
+			blockquoteBorder: false,
+			quoteText:
+				"“We see the community as our family…we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.”<span>- Deborah Forbes, VP of Operations, Doral Health and Wellness, part of the CINQCARE network</span>",
 		};
 	}
 
@@ -28,8 +29,10 @@ const Hero = ({ page }) => {
 			h1: "Strengthening Community Care, <em>Together</em>",
 			h1Period: true,
 			buttonText: "Learn more about joining CINQCARE",
-			buttonLink: "#",  // NEED LINK
-			quoteText: "“CINQCARE isn’t just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- Dr. Wilfred Herard, MD — CEO of Proactive Care IPA</span>"
+			buttonLink: "#", // NEED LINK
+			blockquoteBorder: false,
+			quoteText:
+				"“CINQCARE isn't just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- Dr. Wilfred Herard, MD — CEO of Proactive Care IPA</span>",
 		};
 	}
 
@@ -41,7 +44,9 @@ const Hero = ({ page }) => {
 			h1Period: false,
 			buttonText: "Find Support Near You",
 			buttonLink: "/join-our-family",
-			quoteText: "“To care for you where you live, that’s our calling.”<span>— Tony Welters – Founder and CEO</span>"
+			blockquoteBorder: false,
+			quoteText:
+				"“To care for you where you live, that's our calling.”<span>— Tony Welters - Founder and CEO</span>",
 		};
 	}
 
@@ -53,12 +58,28 @@ const Hero = ({ page }) => {
 			h1Period: false,
 			buttonText: "Become a Partner",
 			buttonLink: "/join-our-family",
-			quoteText: "“It’s a pretty bold and audacious goal [CINQCARE has] set out, an opportunity to make some meaningful change with communities that need it..”<span>— Gary Bacher – XXX White House advisor and former CINQCARE Chief Strategy Officer</span>"
+			blockquoteBorder: false,
+			quoteText:
+				"“It's a pretty bold and audacious goal [CINQCARE has] set out, an opportunity to make some meaningful change with communities that need it..”<span>— Gary Bacher - XXX White House advisor and former CINQCARE Chief Strategy Officer</span>",
+		};
+	}
+
+	// For Partners
+	if (page == "careers") {
+		content = {
+			bgImgSrc: "images/hero-partners-temp.jpg", // IMAGE NOT FINAL
+			h1: "<span>Open Positions</span>Why CINQCARE may be <em>your calling</em>",
+			h1Period: false,
+			buttonText: "",
+			buttonLink: "",
+			blockquoteBorder: true,
+			quoteText:
+				"Caregivers are born to care. It’s more than a job—it’s a calling. We’re committed to delivering health, care, and well-being to those who need it most, especially in high-needs communities.",
 		};
 	}
 
 	return (
-		<section 
+		<section
 			className={styles.section_Hero}
 			style={{
 				backgroundImage: `url(${content.bgImgSrc})`,
@@ -67,12 +88,12 @@ const Hero = ({ page }) => {
 			<div className={`${styles.container_Hero} ${" wrapper"}`}>
 				<div className={styles.heroContent}>
 					<div>
-						<h1 
-							className={content.h1Period ? ("period") : undefined}
+						<h1
+							className={content.h1Period ? "period" : undefined}
 							dangerouslySetInnerHTML={{ __html: content.h1 }}
 						></h1>
 						{content?.buttonLink && (
-							<Button 
+							<Button
 								link={content.buttonLink}
 								text={content.buttonText}
 								type="outline"
@@ -80,7 +101,9 @@ const Hero = ({ page }) => {
 						)}
 					</div>
 					<blockquote
-						className={styles.heroQuote} 
+						className={`${styles.heroQuote} ${
+							content.blockquoteBorder ? styles.border : ""
+						}`}
 						dangerouslySetInnerHTML={{ __html: content.quoteText }}
 					></blockquote>
 				</div>
