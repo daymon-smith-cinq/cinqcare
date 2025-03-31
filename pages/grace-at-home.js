@@ -2,10 +2,14 @@ import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
-import Hero from "../components/hero/hero";
-import Footer from "../components/footer/footer";
-import CTA from "../components/cta/cta";
+import HeroAlt from "../components/heroAlt/heroAlt";
+import OrangeBox from "../components/orangeBox/orangeBox";
 import Map from "../components/map/map";
+import SideBySide from "../components/sideBySide/sideBySide";
+import IconBlocks from "../components/iconBlocks/iconBlocks";
+import CTA from "../components/cta/cta";
+import Masonry from "../components/masonry/masonry";
+import Footer from "../components/footer/footer";
 
 export default function GraceAtHome() {
 
@@ -33,11 +37,35 @@ export default function GraceAtHome() {
       <Header headerBg="dark" />
 
       <main>
-        <Hero page={currentPage} />
-
+        <HeroAlt page={currentPage} />
+        <OrangeBox page={currentPage} />
         <Map page={currentPage} />
-        
-        <CTA />
+        <SideBySide page={currentPage} num="first" />
+        <IconBlocks page={currentPage} />
+        <SideBySide page={currentPage} num="second" />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
+        <Masonry page={currentPage} />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
       </main>
 
       <Footer />
