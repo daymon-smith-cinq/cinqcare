@@ -122,15 +122,11 @@
 					font-style: normal;
 					font-weight: 300;
 					padding-top: 40px;
-
-					@include respond-to("tablet") {
-						padding-right: 0;
-						font-size: 20px;
-					}
 				}
 
 				@include respond-to("tablet") {
 					font-size: 20px;
+					padding-right: 0;
 				}
 			}
 
