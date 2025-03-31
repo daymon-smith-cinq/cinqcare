@@ -24,7 +24,7 @@ const Cards = () => {
               <address>
                 564 Niagara Street,<br />
                 Buffalo, NY<br />
-                14201 716.882.0366
+                14201 716.882.0366
               </address>
             </div>
             <img src={buffaloMap.src} />
