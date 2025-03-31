@@ -55,6 +55,25 @@
 					font-size: 28px;
 				}
 			}
+
+			h4 {
+				line-height: 1.5em;
+			}
+
+			ul {
+				font-size: 18px;
+				font-size: clamp(1.125rem, 1vw + 1rem, 1.25rem);
+				color: $black;
+				line-height: 1.5;
+				text-wrap: pretty;
+				list-style-type: disc;
+				padding-left: 30px;
+				margin-bottom: 40px;
+			}
+
+			li {
+				margin: 0.5em 0;
+			}
 		}
 	}
 }

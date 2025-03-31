@@ -84,23 +84,26 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: false,			
 			columns: [
 				{
-					image: AboutImg, // TEMP IMAGE
-						imgAlt: "",
-						imgWidth: "665",
-						imgHeight: "440",
+					heading: "What <em>We</em> Do",
+					headingPeriod: true,
+					text: "<h4>Primary and Preventive Care — at Home</h4>" +
+					"<p>Checkups that don’t rush, help with your medications, and support in managing your chronic conditions, including diabetes, heart disease, and COPD. We also will help you recover safely at home after a hospital stay.</p>" +
+					"<h4>Urgent and Acute Care — at Home</h4>" +
+					"<p>Skip the wait — and the travel. Our care team offers urgent visits in your home, helping you avoid unnecessary emergency room trips.</p>" +
+					"<h4>End-to-End Care — at Home</h4>" +
+					"<p>We offer care for your family that goes beyond your medical needs, with specialized services including for dementia, mobility challenges, and coordination with your doctors, nurses and caregivers.</p>",
 				},
 				{
-					subheading: "<em>Care is a Calling</em>",
-					heading: "It’s more than a job. It’s a purpose. It’s a calling. If it’s your goal to deliver care where you live, let’s work together.",
-					headingPeriod: false,
-					buttonLink: "/careers",
-					buttonText: "Open Positions",
+					image: AboutImg, // TEMP IMAGE
+						imgAlt: "",
+						imgWidth: "509",
+						imgHeight: "339",
 				},
 			],
 		};
 	} else if (page == "grace-at-home" && num == "second") {
 		content = {
-			bgGradient: false,			
+			bgGradient: true,			
 			columns: [
 				{
 					image: AboutImg, // TEMP IMAGE
@@ -109,11 +112,57 @@ const SideBySide = ({ page, num }) => {
 						imgHeight: "440",
 				},
 				{
-					subheading: "<em>Care is a Calling</em>",
-					heading: "It’s more than a job. It’s a purpose. It’s a calling. If it’s your goal to deliver care where you live, let’s work together.",
+					heading: "What Makes <br/><em>Grace at Home</em> Different?",
 					headingPeriod: false,
-					buttonLink: "/careers",
-					buttonText: "Open Positions",
+					text: "<p>A Doctor Who Comes to You — No waiting rooms. No drives. Care that comes to your door.</p>",
+				},
+			],
+		};
+	} else if (page == "for-moms" && num == "first") {
+		content = {
+			bgGradient: false,			
+			columns: [
+				{
+					image: AboutImg, // TEMP IMAGE
+						imgAlt: "",
+						imgWidth: "622",
+						imgHeight: "650",
+				},
+				{
+					heading: "Why CINQCARE for Moms?",
+					headingPeriod: false,
+					text: "<h4>Getting pregnancy and postpartum care can feel like wandering through a maze. Long wait times. Complicated coverage rules. Limited support for real-life challenges.</h4>" +
+					"<h4>Too many women are left to figure out their getting quality care alone. At CINQCARE, we make sure <em>no mom has to navigate this journey by herself.</em></h4>",
+				},
+			],
+		};
+	} else if (page == "for-moms" && num == "second") {
+		content = {
+			bgGradient: true,			
+			columns: [
+				{
+					image: AboutImg, // TEMP IMAGE
+						imgAlt: "",
+						imgWidth: "665",
+						imgHeight: "440",
+				},
+				{
+					heading: "Your Health, <em>Your Way</em>",
+					headingPeriod: false,
+					text: "<p>CINQCARE for Moms is built on partnerships with trusted practitioners and community-based care. At Grace Women’s Health Center in Buffalo, women receive pregnancy, postpartum, and reproductive care with dignity and support.</p>" +
+					"<p>Located at Jefferson Ave., Buffalo, NY</p>",
+				},
+			],
+		};
+	} else if (page == "for-moms" && num == "third") {
+		content = {
+			bgGradient: false,			
+			columns: [
+				{
+					text: "<p class='fine-print'>Grace Women’s Health Center is an independently owned and operated medical practice that contracts with CINQ Connect for administrative and operational support. CINQCARE does not provide medical care or make clinical decisions.</p>",
+				},
+				{
+					text: "",
 				},
 			],
 		};

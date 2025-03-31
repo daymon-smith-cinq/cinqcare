@@ -10,6 +10,7 @@ import IconBlocks from "../components/iconBlocks/iconBlocks";
 import CTA from "../components/cta/cta";
 import MasonryImages from "../components/masonryImages/masonryImages";
 import Footer from "../components/footer/footer";
+import logoGraceAtHome from "/public/logo-grace-at-home.svg";
 
 export default function GraceAtHome() {
 
@@ -44,27 +45,31 @@ export default function GraceAtHome() {
         <IconBlocks page={currentPage} />
         <SideBySide page={currentPage} num="second" />
         <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
-          link="/"
-          target="_blank"
+          type="tertiary"
+          buttonText="Find Care Near You"
+          link="/join-our-family"
         >
+          <Image 
+            priority={false} 
+            src={logoGraceAtHome} 
+            alt="Grace at Home logo"
+            width="164" 
+            height="58"
+          />
           <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
+            <h3>Ready to see if <em>Grace at Home</em> is right for you?</h3>
           </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
         </CTA>
 
         <MasonryImages page={currentPage} />
 
         <CTA
           type="primary"
-          buttonText="Learn More"
+          buttonText="Find Care Near You"
           link="/"
-          target="_blank"
         >
           <header>
-            <h2> Ready to Get Started? </h2>
+            <h2>Ready to Get Started?</h2>
           </header>
           <p>Take the first step toward better care. Find support today.</p>
         </CTA>

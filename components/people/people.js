@@ -128,7 +128,7 @@ const People = ({ page }) => {
 		content = {
 			heading: "Meet Our Providers",
 			headingPeriod: false,
-			subheading: "<p>Your health starts with a trusted provider who understands your needs.</p>",
+			subheading: "<p>Your health starts with a provider who understands your needs.</p>",
 			centeredHeading: false,
 			people: [
 				{
