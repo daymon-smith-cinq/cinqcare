@@ -40,6 +40,10 @@
 		text-align: center;
 	}
 
+	img {
+		margin-bottom: 60px;
+	}
+
 	h2,
 	p {
 		color: white;
@@ -86,6 +90,27 @@
 	}
 
 	h2,
+	p {
+		color: #000;
+	}
+}
+
+.tertiary {
+	background: #FCF6EC;
+	min-height: auto;
+	padding-bottom: clamp(80px, 10vw, 140px);
+
+	&::before,
+	&::after {
+		display: none;
+	}
+
+	.wrapper {
+		max-width: 600px;
+	}
+
+	h2,
+	h3,
 	p {
 		color: #000;
 	}

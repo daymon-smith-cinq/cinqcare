@@ -63,6 +63,36 @@ const TestimonialSlider = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "care-medical-practice") {
+		content = {
+			heading: "Patient Testimonial",
+			paragraph: "",
+			subtext: "",
+			testimonials: [
+				{
+					color: "yellow", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-5.png",
+					quote:
+						'"At my Care Medical Practice, I feel like more than just a number. My doctor really listens and works with me to improve my health."',
+					name: "Family Member, Buffalo, NY",
+				},
+			],
+		};
+	} else if (page === "for-moms") {
+		content = {
+			heading: "Meet a Mom",
+			paragraph: "",
+			subtext: "",
+			testimonials: [
+				{
+					color: "yellow", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-2.png",
+					quote:
+						'"I felt like someone finally <em>saw me.</em><br/><br/>"CINQCARE for Moms gave me more than just medical care. They made sure I had everything I needed to feel safe, supported, and strong — <em>before and after my baby arrived.</em>"',
+					name: "CINQCARE for Moms Family Member",
+				},
+			],
+		};
 	}
 
 	const [activeIndex, setActiveIndex] = useState(0);
