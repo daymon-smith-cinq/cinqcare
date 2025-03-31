@@ -113,6 +113,7 @@
 			blockquote {
 				font-size: 24px;
 				line-height: 1.25em;
+				padding-right: 50%;
 
 				&.border {
 					width: 100%;
@@ -121,7 +122,6 @@
 					font-style: normal;
 					font-weight: 300;
 					padding-top: 40px;
-					padding-right: 50%;
 
 					@include respond-to("tablet") {
 						padding-right: 0;
