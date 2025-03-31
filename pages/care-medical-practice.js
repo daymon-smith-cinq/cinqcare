@@ -3,6 +3,7 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import HeroAlt from "../components/heroAlt/heroAlt";
+import Cards from "../components/cards/cards";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
 import People from "../components/people/people";
 import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
@@ -36,31 +37,24 @@ export default function CareMedicalPractice() {
 
       <main>
         <HeroAlt page={currentPage} />
+
+        <Cards page={currentPage} />
         
         <IconBlocks page={currentPage} />
+        
         <People page={currentPage} />
-        <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
-          link="/"
-          target="_blank"
-        >
-          <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
-          </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
-        </CTA>
+        
         <TestimonialSlider page={currentPage} />
+
         <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
+          type="primary"
+          buttonText="Book Care Now"
           link="/"
           target="_blank"
         >
           <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
+            <h2>Take the <em>first step</em><br />toward better care.</h2>
           </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
         </CTA>
       </main>
 
