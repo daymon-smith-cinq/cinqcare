@@ -49,7 +49,7 @@ const People = ({ page }) => {
 	// About
 	if (page == "about") {
 		content = {
-			heading: "<em>Leadership</em>",
+			heading: "<a name='team'></a><em>Leadership</em>",
 			headingPeriod: false,
 			centeredHeading: true,
 			bgGradient: true,
