@@ -8,7 +8,7 @@ import Map from "../components/map/map";
 import SideBySide from "../components/sideBySide/sideBySide";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
 import CTA from "../components/cta/cta";
-import Masonry from "../components/masonry/masonry";
+import MasonryImages from "../components/masonryImages/masonryImages";
 import Footer from "../components/footer/footer";
 
 export default function GraceAtHome() {
@@ -54,17 +54,19 @@ export default function GraceAtHome() {
           </header>
           <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
         </CTA>
-        <Masonry page={currentPage} />
+
+        <MasonryImages page={currentPage} />
+
         <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
+          type="primary"
+          buttonText="Learn More"
           link="/"
           target="_blank"
         >
           <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
+            <h2> Ready to Get Started? </h2>
           </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+          <p>Take the first step toward better care. Find support today.</p>
         </CTA>
       </main>
 
