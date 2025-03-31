@@ -2,10 +2,12 @@ import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
-import Hero from "../components/hero/hero";
-import Footer from "../components/footer/footer";
-import CTA from "../components/cta/cta";
+import HeroAlt from "../components/heroAlt/heroAlt";
+import IconBlocks from "../components/iconBlocks/iconBlocks";
 import People from "../components/people/people";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
+import CTA from "../components/cta/cta";
+import Footer from "../components/footer/footer";
 
 export default function CareMedicalPractice() {
 
@@ -33,11 +35,33 @@ export default function CareMedicalPractice() {
       <Header headerBg="dark" />
 
       <main>
-        <Hero page={currentPage} />
-
+        <HeroAlt page={currentPage} />
+        
+        <IconBlocks page={currentPage} />
         <People page={currentPage} />
-
-        <CTA />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
+        <TestimonialSlider page={currentPage} />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
       </main>
 
       <Footer />
