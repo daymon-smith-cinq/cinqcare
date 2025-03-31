@@ -115,6 +115,12 @@
 				a {
 					padding: 10px 30px;
 					font-size: 18px;
+					user-select: none;
+					transition: 0.2s linear;
+
+					&:hover {
+						color: #da6b07;
+					}
 
 					@include respond-to("laptop") {
 						padding: 10px 15px;
