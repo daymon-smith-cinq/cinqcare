@@ -34,7 +34,7 @@ export default function CareMedicalPractice() {
         <title>{title}</title>
       </Head>
 
-      <Header headerBg="dark" />
+      <Header headerBg="light" />
 
       <main>
         <HeroAlt page={currentPage} />
