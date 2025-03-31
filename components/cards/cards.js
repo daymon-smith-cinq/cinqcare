@@ -10,11 +10,12 @@ const Cards = () => {
 
         <header className={styles.section__header}>
           <h2 className="period">Find <em>Grace at Home</em> Near You</h2>
-          <p>Care Medical Practices are expanding to serve more communities.</p>
+          <p>Care Medical Practice is expanding to serve more communities.</p>
           <Button 
-            link={ '/' }
+            link={ '/join-our-family' }
             text={ 'Contact Us' }
           />
+          <p className="fine-print">Care Medical Practices are independent medical groups that partner with CINQCARE for administrative and operational support. CINQCARE does not provide medical services or direct patient care.</p>
         </header>
 
         <div className={styles.card__item}>

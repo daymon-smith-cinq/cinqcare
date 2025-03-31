@@ -12,9 +12,9 @@ const MasonryImages = () => {
           <h2 className="period">Going <em>Beyond</em> Medical Care</h2>
         </header>
         <div>
-          <p>Whether you need primary care, urgent visits, medications, mobility, food access, caregiver support or help managing chronic conditions, we create a plan that works for you.</p>
+          <p>Whether you need primary care, urgent visits, medications, mobility, food access, caregiver support, or help managing chronic conditions, we create a plan just for you.</p>
 
-          <p>Covered by Medicare & Most Insurance — We believe high-quality care should be accessible to everyone who needs it.</p>
+          <p>Covered by Medicare and Most Insurance — We believe quality care should be accessible to everyone who needs it.</p>
         </div>
       </div>
       <div className="wrapper">
