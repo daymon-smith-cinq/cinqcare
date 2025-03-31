@@ -2,7 +2,7 @@ import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
-import Hero from "../components/hero/hero";
+import HeroAbout from "../components/heroAbout/heroAbout";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 import People from "../components/people/people";
@@ -38,7 +38,7 @@ export default function About() {
       <Header headerBg="light" />
 
       <main>
-        <Hero page={currentPage} />
+        <HeroAbout page={currentPage} />
         <GlassAccordion page={currentPage} />
         <People page={currentPage} />
         <BackgroundContainer page={currentPage}>
