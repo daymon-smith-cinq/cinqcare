@@ -2,8 +2,9 @@ import styles from "./sideBySide.module.scss";
 import Image from "next/image";
 import Button from "../button/button";
 import HomeImg from "/public/images/sidebyside-home-temp.webp";
+import AboutImg from "/public/images/about-frame.jpg";
 
-const SideBySide = ({ page }) => {
+const SideBySide = ({ page, num }) => {
 
 	// *******
 	// Content
@@ -18,6 +19,7 @@ const SideBySide = ({ page }) => {
 					imgAlt: "",
 					imgWidth: "",
 					imgHeight: "",
+				subheading: "",
 				heading: "",
 				headingPeriod: false,
 				text: "",
@@ -29,6 +31,7 @@ const SideBySide = ({ page }) => {
 					imgAlt: "",
 					imgWidth: "",
 					imgHeight: "",
+				subheading: "",
 				heading: "",
 				headingPeriod: false,
 				text: "",
@@ -57,6 +60,63 @@ const SideBySide = ({ page }) => {
 				},
 			],
 		};
+	} else if (page == "about") {
+		content = {
+			bgGradient: false,			
+			columns: [
+				{
+					image: AboutImg, // TEMP IMAGE
+						imgAlt: "",
+						imgWidth: "665",
+						imgHeight: "440",
+				},
+				{
+					subheading: "<em>Care is a Calling</em>",
+					heading: "It’s more than a job. It’s a purpose. It’s a calling. If it’s your goal to deliver care where you live, let’s work together.",
+					headingPeriod: false,
+					buttonLink: "/careers",
+					buttonText: "Open Positions",
+				},
+			],
+		};
+	} else if (page == "grace-at-home" && num == "first") {
+		content = {
+			bgGradient: false,			
+			columns: [
+				{
+					image: AboutImg, // TEMP IMAGE
+						imgAlt: "",
+						imgWidth: "665",
+						imgHeight: "440",
+				},
+				{
+					subheading: "<em>Care is a Calling</em>",
+					heading: "It’s more than a job. It’s a purpose. It’s a calling. If it’s your goal to deliver care where you live, let’s work together.",
+					headingPeriod: false,
+					buttonLink: "/careers",
+					buttonText: "Open Positions",
+				},
+			],
+		};
+	} else if (page == "grace-at-home" && num == "second") {
+		content = {
+			bgGradient: false,			
+			columns: [
+				{
+					image: AboutImg, // TEMP IMAGE
+						imgAlt: "",
+						imgWidth: "665",
+						imgHeight: "440",
+				},
+				{
+					subheading: "<em>Care is a Calling</em>",
+					heading: "It’s more than a job. It’s a purpose. It’s a calling. If it’s your goal to deliver care where you live, let’s work together.",
+					headingPeriod: false,
+					buttonLink: "/careers",
+					buttonText: "Open Positions",
+				},
+			],
+		};
 	}
 
 	return (
@@ -77,6 +137,12 @@ const SideBySide = ({ page }) => {
 									width={column.imgWidth} 
 									height={column.imgHeight}
 								/>
+							)}
+							{column?.subheading && (
+								<h3
+									className={styles.subheading}
+									dangerouslySetInnerHTML={{ __html: column.subheading }}
+								></h3>
 							)}
 							{column?.heading && (
 								<h2

@@ -16,6 +16,7 @@ const CTA = ( props ) => {
           <Button 
             link={ props.link }
             text={ props.buttonText }
+            target={ props.target }
             type={ props.type == "primary" ? "secondary" : "primary" }
           />
         )}

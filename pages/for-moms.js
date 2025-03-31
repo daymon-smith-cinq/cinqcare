@@ -2,9 +2,14 @@ import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
-import Hero from "../components/hero/hero";
-import Footer from "../components/footer/footer";
+import HeroAlt from "../components/heroAlt/heroAlt";
+import OrangeBox from "../components/orangeBox/orangeBox";
+import SideBySide from "../components/sideBySide/sideBySide";
+import GlassAccordion from "../components/glassAccordion/glassAccordion";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import CTA from "../components/cta/cta";
+import Accordion from "../components/accordion/accordion";
+import Footer from "../components/footer/footer";
 
 export default function ForMoms() {
 
@@ -32,9 +37,36 @@ export default function ForMoms() {
       <Header headerBg="dark" />
 
       <main>
-        <Hero page={currentPage} />
+        <HeroAlt page={currentPage} />
+        <OrangeBox page={currentPage} />
 
-        <CTA />
+        <SideBySide page={currentPage} num="first" />
+        <GlassAccordion page={currentPage} />
+        <TestimonialSlider page={currentPage} />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
+        <SideBySide page={currentPage} num="second" />
+        <CTA
+          type="secondary"
+          buttonText="Contact Us Today"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2 class="period">We want to hear <em>from you</em></h2>
+          </header>
+          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+        </CTA>
+        <Accordion page={currentPage} />
       </main>
 
       <Footer />

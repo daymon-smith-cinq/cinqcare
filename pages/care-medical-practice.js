@@ -2,10 +2,13 @@ import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
-import Hero from "../components/hero/hero";
-import Footer from "../components/footer/footer";
-import CTA from "../components/cta/cta";
+import HeroAlt from "../components/heroAlt/heroAlt";
+import Cards from "../components/cards/cards";
+import IconBlocks from "../components/iconBlocks/iconBlocks";
 import People from "../components/people/people";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
+import CTA from "../components/cta/cta";
+import Footer from "../components/footer/footer";
 
 export default function CareMedicalPractice() {
 
@@ -33,11 +36,26 @@ export default function CareMedicalPractice() {
       <Header headerBg="dark" />
 
       <main>
-        <Hero page={currentPage} />
+        <HeroAlt page={currentPage} />
 
+        <Cards page={currentPage} />
+        
+        <IconBlocks page={currentPage} />
+        
         <People page={currentPage} />
+        
+        <TestimonialSlider page={currentPage} />
 
-        <CTA />
+        <CTA
+          type="primary"
+          buttonText="Book Care Now"
+          link="/"
+          target="_blank"
+        >
+          <header>
+            <h2>Take the <em>first step</em><br />toward better care.</h2>
+          </header>
+        </CTA>
       </main>
 
       <Footer />

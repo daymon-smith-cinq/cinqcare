@@ -34,6 +34,7 @@ const People = ({ page }) => {
 		headingPeriod: false,
 		subheading: "",
 		centeredHeading: false,
+		bgGradient: false,
 		people: [
 			{
 				portrait: "",
@@ -50,8 +51,8 @@ const People = ({ page }) => {
 		content = {
 			heading: "<em>Leadership</em>",
 			headingPeriod: false,
-			subheading: "",
 			centeredHeading: true,
+			bgGradient: true,
 			people: [
 				{
 					portrait: TonyW,
@@ -171,7 +172,7 @@ const People = ({ page }) => {
 	}
 
 	return (
-		<section className={styles.section_people}>
+		<section className={`${styles.section_people} ${content.bgGradient ? (`${styles.gradient}`) : undefined}`}>
 			<div className={`${styles.container_people} ${" wrapper"}`}>
 				<div className={`${styles.headingContainer} ${content.centeredHeading ? (`${styles.centered}`) : undefined}`}>
 					{content?.heading && (
