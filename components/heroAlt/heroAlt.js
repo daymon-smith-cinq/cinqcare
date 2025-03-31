@@ -11,12 +11,36 @@ const HeroAlt = ({ page }) => {
 	// Homepage
 	if (page == "grace-at-home") {
 		content = {
-			heroImage: "images/hero-home-temp.jpg", // IMAGE NOT FINAL
+			heroImage: "images/ManNurse.png", // IMAGE NOT FINAL
 			h1: "<span>Grace at Home</span> Bringing <em>Health and Care</em> to You",
 			h1Period: false,
 			paragraph: "Healthcare shouldn't be out of reach. <br> We bring it home.",
 			buttonText: "Visit Site",
 			buttonLink: "/#", // HYRULE IS IN DANGER! (NEED LINK)
+		};
+	}
+
+	if (page == "for-moms") {
+		content = {
+			heroImage: "images/HappyPregnantCouple.jpg", // IMAGE NOT FINAL
+			h1: "<span>CINQCARE for Moms</span> Motherhood, with the <em>Support You Deserve</em>",
+			h1Period: false,
+			paragraph:
+				"You're always there for everyone else. <br> We're here for you.",
+			buttonText: "",
+			buttonLink: "", // HYRULE IS IN DANGER! (NEED LINK)
+		};
+	}
+
+	if (page == "care-medical-practice") {
+		content = {
+			heroImage: "images/DoctorTeen.jpg", // IMAGE NOT FINAL
+			h1: "<span>Care Medical Practice</span> Trusted Care, Right in Your Neighborhood",
+			h1Period: false,
+			paragraph:
+				"Comprehensive, high-quality primary and specialty care—delivered with compassion and convenience. <span>Find expert medical care close to home, designed to keep you well and thriving.</span>",
+			buttonText: "",
+			buttonLink: "", // HYRULE IS IN DANGER! (NEED LINK)
 		};
 	}
 

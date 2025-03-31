@@ -12,70 +12,70 @@ import Footer from "../components/footer/footer";
 import logoCareMedical from "/public/logo-care-medical-practice.svg";
 
 export default function CareMedicalPractice() {
+	// Define current page
+	const currentPage = "care-medical-practice";
 
-  // Define current page
-  const currentPage = "care-medical-practice";
+	// SEO
+	const title = "Care Medical Practice | CINQCARE";
+	const metaDescription =
+		"Care Medical Practice offers primary, specialty, and mental health care in your community. Find expert, compassionate care near you.";
+	const pageURL = "https://cinq.care/care-medical-practice";
 
-  // SEO
-  const title = "Care Medical Practice | CINQCARE";
-  const metaDescription = "Care Medical Practice offers primary, specialty, and mental health care in your community. Find expert, compassionate care near you.";
-  const pageURL = "https://cinq.care/care-medical-practice";
+	return (
+		<>
+			<Head>
+				<meta name="description" content={metaDescription} />
+				<meta property="og:image" content={OpengraphImg.src} />
+				<meta property="og:title" content={title} />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={pageURL} />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:site" content="@carecinq" />
+				<title>{title}</title>
+			</Head>
 
-  return (
-    <>
-      <Head>
-        <meta name="description" content={metaDescription} />
-        <meta property="og:image" content={OpengraphImg.src} />
-        <meta property="og:title" content={title} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={pageURL} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@carecinq" />
-        <title>{title}</title>
-      </Head>
+			<Header headerBg="light" />
 
-      <Header headerBg="dark" />
+			<main>
+				<HeroAlt page={currentPage} />
 
-      <main>
-        <HeroAlt page={currentPage} />
+				<Cards page={currentPage} />
 
-        <Cards page={currentPage} />
-        
-        <IconBlocks page={currentPage} />
-        
-        <People page={currentPage} />
+				<IconBlocks page={currentPage} />
 
-        <CTA
-          type="tertiary"
-          buttonText="Learn More"
-          link="/join-our-family"
-        >
-          <Image 
-            priority={false} 
-            src={logoCareMedical} 
-            alt="Care Medical Practice logo"
-            width="141" 
-            height="58"
-          />
-          <header>
-            <h3>Ready to see if <em>Care Medical Practice</em> is right for you?</h3>
-          </header>
-        </CTA>
+				<People page={currentPage} />
 
-        <TestimonialSlider page={currentPage} />
+				<CTA type="tertiary" buttonText="Learn More" link="/join-our-family">
+					<Image
+						priority={false}
+						src={logoCareMedical}
+						alt="Care Medical Practice logo"
+						width="141"
+						height="58"
+					/>
+					<header>
+						<h3>
+							Ready to see if <em>Care Medical Practice</em> is right for you?
+						</h3>
+					</header>
+				</CTA>
 
-        <CTA
-          type="primary"
-          buttonText="Find a Care Medical Practice Near You"
-          link="/join-our-family"
-        >
-          <header>
-            <h2>Take the <em>first step</em> toward better care.</h2>
-          </header>
-        </CTA>
-      </main>
+				<TestimonialSlider page={currentPage} />
 
-      <Footer />
-    </>
-  );
+				<CTA
+					type="primary"
+					buttonText="Find a Care Medical Practice Near You"
+					link="/join-our-family"
+				>
+					<header>
+						<h2>
+							Take the <em>first step</em> toward better care.
+						</h2>
+					</header>
+				</CTA>
+			</main>
+
+			<Footer />
+		</>
+	);
 }
