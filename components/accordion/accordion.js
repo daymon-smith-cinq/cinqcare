@@ -111,6 +111,41 @@ const Accordion = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "for-moms") {
+		content = {
+			heading:
+				"Answers to <span>your questions</span> about CINQCARE for Moms",
+			headingPeriod: true,
+			paragraph: "Expand to see common questions about CINQCARE for Moms.",
+			accordionContent: [
+				{
+					heading: "What kind of care does CINQCARE for Moms provide?",
+					paragraph:
+						"CINQCARE for Moms offers pregnancy support, postpartum check-ins, and mental health care, as well services like food and transportation assistance.",
+				},
+				{
+					heading: "Do I need insurance to receive support?",
+					paragraph:
+						"CINQCARE for Moms works with health plans and local programs. We can help you understand your coverage or connect you with resources to get coverage.",
+				},
+				{
+					heading: "Can I receive care at home?",
+					paragraph:
+						"Yes! Our program anticipates in-home and virtual check-ins, along with connections to doctors and specialists near you.",
+				},
+				{
+					heading:
+						"Does CINQCARE for Moms replace my doctor?",
+					paragraph:
+						"No! We work with your OB doctor and primary care provider to make sure you have the best possible support throughout your pregnancy and postpartum journey.",
+				},
+				{
+					heading: "How do I sign up?",
+					paragraph:
+						"Getting started is easy. Click below to connect with a care team member and see if you’re eligible.",
+				},
+			],
+		};
 	}
 
 	const [activeIndex, setActiveIndex] = useState(0);

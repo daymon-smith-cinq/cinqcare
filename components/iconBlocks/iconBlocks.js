@@ -116,6 +116,72 @@ const IconBlocks = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "grace-at-home") {
+		content = {
+			heading: "Who We <em>Serve</em>",
+			paragraph:
+				"We bring the doctor to you. We specialize in serving:",
+			subtext: "",
+			fourBlocks: true,
+			iconBlocks: [
+				{
+					icon: "icons/Wheelchair.svg",
+					heading: "Homebound and Mobility-Limited Adults",
+				},
+				{
+					icon: "icons/Head-Pain.svg",
+					heading: "People Managing Chronic Conditions",
+				},
+				{
+					icon: "icons/Walker.svg",
+					heading: "Seniors and Adults with Cognitive Decline",
+				},
+				{
+					icon: "icons/Hospital.svg",
+					heading: "Patients Transitioning from Hospital to Home",
+				},
+			],
+		};
+	} else if (page === "care-medical-practice") {
+		content = {
+			heading: "What We Offer",
+			paragraph:
+				"Care Medical Practice brings together everything you need to stay healthy — from checkups to specialty services — close to home, with a care team that knows you.",
+			subtext: "",
+			fourBlocks: false,
+			iconBlocks: [
+				{
+					icon: "icons/Provider.svg",
+					heading: "Primary Care",
+					paragraph:
+						"Wellness visits, chronic condition management, and preventive screenings.",
+				},
+				{
+					icon: "icons/Xray.svg",
+					heading: "Diagnostic and Specialty Services",
+					paragraph:
+						"X-rays, EKGs, ultrasounds, stress tests, and physical therapy.",
+				},
+				{
+					icon: "icons/Brain.svg",
+					heading: "Behavioral and Mental Health",
+					paragraph:
+						"Therapy and support for emotional and psychological well-being.",
+				},
+				{
+					icon: "icons/Communication.svg",
+					heading: "Care Coordination",
+					paragraph:
+						"Guidance and support from a dedicated team.",
+				},
+				{
+					icon: "icons/Hierarchy-of-Needs.svg",
+					heading: "Supportive Services",
+					paragraph:
+						"Including nutrition counseling, community-based support, and health education.",
+				},
+			],
+		};
 	}
 
 	return (
@@ -132,12 +198,10 @@ const IconBlocks = ({ page }) => {
 			)}
 
 			{content.iconBlocks?.length > 0 && (
-				<div className={styles.container_IconBlocks}>
+				<div className={`${styles.container_IconBlocks} ${content.fourBlocks ? styles.fourBlocks : "undefined"}`}>
 					{content.iconBlocks.map((item, index) => (
 						<div
-							className={`${styles.iconBlock} ${
-								content.fourBlocks ? styles.fourBlocks : ""
-							}`}
+							className={styles.iconBlock}
 							key={index}
 						>
 							{item.icon && <img src={item.icon} loading="lazy" alt="" />}

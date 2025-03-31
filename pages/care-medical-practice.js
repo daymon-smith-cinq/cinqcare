@@ -9,6 +9,7 @@ import People from "../components/people/people";
 import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import CTA from "../components/cta/cta";
 import Footer from "../components/footer/footer";
+import logoCareMedical from "/public/logo-care-medical-practice.svg";
 
 export default function CareMedicalPractice() {
 
@@ -43,17 +44,33 @@ export default function CareMedicalPractice() {
         <IconBlocks page={currentPage} />
         
         <People page={currentPage} />
-        
+
+        <CTA
+          type="tertiary"
+          buttonText="Learn More"
+          link="/join-our-family"
+        >
+          <Image 
+            priority={false} 
+            src={logoCareMedical} 
+            alt="Care Medical Practice logo"
+            width="141" 
+            height="58"
+          />
+          <header>
+            <h3>Ready to see if <em>Care Medical Practice</em> is right for you?</h3>
+          </header>
+        </CTA>
+
         <TestimonialSlider page={currentPage} />
 
         <CTA
           type="primary"
-          buttonText="Book Care Now"
-          link="/"
-          target="_blank"
+          buttonText="Find a Care Medical Practice Near You"
+          link="/join-our-family"
         >
           <header>
-            <h2>Take the <em>first step</em><br />toward better care.</h2>
+            <h2>Take the <em>first step</em> toward better care.</h2>
           </header>
         </CTA>
       </main>

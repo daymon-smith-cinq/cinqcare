@@ -10,6 +10,7 @@ import TestimonialSlider from "../components/testimonialSlider/testimonialSlider
 import CTA from "../components/cta/cta";
 import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
+import logoForMoms from "/public/logo-cinqcare-for-moms.svg";
 
 export default function ForMoms() {
 
@@ -44,29 +45,34 @@ export default function ForMoms() {
         <GlassAccordion page={currentPage} />
         <TestimonialSlider page={currentPage} />
         <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
-          link="/"
-          target="_blank"
+          type="tertiary"
+          buttonText="Learn More"
+          link="/join-our-family"
         >
+          <Image 
+            priority={false} 
+            src={logoForMoms} 
+            alt="CINQCARE for Moms logo"
+            width="188" 
+            height="57"
+          />
           <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
+            <h3>Ready to see if <em>CINQCARE for Moms</em> is right for you?</h3>
           </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
         </CTA>
         <SideBySide page={currentPage} num="second" />
         <CTA
-          type="secondary"
-          buttonText="Contact Us Today"
-          link="/"
-          target="_blank"
+          type="primary"
+          buttonText="Find Support Today"
+          link="/join-our-family"
         >
           <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
+            <h2>We’re Here <em>for You</em></h2>
           </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+          <p>Whether you're pregnant, postpartum, or planning for the future, CINQCARE for Moms is here to help.</p>
         </CTA>
         <Accordion page={currentPage} />
+        <SideBySide page={currentPage} num="third" />
       </main>
 
       <Footer />
