@@ -27,7 +27,7 @@ const ColumnAccordion = ({ page }) => {
 					text: "<p>Meeting women where they are and making sure they have the care, advocacy, and support they deserve.</p>",
 					buttonText: "Learn More",
 					buttonLink: "/for-moms",
-					imgSrc: "images/columns-for-moms-temp.webp",  // Need final image
+					imgSrc: "images/MotherChild.jpg",
 					imgAlign: "right center",
 					comingSoon: false,
 				},
