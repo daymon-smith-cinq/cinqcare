@@ -8,7 +8,6 @@ const HeroAlt = ({ page }) => {
 	// *******
 	let content = "";
 
-	// Homepage
 	if (page == "grace-at-home") {
 		content = {
 			heroImage: "images/ManNurse.png", // IMAGE NOT FINAL
@@ -38,7 +37,7 @@ const HeroAlt = ({ page }) => {
 			h1: "<span>Care Medical Practice</span> Trusted Care, Right in Your Neighborhood",
 			h1Period: false,
 			paragraph:
-				"Comprehensive, high-quality primary and specialty care—delivered with compassion and convenience. <span>Find expert medical care close to home, designed to keep you well and thriving.</span>",
+				"Comprehensive, quality primary and specialty care — delivered with compassion and convenience. <span>Find expert medical care close to home, designed to keep you well and thriving.</span>",
 			buttonText: "",
 			buttonLink: "", // HYRULE IS IN DANGER! (NEED LINK)
 		};
