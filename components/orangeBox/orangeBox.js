@@ -1,6 +1,7 @@
 import styles from "./orangeBox.module.scss";
 import Image from "next/image";
-import ImgHome from "/public/images/orangeBox-temp.jpg";
+import ImgHome from "/public/images/orangeBox.jpg";
+import ImgCommunity from "/public/images/WomenConversation.jpg";
 
 const OrangeBox = ({ page }) => {
 
@@ -18,7 +19,7 @@ const OrangeBox = ({ page }) => {
 	if (page == "home") {
 		content = {
 			bgImgSrc: "images/orangeBox-stripes-home.png",
-			foregroundImg: ImgHome, // IMAGE NOT FINAL
+			foregroundImg: ImgHome,
 			foregroundImgAlt: "",
 			text: "<h4>Our vision</h4>" +
 				"<h3>People who need care, particularly at home, often never get it — <em>especially when they live in high-needs, urban and rural areas.</em> In our communities, we know it’s too hard to get in to see a primary care doctor, too expensive to get a nurse to visit at home, too complicated to qualify for support programs.</h3>" +
@@ -40,7 +41,7 @@ const OrangeBox = ({ page }) => {
 	} else if (page == "communities") {
 		content = {
 			bgImgSrc: "images/orangeBox-stripes-home.png",
-			foregroundImg: ImgHome, // IMAGE NOT FINAL
+			foregroundImg: ImgCommunity,
 			foregroundImgAlt: "",
 			text: "<h3>As we find new ways to drive care forward and the health of our nation forward — the things that matter most to us are always the individual stories of Family Members and communities healing together.</h3>",
 		};

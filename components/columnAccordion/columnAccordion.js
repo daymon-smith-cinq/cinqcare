@@ -18,7 +18,8 @@ const ColumnAccordion = ({ page }) => {
 					text: "<p>Delivering high-quality primary and specialty care—with compassion.</p>",
 					buttonText: "Learn More",
 					buttonLink: "/care-medical-practice",
-					imgSrc: "images/columns-for-moms-temp.webp", // Need expanded image
+					imgSrc: "images/Nurse.jpg",
+					imgAlign: "left center",
 					comingSoon: false,
 				},
 				{
@@ -27,6 +28,7 @@ const ColumnAccordion = ({ page }) => {
 					buttonText: "Learn More",
 					buttonLink: "/for-moms",
 					imgSrc: "images/columns-for-moms-temp.webp",  // Need final image
+					imgAlign: "right center",
 					comingSoon: false,
 				},
 				{
@@ -34,7 +36,8 @@ const ColumnAccordion = ({ page }) => {
 					text: "<p>Connecting virtual and in-home care in coordination with your local primary care team.</p>",
 					buttonText: "Learn More",
 					buttonLink: "/grace-at-home",
-					imgSrc: "images/columns-for-moms-temp.webp", // Need expanded image
+					imgSrc: "images/NursePatient.jpg",
+					imgAlign: "center",
 					comingSoon: false,
 				},
 				{
@@ -42,7 +45,8 @@ const ColumnAccordion = ({ page }) => {
 					text: "<p>High-touch support to help our older family members thrive at home. </p>",
 					buttonText: "",
 					buttonLink: "",
-					imgSrc: "images/columns-for-moms-temp.webp", // Need expanded image
+					imgSrc: "images/WomanLaughing.jpg",
+					imgAlign: "center",
 					comingSoon: true,
 				},
 			],
@@ -101,6 +105,7 @@ const ColumnAccordion = ({ page }) => {
 							onKeyUp={toggleAccordion}
 							style={{
 								backgroundImage: `url(${column.imgSrc})`,
+								backgroundPosition: `${column.imgAlign}`,
 							}}
 						>
 							<div className={styles.textBox}>

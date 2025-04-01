@@ -1,12 +1,12 @@
 import styles from "./slidecordion.module.scss";
 import Image from "next/image";
 import Button from "../button/button";
-import ImgProviders from "/public/images/slidecordion-providers.webp";
-import ImgPatients from "/public/images/slidecordion-patients.webp";
-import ImgPartners from "/public/images/slidecordion-partners.webp";
-import ImgPurpose from "/public/images/about-purpose.jpg"; // TEMP
-import ImgMission from "/public/images/about-mission.jpg"; // TEMP
-import ImgPromise from "/public/images/about-promise.jpg"; // TEMP
+import ImgProviders from "/public/images/Providers.svg";
+import ImgPatients from "/public/images/Patients.png";
+import ImgPartners from "/public/images/Partners.svg";
+import ImgPurpose from "/public/images/WomenHugging-on-couch.jpg";
+import ImgMission from "/public/images/BusinesswomanHandshake.jpg";
+import ImgPromise from "/public/images/DoctorPatient.jpg";
 
 const Slidecordion = ({ page }) => {
 
