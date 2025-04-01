@@ -67,7 +67,7 @@ const Hero = ({ page }) => {
 	// Careers
 	if (page == "careers") {
 		content = {
-			bgImgSrc: "images/hero-partners-temp.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-careers.jpg",
 			h1: "<span>Open Positions</span>Why CINQCARE may be <em>your calling</em>",
 			h1Period: false,
 			buttonText: "",

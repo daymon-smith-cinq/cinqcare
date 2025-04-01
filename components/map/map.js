@@ -33,7 +33,7 @@ const SideBySide = ({ page }) => {
 		content = {
 			heading: "<em>Serving 20+ communities</em> and growing",
 			headingPeriod: true,
-			text: "<p>We’re focusing on where care is needed most — bringing health and care to high-need, urban, and rural neighborhoods. We help local doctors, care teams, nurses, therapists, specialists, and community programs (including food and rides) work together for you.</p>",
+			text: "<p>We’re focusing on <em>where care is needed most</em> — bringing health and care to high-need, urban, and rural neighborhoods. We help local doctors, care teams, nurses, therapists, specialists, and community programs (including food and rides) work together for you.</p>",
 			buttonText: "Learn More",
 			buttonLink: "/join-our-family",
 			finePrint: "",

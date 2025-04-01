@@ -69,6 +69,10 @@ main {
 	display: block;
 }
 
+em {
+	font-style: oblique;
+}
+
 /************/
 /* Globals */
 /**********/
@@ -119,6 +123,7 @@ h4 {
 
 	em {
 		font-family: "PP Editorial New", serif;
+		font-style: italic;
 	}
 }
 

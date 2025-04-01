@@ -43,13 +43,16 @@ export default function Patients() {
 
         <ScrollJacking page={currentPage} bg={circle}>
           <div>
-            <h2>What if we made delivering care a <em>little easier</em> for the providers who know their communities best?</h2>
+            <h2>What if <em>getting care</em> didn’t feel so hard?</h2>
           </div>
           <div>
-            <h2>You're not just <em>treating symptoms</em> — you’re navigating a system that wasn’t built for high-needs, underserved populations.</h2>
+            <h2>For too many people, healthcare feels <em>out of reach</em> — it can seem like no one is truly looking out for you.</h2>
           </div>
           <div>
-            <h2>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. <em>Yet, your commitment never wavers.</em></h2>
+            <h2>Long wait times, complicated paperwork, and a system that wasn’t built for real life make it difficult <em>to get the help you deserve.</em></h2>
+          </div>
+          <div>
+            <h2>But it doesn’t have to be this way. At CINQCARE, we bring health and care together, meeting you where you are and <em>making it easier to get the support you need.</em></h2>
           </div>
         </ScrollJacking>
         <IconBlocks page={currentPage} />

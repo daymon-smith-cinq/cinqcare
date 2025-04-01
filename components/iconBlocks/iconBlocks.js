@@ -38,7 +38,7 @@ const IconBlocks = ({ page }) => {
 					icon: "icons/Doctor.svg",
 					heading: "Access to resources",
 					paragraph:
-						'We connect patients (whom we call "Family Members") to care navigators, behavioral health experts, and community, strengthening relationships and improving outcomes.',
+						'We connect patients (whom we call “Family Members”) to care navigators, behavioral health experts, and community resources, strengthening relationships and improving outcomes.',
 				},
 			],
 		};

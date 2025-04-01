@@ -48,10 +48,10 @@ export default function Providers() {
             <h2>What if we made delivering care a <em>little easier</em> for the providers who know their communities best?</h2>
           </div>
           <div>
-            <h2>You're not just <em>treating symptoms</em> — you’re navigating a system that wasn’t built for high-needs, underserved populations.</h2>
+            <h2>You’re not just <em>treating symptoms</em> — you’re navigating a system that wasn’t built for high-needs populations. </h2>
           </div>
           <div>
-            <h2>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. <em>Yet, your commitment never wavers.</em></h2>
+            <h2>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. <em>Yet your commitment never wavers.</em></h2>
           </div>
         </ScrollJacking>
         <IconBlocks page={currentPage} />
