@@ -133,6 +133,10 @@
 			}
 
 			.slidecordionText {
+				p, a, ul, ol, li {
+					color: $gray;
+				}
+
 				ul {
 					font-size: 18px;
 					font-size: clamp(1.125rem, 1vw + 1rem, 1.25rem);

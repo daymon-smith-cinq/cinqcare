@@ -59,7 +59,7 @@ export default function Patients() {
         <CTA
           type="primary"
           buttonText="Contact Us Today"
-          link="/"
+          link="/join-our-family"
           target="_blank"
         >
           <header>

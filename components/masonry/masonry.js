@@ -19,7 +19,7 @@ const Masonry = () => {
 						<br />
 						It's our calling to deliver care where you live.{" "}
 					</p>
-					<Button link="/" text="About Us" />
+					<Button link="/about" text="About Us" />
 				</div>
 			</div>
 			<div className="wrapper">
