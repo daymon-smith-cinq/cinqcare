@@ -12,13 +12,13 @@ const Hero = ({ page }) => {
 	if (page == "home") {
 		content = {
 			bgImgSrc: "images/hero-home.jpg",
-			h1: "<em>Care,</em> Where You Live",
+			h1: "Care that meets you at home — and <em>treats you as Family</em>",
 			h1Period: false,
 			buttonText: "Learn More",
 			buttonLink: "/join-our-family",
 			blockquoteBorder: false,
 			quoteText:
-				"We see the community as our family…we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.<span>- Deborah Forbes, VP of Operations, Doral Health and Wellness, part of the CINQCARE network</span>",
+				"“We see the community as our family…we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.”<span>- Deborah Forbes, VP of Operations, Doral Health and Wellness, part of the CINQCARE network</span>",
 		};
 	}
 

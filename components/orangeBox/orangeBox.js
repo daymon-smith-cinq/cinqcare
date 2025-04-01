@@ -21,10 +21,10 @@ const OrangeBox = ({ page }) => {
 			bgImgSrc: "images/orangeBox-stripes-home.png",
 			foregroundImg: ImgHome,
 			foregroundImgAlt: "",
-			text: "<h4>Our vision</h4>" +
-				"<h3>People who need care, particularly at home, often never get it — <em>especially when they live in high-needs, urban and rural areas.</em> In our communities, we know it’s too hard to get in to see a primary care doctor, too expensive to get a nurse to visit at home, too complicated to qualify for support programs.</h3>" +
-				"<h3>That’s why we design new models to deliver health and care – better, easier and less expensively – to our communities, right where you live.</h3>" +
-				"<h3><em>We are in the health and care business.</em></h3>"
+			text: "<h4>Our Approach</h4>" +
+				"<h3>Too often, people who need care — especially in the home — don’t get it. In high-needs, urban, and rural communities, the system isn’t working. It’s hard to get a primary care appointment. Home visits are too expensive. Support programs feel out of reach.</h3>" +
+				"<h3>We’re changing that.</h3>" +
+				"<h3>CINQCARE delivers health and care — better, simpler, and closer to home. Because your health shouldn’t depend on your zip code.</h3>"
 		};
 	} else if (page == "grace-at-home") {
 		content = {
