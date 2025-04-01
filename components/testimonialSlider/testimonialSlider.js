@@ -93,6 +93,35 @@ const TestimonialSlider = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "communities") {
+		content = {
+			heading: "Real people, <em>Real Care</em>",
+			paragraph: "",
+			subtext: "",
+			testimonials: [
+				{
+					color: "yellow", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-2.png",
+					quote:
+						'"The group I am working with has worked in the neighborhood and outreached regularly. Meeting the community through their eyes has made the experience even more closer to home."',
+					name: "Zoey, a CINQCARE care coordinator",
+				},
+				{
+					color: "orange", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-2.png",
+					quote:
+						'"The experience has been nothing but amazing, being able to communicate with the community and being out here with family members who actually need our help."',
+					name: "Kiara, a CINQCARE care coordinator",
+				},
+				{
+					color: "yellow", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-2.png",
+					quote:
+						'"We are not a sick care system where we only want to see you when you are sick — we are in it for the long haul with our patients and the community… CINQCARE has been open, honest and transparent…that means the world to us."',
+					name: "Parinda Khatri, Ph.D., Cherokee Health Systems CEO",
+				},
+			],
+		};
 	}
 
 	const [activeIndex, setActiveIndex] = useState(0);
