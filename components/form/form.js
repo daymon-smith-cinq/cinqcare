@@ -1,19 +1,6 @@
-import { useEffect } from "react";
 import styles from "./form.module.scss";
 
 const Form = ({ page }) => {
-	// Form
-	// useEffect(() => {
-	// 	// Avoid inserting script multiple times
-	// 	if (document.getElementById("jotform-script")) return;
-
-	// 	const script = document.createElement("script");
-	// 	script.id = "jotform-script";
-	// 	script.type = "text/javascript";
-	// 	script.src = "https://form.jotform.com/jsform/250897973993078";
-	// 	document.body.appendChild(script);
-	// }, []);
-
 	let content = "";
 
 	if (page === "join-our-family") {
