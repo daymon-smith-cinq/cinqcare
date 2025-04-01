@@ -72,7 +72,7 @@ const GlassAccordion = ({ page }) => {
 			bgImgSrc: "images/Couple-Reviewing-Information.jpg",
 			heading: "How CINQCARE <span>works differently</span>",
 			paragraph:
-				"What makes us different? We bring deep expertise, cutting-edge tools, and a commitment to care that extends beyond the clinic.",
+				"<p>What makes us different? We bring deep expertise, cutting-edge tools, and a commitment to care that extends beyond the clinic.</p>",
 			buttonLink: "",
 			buttonText: "",
 			accordionContent: [
@@ -181,7 +181,7 @@ const GlassAccordion = ({ page }) => {
 						dangerouslySetInnerHTML={{ __html: content.heading }}
 					/>
 					{content.paragraph && (
-						<p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
+						<div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
 					)}
 					{content.buttonLink && (
 						<Button link={content.buttonLink} text={content.buttonText} />

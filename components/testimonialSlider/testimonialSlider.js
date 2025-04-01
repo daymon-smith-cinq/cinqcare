@@ -209,7 +209,7 @@ const TestimonialSlider = ({ page }) => {
 				</div>
 			)}
 			{content.subtext && (
-				<a className={styles.subtext_Testimonials} href="/community">
+				<a className={styles.subtext_Testimonials} href="/communities">
 					{content.subtext}
 				</a>
 			)}
