@@ -68,6 +68,7 @@
 		@include respond-to("tablet-landscape") {
 			position: relative;
 			z-index: 2;
+			gap: 40px;
 		}
 
 		.heroContent {
@@ -80,21 +81,21 @@
 			flex-shrink: 1;
 
 			@include respond-to("laptop") {
-				//gap: 150px;
+				max-width: 300px;
 			}
 
-			@include respond-to("tablet") {
-				max-width: 65%;
-				//gap: 60px;
-			}
+			// @include respond-to("tablet") {
+			// 	max-width: 65%;
+			// 	//gap: 60px;
+			// }
 
-			@include respond-to("mobile-landscape") {
-				max-width: 80%;
-			}
+			// @include respond-to("mobile-landscape") {
+			// 	max-width: 80%;
+			// }
 
-			@include respond-to("mobile") {
-				max-width: 100%;
-			}
+			// @include respond-to("mobile") {
+			// 	max-width: 100%;
+			// }
 
 			h1 {
 				font-size: 52px;
@@ -112,6 +113,18 @@
 					font-weight: 500;
 					line-height: 26px; /* 108.333% */
 				}
+
+				b {
+					color: #e45f0c;
+				}
+
+				@include respond-to("laptop") {
+					width: auto;
+				}
+
+				@include respond-to("tablet") {
+					font-size: 36px;
+				}
 			}
 
 			p {
@@ -122,6 +135,12 @@
 					font-style: italic;
 					display: block;
 					margin-top: 32px;
+				}
+
+				@include respond-to("laptop") {
+					br {
+						display: none;
+					}
 				}
 			}
 		}
@@ -137,6 +156,19 @@
 				display: block;
 				object-fit: cover;
 				border-radius: 10px;
+			}
+
+			@include respond-to("mobile-landscape") {
+				// position: absolute;
+				// top: 50px;
+				// right: -220px;
+				// width: 400px;
+				// height: 400px;
+				display: none;
+			}
+
+			@include respond-to("mobile") {
+				display: none;
 			}
 		}
 	}

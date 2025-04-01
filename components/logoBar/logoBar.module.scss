@@ -35,6 +35,10 @@
 		align-items: center;
 		gap: 60px 100px;
 
+		@include respond-to("mobile") {
+			flex-direction: column;
+		}
+
 		img {
 			max-width: 190px;
 			max-height: 55px;

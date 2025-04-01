@@ -43,6 +43,17 @@ const HeroAlt = ({ page }) => {
 		};
 	}
 
+	if (page == "thank-you") {
+		content = {
+			heroImage: "images/DoctorTeen.jpg", // IMAGE NOT FINAL
+			h1: "<b>Thank you</b> for <em>your interest!</em>",
+			h1Period: false,
+			paragraph: "We will be in contact soon.",
+			buttonText: "",
+			buttonLink: "", // HYRULE IS IN DANGER! (NEED LINK)
+		};
+	}
+
 	return (
 		<section className={styles.section_Hero}>
 			<div className={`${styles.container_Hero} ${" wrapper"}`}>

@@ -51,6 +51,7 @@
 
 	h2 {
 		font-size: toem(48px);
+		line-height: 1.2;
 	}
 
 	p {
@@ -96,7 +97,7 @@
 }
 
 .tertiary {
-	background: #FCF6EC;
+	background: #fcf6ec;
 	min-height: auto;
 	padding-bottom: clamp(80px, 10vw, 140px);
 

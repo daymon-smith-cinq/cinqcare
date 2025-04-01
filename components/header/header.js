@@ -39,7 +39,7 @@ const Header = ({ headerBg }) => {
 						{currentPath !== "/join-our-family" && (
 							<label
 								htmlFor="responsiveMenuToggle"
-								className={styles.responsiveMenuToggleLabel}
+								className={`${styles.responsiveMenuToggleLabel} ${bgColor}`}
 							>
 								Menu
 							</label>
