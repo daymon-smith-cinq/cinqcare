@@ -140,7 +140,7 @@ const Footer = () => {
 
 						<nav className={styles.footer__policy}>
 							<a href="/privacy-policy">Privacy Policy</a>
-							<a href="/privacy-policy-care-at-home">Privacy Policy</a>
+							<a href="/privacy-policy-grace-at-home">Grace at Home Privacy Policy</a>
 						</nav>
 
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>

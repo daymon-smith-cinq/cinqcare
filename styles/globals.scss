@@ -1,5 +1,6 @@
 @use "tailwindcss";
 @use "./styles/abstracts" as *;
+@use "./pages/privacy-policy" as *;
 
 /***********/
 /* Resets */
@@ -242,4 +243,8 @@ h1.period::after {
 
 .loaded {
 	opacity: 1;
+}
+
+.gradient--top {
+	background: linear-gradient(to bottom, rgba(#FBF2E3, .7) 0%, rgba(#FBF2E3, 0) 100%);
 }
