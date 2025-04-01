@@ -1,0 +1,82 @@
+.section_Form {
+	position: relative;
+	margin-top: 60px;
+	padding: 0 40px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: -5%;
+		width: 40vw;
+		height: 40vw;
+		border-radius: 100%;
+		background: red;
+		z-index: 1;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 226, 225, 0.5) 50%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		filter: blur(200px);
+	}
+
+	.container_Form {
+		position: relative;
+		z-index: 3;
+		width: 100%;
+		max-width: 1460px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		gap: 60px;
+
+		.form_Content {
+			width: 100%;
+			max-width: 580px;
+			display: flex;
+			flex-direction: column;
+			gap: 60px;
+
+			h1 {
+				color: #000;
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 62px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 57.6px; /* 92.903% */
+				margin-bottom: 0;
+			}
+
+			img {
+			}
+
+			p {
+				color: #5e5e5e;
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+
+				br {
+					margin-bottom: 10px;
+				}
+
+				em {
+					font-family: "PP Editorial New", Times, serif;
+					font-style: italic;
+				}
+			}
+		}
+
+		.form_Form {
+			width: 100%;
+			max-width: 625px;
+			height: 690px;
+			overflow: hidden;
+			filter: drop-shadow(0px 4px 97.2px rgba(0, 0, 0, 0.05));
+			border-radius: 10px;
+		}
+	}
+}

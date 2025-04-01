@@ -1,16 +1,29 @@
-import styles from "./footer.module.scss";
+import { useRouter } from "next/router";
 import logo from "../../public/logo.svg";
 import facebook from "../../public/logo--facebook.svg";
 import linkedin from "../../public/logo--linkedin.svg";
 import instagram from "../../public/logo--instagram.svg";
 import Button from "../button/button";
+import styles from "./footer.module.scss";
 
 const Footer = () => {
+	const router = useRouter();
+	const currentPath = router.pathname;
+	const isJoinPage = currentPath === "/join-our-family";
+
 	return (
-		<footer className={styles.footer__main}>
+		<footer
+			className={`${styles.footer__main} ${
+				isJoinPage ? styles.minimalLayoutMain : ""
+			}`}
+		>
 			<div className={`${styles.wrapper} ${" wrapper"}`}>
-				<div className={styles.footer__content}>
-					<a href="/">
+				<div
+					className={`${styles.footer__content} ${
+						isJoinPage ? styles.minimalLayout : ""
+					}`}
+				>
+					<a href="/" className={styles.container__logo}>
 						<img
 							src={logo.src}
 							alt="Footer logo"
@@ -18,69 +31,71 @@ const Footer = () => {
 						/>
 					</a>
 
-					<nav className={styles.footer__nav}>
-						<div>
-							<header>Who We Serve</header>
-							<ul>
-								<li>
-									<a href="/providers">Providers</a>
-								</li>
-								<li>
-									<a href="/patients">Patients</a>
-								</li>
-								<li>
-									<a href="/partners">Partners</a>
-								</li>
-							</ul>
+					{currentPath !== "/join-our-family" && (
+						<nav className={styles.footer__nav}>
+							<div>
+								<header>Who We Serve</header>
+								<ul>
+									<li>
+										<a href="/providers">Providers</a>
+									</li>
+									<li>
+										<a href="/patients">Patients</a>
+									</li>
+									<li>
+										<a href="/partners">Partners</a>
+									</li>
+								</ul>
+							</div>
+
+							<div>
+								<header>Our Services</header>
+								<ul>
+									<li>
+										<a href="/grace-at-home">Grace at Home</a>
+									</li>
+									<li>
+										<a href="/for-moms">CINQCARE for Moms</a>
+									</li>
+									<li>
+										<a href="/care-medical-practice">Care Medical Practice</a>
+									</li>
+								</ul>
+							</div>
+
+							<div>
+								<header>Community</header>
+								<ul>
+									<li>
+										<a href="/communities">Community</a>
+									</li>
+								</ul>
+							</div>
+
+							<div>
+								<header>Company</header>
+								<ul>
+									<li>
+										<a href="/about">About Us</a>
+									</li>
+									<li>
+										<a href="/careers">Careers</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					)}
+					{currentPath !== "/join-our-family" && (
+						<div className={styles.footer__hero}>
+							<header>
+								<h2>
+									<em>More Than Healthcare</em> — A Movement for Those Who Need
+									It Most.
+								</h2>
+							</header>
+							<Button link="/join-our-family" text="Join Our Family" />
 						</div>
-
-						<div>
-							<header>Our Services</header>
-							<ul>
-								<li>
-									<a href="/grace-at-home">Grace at Home</a>
-								</li>
-								<li>
-									<a href="/for-moms">CINQCARE for Moms</a>
-								</li>
-								<li>
-									<a href="/care-medical-practice">Care Medical Practice</a>
-								</li>
-							</ul>
-						</div>
-
-						<div>
-							<header>Community</header>
-							<ul>
-								<li>
-									<a href="/communities">Community</a>
-								</li>
-							</ul>
-						</div>
-
-						<div>
-							<header>Company</header>
-							<ul>
-								<li>
-									<a href="/about">About Us</a>
-								</li>
-								<li>
-									<a href="/careers">Careers</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-
-					<div className={styles.footer__hero}>
-						<header>
-							<h2>
-								<em>More Than Healthcare</em> — A Movement for Those Who Need It
-								Most.
-							</h2>
-						</header>
-						<Button link="/join-our-family" text="Join Our Family" />
-					</div>
-
+					)}
 					<div className={styles.footer__info}>
 						<nav className={styles.footer__subnav}>
 							<div>
@@ -131,16 +146,17 @@ const Footer = () => {
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>
 					</div>
 				</div>
-
-				<div className={styles.footer__hero}>
-					<header>
-						<h2>
-							<em>More Than Healthcare</em> — A Movement for Those Who Need It
-							Most.
-						</h2>
-					</header>
-					<Button link="/join-our-family" text="Join Our Family" />
-				</div>
+				{currentPath !== "/join-our-family" && (
+					<div className={styles.footer__hero}>
+						<header>
+							<h2>
+								<em>More Than Healthcare</em> — A Movement for Those Who Need It
+								Most.
+							</h2>
+						</header>
+						<Button link="/join-our-family" text="Join Our Family" />
+					</div>
+				)}
 			</div>
 		</footer>
 	);
