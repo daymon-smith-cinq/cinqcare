@@ -53,8 +53,7 @@ export default function Home() {
 				<CTA
 					type="primary"
 					buttonText="Connect with Us"
-					link="/"
-					target="_blank"
+					link="/join-our-family"
 				>
 					<header>
 						<h2>

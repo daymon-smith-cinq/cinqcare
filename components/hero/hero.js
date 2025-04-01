@@ -15,7 +15,7 @@ const Hero = ({ page }) => {
 			h1: "<em>Care,</em> Where You Live",
 			h1Period: false,
 			buttonText: "Learn More",
-			buttonLink: "#", // HYRULE IS IN DANGER! (NEED LINK)
+			buttonLink: "/join-our-family",
 			blockquoteBorder: false,
 			quoteText:
 				"“We see the community as our family… we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.“",
@@ -29,7 +29,7 @@ const Hero = ({ page }) => {
 			h1: "Strengthening Community Care, <em>Together</em>",
 			h1Period: true,
 			buttonText: "Learn more about joining CINQCARE",
-			buttonLink: "#", // NEED LINK
+			buttonLink: "/join-our-family",
 			blockquoteBorder: false,
 			quoteText:
 				"“CINQCARE isn't just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- Dr. Wilfred Herard, MD — CEO of Proactive Care IPA</span>",

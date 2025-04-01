@@ -137,7 +137,7 @@ const ColumnAccordion = ({ page }) => {
 								</div>
 
 								{column?.comingSoon && (
-									<div className={styles.comingSoon}><span>Coming soon!</span></div>
+									<div className={styles.comingSoon}><span>Coming soon</span></div>
 								)}
 							</div>
 						</div>

@@ -63,7 +63,7 @@ export default function Providers() {
         <CTA
           type="secondary"
           buttonText="Contact Us Today"
-          link="/"
+          link="/join-our-family"
           target="_blank"
         >
           <header>

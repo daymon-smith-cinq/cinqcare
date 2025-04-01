@@ -82,21 +82,27 @@
 			}
 
 			@include respond-to("tablet") {
-				max-width: 65%;
 				gap: 60px;
 			}
 
-			@include respond-to("mobile-landscape") {
-				max-width: 80%;
-			}
+			> div {
+				max-width: 50%;
 
-			@include respond-to("mobile") {
-				max-width: 100%;
+				@include respond-to("tablet") {
+					max-width: 65%;
+				}
+	
+				@include respond-to("mobile-landscape") {
+					max-width: 80%;
+				}
+	
+				@include respond-to("mobile") {
+					max-width: 100%;
+				}
 			}
 
 			h1 {
 				margin: 0.5em 0;
-				max-width: 55%;
 
 				span {
 					display: block;

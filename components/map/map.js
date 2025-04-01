@@ -19,9 +19,9 @@ const SideBySide = ({ page }) => {
 			headingPeriod: true,
 			text: "<p>We’re currently expanding the network with independent and community-based primary care practices, provider-led entities, IPAs, FQHCs, rural health clinics, post-acute and home-based organizations, and specialty groups in high-need areas.</p>",
 			buttonText: "Learn More",
-			buttonLink: "#", // NEED LINK
+			buttonLink: "/join-our-family",
 			finePrint: "",
-			image: ProvidersMap, // TEMP MAP
+			image: ProvidersMap,
 			imgAlt: "A stylized map of the United States, made from a grid of many dots. Some dots are highlighted in different colors, highlighting CINQCARE-partnered locations across the US. Two locations in the Northeast have info boxes: Buffalo and DC.",
 			imgWidth: "977",
 			imgHeight: "675",
@@ -35,7 +35,7 @@ const SideBySide = ({ page }) => {
 			headingPeriod: true,
 			text: "<p>We’re focusing on where care is needed most — bringing health and care to high-need, urban, and rural neighborhoods. We help local doctors, care teams, nurses, therapists, specialists, and community programs (including food and rides) work together for you.</p>",
 			buttonText: "Learn More",
-			buttonLink: "#", // NEED LINK
+			buttonLink: "/join-our-family",
 			finePrint: "",
 			image: PatientsMap,
 			imgAlt: "A stylized map of the United States, made from a grid of many dots. Some dots are highlighted in different colors, highlighting patients who are part of the CINQCARE community. Two patients have info boxes with their photo, name, age, and location.",
