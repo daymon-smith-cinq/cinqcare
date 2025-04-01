@@ -39,7 +39,7 @@ const Slidecordion = ({ page }) => {
 				},
 				{
 					title: "Partners",
-					text: "<p>We are partnered in purpose to lower costs, increase Family Member satisfaction, and deliver better outcomes in high-needs, urban and rural communities across the US.</p>",
+					text: "<p>We share a vision to lower costs, increase Family Member satisfaction, and deliver better outcomes in high-needs, urban and rural communities across the US.</p>",
 					buttonText: "See Partners",
 					buttonLink: "/partners",
 					imgSrc: ImgPartners,

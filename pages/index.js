@@ -61,8 +61,7 @@ export default function Home() {
 						</h2>
 					</header>
 					<p>
-						We’d love to explore opportunities for providers, patients, and
-						partners in your area.
+						We’d love to explore opportunities for providers, Family Members, and partners in your area.
 					</p>
 				</CTA>
 			</main>
