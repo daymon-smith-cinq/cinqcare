@@ -14,32 +14,32 @@ import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
 
 export default function Patients() {
+	// Define current page
+	const currentPage = "patients";
 
-  // Define current page
-  const currentPage = "patients";
+	// SEO
+	const title = "For Patients | CINQCARE";
+	const metaDescription =
+		"CINQCARE provides trusted providers, community support, and tailored care services to improve your health where you live.";
+	const pageURL = "https://cinq.care/patients";
 
-  // SEO
-  const title = "For Patients | CINQCARE";
-  const metaDescription = "CINQCARE provides trusted providers, community support, and tailored care services to improve your health where you live.";
-  const pageURL = "https://cinq.care/patients";
+	return (
+		<>
+			<Head>
+				<meta name="description" content={metaDescription} />
+				<meta property="og:image" content={OpengraphImg.src} />
+				<meta property="og:title" content={title} />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={pageURL} />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:site" content="@carecinq" />
+				<title>{title}</title>
+			</Head>
 
-  return (
-    <>
-      <Head>
-        <meta name="description" content={metaDescription} />
-        <meta property="og:image" content={OpengraphImg.src} />
-        <meta property="og:title" content={title} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={pageURL} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@carecinq" />
-        <title>{title}</title>
-      </Head>
+			<Header headerBg="dark" />
 
-      <Header headerBg="dark" />
-
-      <main>
-        <Hero page={currentPage} />
+			<main>
+				<Hero page={currentPage} />
 
         <ScrollJacking page={currentPage} bg={circle}>
           <div>
@@ -61,19 +61,22 @@ export default function Patients() {
         <GlassAccordion page={currentPage} />
         <CTA
           type="primary"
-          buttonText="Contact Us Today"
+          buttonText="Find Support Near You"
           link="/join-our-family"
           target="_blank"
         >
           <header>
-            <h2 class="period">We want to hear <em>from you</em></h2>
+            <h2 class="period">Your health, <em>our commitment</em></h2>
           </header>
-          <p>Tell us about your community and your good work. If it’s your calling to deliver care where you live, we are ready to help.</p>
+          <p>
+						We don’t want you to have to navigate healthcare alone. See if we’re
+						already working in your community to make things easier.
+					</p>
         </CTA>
         <Accordion page={currentPage} />
       </main>
 
-      <Footer />
-    </>
-  );
+			<Footer />
+		</>
+	);
 }
