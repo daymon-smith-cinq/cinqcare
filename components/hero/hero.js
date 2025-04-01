@@ -60,14 +60,14 @@ const Hero = ({ page }) => {
 			buttonLink: "/join-our-family",
 			blockquoteBorder: false,
 			quoteText:
-				"“It's a pretty bold and audacious goal [CINQCARE has] set out, an opportunity to make some meaningful change with communities that need it..”<span>— Gary Bacher - XXX White House advisor and former CINQCARE Chief Strategy Officer</span>",
+				"“It's a pretty bold and audacious goal we set out, an opportunity to make meaningful change with communities that need it.”<span>— Gary Bacher, former CINQCARE Chief Strategy Officer</span>",
 		};
 	}
 
 	// Careers
 	if (page == "careers") {
 		content = {
-			bgImgSrc: "images/hero-partners-temp.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-careers.jpg",
 			h1: "<span>Open Positions</span>Why CINQCARE may be <em>your calling</em>",
 			h1Period: false,
 			buttonText: "",
