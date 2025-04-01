@@ -31,13 +31,13 @@ const Accordion = ({ page }) => {
 				{
 					heading: "How will CINQCARE's model integrate into my EHR?",
 					paragraph:
-						"CINQCARE provides EHR-agnostic solutions that can integrate with your existing system. We offer data exchange tools, clinical decision support, and real-time patient insights (e.g. access to ADT feed) to enhance care coordination without disrupting workflows.",
+						"CINQCARE provides EHR-agnostic solutions that can integrate with your existing system. We offer data exchange tools, clinical decision support, and real-time patient insights (e.g., access to ADT feed) to enhance care coordination without disrupting workflows.",
 				},
 				{
 					heading:
 						"What level of support will I receive in implementing CINQCARE's care model and technologies?",
 					paragraph:
-						"Providers receive dedicated practice facilitation, including onboarding assistance, training sessions, and ongoing technical and operational support to ensure optimal performance in value-based care arrangements. Our in-home care model is meant to complement current clinical care -- never to replace them.",
+						"Providers receive dedicated practice facilitation, including onboarding assistance, training sessions, and ongoing technical and operational support to ensure optimal performance in value-based care arrangements. Our in-home care model is meant to complement current clinical care — never to replace them.",
 				},
 				{
 					heading:
@@ -49,13 +49,13 @@ const Accordion = ({ page }) => {
 					heading:
 						"How much influence do providers have in shaping care delivery strategies within the network?",
 					paragraph:
-						"CINQCARE values provider input and encourages participation in advisory councils, IPA Governance committees, quality committees, and feedback sessions to ensure that care delivery strategies are aligned with clinical realities and provider needs.",
+						"CINQCARE values provider input and encourages participation in advisory councils, IPA governance committees, quality committees, and feedback sessions to ensure that care delivery strategies are aligned with clinical realities and provider needs.",
 				},
 				{
 					heading:
 						"Will there be administrative burdens with reporting requirements?",
 					paragraph:
-						"CINQCARE minimizes administrative burdens by automating data collection and reporting where possible. In fact, participation in our ACO-REACH program may eliminate your Merit-Based Incentive Payment System (MIPS) reporting requirement.",
+						"CINQCARE minimizes administrative burdens by automating data collection and reporting where possible. In fact, participation in our ACO REACH program may eliminate your Merit-based Incentive Payment System (MIPS) reporting requirement.",
 				},
 				{
 					heading:

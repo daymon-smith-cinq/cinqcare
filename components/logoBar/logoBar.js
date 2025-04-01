@@ -8,7 +8,6 @@ const LogoBar = ({ page }) => {
 			heading: "Featured Members",
 			logos: [
 				{ logo: "logos/doralhw_logo.svg" },
-				{ logo: "logos/Humana_logo.svg" },
 				{ logo: "logos/cherokee_logo.svg" },
 				{ logo: "logos/mfc_logo.svg" },
 				{ logo: "logos/March_of_Dimes_logo.svg" },

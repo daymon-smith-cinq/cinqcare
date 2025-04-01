@@ -1,5 +1,6 @@
 @use "tailwindcss";
 @use "./styles/abstracts" as *;
+@use "./pages/privacy-policy" as *;
 
 /***********/
 /* Resets */
@@ -68,6 +69,10 @@ main {
 	display: block;
 }
 
+em {
+	font-style: oblique;
+}
+
 /************/
 /* Globals */
 /**********/
@@ -118,6 +123,7 @@ h4 {
 
 	em {
 		font-family: "PP Editorial New", serif;
+		font-style: italic;
 	}
 }
 
@@ -242,4 +248,8 @@ h1.period::after {
 
 .loaded {
 	opacity: 1;
+}
+
+.gradient--top {
+	background: linear-gradient(to bottom, rgba(#FBF2E3, .7) 0%, rgba(#FBF2E3, 0) 100%);
 }

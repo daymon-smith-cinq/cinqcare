@@ -6,7 +6,6 @@ import PatientsMap from "/public/images/map-patients.png";
 import CareMap from "/public/images/map-grace-at-home.png";
 
 const SideBySide = ({ page }) => {
-
 	// *******
 	// Content
 	// *******
@@ -19,10 +18,11 @@ const SideBySide = ({ page }) => {
 			headingPeriod: true,
 			text: "<p>We’re currently expanding the network with independent and community-based primary care practices, provider-led entities, IPAs, FQHCs, rural health clinics, post-acute and home-based organizations, and specialty groups in high-need areas.</p>",
 			buttonText: "Learn More",
-			buttonLink: "#", // NEED LINK
+			buttonLink: "/join-our-family",
 			finePrint: "",
-			image: ProvidersMap, // TEMP MAP
-			imgAlt: "A stylized map of the United States, made from a grid of many dots. Some dots are highlighted in different colors, highlighting CINQCARE-partnered locations across the US. Two locations in the Northeast have info boxes: Buffalo and DC.",
+			image: ProvidersMap,
+			imgAlt:
+				"A stylized map of the United States, made from a grid of many dots. Some dots are highlighted in different colors, highlighting CINQCARE-partnered locations across the US. Two locations in the Northeast have info boxes: Buffalo and DC.",
 			imgWidth: "977",
 			imgHeight: "675",
 		};
@@ -33,12 +33,13 @@ const SideBySide = ({ page }) => {
 		content = {
 			heading: "<em>Serving 20+ communities</em> and growing",
 			headingPeriod: true,
-			text: "<p>We’re focusing on where care is needed most — bringing health and care to high-need, urban, and rural neighborhoods. We help local doctors, care teams, nurses, therapists, specialists, and community programs (including food and rides) work together for you.</p>",
+			text: "<p>We’re focusing on <em>where care is needed most</em> — bringing <em>health and care</em> to high-need, urban, and rural neighborhoods. We help local doctors, care teams, nurses, therapists, specialists, and community programs (including food and rides) work together for you.</p>",
 			buttonText: "Learn More",
-			buttonLink: "#", // NEED LINK
+			buttonLink: "/communities",
 			finePrint: "",
 			image: PatientsMap,
-			imgAlt: "A stylized map of the United States, made from a grid of many dots. Some dots are highlighted in different colors, highlighting patients who are part of the CINQCARE community. Two patients have info boxes with their photo, name, age, and location.",
+			imgAlt:
+				"A stylized map of the United States, made from a grid of many dots. Some dots are highlighted in different colors, highlighting patients who are part of the CINQCARE community. Two patients have info boxes with their photo, name, age, and location.",
 			imgWidth: "955",
 			imgHeight: "574",
 		};
@@ -49,13 +50,16 @@ const SideBySide = ({ page }) => {
 		content = {
 			heading: "Find <em>Grace at Home</em> Near You",
 			headingPeriod: true,
-			text: "<p>Indiana | New York | California</p>" +
-			"<p>More locations are coming soon! Need help finding care?</p>",
+			text:
+				"<p>Indiana | New York | California</p>" +
+				"<p>More locations are coming soon! Need help finding care?</p>",
 			buttonText: "Contact Us",
 			buttonLink: "/join-our-family",
-			finePrint: "<p>Grace at Home is a medical practice delivering in-home and virtual care. CINQCARE serves as the Management Services Organization (MSO), providing operational, administrative, and non-clinical support. CINQCARE does not practice medicine or direct patient care.</p>",
+			finePrint:
+				"<p>Grace at Home is a medical practice delivering in-home and virtual care. CINQCARE serves as the Management Services Organization (MSO), providing operational, administrative, and non-clinical support. CINQCARE does not practice medicine or direct patient care.</p>",
 			image: CareMap,
-			imgAlt: "A stylized map of the United States, made from a grid of many dots. Some dots have pinpoints with the CINQCARE logomark, highlighting the CINQCARE community locations across the United States.",
+			imgAlt:
+				"A stylized map of the United States, made from a grid of many dots. Some dots have pinpoints with the CINQCARE logomark, highlighting the CINQCARE community locations across the United States.",
 			imgWidth: "955",
 			imgHeight: "574",
 		};
@@ -68,7 +72,9 @@ const SideBySide = ({ page }) => {
 					<div className={styles.textContainer}>
 						{content?.heading && (
 							<h3
-								className={`${styles.heading} ${content.headingPeriod ? ("period") : undefined}`}
+								className={`${styles.heading} ${
+									content.headingPeriod ? "period" : undefined
+								}`}
 								dangerouslySetInnerHTML={{ __html: content.heading }}
 							></h3>
 						)}
@@ -79,10 +85,7 @@ const SideBySide = ({ page }) => {
 							></div>
 						)}
 						{content?.buttonLink && (
-							<Button 
-								link={content.buttonLink}
-								text={content.buttonText}
-							/>
+							<Button link={content.buttonLink} text={content.buttonText} />
 						)}
 						{content?.finePrint && (
 							<div
@@ -93,12 +96,12 @@ const SideBySide = ({ page }) => {
 					</div>
 					{content?.image && (
 						<div className={styles.map}>
-							<Image 
+							<Image
 								className={styles.map}
-								priority={false} 
-								src={content.image} 
-								alt={content.imgAlt} 
-								width={content.imgWidth} 
+								priority={false}
+								src={content.image}
+								alt={content.imgAlt}
+								width={content.imgWidth}
 								height={content.imgHeight}
 							/>
 						</div>

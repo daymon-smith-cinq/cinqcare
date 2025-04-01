@@ -11,6 +11,7 @@ import CTA from "../components/cta/cta";
 import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
 import logoForMoms from "/public/logo-cinqcare-for-moms.svg";
+import Cards from "@/components/cards/cards";
 
 export default function ForMoms() {
 	// Define current page
@@ -40,7 +41,7 @@ export default function ForMoms() {
 			<main>
 				<HeroAlt page={currentPage} />
 				<OrangeBox page={currentPage} />
-
+				<Cards page={currentPage} />
 				<SideBySide page={currentPage} num="first" />
 				<GlassAccordion page={currentPage} />
 				<TestimonialSlider page={currentPage} />

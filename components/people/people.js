@@ -219,6 +219,7 @@ const People = ({ page }) => {
 										dangerouslySetInnerHTML={{ __html: person.title }}
 									></p>
 								)}
+								{/*
 								{person?.info && (
 									<p
 										className={styles.info}
@@ -231,6 +232,7 @@ const People = ({ page }) => {
 										dangerouslySetInnerHTML={{ __html: person.quote }}
 									></blockquote>
 								)}
+								*/}
 							</div>
 						</div>
 					))}	

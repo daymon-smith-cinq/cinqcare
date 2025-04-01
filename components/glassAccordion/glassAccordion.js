@@ -58,12 +58,12 @@ const GlassAccordion = ({ page }) => {
 				{
 					heading: "Alan Lee Jr's Story",
 					paragraph:
-						"A young entrepreneur navigates through alcohol abuse recovery to better health thanks to support from his care team. Over the course of his care, he stays sober, starts riding a bike, and ultimately opens a barbershop in his own city neighborhood.",
+						"A young entrepreneur navigates through alcohol abuse recovery to better health, thanks to support from his care team. Over the course of his care, he stays sober, starts riding a bike, and ultimately opens a barbershop in his own city neighborhood.",
 				},
 				{
 					heading: "Ken Kurtz's Story",
 					paragraph:
-						"After suffering a spinal cord injury, an older member of a rural community is helped to navigate a hospital stay, recover at home, improve his chronic conditions, and heal enough to get out of his wheelchair thanks to a dedicated nurse, navigator, and physician care team.",
+						"After suffering a spinal cord injury, an older member of a rural community is helped to navigate a hospital stay, recover at home, improve his chronic conditions, and heal enough to get out of his wheelchair, thanks to a dedicated nurse, navigator, and physician care team.",
 				},
 			],
 		};
@@ -71,7 +71,8 @@ const GlassAccordion = ({ page }) => {
 		content = {
 			bgImgSrc: "images/Couple-Reviewing-Information.jpg",
 			heading: "How CINQCARE <span>works differently</span>",
-			paragraph: "",
+			paragraph:
+				"<p>What makes us different? We bring deep expertise, cutting-edge tools, and a commitment to care that extends beyond the clinic.</p>",
 			buttonLink: "",
 			buttonText: "",
 			accordionContent: [
@@ -81,14 +82,14 @@ const GlassAccordion = ({ page }) => {
 						"Our approach is informed by decades of sector leadership and lived experience in high-need, urban, and rural communities.",
 				},
 				{
-					heading: "Sophisticated engagement engine",
+					heading: "Precision Engagement Engine",
 					paragraph:
-						"AI-driven, predictive and automated, our workflows help make sure we reach the right members, with the right interventions, at the right time.",
+						"AI-driven, predictive, and automated, our workflows help make sure we reach the right members, with the right interventions, at the right time.",
 				},
 				{
 					heading: "Caring for the caregivers",
 					paragraph:
-						"We elevate and support family caregivers as the backbone of whole-person care, including through a hub for coordination with care teams.",
+						"We support family caregivers as the backbone of whole-person care, including through a hub for coordination with care teams.",
 				},
 			],
 		};
@@ -96,9 +97,10 @@ const GlassAccordion = ({ page }) => {
 		content = {
 			bgImgSrc: "images/WomanMeeting.jpg",
 			heading: "We were born <em>different</em>",
-			paragraph: "<p>We were created in 2020 to be on call to deliver health, care and well-being in the homes and communities of those who need care the most.</p>" + 
-			"<p>We are passionate about creating a world where health and care isn’t a burden. It is why we are committed to recruit, empower and equip physicians, nurses, practitioners and caregivers with the supportive technology they need to every day deliver care where people live.</p>" + 
-			"<p>We believe providing care is a privilege – one we are grateful to earn. That’s why we built a different way to care. Now more than ever, different is better.</p>",
+			paragraph:
+				"<p>We were created in 2020 to be on call to deliver health, care and well-being in the homes and communities of those who need care the most.</p>" +
+				"<p>We are passionate about creating a world where health and care isn’t a burden. It is why we are committed to recruit, empower and equip physicians, nurses, practitioners and caregivers with the supportive technology they need to every day deliver care where people live.</p>" +
+				"<p>We believe providing care is a privilege – one we are grateful to earn. That’s why we built a different way to care. Now more than ever, different is better.</p>",
 			buttonLink: "",
 			buttonText: "",
 			accordionContent: [
@@ -123,7 +125,8 @@ const GlassAccordion = ({ page }) => {
 		content = {
 			bgImgSrc: "images/Ultrasound.jpg",
 			heading: "Care for Every Stage of <em>Motherhood</em>",
-			paragraph: "<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
+			paragraph:
+				"CINQCARE for Moms provides wraparound care, designed for you.",
 			buttonLink: "/join-our-family",
 			buttonText: "See How CINQCARE Supports Moms",
 			accordionContent: [
@@ -181,10 +184,7 @@ const GlassAccordion = ({ page }) => {
 						<div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
 					)}
 					{content.buttonLink && (
-						<Button 
-							link={content.buttonLink}
-							text={content.buttonText}
-						/>
+						<Button link={content.buttonLink} text={content.buttonText} />
 					)}
 				</div>
 			)}

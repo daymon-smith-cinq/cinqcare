@@ -37,14 +37,14 @@ const TestimonialSlider = ({ page }) => {
 					image: "/headshots/headshot-3.png",
 					quote:
 						'"I used to miss my doctor\'s appointments because I had no way to get there. I worried about my health, but I felt stuck. Then, CINQCARE stepped in. Now, a nurse comes to me, checks on me, and helps me manage my diabetes. I feel healthier, and I finally have the support I needed."',
-					name: "Linda M., CINQCARE Family Member in [STATE]",
+					name: "Linda M., CINQCARE Family Member",
 				},
 				{
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
 					image: "/headshots/headshot-4.png",
 					quote:
 						"\"After my stroke, I didn't know how I was going to manage. CINQCARE's team checked on me at home, made sure I had food, and helped me recover. Now, I feel stronger every day.\"",
-					name: "James W., CINQCARE Family Member in [STATE]",
+					name: "James W., CINQCARE Family Member",
 				},
 			],
 		};
@@ -209,7 +209,7 @@ const TestimonialSlider = ({ page }) => {
 				</div>
 			)}
 			{content.subtext && (
-				<a className={styles.subtext_Testimonials} href="/community">
+				<a className={styles.subtext_Testimonials} href="/communities">
 					{content.subtext}
 				</a>
 			)}
