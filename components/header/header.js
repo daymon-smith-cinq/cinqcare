@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import styles from "./header.module.scss";
 import Image from "next/image";
 import Logo from "../../public/cinqcare-logo.svg";
 import ReversedLogo from "../../public/cinqcare-logo-reverse.svg";
 
 const Header = ({ headerBg }) => {
+	const router = useRouter();
+	const currentPath = router.pathname;
+
 	// Dark bg
 	let bgColor = styles.light;
 	if (headerBg == "dark") {
@@ -29,63 +33,75 @@ const Header = ({ headerBg }) => {
 						<a href="/" className={styles.logo}>
 							<Image priority={true} src={logoSrc} alt="Cinqcare Logo" />
 						</a>
-						<div className={styles.spacer}></div>
-						<label
-							htmlFor="responsiveMenuToggle"
-							className={styles.responsiveMenuToggleLabel}
-						>
-							Menu
-						</label>
-						<input
-							type="checkbox"
-							id="responsiveMenuToggle"
-							className={styles.responsiveMenuToggleInput}
-						/>
-						<nav id="nav" role="navigation" aria-label="Main">
-							<ul id="menu" className={styles.menu}>
-								<li
-									className={styles.hasSubmenu}
-									onMouseEnter={toggleAriaExpanded}
-									onMouseLeave={toggleAriaExpanded}
-								>
-									<a aria-expanded={ariaExpanded}>Who We Serve</a>
-									<ul className={styles.submenu}>
-										<li>
-											<a href="/providers">For Providers</a>
-										</li>
-										<li>
-											<a href="/patients">For Patients</a>
-										</li>
-										<li>
-											<a href="/partners">For Partners</a>
-										</li>
-									</ul>
-								</li>
-								<li className={styles.hasSubmenu}>
-									<a aria-expanded="false">Our Services</a>
-									<ul className={styles.submenu}>
-										<li>
-											<a href="/grace-at-home">Grace at Home</a>
-										</li>
-										<li>
-											<a href="/for-moms">CINQCARE for Moms</a>
-										</li>
-										<li>
-											<a href="/care-medical-practice">Care Medical Practice</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="/communities">Community</a>
-								</li>
-								<li>
-									<a href="/about">About</a>
-								</li>
-							</ul>
-						</nav>
-						<a className={styles.menu_cta} href="/join-our-family">
-							Join Our Family
-						</a>
+						{currentPath !== "/join-our-family" && (
+							<div className={styles.spacer}></div>
+						)}
+						{currentPath !== "/join-our-family" && (
+							<label
+								htmlFor="responsiveMenuToggle"
+								className={styles.responsiveMenuToggleLabel}
+							>
+								Menu
+							</label>
+						)}
+						{currentPath !== "/join-our-family" && (
+							<input
+								type="checkbox"
+								id="responsiveMenuToggle"
+								className={styles.responsiveMenuToggleInput}
+							/>
+						)}
+						{currentPath !== "/join-our-family" && (
+							<nav id="nav" role="navigation" aria-label="Main">
+								<ul id="menu" className={styles.menu}>
+									<li
+										className={styles.hasSubmenu}
+										onMouseEnter={toggleAriaExpanded}
+										onMouseLeave={toggleAriaExpanded}
+									>
+										<a aria-expanded={ariaExpanded}>Who We Serve</a>
+										<ul className={styles.submenu}>
+											<li>
+												<a href="/providers">For Providers</a>
+											</li>
+											<li>
+												<a href="/patients">For Patients</a>
+											</li>
+											<li>
+												<a href="/partners">For Partners</a>
+											</li>
+										</ul>
+									</li>
+									<li className={styles.hasSubmenu}>
+										<a aria-expanded="false">Our Services</a>
+										<ul className={styles.submenu}>
+											<li>
+												<a href="/grace-at-home">Grace at Home</a>
+											</li>
+											<li>
+												<a href="/for-moms">CINQCARE for Moms</a>
+											</li>
+											<li>
+												<a href="/care-medical-practice">
+													Care Medical Practice
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="/communities">Community</a>
+									</li>
+									<li>
+										<a href="/about">About</a>
+									</li>
+								</ul>
+							</nav>
+						)}
+						{currentPath !== "/join-our-family" && (
+							<a className={styles.menu_cta} href="/join-our-family">
+								Join Our Family
+							</a>
+						)}
 					</div>
 				</div>
 			</header>

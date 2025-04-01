@@ -1,7 +1,7 @@
 import styles from "./video.module.scss";
 import MuxPlayer from "@mux/mux-player-react";
 
-const Video = ({ page }) => {
+const Video = ({ page, vid }) => {
 	// *******
 	// Content
 	// *******
@@ -13,8 +13,8 @@ const Video = ({ page }) => {
 			heading:
 				"Learn how Gail <em>reversed her diabetes diagnosis</em> and went from nine chronic conditions to one thanks to the coordinated care provided by CINQCARE in her neighborhood:",
 			headingPeriod: false,
-			quote: "",
-			name: "",
+			quote: '“Seeing that somebody cares if I’m doing well or not, that’s what I call a team. It is a push they give you to go for more… I’m going to get better. I’m going to be better. I’m going to come off of this medication. I see I can do it.”',
+			name: "– CINQCARE patient Gail Cintron",
 			videoId: "ylArPH37N4UqBAbiigSnVKqrV4Aw3xa4tiXz523TBjA",
 			videoTitle: "Gail's CINQCARE Health Home Story",
 		};
@@ -26,15 +26,39 @@ const Video = ({ page }) => {
 			heading:
 				"Meet Cherokee Health Systems, an FQHC <em>thriving</em> in CINQCARE’s network",
 			headingPeriod: true,
-			quote: "",
-			name: "",
+			quote: '“It’s like a family circle, they don’t hesitate to do anything for you. It makes me feel comfortable.”',
+			name: "— Kenneth Glass, CINQCARE/Cherokee Health Systems patient",
 			videoId: "rFHXoYNkoBiLCy5kCjrwDjVMK1ku8Dz6RQs3U9GvMWI",
 			videoTitle: "CINQCARE Partnership with Cherokee Health Systems",
 		};
 	}
 
+	// Communities
+	if (page == "communities" && vid == "alan") {
+		content = {
+			heading:
+				"Alan’s <em>recovery</em> story",
+			headingPeriod: false,
+			quote: '"A lot of the members that we have are a part of our community… It’s just nice to know that you’ve helped somebody achieve their goals and that you were a part of their journey."',
+			name: "– Denee Tidwell, CINQCARE care manager",
+			videoId: "CZBLageaqCbp50002wblg6fbJxqmaxN5vIVCeKMDgYzOw",
+			videoTitle: "Alan's Story",
+		};
+	} else if (page == "communities" && vid == "buffalo") {
+		content = {
+			reverseGradient: true,
+			heading:
+				"Buffalo grand <em>opening</em>",
+			headingPeriod: false,
+			quote: '"On behalf of the entire city of Buffalo, I want to thank CINQCARE for the work that they are doing, for their leadership and their continued commitment to the Buffalo community."',
+			name: "– Christopher P. Scanlon, Mayor of Buffalo, NY",
+			videoId: "54X00oJg1oqRctBCEmVRvVJuKlyoDGxGmo6NXVIhqPU00",
+			videoTitle: "GWHC Grand Opening",
+		};
+	}
+
 	return (
-		<section className={styles.section_video}>
+		<section className={`${styles.section_video} ${content.reverseGradient ? (`${styles.reverseGradient}`) : undefined}`}>
 			<div className={`${styles.container_video} ${"wrapper"}`}>
 				<h2
 					className={content.headingPeriod ? "period" : undefined}
@@ -42,7 +66,7 @@ const Video = ({ page }) => {
 				></h2>
 				<div
 					className={`${styles.video} ${
-						content.hasQuote ? styles.hasQuote : ""
+						content.quote ? styles.hasQuote : ""
 					}`}
 				>
 					<MuxPlayer
