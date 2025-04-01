@@ -6,7 +6,7 @@ const Form = ({ page }) => {
 	if (page === "join-our-family") {
 		content = {
 			heading: "Join <em>our family</em>",
-			image: "images/FoodDelivery.jpg",
+			image: "images/ManWomanHugging.jpg",
 			paragraph:
 				"Every day, we’re committed to your health and well-being—<em>because to us, you’re family.</em> <br> We’ll provide you with personalized care, ensuring you have access to medical, mental health, and community services.",
 		};

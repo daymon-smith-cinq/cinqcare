@@ -7,7 +7,7 @@ const GlassAccordion = ({ page }) => {
 
 	if (page === "providers") {
 		content = {
-			bgImgSrc: "images/Woman-helping-man-into-car.png",
+			bgImgSrc: "images/Woman-helping-man-into-car.jpg",
 			heading:
 				"How can CINQCARE help deliver <span>health and care</span> where you live?",
 			paragraph: "",
@@ -43,7 +43,7 @@ const GlassAccordion = ({ page }) => {
 		};
 	} else if (page === "patients") {
 		content = {
-			bgImgSrc: "images/Pregnant_Mother.png",
+			bgImgSrc: "images/PregnantMother.jpg",
 			heading: "Who <span>we're</span> helping today",
 			paragraph:
 				"<p>Our goal is simple: to help you stay healthier at home — with care that meets you where you are and makes a difference in your life. If you're doing your best to manage tough health issues, <span>we want to be on your side</span>.</p>",
@@ -69,7 +69,7 @@ const GlassAccordion = ({ page }) => {
 		};
 	} else if (page === "partners") {
 		content = {
-			bgImgSrc: "images/Couple-Reviewing-Information.png",
+			bgImgSrc: "images/Couple-Reviewing-Information.jpg",
 			heading: "How CINQCARE <span>works differently</span>",
 			paragraph: "",
 			buttonLink: "",
@@ -121,7 +121,7 @@ const GlassAccordion = ({ page }) => {
 		};
 	} else if (page === "for-moms") {
 		content = {
-			bgImgSrc: "images/about-accordion-temp.jpg", // pending final image
+			bgImgSrc: "images/Ultrasound.jpg",
 			heading: "Care for Every Stage of <em>Motherhood</em>",
 			paragraph: "<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
 			buttonLink: "/join-our-family",
