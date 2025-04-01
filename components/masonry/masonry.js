@@ -49,7 +49,7 @@ const Masonry = () => {
 									and confidence, thriving in life after chemo."
 								</p>
 							</div>
-							<img src="/images/WomanSun.png" alt="Placeholder" />
+							<img src="/images/WomanSun.jpg" alt="" />
 						</div>
 
 						<div className={styles.masonry__item}>
@@ -74,7 +74,7 @@ const Masonry = () => {
 									fullest."
 								</p>
 							</div>
-							<img src="/images/WomanPort.png" alt="Placeholder" />
+							<img src="/images/WomanPort.jpg" alt="" />
 						</div>
 					</div>
 
@@ -102,7 +102,7 @@ const Masonry = () => {
 									daily life.”
 								</p>
 							</div>
-							<img src="/images/Wheelchair.png" alt="Placeholder" />
+							<img src="/images/Wheelchair.jpg" alt="" />
 						</div>
 					</div>
 
@@ -129,7 +129,7 @@ const Masonry = () => {
 									well-managed, allowing me to thrive in my daily life."
 								</p>
 							</div>
-							<img src="/images/Hiking.png" alt="Placeholder" />
+							<img src="/images/Hiking.jpg" alt="" />
 						</div>
 					</div>
 				</div>

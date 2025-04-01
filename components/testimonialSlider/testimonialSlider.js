@@ -71,7 +71,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
-					image: "/headshots/headshot-5.png",
+					image: "/headshots/headshot-7.png",
 					quote:
 						'"At my Care Medical Practice, I feel like more than just a number. My doctor really listens and works with me to improve my health."',
 					name: "Family Member, Buffalo, NY",
@@ -86,7 +86,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
-					image: "/headshots/headshot-2.png",
+					image: "/headshots/headshot-8.png",
 					quote:
 						'"I felt like someone finally <em>saw me.</em><br/><br/>"CINQCARE for Moms gave me more than just medical care. They made sure I had everything I needed to feel safe, supported, and strong — <em>before and after my baby arrived.</em>"',
 					name: "CINQCARE for Moms Family Member",
@@ -101,14 +101,14 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
-					image: "/headshots/headshot-2.png",
+					image: "/headshots/headshot-10.png",
 					quote:
 						'"The group I am working with has worked in the neighborhood and outreached regularly. Meeting the community through their eyes has made the experience even more closer to home."',
 					name: "Zoey, a CINQCARE care coordinator",
 				},
 				{
 					color: "orange", // Background Color, only yellow and orange are supported rn.
-					image: "/headshots/headshot-2.png",
+					image: "/headshots/headshot-9.png",
 					quote:
 						'"The experience has been nothing but amazing, being able to communicate with the community and being out here with family members who actually need our help."',
 					name: "Kiara, a CINQCARE care coordinator",
