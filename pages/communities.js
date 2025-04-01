@@ -5,6 +5,7 @@ import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
+import MasonryText from "@/components/masonryText/masonryText";
 
 export default function Communities() {
 
@@ -34,7 +35,20 @@ export default function Communities() {
       <main>
         <Hero page={currentPage} />
 
-        <CTA />
+        <MasonryText page={currentPage} />
+
+        <CTA
+          type="primary"
+          buttonText="Connect with Us"
+          link="/"
+          target="_blank"
+          page={currentPage}
+        >
+          <header>
+            <h2>Join the <em>CINQCARE</em> Family.</h2>
+          </header>
+          <p>We’d love to meet your community and explore ways to work together.</p>
+        </CTA>
       </main>
 
       <Footer />
