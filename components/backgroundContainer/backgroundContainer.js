@@ -22,13 +22,13 @@ const BackgroundContainer = ({ page, children }) => {
 			margin: "0 auto",
 			padding: "0",
 			background:
-				"linear-gradient(0deg, rgba(251,242,227,0) 0%, rgba(251,242,227,1) 100%);",
+				"linear-gradient(0deg, rgba(251,242,227,0) 0%, rgba(251,242,227,1) 100%)",
 		};
 	} else if (page === "join-our-family") {
 		content = {
 			margin: "",
 			padding: "",
-			background: "linear-gradient(#fdf9f1, #fff, #fdf9f1);",
+			background: "linear-gradient(#fdf9f1, #fff, #fdf9f1)",
 		};
 	}
 

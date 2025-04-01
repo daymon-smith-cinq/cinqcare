@@ -13,7 +13,7 @@ const Masonry = () => {
 						health conditions.
 					</h2>
 				</header>
-				<div>
+				<div className={styles.container_ParaButton}>
 					<p>
 						We are working together with our communities to change that.
 						<br />
