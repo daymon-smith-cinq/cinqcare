@@ -3,6 +3,9 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
+import OrangeBox from "../components/orangeBox/orangeBox";
+import Video from "../components/video/video";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 
@@ -33,8 +36,22 @@ export default function Communities() {
 
       <main>
         <Hero page={currentPage} />
+        <OrangeBox page={currentPage} />
 
-        <CTA />
+        <Video page={currentPage} vid={"alan"} />
+        <TestimonialSlider page={currentPage} />
+        <Video page={currentPage} vid={"buffalo"} />
+        <CTA
+          type="primary"
+          buttonText="Connect with us"
+          link="/join-our-family"
+          target="_blank"
+        >
+          <header>
+            <h2>Join the CINQCARE Family</h2>
+          </header>
+          <p>We’d love to meet your community and explore ways to work together.</p>
+        </CTA>
       </main>
 
       <Footer />

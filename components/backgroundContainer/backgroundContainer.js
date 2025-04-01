@@ -24,6 +24,12 @@ const BackgroundContainer = ({ page, children }) => {
 			background:
 				"linear-gradient(0deg, rgba(251,242,227,0) 0%, rgba(251,242,227,1) 100%);",
 		};
+	} else if (page === "join-our-family") {
+		content = {
+			margin: "",
+			padding: "",
+			background: "linear-gradient(#fdf9f1, #fff, #fdf9f1);",
+		};
 	}
 
 	console.log("Page:", page);

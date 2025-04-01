@@ -37,6 +37,13 @@ const OrangeBox = ({ page }) => {
 			text: "<h3>“I felt like I was doing this alone—until I found CINQCARE.”</h3>" +
 			"<h3>Tasha W. - CINQCARE Mom</h3>",
 		};
+	} else if (page == "communities") {
+		content = {
+			bgImgSrc: "images/orangeBox-stripes-home.png",
+			foregroundImg: ImgHome, // IMAGE NOT FINAL
+			foregroundImgAlt: "",
+			text: "<h3>As we find new ways to drive care forward and the health of our nation forward — the things that matter most to us are always the individual stories of Family Members and communities healing together.</h3>",
+		};
 	}
 
 	return (
