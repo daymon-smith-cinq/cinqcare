@@ -93,9 +93,38 @@ const TestimonialSlider = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "communities") {
+		content = {
+			heading: "Real people, <em>Real Care</em>",
+			paragraph: "",
+			subtext: "",
+			testimonials: [
+				{
+					color: "yellow", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-2.png",
+					quote:
+						'"The group I am working with has worked in the neighborhood and outreached regularly. Meeting the community through their eyes has made the experience even more closer to home."',
+					name: "Zoey, a CINQCARE care coordinator",
+				},
+				{
+					color: "orange", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-2.png",
+					quote:
+						'"The experience has been nothing but amazing, being able to communicate with the community and being out here with family members who actually need our help."',
+					name: "Kiara, a CINQCARE care coordinator",
+				},
+				{
+					color: "yellow", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-6.png",
+					quote:
+						'"We are not a sick care system where we only want to see you when you are sick — we are in it for the long haul with our patients and the community… CINQCARE has been open, honest and transparent…that means the world to us."',
+					name: "Parinda Khatri, Ph.D., Cherokee Health Systems CEO",
+				},
+			],
+		};
 	} else if (page === "join-our-family") {
 		content = {
-			heading: "Read reviews form people <span>we've helped.</span>",
+			heading: "Read reviews from people <em>we've helped.</em>",
 			paragraph: "",
 			subtext: "",
 			testimonials: [
@@ -104,7 +133,7 @@ const TestimonialSlider = ({ page }) => {
 					image: "/headshots/headshot-2.png",
 					quote:
 						'"With CINQCARE, we’re not just improving metrics—<span>we’re improving lives.</span> The impact on our patients and our practice has been transformational."',
-					name: "Ms. Deborah Forbes — VP of Operations, Doral Health and Wellness",
+					name: " Ms. Deborah Forbes — VP of Operations, Doral Health and Wellness",
 				},
 			],
 		};

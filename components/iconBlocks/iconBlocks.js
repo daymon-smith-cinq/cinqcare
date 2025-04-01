@@ -7,7 +7,7 @@ const IconBlocks = ({ page }) => {
 		content = {
 			heading: "Why <span>trust</span> CINQCARE as your practice's partner?",
 			paragraph: "",
-			subtext: "",
+			subtext: "CINQCARE supports providers with practice facilitation, care coordination, and value-based program support. All medical decisions remain with licensed healthcare providers within our network.",
 			fourBlocks: false,
 			iconBlocks: [
 				{
@@ -81,7 +81,7 @@ const IconBlocks = ({ page }) => {
 			heading: "Why partner with <span>us</span>?",
 			paragraph:
 				"We’re working with healthcare organizations leading lasting change in their high-need, urban and rural communities, including Medicare & Dual Special Needs Plans (D-SNPs), State Medicaid & Managed Care Organizations (MCOs), ACO REACH & Risk-Based Payer Models as well as State and Federal Health Programs",
-			subtext: "",
+			subtext: "CINQCARE partners with payers and government agencies to provide care coordination, operational expertise, and non-clinical support. All medical care is delivered by independently owned and operated medical practices within the CINQCARE network.",
 			fourBlocks: false,
 			iconBlocks: [
 				{
