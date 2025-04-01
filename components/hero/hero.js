@@ -64,7 +64,7 @@ const Hero = ({ page }) => {
 		};
 	}
 
-	// For Partners
+	// Careers
 	if (page == "careers") {
 		content = {
 			bgImgSrc: "images/hero-partners-temp.jpg", // IMAGE NOT FINAL
@@ -75,6 +75,20 @@ const Hero = ({ page }) => {
 			blockquoteBorder: true,
 			quoteText:
 				"Caregivers are born to care. It’s more than a job—it’s a calling. We’re committed to delivering health, care, and well-being to those who need it most, especially in high-needs communities.",
+		};
+	}
+
+	// Communities
+	if (page == "communities") {
+		content = {
+			bgImgSrc: "images/hero-partners-temp.jpg", // IMAGE NOT FINAL
+			h1: "We are in this together — <em>members of one family</em>",
+			h1Period: false,
+			buttonText: "",
+			buttonLink: "",
+			blockquoteBorder: false,
+			quoteText:
+				"“I created CINQCARE to answer the call to every day deliver health, care, and well-being to those who need care the most, with a deep commitment to high-needs, urban, and rural communities.”<span>– Founder Tony Welters</span>",
 		};
 	}
 
