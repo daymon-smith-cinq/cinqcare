@@ -28,7 +28,6 @@ const Form = ({ page }) => {
 					<iframe
 						title="CINQCARE Join Form"
 						id="JotFormIFrame"
-						allowTransparency="true"
 						allowFullScreen
 						src="https://form.jotform.com/250897973993078"
 						style={{
