@@ -8,6 +8,7 @@ import Video from "../components/video/video";
 import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
+import MasonryText from "@/components/masonryText/masonryText";
 
 export default function Communities() {
 
@@ -37,7 +38,7 @@ export default function Communities() {
       <main>
         <Hero page={currentPage} />
         <OrangeBox page={currentPage} />
-
+        <MasonryText page={currentPage} />
         <Video page={currentPage} vid={"alan"} />
         <TestimonialSlider page={currentPage} />
         <Video page={currentPage} vid={"buffalo"} />
@@ -48,7 +49,7 @@ export default function Communities() {
           target="_blank"
         >
           <header>
-            <h2>Join the CINQCARE Family</h2>
+            <h2>Join the <em>CINQCARE</em> Family</h2>
           </header>
           <p>We’d love to meet your community and explore ways to work together.</p>
         </CTA>
