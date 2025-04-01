@@ -1,0 +1,64 @@
+@use "./styles/abstracts" as *;
+
+section[page="privacy-policy"] {
+  .wrapper {
+    margin-top: 120px;
+    padding-bottom: 160px;
+  }
+
+  h1 {
+    margin-bottom: toem(40px);
+    font-size: toem(52px);
+  }
+
+  h2 {
+    font-size: toem(30px);
+  }
+
+  h3 {
+    font-size: toem(26px);
+  }
+
+  * + h2,
+  * + h3 {
+    margin-top: 50px;
+    margin-bottom: 30px
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul,
+  ol {
+    li {
+      font-size: toem(18px);
+      line-height: 2;
+      list-style-position: inside;
+    }
+  }
+
+  a {
+    color: #e45f0c;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  address {
+    line-height: 1.6;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+#digital-advertising-and-analytics {
+  scroll-margin-top: 50px;
+}
