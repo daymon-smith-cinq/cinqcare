@@ -93,6 +93,21 @@ const TestimonialSlider = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "join-our-family") {
+		content = {
+			heading: "Read reviews form people <span>we've helped.</span>",
+			paragraph: "",
+			subtext: "",
+			testimonials: [
+				{
+					color: "orange", // Background Color, only yellow and orange are supported rn.
+					image: "/headshots/headshot-2.png",
+					quote:
+						'"With CINQCARE, we’re not just improving metrics—<span>we’re improving lives.</span> The impact on our patients and our practice has been transformational."',
+					name: "Ms. Deborah Forbes — VP of Operations, Doral Health and Wellness",
+				},
+			],
+		};
 	}
 
 	const [activeIndex, setActiveIndex] = useState(0);
