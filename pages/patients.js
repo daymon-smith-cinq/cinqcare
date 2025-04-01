@@ -4,7 +4,7 @@ import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
 import ScrollJacking from "../components/scrollJacking/scrollJacking";
-import circle from "/public/circle.svg";
+import scrollJackingImage from "/public/images/scrolljacking--patients.svg";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
 import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import Map from "../components/map/map";
@@ -41,7 +41,7 @@ export default function Patients() {
       <main>
         <Hero page={currentPage} />
 
-        <ScrollJacking page={currentPage} bg={circle}>
+        <ScrollJacking page={currentPage} bg={scrollJackingImage} bgPosition="end normal" bgWidth="70%">
           <div>
             <h2>What if we made delivering care a <em>little easier</em> for the providers who know their communities best?</h2>
           </div>
