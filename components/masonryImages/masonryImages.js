@@ -1,8 +1,8 @@
 import styles from "./masonryImages.module.scss";
-import image1 from "../../public/images/grace-masonry--1.png";
-import image2 from "../../public/images/grace-masonry--2.png";
-import image3 from "../../public/images/grace-masonry--3.png"
-import image4 from "../../public/images/grace-masonry--4.png"
+import image1 from "../../public/images/HoldingHands.jpg";
+import image2 from "../../public/images/ManFood.jpg";
+import image3 from "../../public/images/Nurse-helping-woman-stand.jpg"
+import image4 from "../../public/images/WomanShot.jpg"
 
 const MasonryImages = () => {
   return (

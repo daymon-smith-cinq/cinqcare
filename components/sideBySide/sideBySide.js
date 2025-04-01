@@ -1,8 +1,12 @@
 import styles from "./sideBySide.module.scss";
 import Image from "next/image";
 import Button from "../button/button";
-import HomeImg from "/public/images/sidebyside-home-temp.webp";
-import AboutImg from "/public/images/about-frame.jpg";
+import HomeImg from "/public/images/sidebyside-home.jpg";
+import AboutImg from "/public/images/WomanSmiling-about.jpg";
+import GraceImg from "/public/images/NurseHuggingWoman.jpg";
+import Grace2Img from "/public/images/NurseFrontDoor.jpg";
+import MomsImg from "/public/images/WomenPregnancyTest.jpg";
+import Moms2Img from "/public/images/Babymother.jpg";
 
 const SideBySide = ({ page, num }) => {
 
@@ -47,7 +51,7 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: true,			
 			columns: [
 				{
-					image: HomeImg, // TEMP IMAGE
+					image: HomeImg,
 						imgAlt: "A young Black nurse sits side-by-side with an elderly white woman. The nurse has her arm around the older woman's shoulders and the older woman is leaning into the embrace. Both are laughing and comfortable together, like they have known each other for a long time. The backdrop is of a city neighborhood.",
 						imgWidth: "665",
 						imgHeight: "440",
@@ -65,7 +69,7 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: false,			
 			columns: [
 				{
-					image: AboutImg, // TEMP IMAGE
+					image: AboutImg,
 						imgAlt: "",
 						imgWidth: "665",
 						imgHeight: "440",
@@ -94,7 +98,7 @@ const SideBySide = ({ page, num }) => {
 					"<p>We offer care for your family that goes beyond your medical needs, with specialized services including for dementia, mobility challenges, and coordination with your doctors, nurses and caregivers.</p>",
 				},
 				{
-					image: AboutImg, // TEMP IMAGE
+					image: GraceImg,
 						imgAlt: "",
 						imgWidth: "509",
 						imgHeight: "339",
@@ -106,7 +110,7 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: true,			
 			columns: [
 				{
-					image: AboutImg, // TEMP IMAGE
+					image: Grace2Img,
 						imgAlt: "",
 						imgWidth: "665",
 						imgHeight: "440",
@@ -123,7 +127,7 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: false,			
 			columns: [
 				{
-					image: AboutImg, // TEMP IMAGE
+					image: MomsImg,
 						imgAlt: "",
 						imgWidth: "622",
 						imgHeight: "650",
@@ -141,7 +145,7 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: true,			
 			columns: [
 				{
-					image: AboutImg, // TEMP IMAGE
+					image: Moms2Img,
 						imgAlt: "",
 						imgWidth: "665",
 						imgHeight: "440",

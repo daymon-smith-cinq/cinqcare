@@ -11,7 +11,7 @@ const Hero = ({ page }) => {
 	// Homepage
 	if (page == "home") {
 		content = {
-			bgImgSrc: "images/hero-home-temp.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-home.jpg",
 			h1: "<em>Care,</em> Where You Live",
 			h1Period: false,
 			buttonText: "Learn More",
@@ -25,7 +25,7 @@ const Hero = ({ page }) => {
 	// For Providers
 	if (page == "providers") {
 		content = {
-			bgImgSrc: "images/hero-providers-temp.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-providers.jpg",
 			h1: "Strengthening Community Care, <em>Together</em>",
 			h1Period: true,
 			buttonText: "Learn more about joining CINQCARE",
@@ -39,7 +39,7 @@ const Hero = ({ page }) => {
 	// For Patients
 	if (page == "patients") {
 		content = {
-			bgImgSrc: "images/hero-patients-temp.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-patients.jpg",
 			h1: "Health and Care, <em>Right Where You Live</em>",
 			h1Period: false,
 			buttonText: "Find Support Near You",
@@ -53,7 +53,7 @@ const Hero = ({ page }) => {
 	// For Partners
 	if (page == "partners") {
 		content = {
-			bgImgSrc: "images/hero-partners-temp.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/hero-partners.jpg",
 			h1: "Experts in Health and Care, Leading a <em>New Way Forward</em>",
 			h1Period: false,
 			buttonText: "Become a Partner",
@@ -81,7 +81,7 @@ const Hero = ({ page }) => {
 	// Communities
 	if (page == "communities") {
 		content = {
-			bgImgSrc: "images/hero-partners-temp.jpg", // IMAGE NOT FINAL
+			bgImgSrc: "images/PeopleGathering.jpg",
 			h1: "We are in this together — <em>members of one family</em>",
 			h1Period: false,
 			buttonText: "",
