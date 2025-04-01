@@ -18,7 +18,7 @@ const Hero = ({ page }) => {
 			buttonLink: "/join-our-family",
 			blockquoteBorder: false,
 			quoteText:
-				"“We see the community as our family… we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.“",
+				"We see the community as our family…we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.<span>- Deborah Forbes, VP of Operations, Doral Health and Wellness, part of the CINQCARE network</span>",
 		};
 	}
 
@@ -54,7 +54,7 @@ const Hero = ({ page }) => {
 	if (page == "partners") {
 		content = {
 			bgImgSrc: "images/hero-partners.jpg",
-			h1: "Experts in Health and Care, Leading a <em>New Way Forward</em>",
+			h1: "Health and Care, <em>Grounded in Experience</em>",
 			h1Period: false,
 			buttonText: "Become a Partner",
 			buttonLink: "/join-our-family",

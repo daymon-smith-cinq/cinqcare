@@ -53,8 +53,8 @@ export default function GraceAtHome() {
 						priority={false}
 						src={logoGraceAtHome}
 						alt="Grace at Home logo"
-						width="164"
-						height="58"
+						width="271"
+						height="34"
 					/>
 					<header>
 						<h3>

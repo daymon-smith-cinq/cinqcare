@@ -50,8 +50,8 @@ export default function CareMedicalPractice() {
 						priority={false}
 						src={logoCareMedical}
 						alt="Care Medical Practice logo"
-						width="141"
-						height="58"
+						width="154"
+						height="65"
 					/>
 					<header>
 						<h3>
