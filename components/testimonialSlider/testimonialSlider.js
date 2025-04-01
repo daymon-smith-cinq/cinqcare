@@ -115,7 +115,7 @@ const TestimonialSlider = ({ page }) => {
 				},
 				{
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
-					image: "/headshots/headshot-2.png",
+					image: "/headshots/headshot-6.png",
 					quote:
 						'"We are not a sick care system where we only want to see you when you are sick — we are in it for the long haul with our patients and the community… CINQCARE has been open, honest and transparent…that means the world to us."',
 					name: "Parinda Khatri, Ph.D., Cherokee Health Systems CEO",
