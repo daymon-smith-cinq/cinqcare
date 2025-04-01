@@ -11,9 +11,6 @@
 	z-index: 3;
 
 	&.dark .headerNav nav > ul.menu {
-		@include respond-to("tablet-landscape") {
-		}
-
 		> li {
 			a {
 				color: $white;
@@ -214,21 +211,27 @@
 				-ms-user-select: none;
 				user-select: none;
 				z-index: 99;
+			}
 
+			&:before {
+				content: "\2261";
+				display: block;
+				width: 100%;
+				height: 100%;
+				font-family: "Sohne", sans-serif;
+				font-size: 40px;
+				line-height: 60px;
+				text-align: center;
+				color: $white;
+			}
+
+			&:hover::before {
+				color: $dark-orange;
+			}
+
+			&.light {
 				&:before {
-					content: "\2261";
-					display: block;
-					width: 100%;
-					height: 100%;
-					font-family: "Sohne", sans-serif;
-					font-size: 40px;
-					line-height: 60px;
-					text-align: center;
-					color: $white;
-				}
-
-				&:hover::before {
-					color: $dark-orange;
+					color: $black;
 				}
 			}
 

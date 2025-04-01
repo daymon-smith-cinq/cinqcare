@@ -225,6 +225,10 @@
 		justify-content: center;
 		text-align: center;
 	}
+
+	@include respond-to("mobile") {
+		gap: 50px;
+	}
 }
 
 .footer__hero {

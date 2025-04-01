@@ -5,6 +5,10 @@
 	margin-top: 60px;
 	padding: 0 40px;
 
+	@include respond-to("mobile") {
+		padding: 0;
+	}
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -33,12 +37,23 @@
 		justify-content: space-between;
 		gap: 60px;
 
+		@include respond-to("tablet-landscape") {
+			gap: 30px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
 		.form_Content {
 			width: 100%;
 			max-width: 580px;
 			display: flex;
 			flex-direction: column;
 			gap: 60px;
+
+			@include respond-to("tablet-landscape") {
+				gap: 30px;
+			}
 
 			h1 {
 				color: #000;
@@ -48,9 +63,11 @@
 				font-weight: 400;
 				line-height: 57.6px; /* 92.903% */
 				margin-bottom: 0;
-			}
 
-			img {
+				@include respond-to("tablet-landscape") {
+					font-size: 42px;
+					text-align: center;
+				}
 			}
 
 			p {
@@ -75,10 +92,19 @@
 		.form_Form {
 			width: 100%;
 			max-width: 625px;
-			height: 690px;
+			//height: 690px;
 			overflow: hidden;
 			filter: drop-shadow(0px 4px 97.2px rgba(0, 0, 0, 0.05));
 			border-radius: 10px;
+
+			@include respond-to("tablet-landscape") {
+				min-width: 370px;
+			}
+
+			@include respond-to("mobile") {
+				width: 100%;
+				min-width: unset;
+			}
 		}
 	}
 }
