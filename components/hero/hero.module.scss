@@ -139,34 +139,30 @@
 			}
 
 			blockquote {
-				font-size: 24px;
-				line-height: 1.25em;
+				font-size: 20px;
+				line-height: 1.3em;
 				padding-right: 40%;
 
 				&.border {
 					width: 100%;
 					border-top: 1px solid rgba(255, 255, 255, 0.5);
-					font-size: 24px;
+					font-size: 20px;
 					font-style: normal;
 					font-weight: 300;
 					padding-top: 40px;
 				}
 
 				@include respond-to("tablet") {
-					font-size: 20px;
 					padding-right: 0;
 				}
 			}
 
 			blockquote span {
 				display: block;
-				font-size: 18px;
+				font-size: 16px;
 				line-height: 1.25em;
 				margin-top: 20px;
 
-				@include respond-to("tablet") {
-					font-size: 16px;
-				}
 			}
 		}
 	}
