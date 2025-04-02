@@ -142,7 +142,7 @@ const Accordion = ({ page }) => {
 				{
 					heading: "How do I sign up?",
 					paragraph:
-						"Getting started is easy. Click below to connect with a care team member and see if you’re eligible.",
+						"Getting started is easy. Click above to connect with a care team member and see if you’re eligible.",
 				},
 			],
 		};
