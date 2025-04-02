@@ -99,7 +99,16 @@ const Hero = ({ page }) => {
 				backgroundImage: `url(${content.bgImgSrc})`,
 			}}
 		>
-			<div className={`${styles.container_Hero} ${" wrapper"}`}>
+			{/* Video background */}
+			{page === "home" && (
+				<video autoPlay muted loop playsInline className={styles.heroVideo}>
+					<source src="/videos/home-video.mp4" type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+			)}
+
+			{/* Content on top of the video */}
+			<div className={`${styles.container_Hero} wrapper`}>
 				<div className={styles.heroContent}>
 					<div>
 						<h1
