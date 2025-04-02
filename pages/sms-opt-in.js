@@ -15,7 +15,7 @@ export default function JoinOurFamily() {
 	const title = "SMS Opt-In | CINQCARE";
 	const metaDescription =
 		"Join CINQCARE’s mission to transform care and well-being. Connect with us today—take the first step to become part of our family.";
-	const pageURL = "sms-opt-In";
+	const pageURL = "https://cinq.care/sms-opt-in";
 
 	return (
 		<>

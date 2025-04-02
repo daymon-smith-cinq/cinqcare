@@ -62,13 +62,13 @@ const Header = ({ headerBg }) => {
 										<a aria-expanded={ariaExpanded}>Who We Serve</a>
 										<ul className={styles.submenu}>
 											<li>
-												<a href="/providers">For Providers</a>
+												<a href="/for-providers">For Providers</a>
 											</li>
 											<li>
-												<a href="/patients">For Patients</a>
+												<a href="/for-patients">For Patients</a>
 											</li>
 											<li>
-												<a href="/partners">For Partners</a>
+												<a href="/for-partners">For Partners</a>
 											</li>
 										</ul>
 									</li>

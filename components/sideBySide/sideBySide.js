@@ -80,7 +80,7 @@ const SideBySide = ({ page, num }) => {
 					heading:
 						"It’s more than a job. It’s a purpose. It’s a calling. If it’s your goal to deliver care where you live, let’s work together.",
 					headingPeriod: false,
-					buttonLink: "/careers",
+					buttonLink: "/careers-with-a-calling",
 					buttonText: "Open Positions",
 				},
 			],

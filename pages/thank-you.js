@@ -14,7 +14,7 @@ export default function JoinOurFamily() {
 	const title = "Thank You | CINQCARE";
 	const metaDescription =
 		"Join CINQCARE’s mission to transform care and well-being. Connect with us today—take the first step to become part of our family.";
-	const pageURL = "thank-you";
+	const pageURL = "https://cinq.care/thank-you";
 
 	return (
 		<>

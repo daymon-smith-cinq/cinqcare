@@ -21,7 +21,7 @@ export default function Patients() {
 	const title = "For Patients | CINQCARE";
 	const metaDescription =
 		"CINQCARE provides trusted providers, community support, and tailored care services to improve your health where you live.";
-	const pageURL = "https://cinq.care/patients";
+	const pageURL = "https://cinq.care/for-patients";
 
 	return (
 		<>
@@ -41,40 +41,60 @@ export default function Patients() {
 			<main>
 				<Hero page={currentPage} />
 
-        <ScrollJacking page={currentPage} bg={scrollJackingImage} bgPosition="end normal" bgWidth="70%">
-          <div>
-            <h2>What if <em>getting care</em> didn’t feel so hard?</h2>
-          </div>
-          <div>
-            <h2>For too many people, healthcare feels <em>out of reach</em> — it can seem like no one is truly looking out for you.</h2>
-          </div>
-          <div>
-            <h2>Long wait times, complicated paperwork, and a system that wasn’t built for real life make it difficult <em>to get the help you deserve.</em></h2>
-          </div>
-          <div>
-            <h2>But it doesn’t have to be this way. At CINQCARE, we bring health and care together, meeting you where you are and <em>making it easier to get the support you need.</em></h2>
-          </div>
-        </ScrollJacking>
-        <IconBlocks page={currentPage} />
-        <Map page={currentPage} />
-        <TestimonialSlider page={currentPage} />
-        <GlassAccordion page={currentPage} />
-        <CTA
-          type="primary"
-          buttonText="Find Support Near You"
-          link="/join-our-family"
-          target="_blank"
-        >
-          <header>
-            <h2 class="period">Your health, <em>our commitment</em></h2>
-          </header>
-          <p>
+				<ScrollJacking
+					page={currentPage}
+					bg={scrollJackingImage}
+					bgPosition="end normal"
+					bgWidth="70%"
+				>
+					<div>
+						<h2>
+							What if <em>getting care</em> didn’t feel so hard?
+						</h2>
+					</div>
+					<div>
+						<h2>
+							For too many people, healthcare feels <em>out of reach</em> — it
+							can seem like no one is truly looking out for you.
+						</h2>
+					</div>
+					<div>
+						<h2>
+							Long wait times, complicated paperwork, and a system that wasn’t
+							built for real life make it difficult{" "}
+							<em>to get the help you deserve.</em>
+						</h2>
+					</div>
+					<div>
+						<h2>
+							But it doesn’t have to be this way. At CINQCARE, we bring health
+							and care together, meeting you where you are and{" "}
+							<em>making it easier to get the support you need.</em>
+						</h2>
+					</div>
+				</ScrollJacking>
+				<IconBlocks page={currentPage} />
+				<Map page={currentPage} />
+				<TestimonialSlider page={currentPage} />
+				<GlassAccordion page={currentPage} />
+				<CTA
+					type="primary"
+					buttonText="Find Support Near You"
+					link="/join-our-family"
+					target="_blank"
+				>
+					<header>
+						<h2 class="period">
+							Your health, <em>our commitment</em>
+						</h2>
+					</header>
+					<p>
 						We don’t want you to have to navigate healthcare alone. See if we’re
 						already working in your community to make things easier.
 					</p>
-        </CTA>
-        <Accordion page={currentPage} />
-      </main>
+				</CTA>
+				<Accordion page={currentPage} />
+			</main>
 
 			<Footer />
 		</>
