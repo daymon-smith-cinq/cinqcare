@@ -13,9 +13,11 @@ const HeroAlt = ({ page }) => {
 			heroImage: "images/ManNurse.jpg",
 			h1: "<span>Grace at Home</span> Bringing <em>Health and Care</em> to You",
 			h1Period: false,
-			paragraph: "Healthcare shouldn't be out of reach. <br> We bring it home.",
+			paragraph: "",
 			buttonText: "Visit Site",
-			buttonLink: "/#", // HYRULE IS IN DANGER! (NEED LINK)
+			buttonLink: "#", // Need final link
+			buttonTarget: "_blank",
+			quoteText: "“At Grace at Home, we believe health and care should come to you, not the other way around.” <span>— Traci Miller, President, Grace at Home</span>",
 		};
 	}
 
@@ -27,7 +29,7 @@ const HeroAlt = ({ page }) => {
 			paragraph:
 				"You're always there for everyone else. <br> We're here for you.",
 			buttonText: "",
-			buttonLink: "", // HYRULE IS IN DANGER! (NEED LINK)
+			buttonLink: "",
 		};
 	}
 
@@ -39,18 +41,18 @@ const HeroAlt = ({ page }) => {
 			paragraph:
 				"Comprehensive, quality primary and specialty care — delivered with compassion and convenience. <span>Find expert medical care close to home, designed to keep you well and thriving.</span>",
 			buttonText: "",
-			buttonLink: "", // HYRULE IS IN DANGER! (NEED LINK)
+			buttonLink: "",
 		};
 	}
 
 	if (page == "thank-you") {
 		content = {
-			heroImage: "images/Family.jpg", // IMAGE NOT FINAL
+			heroImage: "images/Family.jpg",
 			h1: "<b>Thank you</b> for <em>your interest!</em>",
 			h1Period: false,
 			paragraph: "We will be in contact soon.",
 			buttonText: "",
-			buttonLink: "", // HYRULE IS IN DANGER! (NEED LINK)
+			buttonLink: "",
 		};
 	}
 
@@ -69,8 +71,15 @@ const HeroAlt = ({ page }) => {
 						<Button
 							link={content.buttonLink}
 							text={content.buttonText}
+							target={content.buttonTarget ? `${content.buttonTarget}` : "_self"}
 							type="outline-black"
 						/>
+					)}
+					{content?.quoteText && (
+						<blockquote 
+							className={styles.heroQuote}
+							dangerouslySetInnerHTML={{ __html: content.quoteText }}
+						></blockquote>
 					)}
 				</div>
 				<div className={styles.heroImage}>

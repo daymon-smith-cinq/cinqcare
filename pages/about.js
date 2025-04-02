@@ -40,7 +40,8 @@ export default function About() {
       <main>
         <HeroAbout page={currentPage} />
         <GlassAccordion page={currentPage} />
-        <People page={currentPage} />
+        <People page={currentPage} group="leadership" />
+        <People page={currentPage} group="advisors" />
         <BackgroundContainer page={currentPage}>
           <SideBySide page={currentPage} />
           <Spacer />

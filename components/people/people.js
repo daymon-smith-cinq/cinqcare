@@ -13,7 +13,8 @@ import RodneyA from "/public/portraits/rodney-armstead.jpg";
 import NatalieL from "/public/portraits/natalie-o-ludaway.jpg";
 import SteveS from "/public/portraits/steve-swift.jpg";
 import BarbaraR from "/public/portraits/barbara-rhoden.jpg";
-import CharylRW from "/public/portraits/cheryl-rucker-whitaker.jpg";
+import TraciM from "/public/portraits/traci-miller.jpg";
+import CherylRW from "/public/portraits/cheryl-rucker-whitaker.jpg";
 
 import GlenisS from "/public/portraits/glenis-strachan.jpg";
 import JesslynP from "/public/portraits/jesslyn-perry.jpg";
@@ -22,7 +23,7 @@ import GaryC from "/public/portraits/gary-carpenter.jpg";
 import PamelaB from "/public/portraits/pamela-burton.jpg";
 import StevenL from "/public/portraits/steven-liverpool.jpg";
 
-const People = ({ page }) => {
+const People = ({ page, group }) => {
 
 	// *******
 	// Content
@@ -47,7 +48,7 @@ const People = ({ page }) => {
 	};
 
 	// About
-	if (page == "about") {
+	if (page == "about" && group == "leadership") {
 		content = {
 			heading: "<a name='team'></a><em>Leadership</em>",
 			headingPeriod: false,
@@ -60,49 +61,14 @@ const People = ({ page }) => {
 					title: "Founder & CEO",
 				},
 				{
-					portrait: BillH,
-					name: "Bill Hagan",
-					title: "Senior Advisor",
-				},
-				{
 					portrait: DeniseC,
 					name: "Denise Christian, MD",
 					title: "Chief Medical Officer",
 				},
 				{
-					portrait: ErnieM,
-					name: "Ernie Monfiletto",
-					title: "Senior Advisor",
-				},
-				{
 					portrait: KristyD,
 					name: "Kristy Duffey",
 					title: "Chief Clinical Operations Officer",
-				},
-				{
-					portrait: JessicaG,
-					name: "Jessica Gamzon",
-					title: "President Network Solutions",
-				},
-				{
-					portrait: BrianB,
-					name: "Brian Benjamin",
-					title: "President Northeast",
-				},
-				{
-					portrait: RitaJM,
-					name: "Rita Johnson Mills",
-					title: "Head of Special Accounts Relationships",
-				},
-				{
-					portrait: RodneyA,
-					name: "Rodney Armstead",
-					title: "Senior Advisor",
-				},
-				{
-					portrait: NatalieL,
-					name: "Natalie O. Ludaway",
-					title: "Chief Legal & External Affairs Officer",
 				},
 				{
 					portrait: SteveS,
@@ -115,9 +81,55 @@ const People = ({ page }) => {
 					title: "Chief Brand and Marketing Officer",
 				},
 				{
-					portrait: CharylRW,
+					portrait: NatalieL,
+					name: "Natalie O. Ludaway",
+					title: "Chief Legal & External Affairs Officer",
+				},
+				{
+					portrait: BrianB,
+					name: "Brian Benjamin",
+					title: "President Northeast",
+				},
+				{
+					portrait: RitaJM,
+					name: "Rita Johnson Mills",
+					title: "Head of Special Accounts Relationships",
+				},
+				{
+					portrait: CherylRW,
 					name: "Cheryl Rucker Whitaker",
 					title: "President, Central and Southeast Regions",
+				},
+				{
+					portrait: TraciM,
+					name: "Traci Miller",
+					title: "President, Care at Home",
+				},
+				{
+					portrait: JessicaG,
+					name: "Jessica Gamzon",
+					title: "President Network Solutions",
+				},
+			],
+		};
+	} else if (page == "about" && group == "advisors") {
+		content = {
+			heading: "<em>Advisors</em>",
+			headingPeriod: false,
+			centeredHeading: true,
+			bgGradient: false,
+			people: [
+				{
+					portrait: RodneyA,
+					name: "Rodney Armstead",
+				},
+				{
+					portrait: BillH,
+					name: "Bill Hagan",
+				},
+				{
+					portrait: ErnieM,
+					name: "Ernie Monfiletto",
 				},
 			],
 		};
