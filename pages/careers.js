@@ -14,7 +14,7 @@ export default function Careers() {
 	const title = "Careers | CINQCARE";
 	const metaDescription =
 		"Join CINQCARE’s mission to deliver health and care to high-needs communities. Answer the call to make a difference—explore careers today.";
-	const pageURL = "https://cinq.care/careers";
+	const pageURL = "https://cinq.care/careers-with-a-calling";
 
 	return (
 		<>

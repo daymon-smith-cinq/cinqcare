@@ -9,7 +9,6 @@ import ImgMission from "/public/images/BusinesswomanHandshake.jpg";
 import ImgPromise from "/public/images/DoctorPatient.jpg";
 
 const Slidecordion = ({ page }) => {
-
 	// *******
 	// Content
 	// *******
@@ -18,32 +17,36 @@ const Slidecordion = ({ page }) => {
 	// Homepage
 	if (page == "home") {
 		content = {
-			heading: "Working with our community leaders to <em>surround patients with the support</em> they need",
+			heading:
+				"Working with our community leaders to <em>surround patients with the support</em> they need",
 			headingPeriod: true,
 			slides: [
 				{
 					title: "Providers",
 					text: "<p>We embrace local physicians, practitioners, nurses and clinic leaders who are aligned with our work to remove barriers to health and well-being. Together, we serve our communities.</p>",
 					buttonText: "See Providers",
-					buttonLink: "/providers",
+					buttonLink: "/for-providers",
 					imgSrc: ImgProviders,
-					imgAlt: "A graphic of a dotted line connecting a patient to a care provider. An example alert shows the text 'General Check-in' with the date and time.",
+					imgAlt:
+						"A graphic of a dotted line connecting a patient to a care provider. An example alert shows the text 'General Check-in' with the date and time.",
 				},
 				{
 					title: "Patients",
 					text: "<p>We don’t have patients or customers – we have Family Members. Our culture of care starts with understanding your needs and your plans. It is the cornerstone for how we deliver care, where you live.</p>",
 					buttonText: "See Patients",
-					buttonLink: "/patients",
+					buttonLink: "/for-patients",
 					imgSrc: ImgPatients,
-					imgAlt: "A simple illustrated map of a county with health center locations marked.",
+					imgAlt:
+						"A simple illustrated map of a county with health center locations marked.",
 				},
 				{
 					title: "Partners",
 					text: "<p>We share a vision to lower costs, increase Family Member satisfaction, and deliver better outcomes in high-needs, urban and rural communities across the US.</p>",
 					buttonText: "See Partners",
-					buttonLink: "/partners",
+					buttonLink: "/for-partners",
 					imgSrc: ImgPartners,
-					imgAlt: "A line graph illustrating a patient's blood pressure readings over time.",
+					imgAlt:
+						"A line graph illustrating a patient's blood pressure readings over time.",
 				},
 			],
 		};
@@ -63,9 +66,10 @@ const Slidecordion = ({ page }) => {
 				},
 				{
 					title: "Mission",
-					text: "<ul><li>For insurers and government payors (through lower costs, quality care and better outcomes).</li>" +
-					"<li>For physicians, caregivers and caretakers (through quality care, supportive systems and better outcomes).</li>" +
-					"<li>For Family Members (through quality care and better outcomes).</li></ul>",
+					text:
+						"<ul><li>For insurers and government payors (through lower costs, quality care and better outcomes).</li>" +
+						"<li>For physicians, caregivers and caretakers (through quality care, supportive systems and better outcomes).</li>" +
+						"<li>For Family Members (through quality care and better outcomes).</li></ul>",
 					imgSrc: ImgMission,
 					imgAlt: "",
 				},
@@ -98,9 +102,13 @@ const Slidecordion = ({ page }) => {
 
 			// Create array of affected panels
 			const affectedPanels = document.querySelectorAll(
-				button.getAttribute("aria-controls").split(" ").map(id => `#${id}`).join(', ')
+				button
+					.getAttribute("aria-controls")
+					.split(" ")
+					.map((id) => `#${id}`)
+					.join(", ")
 			);
-			
+
 			if (!expanded) {
 				affectedPanels.forEach((panel) => panel.classList.add(styles.show));
 			} else {
@@ -123,73 +131,71 @@ const Slidecordion = ({ page }) => {
 			<div className={`${styles.container_Slidecordion} ${" wrapper"}`}>
 				<div className={styles.slidecordion}>
 					<div className={styles.slidecordionTextContainer}>
-						<h3 
-							className={content.headingPeriod ? ("period") : undefined} 
+						<h3
+							className={content.headingPeriod ? "period" : undefined}
 							dangerouslySetInnerHTML={{ __html: content.heading }}
 						></h3>
 
 						{content.slides &&
-						content.slides.map((slide, slideIndex) => (
-							<div key={slideIndex} className={styles.slidecordionSlide}>
-								<h2
-									id={`accordion-button-${slideIndex}`}
-									role="button"
-									tabIndex="0"
-									aria-controls={`accordion-panel-${slideIndex} accordion-image-${slideIndex}`}
-									aria-expanded={slideIndex === 0 ? "true" : "false"} // Set aria-expanded for the first item
-									onClick={toggleAccordion}
-									onKeyUp={toggleAccordion}
-									className={`no-select ${styles.accordion_button}`}
-									dangerouslySetInnerHTML={{ __html: slide.title }}
-								></h2>
-								<div
-									id={`accordion-panel-${slideIndex}`}
-									role="region"
-									aria-labelledby={`accordion-button-${slideIndex}`}
-									className={`${styles.accordion_toggle} ${
-										slideIndex === 0 ? styles.show : ""
-									}`} // Add show class for the first item
-								>
-									<div className={styles.accordion_toggle_show}>
-										<div 
-											className={styles.slidecordionText} 
-											dangerouslySetInnerHTML={{ __html: slide.text }}
-										></div>
-										{slide?.buttonLink && (
-											<Button 
-												link={slide.buttonLink}
-												text={slide.buttonText}
-												size="small"
-											/>
-										)}
+							content.slides.map((slide, slideIndex) => (
+								<div key={slideIndex} className={styles.slidecordionSlide}>
+									<h2
+										id={`accordion-button-${slideIndex}`}
+										role="button"
+										tabIndex="0"
+										aria-controls={`accordion-panel-${slideIndex} accordion-image-${slideIndex}`}
+										aria-expanded={slideIndex === 0 ? "true" : "false"} // Set aria-expanded for the first item
+										onClick={toggleAccordion}
+										onKeyUp={toggleAccordion}
+										className={`no-select ${styles.accordion_button}`}
+										dangerouslySetInnerHTML={{ __html: slide.title }}
+									></h2>
+									<div
+										id={`accordion-panel-${slideIndex}`}
+										role="region"
+										aria-labelledby={`accordion-button-${slideIndex}`}
+										className={`${styles.accordion_toggle} ${
+											slideIndex === 0 ? styles.show : ""
+										}`} // Add show class for the first item
+									>
+										<div className={styles.accordion_toggle_show}>
+											<div
+												className={styles.slidecordionText}
+												dangerouslySetInnerHTML={{ __html: slide.text }}
+											></div>
+											{slide?.buttonLink && (
+												<Button
+													link={slide.buttonLink}
+													text={slide.buttonText}
+													size="small"
+												/>
+											)}
+										</div>
 									</div>
-									
 								</div>
-								
-							</div>
-						))}	
+							))}
 					</div>
 					<div className={styles.slidecordionImgContainer}>
 						{content.slides &&
 							content.slides.map((slide, slideIndex) => (
-							<div
+								<div
 									key={slideIndex}
 									id={`accordion-image-${slideIndex}`}
 									role="region"
 									aria-labelledby={`accordion-button-${slideIndex}`}
-									className={`${styles.accordion_toggle} ${styles.slidecordionImage} ${
-										slideIndex === 0 ? styles.show : ""
-									}`} // Add show class for the first item
+									className={`${styles.accordion_toggle} ${
+										styles.slidecordionImage
+									} ${slideIndex === 0 ? styles.show : ""}`} // Add show class for the first item
 								>
-								<Image 
-									src={slide.imgSrc}
-									alt={slide.imgAlt}
-									width={717}
-									height={779}
-									data-slidecordion-page={slideIndex}
-								/>
-							</div>
-						))}
+									<Image
+										src={slide.imgSrc}
+										alt={slide.imgAlt}
+										width={717}
+										height={779}
+										data-slidecordion-page={slideIndex}
+									/>
+								</div>
+							))}
 					</div>
 				</div>
 			</div>
