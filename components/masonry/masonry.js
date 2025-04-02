@@ -9,8 +9,7 @@ const Masonry = () => {
 			<div className={`${styles.masonry__header} ${" wrapper"}`}>
 				<header>
 					<h2>
-						<em>Millions of people</em>, live with chronic and preventable
-						health conditions.
+						<em>Millions of people</em> live with chronic and preventable health conditions.
 					</h2>
 				</header>
 				<div className={styles.container_ParaButton}>

@@ -108,10 +108,10 @@
 			}
 
 			> div {
-				max-width: 50%;
+				max-width: 65%;
 
 				@include respond-to("tablet") {
-					max-width: 65%;
+					max-width: 70%;
 				}
 
 				@include respond-to("mobile-landscape") {
@@ -141,7 +141,7 @@
 			blockquote {
 				font-size: 24px;
 				line-height: 1.25em;
-				padding-right: 50%;
+				padding-right: 40%;
 
 				&.border {
 					width: 100%;
