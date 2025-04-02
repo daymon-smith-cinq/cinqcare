@@ -18,14 +18,14 @@ const Cards = ({ page }) => {
 			cardContent: [
 				{
 					heading: "<em>Buffalo</em>, NY",
-					address: `564 Niagara Street,<br />Buffalo, NY<br />14201<br />716.882.0366`,
+					address: `564 Niagara Street,<br />Buffalo, NY 14201<br />716.882.0366`,
 					image: buffaloMap.src,
 					paragraph:
 						"On-site lab services, specialty care, and integrated support",
 				},
 				{
 					heading: "<em>Brooklyn</em>, NY",
-					address: `3 22 Linden Boulevard,<br />Ground Floor, Brooklyn,<br />NY 11226<br />718.469.5500`,
+					address: `322 Linden Boulevard,<br />Ground Floor, Brooklyn,<br />NY 11226<br />718.469.5500`,
 					image: brooklynMap.src,
 					paragraph: "Comprehensive primary and specialty care",
 				},

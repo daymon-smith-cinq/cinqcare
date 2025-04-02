@@ -122,17 +122,14 @@ const People = ({ page, group }) => {
 				{
 					portrait: RodneyA,
 					name: "Rodney Armstead",
-					title: "Senior Advisor",
 				},
 				{
 					portrait: BillH,
 					name: "Bill Hagan",
-					title: "Senior Advisor",
 				},
 				{
 					portrait: ErnieM,
 					name: "Ernie Monfiletto",
-					title: "Senior Advisor",
 				},
 			],
 		};

@@ -126,7 +126,7 @@ const GlassAccordion = ({ page }) => {
 			bgImgSrc: "images/Ultrasound.jpg",
 			heading: "Care for Every Stage of <em>Motherhood</em>",
 			paragraph:
-				"CINQCARE for Moms provides wraparound care, designed for you.",
+				"<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
 			buttonLink: "/join-our-family",
 			buttonText: "See How CINQCARE Supports Moms",
 			accordionContent: [

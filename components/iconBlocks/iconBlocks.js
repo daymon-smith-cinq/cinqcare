@@ -139,7 +139,7 @@ const IconBlocks = ({ page }) => {
 				},
 				{
 					icon: "icons/Hospital.svg",
-					heading: "Patients Transitioning from Hospital to Home",
+					heading: "People Transitioning from Hospital to Home",
 				},
 			],
 		};
