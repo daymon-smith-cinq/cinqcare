@@ -20,7 +20,7 @@ export default function Partners() {
 	const title = "For Partners | CINQCARE";
 	const metaDescription =
 		"CINQCARE works with healthcare leaders to improve care delivery, enhance outcomes, and reduce costs in high-need communities using value-based solutions.";
-	const pageURL = "https://cinq.care/partners";
+	const pageURL = "https://cinq.care/for-partners";
 
 	return (
 		<>
@@ -40,25 +40,42 @@ export default function Partners() {
 			<main>
 				<Hero page={currentPage} />
 
-				<ScrollJacking page={currentPage}  bg={scrollJackingImage} bgPosition="end normal" bgWidth="100%">
+				<ScrollJacking
+					page={currentPage}
+					bg={scrollJackingImage}
+					bgPosition="end normal"
+					bgWidth="100%"
+				>
 					<div>
 						<h2>
-							A Healthcare System that <em>Fails Those</em> Who Need Care the Most
+							A Healthcare System that <em>Fails Those</em> Who Need Care the
+							Most
 						</h2>
 					</div>
 					<div>
 						<h2>
-							High-needs individuals are too often reactively served, leading to preventable hospitalizations, rising costs, and poor outcomes. CINQCARE is changing that — shifting from fragmented care to integrated, home-first <em>whole-person health.</em>
+							High-needs individuals are too often reactively served, leading to
+							preventable hospitalizations, rising costs, and poor outcomes.
+							CINQCARE is changing that — shifting from fragmented care to
+							integrated, home-first <em>whole-person health.</em>
 						</h2>
 					</div>
 					<div>
 						<h2>
-							From healthy pregnancies to aging with grace, we’re helping communities <em>build strong health options</em> — designed to support every generation.
+							From healthy pregnancies to aging with grace, we’re helping
+							communities <em>build strong health options</em> — designed to
+							support every generation.
 						</h2>
 					</div>
 					<div>
 						<h2>
-							We partner with health plans, state governments, and mission-aligned organizations to reach high-needs individuals eligible for Medicare, Medicaid, or both (Dual-Eligible), as well as those in specialized populations. <em>Our communities deserve care.</em> Healthy babies, fresh starts, and aging with grace — CINQCARE is building strong health ecosystems in cities and towns to support many generations. 
+							We partner with health plans, state governments, and
+							mission-aligned organizations to reach high-needs individuals
+							eligible for Medicare, Medicaid, or both (Dual-Eligible), as well
+							as those in specialized populations.{" "}
+							<em>Our communities deserve care.</em> Healthy babies, fresh
+							starts, and aging with grace — CINQCARE is building strong health
+							ecosystems in cities and towns to support many generations.
 						</h2>
 					</div>
 				</ScrollJacking>

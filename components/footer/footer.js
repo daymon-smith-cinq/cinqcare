@@ -37,13 +37,13 @@ const Footer = () => {
 								<header>Who We Serve</header>
 								<ul>
 									<li>
-										<a href="/providers">Providers</a>
+										<a href="/for-providers">Providers</a>
 									</li>
 									<li>
-										<a href="/patients">Patients</a>
+										<a href="/for-patients">Patients</a>
 									</li>
 									<li>
-										<a href="/partners">Partners</a>
+										<a href="/for-partners">Partners</a>
 									</li>
 								</ul>
 							</div>
@@ -140,7 +140,9 @@ const Footer = () => {
 
 						<nav className={styles.footer__policy}>
 							<a href="/privacy-policy">Privacy Policy</a>
-							<a href="/privacy-policy-grace-at-home">Grace at Home Privacy Policy</a>
+							<a href="/privacy-policy-grace-at-home">
+								Grace at Home Privacy Policy
+							</a>
 						</nav>
 
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>
