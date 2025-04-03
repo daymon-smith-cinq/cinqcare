@@ -3,12 +3,11 @@
 .section_Hero {
 	background: linear-gradient(180deg, #fcf6ec, white);
 	padding-top: 200px;
-	padding-bottom: 150px;
+	padding-bottom: 120px;
 	height: auto;
-	min-height: 1000px;
 
 	@include respond-to("laptop") {
-		min-height: 800px;
+		padding-bottom: 100px;
 	}
 
 	@include respond-to("tablet-landscape") {
@@ -145,18 +144,19 @@
 			}
 
 			blockquote {
-				font-size: 20px;
+				font-size: 22px;
 				line-height: 1.3em;
 				padding-top: 80px;
 
 				@include respond-to("tablet") {
+					font-size: 20px;
 					padding-top: 20px;
 				}
 			}
 
 			blockquote span {
 				display: block;
-				font-size: 16px;
+				font-size: 18px;
 				line-height: 1.25em;
 				margin-top: 20px;
 			}

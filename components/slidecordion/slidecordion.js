@@ -24,7 +24,7 @@ const Slidecordion = ({ page }) => {
 				{
 					title: "Providers",
 					text: "<p>We embrace local physicians, practitioners, nurses and clinic leaders who are aligned with our work to remove barriers to health and well-being. Together, we serve our communities.</p>",
-					buttonText: "See Providers",
+					buttonText: "See More",
 					buttonLink: "/for-providers",
 					imgSrc: ImgProviders,
 					imgAlt:
@@ -33,7 +33,7 @@ const Slidecordion = ({ page }) => {
 				{
 					title: "Patients",
 					text: "<p>We don’t have patients or customers – we have Family Members. Our culture of care starts with understanding your needs and your plans. It is the cornerstone for how we deliver care, where you live.</p>",
-					buttonText: "See Patients",
+					buttonText: "See More",
 					buttonLink: "/for-patients",
 					imgSrc: ImgPatients,
 					imgAlt:
@@ -42,7 +42,7 @@ const Slidecordion = ({ page }) => {
 				{
 					title: "Partners",
 					text: "<p>We share a vision to lower costs, increase Family Member satisfaction, and deliver better outcomes in high-needs, urban and rural communities across the US.</p>",
-					buttonText: "See Partners",
+					buttonText: "See More",
 					buttonLink: "/for-partners",
 					imgSrc: ImgPartners,
 					imgAlt:

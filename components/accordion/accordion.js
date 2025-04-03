@@ -9,7 +9,7 @@ const Accordion = ({ page }) => {
 			heading:
 				"Answers to <span>your questions</span> about joining the network",
 			headingPeriod: true,
-			paragraph: "Have questions? We're here to help.",
+			paragraph: "",
 			accordionContent: [
 				{
 					heading: "What are the benefits of being associated with CINQCARE?",

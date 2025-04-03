@@ -58,8 +58,8 @@ const TestimonialSlider = ({ page }) => {
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
 					image: "/headshots/headshot-5.png",
 					quote:
-						'"By combining our expertise and resources, Humana and CINQCARE hope to make significant strides in improving the health and well-being of the diverse population of Medicare Advantage members we serve in New York."',
-					name: "Julie Mascari, Humana Northeast Regional Medicare President",
+						'"We are pleased to work with CINQCARE, an organization that shares our unwavering commitment to improving maternal and infant health."',
+					name: "Alison Spera, Senior Vice President of Market Impact at March of Dimes",
 				},
 			],
 		};

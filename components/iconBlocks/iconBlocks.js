@@ -90,7 +90,7 @@ const IconBlocks = ({ page }) => {
 					icon: "icons/Caution.svg",
 					heading: "Risk-Driven, Whole-Person Care",
 					paragraph:
-						"Using advanced risk stratification to identify high-cost, high-needs members across medical, behavioral, and social needs, and providing personalized interventions that lower MLR and improve STAR/HEDIS performance.",
+						"Using advanced risk stratification to identify high-cost, high-needs members across medical, behavioral, and social needs, and providing personalized interventions that lower Medical Loss Ratio (MLR) and improve STAR/HEDIS performance.",
 				},
 				{
 					icon: "icons/HoldingHeart.svg",
