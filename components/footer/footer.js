@@ -143,6 +143,9 @@ const Footer = () => {
 							<a href="/privacy-policy-grace-at-home">
 								Grace at Home Privacy Policy
 							</a>
+							<a href="https://aco.cinq.care/" target="_blank">
+								ACO REACH
+							</a>
 						</nav>
 
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>

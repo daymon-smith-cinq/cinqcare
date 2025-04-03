@@ -11,8 +11,9 @@ const Cards = ({ page }) => {
 			heading: "Find <em>Grace at Home</em> Near You",
 			paragraph:
 				"Care Medical Practice is expanding to serve more communities.",
-			buttonLink: "/join-our-family",
-			buttonText: "Contact Us",
+			buttonLink: "https://caremedicalpractice.care/book-care-options/",
+			buttonText: "Book Care Now",
+			buttonTarget: "_blank",
 			finePrint:
 				"Care Medical Practices are independent medical groups that partner with CINQCARE for administrative and operational support. CINQCARE does not provide medical services or direct patient care.",
 			cardContent: [
@@ -72,7 +73,11 @@ const Cards = ({ page }) => {
 							<p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
 						)}
 						{content.buttonLink && (
-							<Button link={content.buttonLink} text={content.buttonText} />
+							<Button 
+								link={content.buttonLink} 
+								text={content.buttonText}
+								target={content.buttonTarget ? `${content.buttonTarget}` : "_self"}
+							/>
 						)}
 						{content.finePrint && (
 							<p className="fine-print">{content.finePrint}</p>

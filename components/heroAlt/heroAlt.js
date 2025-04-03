@@ -28,8 +28,9 @@ const HeroAlt = ({ page }) => {
 			h1Period: false,
 			paragraph:
 				"You're always there for everyone else. <br> We're here for you.",
-			buttonText: "",
-			buttonLink: "",
+			buttonText: "Visit Site",
+			buttonLink: "https://formoms.cinq.care/",
+			buttonTarget: "_blank",
 		};
 	}
 
