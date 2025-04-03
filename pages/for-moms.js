@@ -45,7 +45,12 @@ export default function ForMoms() {
 				<SideBySide page={currentPage} num="first" />
 				<GlassAccordion page={currentPage} />
 				<TestimonialSlider page={currentPage} />
-				<CTA type="tertiary" buttonText="Learn More" link="/join-our-family">
+				<CTA
+					type="tertiary"
+					buttonText="Learn More"
+					link="https://gracewomenscenter.cinq.care/"
+					target="_blank"
+				>
 					<Image
 						priority={false}
 						src={logoForMoms}
@@ -63,7 +68,8 @@ export default function ForMoms() {
 				<CTA
 					type="primary"
 					buttonText="Find Support Today"
-					link="/join-our-family"
+					link="https://gracewomenscenter.cinq.care/"
+					target="_blank"
 				>
 					<header>
 						<h2>
