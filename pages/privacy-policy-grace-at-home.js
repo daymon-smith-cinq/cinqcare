@@ -227,7 +227,13 @@ export default function PrivacyPolicy() {
 							If you have any questions or suggestions regarding our privacy
 							policy, please contact us at:
 						</p>
-						<address>
+						<address
+							style={{
+								fontSize: "clamp(1.125rem, 1vw + 1rem, 1.25rem)",
+								marginBottom: "20px",
+								lineHeight: "1.4",
+							}}
+						>
 							<strong>GRACE AT HOME</strong>
 							<br />
 							<strong>ATTN: Internet Privacy Manager</strong>
@@ -385,7 +391,17 @@ export default function PrivacyPolicy() {
 						</p>
 
 						<h3>Incorrect use of GRACE AT HOME trademarks</h3>
-						<ul>
+						<ul
+							style={{
+								listStyleType: "disc",
+								listStylePosition: "inside",
+								fontSize: "clamp(1.125rem, 1vw + 1rem, 1.25rem)",
+								marginBottom: "20px",
+								display: "flex",
+								flexDirection: "column",
+								gap: "10px",
+							}}
+						>
 							<li>Do not alter the approved GRACE AT HOME trademark</li>
 							<li>
 								Do not create any new logo for GRACE AT HOME or GRACE AT HOME
@@ -424,7 +440,17 @@ export default function PrivacyPolicy() {
 							Guidelines for Linking to GRACE AT HOME’s Web site. A site that
 							links to GRACE AT HOME’s Web site:
 						</p>
-						<ul>
+						<ul
+							style={{
+								listStyleType: "disc",
+								listStylePosition: "inside",
+								fontSize: "clamp(1.125rem, 1vw + 1rem, 1.25rem)",
+								marginBottom: "20px",
+								display: "flex",
+								flexDirection: "column",
+								gap: "10px",
+							}}
+						>
 							<li>May link to but not replicate GRACE AT HOME content</li>
 							<li>
 								Should not create a browser or border environment around GRACE
