@@ -12,7 +12,7 @@ const Hero = ({ page }) => {
 	if (page == "home") {
 		content = {
 			bgImgSrc: "images/hero-home.jpg",
-			h1: "Health and care that meets you at home — and <em>treats you like Family</em>",
+			h1: "Care that meets you at home — and <em>treats you as Family</em>",
 			h1Period: false,
 			buttonText: "Learn More",
 			buttonLink: "/join-our-family",
@@ -82,6 +82,7 @@ const Hero = ({ page }) => {
 	if (page == "communities") {
 		content = {
 			bgImgSrc: "images/PeopleGathering.jpg",
+			bgImgPos: "bottom center",
 			h1: "We are in this together — <em>members of one family</em>",
 			h1Period: false,
 			buttonText: "",
@@ -97,6 +98,7 @@ const Hero = ({ page }) => {
 			className={styles.section_Hero}
 			style={{
 				backgroundImage: `url(${content.bgImgSrc})`,
+				...(content.bgImgPos && { backgroundPosition: content.bgImgPos }),
 			}}
 		>
 			{/* Video background */}
