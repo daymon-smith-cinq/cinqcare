@@ -4,7 +4,6 @@ import ImgHome from "/public/images/orangeBox.jpg";
 import ImgCommunity from "/public/images/WomenConversation.jpg";
 
 const OrangeBox = ({ page }) => {
-
 	// *******
 	// Content
 	// *******
@@ -13,7 +12,7 @@ const OrangeBox = ({ page }) => {
 		foregroundImg: "",
 		foregroundImgAlt: "",
 		text: "",
-	}
+	};
 
 	// Homepage
 	if (page == "home") {
@@ -21,22 +20,25 @@ const OrangeBox = ({ page }) => {
 			bgImgSrc: "images/orangeBox-stripes-home.png",
 			foregroundImg: ImgHome,
 			foregroundImgAlt: "",
-			text: "<h4>Our Approach</h4>" +
-				"<h3>Too often, people who need care — especially in the home — don’t get it. In high-needs, urban, and rural communities, the system isn’t working. It’s hard to get a primary care appointment. Home visits are too expensive. Support programs feel out of reach.</h3>" +
-				"<h3>We’re changing that.</h3>" +
-				"<h3>CINQCARE delivers health and care — better, simpler, and closer to home. Because your health shouldn’t depend on your zip code.</h3>"
+			text:
+				"<h4>Our Approach</h4>" +
+				"<h3>Too often, the people who need care most — especially at home — don't get it. In high-needs, urban and rural communities, the system isn't working. It's too hard to get an appointment. Too expensive to get a nurse visit. Too confusing to find the support you qualify for.</h3>" +
+				"<h3><em>We’re changing that.</em></h3>" +
+				"<h3>CINQCARE delivers health and care — better, simpler, and closer to home. Because your health shouldn’t depend on your zip code.</h3>",
 		};
 	} else if (page == "grace-at-home") {
 		content = {
 			bgImgSrc: "images/orangeBox-stripes-care.png",
-			text: "<h4>For too many people, getting care means long waits, stressful travel, and a system that feels out of touch with daily life. Our healthcare system can be hard to navigate and even harder to access.</h4>" +
-			"<h4>We <em>meet you where you are,</em> delivering expert medical care, right in the comfort of your home — so you can focus on living well.</h4>",
+			text:
+				"<h4>For too many people, getting care means long waits, stressful travel, and a system that feels out of touch with daily life. Our healthcare system can be hard to navigate and even harder to access.</h4>" +
+				"<h4>We <em>meet you where you are,</em> delivering expert medical care, right in the comfort of your home — so you can focus on living well.</h4>",
 		};
 	} else if (page == "for-moms") {
 		content = {
 			bgImgSrc: "images/orangeBox-stripes-moms.png",
-			text: "<h3>“I felt like I was doing this alone—until I found CINQCARE.”</h3>" +
-			"<h3>Tasha W. - CINQCARE Mom</h3>",
+			text:
+				"<h3>“I felt like I was doing this alone—until I found CINQCARE.”</h3>" +
+				"<h3>Tasha W. - CINQCARE Mom</h3>",
 		};
 	} else if (page == "communities") {
 		content = {
@@ -50,7 +52,7 @@ const OrangeBox = ({ page }) => {
 	return (
 		<section className={styles.section_orangeBox}>
 			<div className={`${styles.container_orangeBox} ${" wrapper"}`}>
-				<div 
+				<div
 					className={styles.orangeBox}
 					style={{
 						backgroundImage: `url(${content.bgImgSrc})`,
@@ -58,11 +60,15 @@ const OrangeBox = ({ page }) => {
 				>
 					{content?.foregroundImg && (
 						<div className={styles.orangeBoxImage}>
-							<Image priority={false} src={content.foregroundImg} alt={content.foregroundImgSrc} />
+							<Image
+								priority={false}
+								src={content.foregroundImg}
+								alt={content.foregroundImgSrc}
+							/>
 						</div>
 					)}
 					<div
-						className={styles.orangeBoxContent} 
+						className={styles.orangeBoxContent}
 						dangerouslySetInnerHTML={{ __html: content.text }}
 					></div>
 				</div>

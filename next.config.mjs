@@ -5,6 +5,11 @@ const nextConfig = {
 	async redirects() {
 		return [
 			{
+				source: "/care-at-home-notice-of-privacy-practices",
+				destination: "/privacy-policy-practices",
+				permanent: true,
+			},
+			{
 				source: "/individuals",
 				destination: "/for-patients",
 				permanent: true,

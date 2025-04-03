@@ -39,8 +39,8 @@ const Cards = ({ page }) => {
 			heading: "Find <em>Care</em> Near You",
 			paragraph:
 				"<b>Coming Soon</b><br>Washington, DC & additional Maryland regions.",
-			buttonLink: "",
-			buttonText: "",
+			buttonLink: "https://gracewomenscenter.cinq.care/",
+			buttonText: "Request a Visit",
 			finePrint: "",
 			cardContent: [
 				{
