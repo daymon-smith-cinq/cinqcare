@@ -127,7 +127,7 @@ const GlassAccordion = ({ page }) => {
 			heading: "Care for Every Stage of <em>Motherhood</em>",
 			paragraph:
 				"<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
-			buttonLink: "/join-our-family",
+			buttonLink: "https://gracewomenscenter.cinq.care/",
 			buttonText: "See How CINQCARE Supports Moms",
 			accordionContent: [
 				{

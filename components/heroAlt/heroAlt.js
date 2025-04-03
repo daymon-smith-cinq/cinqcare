@@ -17,7 +17,8 @@ const HeroAlt = ({ page }) => {
 			buttonText: "Visit Site",
 			buttonLink: "#", // Need final link
 			buttonTarget: "_blank",
-			quoteText: "“At Grace at Home, we believe health and care should come to you, not the other way around.” <span>— Traci Miller, President, Grace at Home</span>",
+			quoteText:
+				"“At Grace at Home, we believe health and care should come to you, not the other way around.” <span>— Traci Miller, President, Grace at Home</span>",
 		};
 	}
 
@@ -29,7 +30,7 @@ const HeroAlt = ({ page }) => {
 			paragraph:
 				"You're always there for everyone else. <br> We're here for you.",
 			buttonText: "Visit Site",
-			buttonLink: "https://formoms.cinq.care/",
+			buttonLink: "https://gracewomenscenter.cinq.care/",
 			buttonTarget: "_blank",
 		};
 	}
@@ -72,12 +73,14 @@ const HeroAlt = ({ page }) => {
 						<Button
 							link={content.buttonLink}
 							text={content.buttonText}
-							target={content.buttonTarget ? `${content.buttonTarget}` : "_self"}
+							target={
+								content.buttonTarget ? `${content.buttonTarget}` : "_self"
+							}
 							type="outline-black"
 						/>
 					)}
 					{content?.quoteText && (
-						<blockquote 
+						<blockquote
 							className={styles.heroQuote}
 							dangerouslySetInnerHTML={{ __html: content.quoteText }}
 						></blockquote>

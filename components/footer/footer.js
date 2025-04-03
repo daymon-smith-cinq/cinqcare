@@ -60,6 +60,11 @@ const Footer = () => {
 									<li>
 										<a href="/care-medical-practice">Care Medical Practice</a>
 									</li>
+									<li>
+										<a href="https://aco.cinq.care/" target="_blank">
+											ACO REACH
+										</a>
+									</li>
 								</ul>
 							</div>
 
@@ -142,9 +147,6 @@ const Footer = () => {
 							<a href="/privacy-policy">Privacy Policy</a>
 							<a href="/privacy-policy-grace-at-home">
 								Grace at Home Privacy Policy
-							</a>
-							<a href="https://aco.cinq.care/" target="_blank">
-								ACO REACH
 							</a>
 						</nav>
 
