@@ -76,7 +76,7 @@ export default function Providers() {
 					target="_blank"
 				>
 					<header>
-						<h2 class="period">
+						<h2 className="period">
 							We want to hear <em>from you</em>
 						</h2>
 					</header>
