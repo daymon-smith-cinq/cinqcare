@@ -8,6 +8,7 @@ const GlassAccordion = ({ page }) => {
 	if (page === "providers") {
 		content = {
 			bgImgSrc: "images/Woman-helping-man-into-car.jpg",
+			darkenAccordionBg: false,
 			heading:
 				"How can CINQCARE help deliver <span>health and care</span> where you live?",
 			paragraph: "",
@@ -44,6 +45,7 @@ const GlassAccordion = ({ page }) => {
 	} else if (page === "patients") {
 		content = {
 			bgImgSrc: "images/PregnantMother.jpg",
+			darkenAccordionBg: false,
 			heading: "Who <span>we're</span> helping today",
 			paragraph:
 				"<p>Our goal is simple: to help you stay healthier at home — with care that meets you where you are and makes a difference in your life. If you're doing your best to manage tough health issues, <span>we want to be on your side</span>.</p>",
@@ -70,6 +72,7 @@ const GlassAccordion = ({ page }) => {
 	} else if (page === "partners") {
 		content = {
 			bgImgSrc: "images/Couple-Reviewing-Information.jpg",
+			darkenAccordionBg: false,
 			heading: "How CINQCARE <span>works differently</span>",
 			paragraph:
 				"<p>What makes us different? We bring deep expertise, cutting-edge tools, and a commitment to care that extends beyond the clinic.</p>",
@@ -96,6 +99,7 @@ const GlassAccordion = ({ page }) => {
 	} else if (page === "about") {
 		content = {
 			bgImgSrc: "images/WomanMeeting.jpg",
+			darkenAccordionBg: false,
 			heading: "We were born <em>different</em>",
 			paragraph:
 				"<p>We were created in 2022 to be on call to deliver health, care and well-being in the homes and communities of those who need care the most.</p>" +
@@ -124,6 +128,7 @@ const GlassAccordion = ({ page }) => {
 	} else if (page === "for-moms") {
 		content = {
 			bgImgSrc: "images/Ultrasound.jpg",
+			darkenAccordionBg: true,
 			heading: "Care for Every Stage of <em>Motherhood</em>",
 			paragraph:
 				"<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
@@ -216,7 +221,11 @@ const GlassAccordion = ({ page }) => {
 						return (
 							<div
 								key={index}
-								className={`${styles.accordion} ${isOpen ? styles.open : ""}`}
+								className={`
+									${styles.accordion} 
+									${isOpen ? styles.open : ""} 
+									${content.darkenAccordionBg ? (`${styles.bg_darken}`) : undefined}
+								`}
 								onClick={() => toggleAccordion(index)}
 								onKeyDown={handleKeyDown}
 								role="button"
