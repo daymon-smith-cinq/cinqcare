@@ -12,7 +12,7 @@ const Hero = ({ page }) => {
 	if (page == "home") {
 		content = {
 			bgImgSrc: "images/hero-home.jpg",
-			h1: "Care that meets you at home — and <em>treats you as Family</em>",
+			h1: "Health and care that meets you at home — and <em>treats you like Family</em>",
 			h1Period: false,
 			buttonText: "Learn More",
 			buttonLink: "/join-our-family",
