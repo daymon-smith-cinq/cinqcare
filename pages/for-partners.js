@@ -90,7 +90,7 @@ export default function Partners() {
 					target=""
 				>
 					<header>
-						<h2 class="period">
+						<h2 className="period">
 							The Future of Health and Care Starts <em>Here.</em>
 						</h2>
 					</header>

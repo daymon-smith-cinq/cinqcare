@@ -84,7 +84,7 @@ export default function Patients() {
 					target="_blank"
 				>
 					<header>
-						<h2 class="period">
+						<h2 className="period">
 							Your health, <em>our commitment</em>
 						</h2>
 					</header>
