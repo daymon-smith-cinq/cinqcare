@@ -28,7 +28,7 @@ const HeroAlt = ({ page }) => {
 				img3width: "509",
 				img3height: "339",
 			quoteText:
-				"“We are not a healthcare company  — <em>we are a health AND care company</em> — and that is a very distinct separation.”<span>— Gary Bacher - Rita Johnson-Mills, Head of Special Accounts Relationships, CINQCARE</span>",
+				"“We are not a healthcare company  — <em>we are a health AND care company</em> — and that is a very distinct separation.”<span>- Rita Johnson-Mills, Head of Special Accounts Relationships, CINQCARE</span>",
 		};
 	}
 

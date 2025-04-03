@@ -11,10 +11,10 @@ const Video = ({ page, vid }) => {
 	if (page == "home") {
 		content = {
 			heading:
-				"Learn how Gail <em>reversed her diabetes</em> diagnosis and went from nine chronic conditions to one, thanks to the end-to-end coordinated care provided by CINQCARE in her neighborhood:",
+				"Learn how Gail <em>reversed her diabetes</em> diagnosis and went from nine chronic conditions to one, thanks to the end-to-end coordinated care provided by CINQCARE in her neighborhood.",
 			headingPeriod: false,
 			quote: '“Seeing that somebody cares if I’m doing well or not, that’s what I call a team. It is a push they give you to go for more… I’m going to get better. I’m going to be better. I’m going to come off of this medication. I see I can do it.”',
-			name: "– CINQCARE patient Gail Cintron",
+			name: "– CINQCARE Family Member Gail Cintron",
 			videoId: "ylArPH37N4UqBAbiigSnVKqrV4Aw3xa4tiXz523TBjA",
 			videoTitle: "Gail's CINQCARE Health Home Story",
 		};

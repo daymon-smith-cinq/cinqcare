@@ -98,7 +98,7 @@ const GlassAccordion = ({ page }) => {
 			bgImgSrc: "images/WomanMeeting.jpg",
 			heading: "We were born <em>different</em>",
 			paragraph:
-				"<p>We were created in 2020 to be on call to deliver health, care and well-being in the homes and communities of those who need care the most.</p>" +
+				"<p>We were created in 2022 to be on call to deliver health, care and well-being in the homes and communities of those who need care the most.</p>" +
 				"<p>We are passionate about creating a world where health and care isn’t a burden. It is why we are committed to recruit, empower and equip physicians, nurses, practitioners and caregivers with the supportive technology they need to every day deliver care where people live.</p>" +
 				"<p>We believe providing care is a privilege – one we are grateful to earn. That’s why we built a different way to care. Now more than ever, different is better.</p>",
 			buttonLink: "",
