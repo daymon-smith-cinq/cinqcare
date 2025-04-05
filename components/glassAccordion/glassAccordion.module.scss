@@ -112,9 +112,19 @@
 			position: relative;
 			border-radius: 6px;
 			padding: 30px 40px;
-			backdrop-filter: blur(60px);
+			background: $blur-bg;
+			backdrop-filter: $blur;
+			-webkit-backdrop-filter: $blur;
 			transition: height 0.2s linear;
 			cursor: pointer;
+
+			&.bg_darken {
+				background: $blur-bg-darken;
+
+				.accordion_Content p {
+					color: rgba(255, 255, 255, 0.9);
+				}
+			}
 
 			h3 {
 				display: inline-block;
