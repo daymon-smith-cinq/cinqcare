@@ -96,6 +96,11 @@
 				.name {
 					font-weight: 500;
 					margin-bottom: 5px;
+
+					@include respond-to("mobile") {
+						font-size: 18px;
+						margin-bottom: 7px;
+					}
 				}
 
 				p, blockquote {
@@ -104,9 +109,10 @@
 	
 				.title {
 					font-size: 18px;
-					
+
 					@include respond-to("mobile") {
-						font-size: 16px;
+						font-size: 15px;
+						line-height: 1.3;
 
 						p {
 							margin: 10px 0 8px 0;
@@ -120,6 +126,17 @@
 	
 				.quote {
 					font-family: "PP Editorial New", serif;
+				}
+
+				@include respond-to("mobile") {
+					.info, .quote {
+						font-size: 15px;
+						line-height: 1.3;
+
+						p {
+							margin: 10px 0 8px 0;
+						}
+					}
 				}
 			}
 		}
