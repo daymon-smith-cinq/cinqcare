@@ -15,6 +15,7 @@ import SteveS from "/public/portraits/steve-swift.jpg";
 import BarbaraR from "/public/portraits/barbara-rhoden.jpg";
 import TraciM from "/public/portraits/traci-miller.jpg";
 import CherylRW from "/public/portraits/cheryl-rucker-whitaker.jpg";
+import AngeliqueKL from "/public/portraits/angelique-kelly-lara.jpg";
 
 import GlenisS from "/public/portraits/glenis-strachan.jpg";
 import JesslynP from "/public/portraits/jesslyn-perry.jpg";
@@ -109,6 +110,11 @@ const People = ({ page, group }) => {
 					portrait: JessicaG,
 					name: "Jessica Gamzon",
 					title: "President Network Solutions",
+				},
+				{
+					portrait: AngeliqueKL,
+					name: "Angelique Kelly-Lara",
+					title: "Chief People Officer",
 				},
 			],
 		};

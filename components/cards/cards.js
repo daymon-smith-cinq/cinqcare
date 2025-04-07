@@ -8,7 +8,7 @@ const Cards = ({ page }) => {
 
 	if (page === "care-medical-practice") {
 		content = {
-			heading: "Find <em>Grace at Home</em> Near You",
+			heading: "Find a Practice <em>Near You</em>",
 			paragraph:
 				"Care Medical Practice is expanding to serve more communities.",
 			buttonLink: "https://caremedicalpractice.care/book-care-options/",
