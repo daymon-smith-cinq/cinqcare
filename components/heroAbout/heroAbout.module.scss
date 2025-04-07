@@ -35,10 +35,19 @@
 
 			@include respond-to("tablet") {
 				flex-wrap: wrap;
+				gap: 20px;
+			}
+
+			@include respond-to("mobile") {
+				gap: 10px;
 			}
 
 			a {
 				margin: 0 auto 60px auto;
+
+				@include respond-to("tablet") {
+					margin-bottom: 40px;
+				}
 			}
 
 			img {
@@ -51,7 +60,7 @@
 
 			@include respond-to("tablet") {
 				> div, > div:last-child  {
-					width: 100%;
+					flex-basis: calc(50% - 10px);
 					margin: 0 auto;
 				
 					img {
@@ -59,12 +68,53 @@
 					}
 				}
 
-				> div:nth-child(1)  {
-					order: 1;
+				> div:nth-child(2) {
+					order: -1;
+					flex-basis: 100%;
+
+					img {
+						width: 100%;
+						max-width: 300px;
+						margin: 0 auto;
+					}
+				}
+
+				> div:nth-child(3) {
+					img {
+						margin-top: 80px;
+					}
+				}
+			}
+
+			@include respond-to("mobile") {
+				> div, > div:last-child {
+					flex-basis: calc(100% - 10px);
+				
+					img {
+						max-width: 70%;
+						margin: 0 auto 0 0;
+					}
+				}
+
+				> div:nth-child(2) {
+					flex-basis: calc(100% - 10px);
+
+					img {
+						max-width: 70%;
+						margin: 0 auto;
+					}
+				}
+
+				> div:nth-child(3) {
+					flex-basis: calc(100% - 10px);
+
+					img {
+						max-width: 70%;
+						margin: 0 0 0 auto;
+					}
 				}
 			}
 		}
-
 	}
 
 	blockquote {
