@@ -30,6 +30,16 @@ const BackgroundContainer = ({ page, children }) => {
 			padding: "",
 			background: "linear-gradient(#fdf9f1, #fff, #fdf9f1)",
 		};
+	} else if (page === "providers") {
+		content = {
+			pageName: "providers",
+			margin: "",
+			padding: "",
+			background:
+				"linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 90%, rgba(255,255,255,1) 90%), url(/backgrounds/PathwayNoGradient.svg) 120% 700px no-repeat",
+			backgroundPos: "calc(100% + 250px) 400px",
+			backgroundSize: "700px 100%",
+		};
 	}
 
 	console.log("Page:", page);
@@ -37,11 +47,15 @@ const BackgroundContainer = ({ page, children }) => {
 
 	return (
 		<section
-			className={styles.section_BackgroundContainer}
+			className={`${styles.section_BackgroundContainer} ${
+				styles[content.pageName]
+			}`}
 			style={{
 				margin: content.margin,
 				padding: content.padding,
 				background: content.background,
+				backgroundSize: content.backgroundSize,
+				backgroundPosition: content.backgroundPos,
 			}}
 		>
 			{children}

@@ -37,6 +37,26 @@
 			padding: 30px 20px;
 		}
 
+		/* New styles */
+		display: flex;
+		align-items: center;
+		gap: 100px;
+
+		@include respond-to("tablet-landscape") {
+			gap: 60px;
+		}
+
+		@include respond-to("tablet") {
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		@include respond-to("mobile") {
+			gap: 20px;
+		}
+
+		/* End new styles */
+
 		&.yellow {
 			background-color: $yellow;
 
@@ -102,6 +122,8 @@
 
 			img {
 				height: 100%;
+				display: block;
+				object-fit: cover;
 				object-position: center;
 			}
 		}
@@ -122,8 +144,8 @@
 				}
 
 				@include respond-to("mobile") {
-					font-size: 26px;
-					line-height: 32px;
+					font-size: 22px;
+					line-height: 26px;
 				}
 
 				span {
@@ -146,6 +168,11 @@
 
 				@include respond-to("tablet") {
 					text-align: center;
+				}
+
+				@include respond-to("mobile") {
+					font-size: 16px;
+					line-height: 20px;
 				}
 			}
 		}

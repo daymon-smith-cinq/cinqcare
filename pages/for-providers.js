@@ -1,6 +1,5 @@
 import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
-import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
 import ScrollJacking from "../components/scrollJacking/scrollJacking";
@@ -13,6 +12,7 @@ import GlassAccordion from "../components/glassAccordion/glassAccordion";
 import LogoBar from "../components/logoBar/logoBar";
 import CTA from "../components/cta/cta";
 import Accordion from "../components/accordion/accordion";
+import BackgroundContainer from "@/components/backgroundContainer/backgroundContainer";
 import Footer from "../components/footer/footer";
 
 export default function Providers() {
@@ -63,8 +63,10 @@ export default function Providers() {
 						</h2>
 					</div>
 				</ScrollJacking>
-				<IconBlocks page={currentPage} />
-				<TestimonialSlider page={currentPage} />
+				<BackgroundContainer page={currentPage}>
+					<IconBlocks page={currentPage} />
+					<TestimonialSlider page={currentPage} />
+				</BackgroundContainer>
 				<Map page={currentPage} />
 				<Video page={currentPage} />
 				<GlassAccordion page={currentPage} />

@@ -2,8 +2,9 @@
 
 .section_Form {
 	position: relative;
-	margin-top: 60px;
+	//margin-top: 60px;
 	padding: 0 40px;
+	padding-top: 200px;
 
 	@include respond-to("mobile") {
 		padding: 0;

@@ -55,7 +55,9 @@ export default function CareMedicalPractice() {
 					/>
 					<header>
 						<h3>
-							Ready to see if <em>Care Medical Practice</em> is right for you?
+							Ready to see if <br />
+							<em>Care Medical Practice</em> <br />
+							is right for you?
 						</h3>
 					</header>
 				</CTA>
