@@ -30,6 +30,11 @@ const nextConfig = {
 				permanent: true,
 			},
 			{
+				source: "/grace-at-home",
+				destination: "https://grace-at-home.care/",
+				permanent: true,
+			},
+			{
 				source: "/care-at-home-privacy-policy",
 				destination: "/privacy-policy",
 				permanent: true,
