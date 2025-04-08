@@ -82,7 +82,6 @@ export default function ForMoms() {
 					</p>
 				</CTA>
 				<Accordion page={currentPage} />
-				<SideBySide page={currentPage} num="third" />
 			</main>
 
 			<Footer />

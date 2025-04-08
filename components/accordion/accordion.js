@@ -117,6 +117,8 @@ const Accordion = ({ page }) => {
 				"Answers to <span>your questions</span> about CINQCARE for Moms",
 			headingPeriod: true,
 			paragraph: "Expand to see common questions about CINQCARE for Moms.",
+			finePrint: 
+				"<p class='fine-print'>Grace Women’s Health Center is an independently owned and operated medical practice that contracts with CINQ Connect for administrative and operational support. CINQCARE does not provide medical care or make clinical decisions.</p>",
 			accordionContent: [
 				{
 					heading: "What kind of care does CINQCARE for Moms provide?",
@@ -157,7 +159,7 @@ const Accordion = ({ page }) => {
 	return (
 		<section className={styles.section_Accordion}>
 			<div className={styles.container_Heading}>
-				<h2
+				<h3
 					className={content.headingPeriod ? "period" : undefined}
 					dangerouslySetInnerHTML={{ __html: content.heading }}
 				/>
@@ -199,7 +201,7 @@ const Accordion = ({ page }) => {
 							aria-controls={`accordion-panel-${index}`}
 							id={`accordion-button-${index}`}
 						>
-							<h3>{item.heading}</h3>
+							<h4>{item.heading}</h4>
 
 							<div
 								id={`accordion-panel-${index}`}
@@ -221,6 +223,13 @@ const Accordion = ({ page }) => {
 					);
 				})}
 			</div>
+
+			{content.finePrint && (
+				<div 
+					className={styles.finePrint}
+					dangerouslySetInnerHTML={{ __html: content.finePrint }}
+				/>
+			)}
 		</section>
 	);
 };
