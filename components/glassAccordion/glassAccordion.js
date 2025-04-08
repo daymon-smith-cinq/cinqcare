@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./glassAccordion.module.scss";
 import Button from "../button/button";
+import Image from "next/image";
 
 const GlassAccordion = ({ page }) => {
 	let content = "";
@@ -179,6 +180,14 @@ const GlassAccordion = ({ page }) => {
 					: undefined
 			}
 		>
+			{content.bgImgSrc && (
+				<div className={styles.mobileImg}>
+					<img
+						src={content.bgImgSrc}
+						alt=""
+					/>
+				</div>
+			)}	
 			{content.heading && (
 				<div className={styles.container_Heading}>
 					<h2
