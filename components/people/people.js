@@ -87,6 +87,11 @@ const People = ({ page, group }) => {
 					title: "Chief Legal & External Affairs Officer",
 				},
 				{
+					portrait: AngeliqueKL,
+					name: "Angelique Kelly-Lara",
+					title: "Chief People Officer",
+				},
+				{
 					portrait: BrianB,
 					name: "Brian Benjamin",
 					title: "President Northeast",
@@ -110,11 +115,6 @@ const People = ({ page, group }) => {
 					portrait: JessicaG,
 					name: "Jessica Gamzon",
 					title: "President Network Solutions",
-				},
-				{
-					portrait: AngeliqueKL,
-					name: "Angelique Kelly-Lara",
-					title: "Chief People Officer",
 				},
 			],
 		};

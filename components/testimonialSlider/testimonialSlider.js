@@ -14,14 +14,14 @@ const TestimonialSlider = ({ page }) => {
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
 					image: "/images/oldFriends.jpg",
 					quote:
-						'"We are not a sick-care system, where we only want to see you when you\'re sick. We are in it for the long haul with our patients and the community."',
+						'"We are not a sick-care system, where we only want to see you when you\'re sick. <em>We are in it for the long haul</em> with our patients and the community."',
 					name: "Parinda Khatri, PhD, Chief Clinical Officer of Cherokee Health Systems",
 				},
 				{
 					color: "orange",
 					image: "/images/oldFriends.jpg",
 					quote:
-						"\"With CINQCARE, we're not just improving metrics—we're improving lives. The impact on our patients and our practice has been transformational.\"",
+						"\"With CINQCARE, we're not just improving metrics—<em>we're improving lives.</em> The impact on our patients and our practice has been transformational.\"",
 					name: "Ms. Deborah Forbes — VP of Operations, Doral Health and Wellness",
 				},
 			],
@@ -34,9 +34,9 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow",
-					image: "/images/womanLivingRoom.jpg",
+					image: "/images/homeVisit.jpg",
 					quote:
-						'"I used to miss my doctor\'s appointments because I had no way to get there. I worried about my health, but I felt stuck. Then, CINQCARE stepped in. Now, a nurse comes to me, checks on me, and helps me manage my diabetes. I feel healthier, and I finally have the support I needed."',
+						'"I used to miss my doctor\'s appointments because I had no way to get there. I worried about my health, but I felt stuck. Then, CINQCARE stepped in. Now, a nurse comes to me, checks on me, and helps me manage my diabetes. <em>I feel healthier, and I finally have the support I needed.</em>"',
 					name: "Linda M., CINQCARE Family Member",
 				},
 				{
@@ -56,7 +56,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow",
-					image: "/images/smilingMan.jpg",
+					image: "/images/OldFriendsPlayingChess.jpg",
 					quote:
 						'"By combining our expertise and resources, Optum and CINQCARE hope to make significant strides in improving the health and well-being of the diverse population of dually eligible Medicare and Medicaid members we serve."',
 					name: "Steve Swift, Chief Financial Officer CINQCARE",
@@ -130,7 +130,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "orange",
-					image: "/images/happyDoctor.jpg",
+					image: "/images/DoctorsTalking.jpg",
 					quote:
 						'"With CINQCARE, we’re not just improving metrics—<span>we’re improving lives.</span> The impact on our patients and our practice has been transformational."',
 					name: " Ms. Deborah Forbes — VP of Operations, Doral Health and Wellness",
