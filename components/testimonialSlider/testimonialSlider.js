@@ -56,7 +56,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow",
-					image: "/images/OldFriendsPlayingChess.jpg",
+					image: "/images/SmilingNurseAndPatient.jpg",
 					quote:
 						'"By combining our expertise and resources, Optum and CINQCARE hope to make significant strides in improving the health and well-being of the diverse population of dually eligible Medicare and Medicaid members we serve."',
 					name: "Steve Swift, Chief Financial Officer CINQCARE",
