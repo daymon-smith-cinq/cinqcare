@@ -97,6 +97,14 @@
 			color: white;
 			font-size: toem(25px);
 			line-height: 140%;
+
+			&.name {
+				font-size: toem(20px);
+
+				strong {
+					font-size: toem(18px);
+				}
+			}
 		}
 
 		img {
