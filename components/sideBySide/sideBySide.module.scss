@@ -26,6 +26,7 @@
 
 		@include respond-to("tablet") {
 			flex-direction: column-reverse;
+			gap: 20px;
 		}
 
 		// @include respond-to("mobile-landscape") {
