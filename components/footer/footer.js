@@ -52,7 +52,9 @@ const Footer = () => {
 								<header>Our Services</header>
 								<ul>
 									<li>
-										<a href="/grace-at-home">Grace at Home</a>
+										<a href="https://grace-at-home.care/" target="_blank">
+											Grace at Home
+										</a>
 									</li>
 									<li>
 										<a href="/for-moms">CINQCARE for Moms</a>

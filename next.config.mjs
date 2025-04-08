@@ -21,7 +21,7 @@ const nextConfig = {
 			},
 			{
 				source: "/care-at-home",
-				destination: "/grace-at-home",
+				destination: "https://grace-at-home.care/",
 				permanent: true,
 			},
 			{
@@ -66,12 +66,12 @@ const nextConfig = {
 			},
 			{
 				source: "/care-at-home-annual-visit-program",
-				destination: "/grace-at-home",
+				destination: "https://grace-at-home.care/",
 				permanent: true,
 			},
 			{
 				source: "/care-where-you-live",
-				destination: "/grace-at-home",
+				destination: "https://grace-at-home.care/",
 				permanent: true,
 			},
 			{
@@ -81,17 +81,17 @@ const nextConfig = {
 			},
 			{
 				source: "/care-at-home-new-page",
-				destination: "/grace-at-home",
+				destination: "https://grace-at-home.care/",
 				permanent: true,
 			},
 			{
 				source: "/care-at-home-annual-assessment-visit-program-form",
-				destination: "/grace-at-home",
+				destination: "https://grace-at-home.care/",
 				permanent: true,
 			},
 			{
 				source: "/concierge-care-at-home-form",
-				destination: "/grace-at-home",
+				destination: "https://grace-at-home.care/",
 				permanent: true,
 			},
 			{
