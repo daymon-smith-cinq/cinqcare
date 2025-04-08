@@ -163,18 +163,6 @@ const SideBySide = ({ page, num }) => {
 				},
 			],
 		};
-	} else if (page == "for-moms" && num == "third") {
-		content = {
-			bgGradient: false,
-			columns: [
-				{
-					text: "<p class='fine-print'>Grace Women’s Health Center is an independently owned and operated medical practice that contracts with CINQ Connect for administrative and operational support. CINQCARE does not provide medical care or make clinical decisions.</p>",
-				},
-				{
-					text: "",
-				},
-			],
-		};
 	}
 
 	return (
