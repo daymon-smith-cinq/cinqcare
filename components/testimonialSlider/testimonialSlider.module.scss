@@ -58,7 +58,20 @@
 		/* End new styles */
 
 		&.yellow {
-			background-color: $yellow;
+			background: url("../../public/backgrounds/t-stripe.svg") no-repeat 120px 0,
+				$yellow;
+
+			@include respond-to("tablet-landscape") {
+				background: url("../../public/backgrounds/t-stripe.svg") no-repeat 70px
+						0,
+					$yellow;
+			}
+
+			@include respond-to("tablet") {
+				background: url("../../public/backgrounds/t-stripe.svg") no-repeat 70px
+						0,
+					$yellow;
+			}
 
 			.image_Testimonials {
 				background: linear-gradient(0deg, #ffc62d 0%, #edac00 100%);
@@ -66,10 +79,20 @@
 		}
 
 		&.orange {
-			background-color: $orange;
+			background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat 120px
+					0,
+				$orange;
 
-			.image_Testimonials {
-				background: linear-gradient(0deg, #ffa941 0%, #e47600 100%);
+			@include respond-to("tablet-landscape") {
+				background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat
+						70px 0,
+					$orange;
+			}
+
+			@include respond-to("tablet") {
+				background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat
+						70px 0,
+					$orange;
 			}
 		}
 

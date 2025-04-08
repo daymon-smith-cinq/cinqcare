@@ -10,7 +10,7 @@ import Stats from "../components/stats/stats";
 import SideBySide from "../components/sideBySide/sideBySide";
 import Video from "../components/video/video";
 import CTA from "../components/cta/cta";
-import Masonry from "../components/masonry/masonry";
+import MasonryCommunities from "@/components/masonry/masonry-communities";
 import Footer from "../components/footer/footer";
 import Spacer from "../components/spacer/spacer";
 
@@ -48,7 +48,7 @@ export default function Home() {
 				<SideBySide page={currentPage} />
 				<Video page={currentPage} />
 				<Spacer separator="true" size="small" />
-				<Masonry page={currentPage} />
+				<MasonryCommunities />
 				<Spacer size="medium" />
 				<CTA
 					type="primary"
@@ -61,7 +61,8 @@ export default function Home() {
 						</h2>
 					</header>
 					<p>
-						We’d love to explore opportunities for providers, Family Members, and partners in your area.
+						We’d love to explore opportunities for providers, Family Members,
+						and partners in your area.
 					</p>
 				</CTA>
 			</main>
