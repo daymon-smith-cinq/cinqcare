@@ -9,7 +9,7 @@ import styles from "./footer.module.scss";
 const Footer = () => {
 	const router = useRouter();
 	const currentPath = router.pathname;
-	const isJoinPage = currentPath === "/join-our-family";
+	const isJoinPage = currentPath === "/";
 
 	return (
 		<footer
@@ -31,7 +31,7 @@ const Footer = () => {
 						/>
 					</a>
 
-					{currentPath !== "/join-our-family" && (
+					{currentPath !== "/" && (
 						<nav className={styles.footer__nav}>
 							<div>
 								<header>Who We Serve</header>
@@ -90,7 +90,7 @@ const Footer = () => {
 							</div>
 						</nav>
 					)}
-					{currentPath !== "/join-our-family" && (
+					{currentPath !== "/" && (
 						<div className={styles.footer__hero}>
 							<header>
 								<h2>
@@ -144,16 +144,13 @@ const Footer = () => {
 						</nav>
 
 						<nav className={styles.footer__policy}>
-							<a href="/privacy-policy">Privacy Policy</a>
-							<a href="/privacy-policy-grace-at-home">
-								Grace at Home Privacy Policy
-							</a>
+							<a href="/privacy-policy-grace-at-home">Privacy Policy</a>
 						</nav>
 
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>
 					</div>
 				</div>
-				{currentPath !== "/join-our-family" && (
+				{currentPath !== "/" && (
 					<div className={styles.footer__hero}>
 						<header>
 							<h2>

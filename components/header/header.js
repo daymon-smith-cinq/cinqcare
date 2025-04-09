@@ -33,10 +33,8 @@ const Header = ({ headerBg }) => {
 						<a href="/" className={styles.logo}>
 							<Image priority={true} src={logoSrc} alt="Cinqcare Logo" />
 						</a>
-						{currentPath !== "/join-our-family" && (
-							<div className={styles.spacer}></div>
-						)}
-						{currentPath !== "/join-our-family" && (
+						{currentPath !== "/" && <div className={styles.spacer}></div>}
+						{currentPath !== "/" && (
 							<label
 								htmlFor="responsiveMenuToggle"
 								className={`${styles.responsiveMenuToggleLabel} ${bgColor}`}
@@ -44,14 +42,14 @@ const Header = ({ headerBg }) => {
 								Menu
 							</label>
 						)}
-						{currentPath !== "/join-our-family" && (
+						{currentPath !== "/" && (
 							<input
 								type="checkbox"
 								id="responsiveMenuToggle"
 								className={styles.responsiveMenuToggleInput}
 							/>
 						)}
-						{currentPath !== "/join-our-family" && (
+						{currentPath !== "/" && (
 							<nav id="nav" role="navigation" aria-label="Main">
 								<ul id="menu" className={styles.menu}>
 									<li
@@ -97,7 +95,7 @@ const Header = ({ headerBg }) => {
 								</ul>
 							</nav>
 						)}
-						{currentPath !== "/join-our-family" && (
+						{currentPath !== "/" && (
 							<a className={styles.menu_cta} href="/join-our-family">
 								Join Our Family
 							</a>

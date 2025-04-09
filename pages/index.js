@@ -1,28 +1,26 @@
 import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
-import Header from "../components/header/header";
 import Image from "next/image";
-import Hero from "../components/hero/hero";
+import Header from "../components/header/header";
+import HeroAlt from "../components/heroAlt/heroAlt";
 import OrangeBox from "../components/orangeBox/orangeBox";
-import Slidecordion from "../components/slidecordion/slidecordion";
-import ColumnAccordion from "../components/columnAccordion/columnAccordion";
-import Stats from "../components/stats/stats";
+import Map from "../components/map/map";
 import SideBySide from "../components/sideBySide/sideBySide";
-import Video from "../components/video/video";
+import IconBlocks from "../components/iconBlocks/iconBlocks";
 import CTA from "../components/cta/cta";
-import MasonryCommunities from "@/components/masonry/masonry-communities";
+import MasonryImages from "../components/masonryImages/masonryImages";
 import Footer from "../components/footer/footer";
-import Spacer from "../components/spacer/spacer";
+import logoGraceAtHome from "/public/logo-grace-at-home.svg";
 
-export default function Home() {
+export default function GraceAtHome() {
 	// Define current page
-	const currentPage = "home";
+	const currentPage = "grace-at-home";
 
 	// SEO
-	const title = "CINQCARE - Care, Where You Live";
+	const title = "Grace at Home | CINQCARE";
 	const metaDescription =
-		"CINQCARE delivers health and care—better, simpler, and closer to home. Because your health shouldn’t depend on your zip code.";
-	const pageURL = "https://cinq.care/";
+		"Grace at Home brings expert primary, urgent, and chronic care to you. Quality health support tailored to your needs, right at home.";
+	const pageURL = "https://grace-at-home.care/";
 
 	return (
 		<>
@@ -37,33 +35,41 @@ export default function Home() {
 				<title>{title}</title>
 			</Head>
 
-			<Header headerBg="dark" />
+			<Header headerBg="light" />
 
 			<main>
-				<Hero page={currentPage} />
+				<HeroAlt page={currentPage} />
 				<OrangeBox page={currentPage} />
-				<Slidecordion page={currentPage} />
-				<ColumnAccordion page={currentPage} />
-				<Stats page={currentPage} />
-				<SideBySide page={currentPage} />
-				<Video page={currentPage} />
-				<Spacer separator="true" size="small" />
-				<MasonryCommunities />
-				<Spacer size="medium" />
+				<Map page={currentPage} />
+				<SideBySide page={currentPage} num="first" />
+				<IconBlocks page={currentPage} />
+				<SideBySide page={currentPage} num="second" />
 				<CTA
-					type="primary"
-					buttonText="Connect with Us"
+					type="tertiary"
+					buttonText="Find Care Near You"
 					link="/join-our-family"
 				>
+					<Image
+						priority={false}
+						src={logoGraceAtHome}
+						alt="Grace at Home logo"
+						width="271"
+						height="34"
+					/>
 					<header>
-						<h2>
-							Join the <em>CINQCARE</em> Family.
-						</h2>
+						<h3>
+							Ready to see if <em>Grace at Home</em> is right for you?
+						</h3>
 					</header>
-					<p>
-						We’d love to explore opportunities for providers, Family Members,
-						and partners in your area.
-					</p>
+				</CTA>
+
+				<MasonryImages page={currentPage} />
+
+				<CTA type="primary" buttonText="Find Care Near You" link="/">
+					<header>
+						<h2>Ready to Get Started?</h2>
+					</header>
+					<p>Take the first step toward better care. Find support today.</p>
 				</CTA>
 			</main>
 
