@@ -31,76 +31,78 @@ const Footer = () => {
 						/>
 					</a>
 
-					{currentPath !== "/" && (
-						<nav className={styles.footer__nav}>
-							<div>
-								<header>Who We Serve</header>
-								<ul>
-									<li>
-										<a href="/for-providers">Providers</a>
-									</li>
-									<li>
-										<a href="/for-patients">Patients</a>
-									</li>
-									<li>
-										<a href="/for-partners">Partners</a>
-									</li>
-								</ul>
-							</div>
+					{currentPath !== "/" &&
+						currentPath !== "/privacy-policy-grace-at-home" && (
+							<nav className={styles.footer__nav}>
+								<div>
+									<header>Who We Serve</header>
+									<ul>
+										<li>
+											<a href="/for-providers">Providers</a>
+										</li>
+										<li>
+											<a href="/for-patients">Patients</a>
+										</li>
+										<li>
+											<a href="/for-partners">Partners</a>
+										</li>
+									</ul>
+								</div>
 
-							<div>
-								<header>Our Services</header>
-								<ul>
-									<li>
-										<a href="/grace-at-home">Grace at Home</a>
-									</li>
-									<li>
-										<a href="/for-moms">CINQCARE for Moms</a>
-									</li>
-									<li>
-										<a href="/care-medical-practice">Care Medical Practice</a>
-									</li>
-									<li>
-										<a href="https://aco.cinq.care/" target="_blank">
-											ACO REACH
-										</a>
-									</li>
-								</ul>
-							</div>
+								<div>
+									<header>Our Services</header>
+									<ul>
+										<li>
+											<a href="/grace-at-home">Grace at Home</a>
+										</li>
+										<li>
+											<a href="/for-moms">CINQCARE for Moms</a>
+										</li>
+										<li>
+											<a href="/care-medical-practice">Care Medical Practice</a>
+										</li>
+										<li>
+											<a href="https://aco.cinq.care/" target="_blank">
+												ACO REACH
+											</a>
+										</li>
+									</ul>
+								</div>
 
-							<div>
-								<header>Community</header>
-								<ul>
-									<li>
-										<a href="/communities">Community</a>
-									</li>
-								</ul>
-							</div>
+								<div>
+									<header>Community</header>
+									<ul>
+										<li>
+											<a href="/communities">Community</a>
+										</li>
+									</ul>
+								</div>
 
-							<div>
-								<header>Company</header>
-								<ul>
-									<li>
-										<a href="/about">About Us</a>
-									</li>
-									<li>
-										<a href="/careers-with-a-calling">Careers</a>
-									</li>
-								</ul>
+								<div>
+									<header>Company</header>
+									<ul>
+										<li>
+											<a href="/about">About Us</a>
+										</li>
+										<li>
+											<a href="/careers-with-a-calling">Careers</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						)}
+					{currentPath !== "/" &&
+						currentPath !== "/privacy-policy-grace-at-home" && (
+							<div className={styles.footer__hero}>
+								<header>
+									<h2>
+										<em>More Than Healthcare</em> — A Movement for Those Who
+										Need It Most.
+									</h2>
+								</header>
+								<Button link="/join-our-family" text="Join Our Family" />
 							</div>
-						</nav>
-					)}
-					{currentPath !== "/" && (
-						<div className={styles.footer__hero}>
-							<header>
-								<h2>
-									<em>More Than Healthcare</em> — A Movement for Those Who Need
-									It Most.
-								</h2>
-							</header>
-							<Button link="/join-our-family" text="Join Our Family" />
-						</div>
-					)}
+						)}
 					<div className={styles.footer__info}>
 						<nav className={styles.footer__subnav}>
 							<div>
@@ -150,17 +152,18 @@ const Footer = () => {
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>
 					</div>
 				</div>
-				{currentPath !== "/" && (
-					<div className={styles.footer__hero}>
-						<header>
-							<h2>
-								<em>More Than Healthcare</em> — A Movement for Those Who Need It
-								Most.
-							</h2>
-						</header>
-						<Button link="/join-our-family" text="Join Our Family" />
-					</div>
-				)}
+				{currentPath !== "/" &&
+					currentPath !== "/privacy-policy-grace-at-home" && (
+						<div className={styles.footer__hero}>
+							<header>
+								<h2>
+									<em>More Than Healthcare</em> — A Movement for Those Who Need
+									It Most.
+								</h2>
+							</header>
+							<Button link="/join-our-family" text="Join Our Family" />
+						</div>
+					)}
 			</div>
 		</footer>
 	);

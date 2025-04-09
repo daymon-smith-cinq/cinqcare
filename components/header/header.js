@@ -33,73 +33,80 @@ const Header = ({ headerBg }) => {
 						<a href="/" className={styles.logo}>
 							<Image priority={true} src={logoSrc} alt="Cinqcare Logo" />
 						</a>
-						{currentPath !== "/" && <div className={styles.spacer}></div>}
-						{currentPath !== "/" && (
-							<label
-								htmlFor="responsiveMenuToggle"
-								className={`${styles.responsiveMenuToggleLabel} ${bgColor}`}
-							>
-								Menu
-							</label>
-						)}
-						{currentPath !== "/" && (
-							<input
-								type="checkbox"
-								id="responsiveMenuToggle"
-								className={styles.responsiveMenuToggleInput}
-							/>
-						)}
-						{currentPath !== "/" && (
-							<nav id="nav" role="navigation" aria-label="Main">
-								<ul id="menu" className={styles.menu}>
-									<li
-										className={styles.hasSubmenu}
-										onMouseEnter={toggleAriaExpanded}
-										onMouseLeave={toggleAriaExpanded}
-									>
-										<a aria-expanded={ariaExpanded}>Who We Serve</a>
-										<ul className={styles.submenu}>
-											<li>
-												<a href="/for-providers">For Providers</a>
-											</li>
-											<li>
-												<a href="/for-patients">For Patients</a>
-											</li>
-											<li>
-												<a href="/for-partners">For Partners</a>
-											</li>
-										</ul>
-									</li>
-									<li className={styles.hasSubmenu}>
-										<a aria-expanded="false">Our Services</a>
-										<ul className={styles.submenu}>
-											<li>
-												<a href="/grace-at-home">Grace at Home</a>
-											</li>
-											<li>
-												<a href="/for-moms">CINQCARE for Moms</a>
-											</li>
-											<li>
-												<a href="/care-medical-practice">
-													Care Medical Practice
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="/communities">Community</a>
-									</li>
-									<li>
-										<a href="/about">About</a>
-									</li>
-								</ul>
-							</nav>
-						)}
-						{currentPath !== "/" && (
-							<a className={styles.menu_cta} href="/join-our-family">
-								Join Our Family
-							</a>
-						)}
+						{currentPath !== "/" &&
+							currentPath !== "/privacy-policy-grace-at-home" && (
+								<div className={styles.spacer}></div>
+							)}
+						{currentPath !== "/" &&
+							currentPath !== "/privacy-policy-grace-at-home" && (
+								<label
+									htmlFor="responsiveMenuToggle"
+									className={`${styles.responsiveMenuToggleLabel} ${bgColor}`}
+								>
+									Menu
+								</label>
+							)}
+						{currentPath !== "/" &&
+							currentPath !== "/privacy-policy-grace-at-home" && (
+								<input
+									type="checkbox"
+									id="responsiveMenuToggle"
+									className={styles.responsiveMenuToggleInput}
+								/>
+							)}
+						{currentPath !== "/" &&
+							currentPath !== "/privacy-policy-grace-at-home" && (
+								<nav id="nav" role="navigation" aria-label="Main">
+									<ul id="menu" className={styles.menu}>
+										<li
+											className={styles.hasSubmenu}
+											onMouseEnter={toggleAriaExpanded}
+											onMouseLeave={toggleAriaExpanded}
+										>
+											<a aria-expanded={ariaExpanded}>Who We Serve</a>
+											<ul className={styles.submenu}>
+												<li>
+													<a href="/for-providers">For Providers</a>
+												</li>
+												<li>
+													<a href="/for-patients">For Patients</a>
+												</li>
+												<li>
+													<a href="/for-partners">For Partners</a>
+												</li>
+											</ul>
+										</li>
+										<li className={styles.hasSubmenu}>
+											<a aria-expanded="false">Our Services</a>
+											<ul className={styles.submenu}>
+												<li>
+													<a href="/grace-at-home">Grace at Home</a>
+												</li>
+												<li>
+													<a href="/for-moms">CINQCARE for Moms</a>
+												</li>
+												<li>
+													<a href="/care-medical-practice">
+														Care Medical Practice
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="/communities">Community</a>
+										</li>
+										<li>
+											<a href="/about">About</a>
+										</li>
+									</ul>
+								</nav>
+							)}
+						{currentPath !== "/" &&
+							currentPath !== "/privacy-policy-grace-at-home" && (
+								<a className={styles.menu_cta} href="/join-our-family">
+									Join Our Family
+								</a>
+							)}
 					</div>
 				</div>
 			</header>
