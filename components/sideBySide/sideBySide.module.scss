@@ -4,9 +4,19 @@
 	padding-top: 100px;
 	padding-bottom: 100px;
 
+	@include respond-to("tablet") {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
 	@include respond-to("mobile-landscape") {
 		padding-top: 60px;
 		padding-bottom: 60px;
+	}
+
+	@include respond-to("mobile") {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	&.gradient {
@@ -25,8 +35,8 @@
 		}
 
 		@include respond-to("tablet") {
-			flex-direction: column-reverse;
-			gap: 20px;
+			flex-direction: column;
+			gap: 50px;
 		}
 
 		// @include respond-to("mobile-landscape") {
