@@ -29,6 +29,11 @@
 		padding: 60px 90px;
 		border-radius: 10px;
 
+		/* New styles */
+		display: flex;
+		align-items: center;
+		gap: 100px;
+
 		@include respond-to("mobile-landscape") {
 			padding: 45px;
 		}
@@ -36,11 +41,6 @@
 		@include respond-to("mobile") {
 			padding: 30px 20px;
 		}
-
-		/* New styles */
-		display: flex;
-		align-items: center;
-		gap: 100px;
 
 		@include respond-to("tablet-landscape") {
 			gap: 60px;
