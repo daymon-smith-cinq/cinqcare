@@ -25,6 +25,13 @@
 
 	@include respond-to("tablet") {
 		padding-bottom: 40px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@include respond-to("mobile") {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.slidecordion {
@@ -131,7 +138,11 @@
 			}
 
 			.slidecordionText {
-				p, a, ul, ol, li {
+				p,
+				a,
+				ul,
+				ol,
+				li {
 					color: $gray;
 				}
 
