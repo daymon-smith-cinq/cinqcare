@@ -76,9 +76,10 @@ const Header = ({ headerBg }) => {
 										<a aria-expanded="false">Our Services</a>
 										<ul className={styles.submenu}>
 											<li>
-												<a href="https://grace-at-home.care/" target="_blank">
+												{/* <a href="https://grace-at-home.care/" target="_blank">
 													Grace at Home
-												</a>
+												</a> */}
+												<a href="/grace-at-home">Grace at Home</a>
 											</li>
 											<li>
 												<a href="/for-moms">CINQCARE for Moms</a>
