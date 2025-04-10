@@ -8,6 +8,7 @@
 
 	@include respond-to("mobile") {
 		padding: 0;
+		padding-top: 100px;
 	}
 
 	&:before {
@@ -36,6 +37,7 @@
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		gap: 60px;
 
 		@include respond-to("tablet-landscape") {
@@ -91,12 +93,15 @@
 		}
 
 		.form_Form {
+			padding-top: 40px;
 			width: 100%;
 			max-width: 625px;
+			height: auto;
 			//height: 690px;
-			overflow: hidden;
+			//overflow: hidden;
 			filter: drop-shadow(0px 4px 97.2px rgba(0, 0, 0, 0.05));
 			border-radius: 10px;
+			background-color: white;
 
 			@include respond-to("tablet-landscape") {
 				min-width: 370px;
