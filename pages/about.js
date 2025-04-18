@@ -11,6 +11,7 @@ import BackgroundContainer from "../components/backgroundContainer/backgroundCon
 import SideBySide from "../components/sideBySide/sideBySide";
 import Slidecordion from "../components/slidecordion/slidecordion";
 import Spacer from "../components/spacer/spacer";
+import TestimonialSimple from "../components/testimonialSimple/testimonialSimple";
 
 export default function About() {
 
@@ -39,6 +40,7 @@ export default function About() {
 
       <main>
         <HeroAbout page={currentPage} />
+        <TestimonialSimple page={currentPage} />
         <GlassAccordion page={currentPage} />
         <People page={currentPage} group="leadership" />
         <People page={currentPage} group="advisors" />
