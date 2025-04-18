@@ -1,0 +1,47 @@
+@use "./styles/abstracts" as *;
+
+.section_testimonialSimple {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	
+
+	@include respond-to("tablet") {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@include respond-to("mobile") {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&.gradient {
+		background: #FBF2E3;
+		background: linear-gradient(0deg, #FBF2E3 20%, rgba(251, 242, 227, 0.00) 100%);
+	}
+
+	.testimonialContainer {
+		max-width: 80%;
+		margin: 0 auto;
+
+		@include respond-to("laptop") {
+			max-width: 100%;
+		}
+
+		.heading {
+			font-weight: 600;
+			line-height: 1.3em;
+			margin-bottom: 20px;
+		}
+
+		.quote {
+			line-height: 1.45em;
+		}
+
+		.name {
+			font-size: clamp(1.125rem, 1vw + 1rem, 1.5rem);
+		}
+	}
+}
