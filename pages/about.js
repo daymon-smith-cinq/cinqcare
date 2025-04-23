@@ -26,7 +26,7 @@ export default function About() {
     <>
       <Head>
         <meta name="description" content={metaDescription} />
-        <meta property="og:image" content="/cinqcare-opengraph.jpg" />
+        //<meta property="og:image" content="/cinqcare-opengraph.jpg" />
         <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageURL} />
