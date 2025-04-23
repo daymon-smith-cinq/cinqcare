@@ -51,7 +51,7 @@ const SideBySide = ({ page }) => {
 			heading: "Find <em>Grace at Home</em> Near You",
 			headingPeriod: true,
 			text:
-				"<p>Indiana | New York | California</p>" +
+				"<p><a href='#' target='_blank'>Indiana</a> | New York | California</p>" +
 				"<p>More locations are coming soon! Need help finding care?</p>",
 			buttonText: "Contact Us",
 			buttonLink: "/join-our-family",

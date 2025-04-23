@@ -2,6 +2,12 @@ import styles from "./sideBySide.module.scss";
 import Image from "next/image";
 import Button from "../button/button";
 import HomeImg from "/public/images/sidebyside-home.jpg";
+import ProvidersImg from "/public/images/WomanSmilingPortrait.jpg";
+import ProvidersShape from "/public/circle.svg";
+import PatientsImg from "/public/images/AssistingElderly.jpg";
+import PatientsShape from "/public/images/scrolljacking--patients.svg";
+import PartnersImg from "/public/images/BedsideVisit.jpg";
+import PartnersShape from "/public/images/scrolljacking--partners.svg";
 import AboutImg from "/public/images/WomanSmiling-about.jpg";
 import GraceImg from "/public/images/NurseHuggingWoman.jpg";
 import Grace2Img from "/public/images/NurseFrontDoor.jpg";
@@ -15,7 +21,8 @@ const SideBySide = ({ page, num }) => {
 
 	// Alllll the options
 	let content = {
-		bgGradient: false,
+		bgShape: false,
+		bgImage: false,
 		columns: [
 			{
 				image: "",
@@ -65,6 +72,61 @@ const SideBySide = ({ page, num }) => {
 				},
 			],
 		};
+	} else if (page == "providers") {
+		content = {
+			bgShape: ProvidersShape,
+			columns: [
+				{
+					image: ProvidersImg,
+					imgAlt: "",
+					imgWidth: "430",
+					imgHeight: "448",
+				},
+				{
+					subheading: "<strong>What if we made delivering care a little easier?</strong>",
+					text:
+						"<p>This is for providers who know their communities best. We know you're not just treating symptoms — you’re navigating a system that wasn’t built for high-needs, underserved populations.</p>" +
+						"<p>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. Yet, your commitment never wavers.</p>",
+				},
+			],
+		};
+	} else if (page == "patients") {
+		content = {
+			bgShape: PatientsShape,
+			columns: [
+				{
+					image: PatientsImg,
+					imgAlt: "",
+					imgWidth: "430",
+					imgHeight: "448",
+				},
+				{
+					subheading: "<strong>What if getting care didn’t feel so hard?</strong>",
+					text:
+						"<p>For too many people, healthcare feels out of reach — it can seem like no one is truly looking out for you.</p>" +
+						"<p>Long wait times, complicated paperwork, and a system that wasn’t built for real life make it difficult to get the help you deserve.</p>" +
+						"<p>But it doesn’t have to be this way. At CINQCARE, we bring health and care together, meeting you where you are and making it easier to get the support you need.</p>",
+				},
+			],
+		};
+	} else if (page == "partners") {
+		content = {
+			bgShape: PartnersShape,
+			columns: [
+				{
+					image: PartnersImg,
+					imgAlt: "",
+					imgWidth: "430",
+					imgHeight: "448",
+				},
+				{
+					subheading: "<strong>Healthcare has been failing the most vulnerable</strong>",
+					text:
+						"<p>High-needs individuals are too often reactively served, leading to preventable hospitalizations, rising costs, and poor outcomes. CINQCARE is changing that — shifting from fragmented care to integrated, home-first, whole-person health for every generation.</p>" +
+						"<p>We partner with health plans, state governments, and mission-aligned organizations to reach high-needs individual, Healthy babies, fresh starts, and aging with grace — CINQCARE is building strong health communities</p>",
+				},
+			],
+		};
 	} else if (page == "about") {
 		content = {
 			bgGradient: false,
@@ -93,12 +155,12 @@ const SideBySide = ({ page, num }) => {
 					heading: "What <em>We</em> Do",
 					headingPeriod: true,
 					text:
-						"<h4>Primary and Preventive Care — at Home</h4>" +
-						"<p>Checkups that don’t rush, help with your medications, and support in managing your chronic conditions, including diabetes, heart disease, and COPD. We also will help you recover safely at home after a hospital stay.</p>" +
-						"<h4>Urgent and Acute Care — at Home</h4>" +
-						"<p>Skip the wait — and the travel. Our care team offers urgent visits in your home, helping you avoid unnecessary emergency room trips.</p>" +
-						"<h4>End-to-End Care — at Home</h4>" +
-						"<p>We offer care for your family that goes beyond your medical needs, with specialized services including for dementia, mobility challenges, and coordination with your doctors, nurses and caregivers.</p>",
+						"<h4><strong>Common Sense Help — at Home</strong></h4>" +
+						"<p>Work with a dedicated care advocate to make a plan for your unique situation alongside your family and caregivers. From building a ramp to get in your front door safely to help with healthy groceries, we are on your side.</p>" +
+						"<h4><strong>Primary, Urgent and Preventive Care — at Home</strong></h4>" +
+						"<p>Let’s work together to fix things before they go wrong. Get checkups that don’t rush, help with your medications, and support in managing your chronic conditions, including diabetes, heart disease, and COPD.</p>" +
+						"<h4><strong>End-to-End Care — at Home</strong></h4>" +
+						"<p>We offer care for your family that goes beyond your medical needs, with specialized services including for dementia, mobility challenges, time off for caregivers, and coordination with your doctors, and nurses.</p>",
 				},
 				{
 					image: GraceImg,
@@ -121,7 +183,7 @@ const SideBySide = ({ page, num }) => {
 				{
 					heading: "What Makes <br/><em>Grace at Home</em> Different?",
 					headingPeriod: false,
-					text: "<p>A Doctor Who Comes to You — No waiting rooms. No drives. Care that comes to your door.</p>",
+					text: "<p>Going Beyond Medical Care — Whether you need primary care, urgent visits, medications, mobility, food access, caregiver support, or help managing chronic conditions, we create a plan just for you.</p>",
 				},
 			],
 		};
@@ -167,9 +229,21 @@ const SideBySide = ({ page, num }) => {
 
 	return (
 		<section
-			className={`${styles.section_sideBySide} ${
-				content.bgGradient ? styles.gradient : undefined
-			}`}
+			className={`
+				${styles.section_sideBySide} 
+				${content.bgGradient ? styles.gradient : undefined} 
+				${content.bgShape ? styles.shape : undefined}
+				${page === "providers" ? styles.circle : undefined}
+				${page === "patients" ? styles.loop : undefined}
+				${page === "partners" ? styles.lane : undefined}
+			`}
+			style={{
+				backgroundImage: `
+					linear-gradient(180deg, rgba(255, 230, 199, 0) 0%, rgba(255, 230, 199, 0) 70%, #FFF 100%),
+					url(${content.bgShape.src}),
+					linear-gradient(180deg, #ffe6c7 0%, #FFF 100%)
+				`,
+			}}
 		>
 			<div className={`${styles.container_sideBySide} ${" wrapper"}`}>
 				<div className={styles.columnContainer}>

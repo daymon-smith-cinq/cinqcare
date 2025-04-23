@@ -1,5 +1,4 @@
 import Head from "next/head";
-import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import HeroAbout from "../components/heroAbout/heroAbout";
@@ -27,7 +26,7 @@ export default function About() {
     <>
       <Head>
         <meta name="description" content={metaDescription} />
-        <meta property="og:image" content={OpengraphImg.src} />
+        <meta property="og:image" content="/cinqcare-opengraph.jpg" />
         <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageURL} />

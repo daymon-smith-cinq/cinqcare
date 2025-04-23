@@ -111,10 +111,34 @@ const Accordion = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "grace-at-home") {
+		content = {
+			heading:
+				"Answers to <span>your questions</span> about <br/>Grace at Home",
+			headingPeriod: true,
+			paragraph: "",
+			accordionContent: [
+				{
+					heading: "What kinds of help is available for caregivers?",
+					paragraph:
+						"Our expert team will assess your most pressing challenges and pain points to understand your unique situation and work together to build an actionable, tailored support plan for meeting your caregiving goals. We offer a Caregiver Navigation Support Specialist who can assist caregivers on a moment’s notice and are specifically trained in helping caregivers navigating complex situations like insurance, home care, and housing. Specialists are based out of the communities they serve; caregivers can always be assured that support is grounded in a localized understanding. Plus, an education platform curated with resources, training, and expert guidance to support caregivers and their loved ones, giving caregivers with 24/7 access to expertise on critical areas such as legal support, financial planning, and care management.",
+				},
+				{
+					heading: "What does a care coordinator do?",
+					paragraph:
+						"This role acts as your quarterback for coordinating and navigating care both away and at home, facilitating communication across clinical care teams, family members, and other caregivers.",
+				},
+				{
+					heading: "Can you help me stay in my home?",
+					paragraph:
+						"Our collaborative of nurses, occupational therapists, and handymen can work alongside you and your caregivers to identify and overcome functional barriers impairing everyday living in your current home. We can also assist through critical decisions around what choices you have for where to live based on your condition, needs, and resources.",
+				},
+			],
+		};
 	} else if (page === "for-moms") {
 		content = {
 			heading:
-				"Answers to <span>your questions</span> about CINQCARE for Moms",
+				"Answers to <span>your questions</span> about <br/>CINQCARE for Moms",
 			headingPeriod: true,
 			paragraph: "Expand to see common questions about CINQCARE for Moms.",
 			finePrint: 
@@ -145,6 +169,41 @@ const Accordion = ({ page }) => {
 					heading: "How do I sign up?",
 					paragraph:
 						"Getting started is easy. Click above to connect with a care team member and see if you’re eligible.",
+				},
+			],
+		};
+	} else if (page === "care-medical-practice") {
+		content = {
+			heading:
+				"Answers to <span>your questions</span> about <br/>Care Medical Practice",
+			headingPeriod: true,
+			paragraph: "",
+			accordionContent: [
+				{
+					heading: "What does it mean to coordinate my care?",
+					paragraph:
+						"Life often gets in the way of getting the health and care you need. Sometimes the problem is confusing paperwork or an issue with language translation or even housing. You may not be aware of important benefits for which you are eligible. Care Medical Practice, which has partnered in purpose with CINQCARE, works with you to navigate these barriers so you can access the care you need. Services can include: translation help for those who have limited English proficiency, help with navigating the health insurance system, referrals to other healthcare providers or community resources for additional services or support, and patient education to help you advocate for your health needs.",
+				},
+				{
+					heading: "What is special about your approach to diagnosis and treatment plans?",
+					paragraph:
+						"When healthcare providers assume they know you, your background and your lifestyle, their diagnosis and treatment plans can lack the effectiveness you deserve. We start with you - the patient and your caregiver - to understand your needs. Our clinical team - which includes nurses, nurse practitioners, social workers, pharmacists, and physicians - seeks to understand you, not just the symptoms of your illness or condition, when making a diagnosis and proposing a treatment plan for your health and recovery. Services can include: access to a state-of-the-art onsite laboratory, x-rays, EKGs for heart related problems, drug screenings, pregnancy testing, preoperative testing, vaccinations, work-related services, and a mobile health clinic that comes to your neighborhood.",
+				},
+				{
+					heading: "What is a check-up like with Care Medical Practice?",
+					paragraph:
+						"In communities with high-needs, higher rates of chronic disease or a lack of cultural fluency among healthcare providers, even a regular check-up cannot be routine. That’s why we provide compassionate, culturally-responsive care in everything we do. Services can include: a detailed review of your medical history, physical exam, lab tests, health risk assessments, lifestyle counseling, vaccinations, and specialist referrals when needed.",
+				},
+				{
+					heading:
+						"Can you help me manage my medications?",
+					paragraph:
+						"Often-overlooked factors can influence how well a certain prescription or medication works. There is no ‘one size fits all’ medication solution for people and communities that come in all shapes and sizes. That’s why we take a different approach to matching you to your medications and care plan. We aim for prescriptions and medications that are based on you, not statistics. Services can include: medication management, refill authorizations, medical education, and collaboration with your pharmacy.",
+				},
+				{
+					heading: "Can behavioral health treatment and therapy be included?",
+					paragraph:
+						"Providing a range of treatments and therapies for medical health and substance use disorders is an important part of caring for the whole you — not just the physical part. Care Medical Practice works to help our Family Members understand and manage their symptoms, improve overall mental well-being, and achieve treatment goals. Services can include: mental health assessments, individual therapy, medication management, specialist referrals, and patient education.",
 				},
 			],
 		};
