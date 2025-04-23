@@ -68,7 +68,7 @@ const Header = ({ headerBg }) => {
 												<a href="/for-patients">For Patients</a>
 											</li>
 											<li>
-												<a href="/for-partners">For Partners</a>
+												<a href="/for-partnerships">For Partnerships</a>
 											</li>
 										</ul>
 									</li>

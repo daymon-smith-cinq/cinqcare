@@ -43,7 +43,7 @@ const Slidecordion = ({ page }) => {
 					title: "Partners",
 					text: "<p>We share a vision to lower costs, increase Family Member satisfaction, and deliver better outcomes in high-needs, urban and rural communities across the US.</p>",
 					buttonText: "See More",
-					buttonLink: "/for-partners",
+					buttonLink: "/for-partnerships",
 					imgSrc: ImgPartners,
 					imgAlt:
 						"A line graph illustrating a patient's blood pressure readings over time.",
