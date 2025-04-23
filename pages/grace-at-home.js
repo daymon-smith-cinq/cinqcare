@@ -9,7 +9,6 @@ import SideBySide from "../components/sideBySide/sideBySide";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
 import CTA from "../components/cta/cta";
 import MasonryImages from "../components/masonryImages/masonryImages";
-import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
 import logoGraceAtHome from "/public/logo-grace-at-home.svg";
 
@@ -70,10 +69,8 @@ export default function GraceAtHome() {
 					<header>
 						<h2>Ready to Get Started?</h2>
 					</header>
-					<p>Take the first step toward better health. Find support today.</p>
+					<p>Take the first step toward better care. Find support today.</p>
 				</CTA>
-
-				<Accordion page={currentPage} />
 			</main>
 
 			<Footer />

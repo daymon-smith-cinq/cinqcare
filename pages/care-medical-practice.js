@@ -8,7 +8,6 @@ import IconBlocks from "../components/iconBlocks/iconBlocks";
 import People from "../components/people/people";
 import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import CTA from "../components/cta/cta";
-import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
 import logoCareMedical from "/public/logo-care-medical-practice.svg";
 
@@ -76,8 +75,6 @@ export default function CareMedicalPractice() {
 						</h2>
 					</header>
 				</CTA>
-
-				<Accordion page={currentPage} />
 			</main>
 
 			<Footer />

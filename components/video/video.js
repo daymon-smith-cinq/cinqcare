@@ -15,7 +15,7 @@ const Video = ({ page, vid }) => {
 			headingPeriod: false,
 			quote:
 				"“Seeing that somebody cares if I’m doing well or not, that’s what I call a team. It is a push they give you to go for more… I’m going to get better. I’m going to be better. I’m going to come off of this medication. I see I can do it.”",
-			name: "– CINQCARE Family Member",
+			name: "– CINQCARE Family Member Gail Cintron",
 			videoId: "ylArPH37N4UqBAbiigSnVKqrV4Aw3xa4tiXz523TBjA",
 			videoTitle: "Gail's CINQCARE Health Home Story",
 		};

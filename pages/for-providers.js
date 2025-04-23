@@ -2,7 +2,6 @@ import Head from "next/head";
 import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
-import SideBySide from "../components/sideBySide/sideBySide";
 import ScrollJacking from "../components/scrollJacking/scrollJacking";
 import circle from "/public/circle.svg";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
@@ -44,8 +43,7 @@ export default function Providers() {
 			<main>
 				<Hero page={currentPage} />
 
-				<SideBySide page={currentPage} />
-				{/* <ScrollJacking page={currentPage} bg={circle}>
+				<ScrollJacking page={currentPage} bg={circle}>
 					<div>
 						<h2>
 							What if we made delivering care a <em>little easier</em> for the
@@ -64,7 +62,7 @@ export default function Providers() {
 							remain unpredictable. <em>Yet your commitment never wavers.</em>
 						</h2>
 					</div>
-				</ScrollJacking> */}
+				</ScrollJacking>
 				<BackgroundContainer page={currentPage}>
 					<IconBlocks page={currentPage} />
 					<TestimonialSlider page={currentPage} />
