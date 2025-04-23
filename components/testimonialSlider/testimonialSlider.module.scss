@@ -59,18 +59,18 @@
 
 		&.yellow {
 			background: url("../../public/backgrounds/t-stripe.svg") no-repeat 120px 0,
-				$yellow;
+				#ffce4c;
 
 			@include respond-to("tablet-landscape") {
 				background: url("../../public/backgrounds/t-stripe.svg") no-repeat 70px
 						0,
-					$yellow;
+					#ffce4c;
 			}
 
 			@include respond-to("tablet") {
 				background: url("../../public/backgrounds/t-stripe.svg") no-repeat 70px
 						0,
-					$yellow;
+					#ffce4c;
 			}
 
 			.image_Testimonials {
@@ -81,18 +81,18 @@
 		&.orange {
 			background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat 120px
 					0,
-				$orange;
+				#fd9e2c;
 
 			@include respond-to("tablet-landscape") {
 				background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat
 						70px 0,
-					$orange;
+					#fd9e2c;
 			}
 
 			@include respond-to("tablet") {
 				background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat
 						70px 0,
-					$orange;
+					#fd9e2c;
 			}
 		}
 
@@ -154,13 +154,37 @@
 		.content_Testimonials {
 			flex-grow: 0;
 			flex-shrink: 1;
+			display: flex;
+			flex-direction: column;
+			gap: 80px;
+
+			@include respond-to("laptop") {
+				gap: 40px;
+			}
+			h2 {
+				color: #20160e;
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 140.14%; /* 33.634px */
+				text-align: left;
+				margin-bottom: 0;
+				text-wrap: wrap !important;
+
+				@include respond-to("tablet") {
+					text-align: center;
+				}
+			}
 			h3 {
-				color: var(--colors-text-text-primary-900, #101828);
+				color: #101828;
 				font-family: "Sohne", Arial, sans-serif;
 				font-size: 32px;
 				font-style: normal;
 				font-weight: 400;
 				line-height: 42.152px; /* 131.723% */
+				margin-bottom: 0;
+				text-wrap: wrap !important;
 
 				@include respond-to("tablet") {
 					text-align: center;
@@ -188,6 +212,7 @@
 				font-style: normal;
 				font-weight: 400;
 				margin-bottom: 0;
+				text-wrap: wrap !important;
 
 				@include respond-to("tablet") {
 					text-align: center;

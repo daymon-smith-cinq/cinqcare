@@ -1,0 +1,74 @@
+@use "./styles/abstracts" as *;
+
+.section_staticJack {
+	background: linear-gradient(#ffe6c7, transparent);
+
+	.container_staticJack {
+		display: flex;
+		align-items: center;
+		gap: 140px;
+
+		@include respond-to("1100px") {
+			gap: 70px;
+		}
+
+		@include respond-to("tablet") {
+			flex-direction: column;
+			gap: 45px;
+		}
+
+		.image {
+			@include respond-to("tablet") {
+				max-width: 400px;
+			}
+		}
+
+		.content {
+			max-width: 555px;
+
+			@include respond-to("1100px") {
+				max-width: 455px;
+			}
+
+			@include respond-to("830px") {
+				max-width: 355px;
+			}
+
+			@include respond-to("tablet") {
+				max-width: unset;
+			}
+
+			h2 {
+				color: #191919;
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 47px; /* 130.556% */
+
+				@include respond-to("1100px") {
+					font-size: 26px;
+					line-height: 37px;
+				}
+
+				@include respond-to("tablet") {
+					text-wrap: wrap !important;
+				}
+			}
+
+			p {
+				color: #191919;
+				font-family: "Sohne", Arial, sans-serif;
+				font-size: 26px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 40px;
+
+				@include respond-to("1100px") {
+					font-size: 20px;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}

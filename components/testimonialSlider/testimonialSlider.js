@@ -6,7 +6,7 @@ const TestimonialSlider = ({ page }) => {
 
 	if (page === "providers") {
 		content = {
-			heading: "<span>Voices</span> of the CINQCARE practice network",
+			heading: "Voices of the CINQCARE practice network",
 			paragraph: "",
 			subtext: "",
 			testimonials: [
@@ -152,10 +152,6 @@ const TestimonialSlider = ({ page }) => {
 
 	return (
 		<section className={styles.section_Testimonials}>
-			{content.heading && (
-				<h2 dangerouslySetInnerHTML={{ __html: content.heading }} />
-			)}
-
 			{content.testimonials?.length > 0 && (
 				<div
 					className={`${styles.container_Testimonials} ${
@@ -172,6 +168,9 @@ const TestimonialSlider = ({ page }) => {
 					{/* The slideWrapper is keyed so it re-mounts and triggers the slideIn animation */}
 					<div key={activeIndex} className={styles.slideWrapper}>
 						<div className={styles.content_Testimonials}>
+							{content.heading && (
+								<h2 dangerouslySetInnerHTML={{ __html: content.heading }} />
+							)}
 							{content.testimonials[activeIndex]?.quote && (
 								<h3
 									dangerouslySetInnerHTML={{
