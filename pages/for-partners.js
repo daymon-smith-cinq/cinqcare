@@ -3,6 +3,7 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
+import SideBySide from "../components/sideBySide/sideBySide";
 import ScrollJacking from "../components/scrollJacking/scrollJacking";
 import scrollJackingImage from "/public/images/scrolljacking--partners.svg";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
@@ -40,7 +41,8 @@ export default function Partners() {
 			<main>
 				<Hero page={currentPage} />
 
-				<ScrollJacking
+				<SideBySide page={currentPage} />
+				{/*<ScrollJacking
 					page={currentPage}
 					bg={scrollJackingImage}
 					bgPosition="end normal"
@@ -78,7 +80,7 @@ export default function Partners() {
 							ecosystems in cities and towns to support many generations.
 						</h2>
 					</div>
-				</ScrollJacking>
+				</ScrollJacking>*/}
 				<IconBlocks page={currentPage} />
 				<TestimonialSlider page={currentPage} />
 				<GlassAccordion page={currentPage} />

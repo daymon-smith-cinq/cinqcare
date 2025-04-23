@@ -6,7 +6,7 @@ const TestimonialSlider = ({ page }) => {
 
 	if (page === "providers") {
 		content = {
-			heading: "<span>Voices</span> of the CINQCARE practice network",
+			heading: "Voices of the CINQCARE practice network",
 			paragraph: "",
 			subtext: "",
 			testimonials: [
@@ -28,7 +28,7 @@ const TestimonialSlider = ({ page }) => {
 		};
 	} else if (page === "patients") {
 		content = {
-			heading: "Real People, <span>Real Care</span>",
+			heading: "Real People, Real Care",
 			paragraph: "",
 			subtext: "See More Stories",
 			testimonials: [
@@ -95,7 +95,7 @@ const TestimonialSlider = ({ page }) => {
 		};
 	} else if (page === "communities") {
 		content = {
-			heading: "Real people, <em>Real Care</em>",
+			heading: "Real people, Real Care",
 			paragraph: "",
 			subtext: "",
 			testimonials: [
@@ -124,7 +124,7 @@ const TestimonialSlider = ({ page }) => {
 		};
 	} else if (page === "join-our-family") {
 		content = {
-			heading: "Read reviews from people <em>we've helped.</em>",
+			heading: "Read reviews from people we've helped.",
 			paragraph: "",
 			subtext: "",
 			testimonials: [
@@ -152,9 +152,6 @@ const TestimonialSlider = ({ page }) => {
 
 	return (
 		<section className={styles.section_Testimonials}>
-			{content.heading && (
-				<h2 dangerouslySetInnerHTML={{ __html: content.heading }} />
-			)}
 
 			{content.testimonials?.length > 0 && (
 				<div
@@ -169,23 +166,29 @@ const TestimonialSlider = ({ page }) => {
 						)}
 					</div>
 
-					{/* The slideWrapper is keyed so it re-mounts and triggers the slideIn animation */}
-					<div key={activeIndex} className={styles.slideWrapper}>
-						<div className={styles.content_Testimonials}>
-							{content.testimonials[activeIndex]?.quote && (
-								<h3
-									dangerouslySetInnerHTML={{
-										__html: content.testimonials[activeIndex].quote,
-									}}
-								/>
-							)}
-							{content.testimonials[activeIndex]?.name && (
-								<p
-									dangerouslySetInnerHTML={{
-										__html: content.testimonials[activeIndex].name,
-									}}
-								/>
-							)}
+					<div className={styles.col_Testimonials}>
+						{content.heading && (
+							<h4 dangerouslySetInnerHTML={{ __html: content.heading }} />
+						)}
+
+						{/* The slideWrapper is keyed so it re-mounts and triggers the slideIn animation */}
+						<div key={activeIndex} className={styles.slideWrapper}>
+							<div className={styles.content_Testimonials}>
+								{content.testimonials[activeIndex]?.quote && (
+									<h3
+										dangerouslySetInnerHTML={{
+											__html: content.testimonials[activeIndex].quote,
+										}}
+									/>
+								)}
+								{content.testimonials[activeIndex]?.name && (
+									<p
+										dangerouslySetInnerHTML={{
+											__html: content.testimonials[activeIndex].name,
+										}}
+									/>
+								)}
+							</div>
 						</div>
 					</div>
 				</div>
