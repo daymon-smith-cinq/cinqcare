@@ -7,6 +7,7 @@ const TestimonialSlider = ({ page }) => {
 	if (page === "providers") {
 		content = {
 			heading: "Voices of the CINQCARE practice network",
+			heading: "Voices of the CINQCARE practice network",
 			paragraph: "",
 			subtext: "",
 			testimonials: [
@@ -152,7 +153,6 @@ const TestimonialSlider = ({ page }) => {
 
 	return (
 		<section className={styles.section_Testimonials}>
-
 			{content.testimonials?.length > 0 && (
 				<div
 					className={`${styles.container_Testimonials} ${
@@ -166,29 +166,26 @@ const TestimonialSlider = ({ page }) => {
 						)}
 					</div>
 
-					<div className={styles.col_Testimonials}>
-						{content.heading && (
-							<h4 dangerouslySetInnerHTML={{ __html: content.heading }} />
-						)}
-
-						{/* The slideWrapper is keyed so it re-mounts and triggers the slideIn animation */}
-						<div key={activeIndex} className={styles.slideWrapper}>
-							<div className={styles.content_Testimonials}>
-								{content.testimonials[activeIndex]?.quote && (
-									<h3
-										dangerouslySetInnerHTML={{
-											__html: content.testimonials[activeIndex].quote,
-										}}
-									/>
-								)}
-								{content.testimonials[activeIndex]?.name && (
-									<p
-										dangerouslySetInnerHTML={{
-											__html: content.testimonials[activeIndex].name,
-										}}
-									/>
-								)}
-							</div>
+					{/* The slideWrapper is keyed so it re-mounts and triggers the slideIn animation */}
+					<div key={activeIndex} className={styles.slideWrapper}>
+						<div className={styles.content_Testimonials}>
+							{content.heading && (
+								<h2 dangerouslySetInnerHTML={{ __html: content.heading }} />
+							)}
+							{content.testimonials[activeIndex]?.quote && (
+								<h3
+									dangerouslySetInnerHTML={{
+										__html: content.testimonials[activeIndex].quote,
+									}}
+								/>
+							)}
+							{content.testimonials[activeIndex]?.name && (
+								<p
+									dangerouslySetInnerHTML={{
+										__html: content.testimonials[activeIndex].name,
+									}}
+								/>
+							)}
 						</div>
 					</div>
 				</div>
