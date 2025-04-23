@@ -3,6 +3,7 @@ import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
+import SideBySide from "../components/sideBySide/sideBySide";
 import ScrollJacking from "../components/scrollJacking/scrollJacking";
 import scrollJackingImage from "/public/images/scrolljacking--patients.svg";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
@@ -41,7 +42,8 @@ export default function Patients() {
 			<main>
 				<Hero page={currentPage} />
 
-				<ScrollJacking
+				<SideBySide page={currentPage} />
+				{/*<ScrollJacking
 					page={currentPage}
 					bg={scrollJackingImage}
 					bgPosition="end normal"
@@ -72,7 +74,7 @@ export default function Patients() {
 							<em>making it easier to get the support you need.</em>
 						</h2>
 					</div>
-				</ScrollJacking>
+				</ScrollJacking>*/}
 				<IconBlocks page={currentPage} />
 				<Map page={currentPage} />
 				<TestimonialSlider page={currentPage} />
