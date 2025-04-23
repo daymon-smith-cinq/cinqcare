@@ -1,25 +1,8 @@
 import styles from "./sideBySide.module.scss";
 import Image from "next/image";
 import Button from "../button/button";
-import HomeImg from "/public/images/sidebyside-home.jpg";
-import ProvidersImg from "/public/images/WomanSmilingPortrait.jpg";
-import ProvidersShape from "/public/circle.svg";
-import PatientsImg from "/public/images/AssistingElderly.jpg";
-import PatientsShape from "/public/images/scrolljacking--patients.svg";
-import PartnersImg from "/public/images/BedsideVisit.jpg";
-import PartnersShape from "/public/images/scrolljacking--partners.svg";
-import AboutImg from "/public/images/WomanSmiling-about.jpg";
-import GraceImg from "/public/images/NurseHuggingWoman.jpg";
-import Grace2Img from "/public/images/NurseFrontDoor.jpg";
-import MomsImg from "/public/images/WomenPregnancyTest.jpg";
-import Moms2Img from "/public/images/Babymother.jpg";
 
 const SideBySide = ({ page, num }) => {
-	// *******
-	// Content
-	// *******
-
-	// Alllll the options
 	let content = {
 		bgShape: false,
 		bgImage: false,
@@ -51,17 +34,16 @@ const SideBySide = ({ page, num }) => {
 		],
 	};
 
-	// Homepage
 	if (page == "home") {
 		content = {
 			bgGradient: true,
 			columns: [
 				{
-					image: HomeImg,
+					image: "/images/sidebyside-home.jpg",
 					imgAlt:
 						"A young Black nurse sits side-by-side with an elderly white woman. The nurse has her arm around the older woman's shoulders and the older woman is leaning into the embrace. Both are laughing and comfortable together, like they have known each other for a long time. The backdrop is of a city neighborhood.",
-					imgWidth: "665",
-					imgHeight: "440",
+					imgWidth: 665,
+					imgHeight: 440,
 				},
 				{
 					heading:
@@ -74,16 +56,17 @@ const SideBySide = ({ page, num }) => {
 		};
 	} else if (page == "providers") {
 		content = {
-			bgShape: ProvidersShape,
+			bgShape: "/circle.svg",
 			columns: [
 				{
-					image: ProvidersImg,
+					image: "/images/WomanSmilingPortrait.jpg",
 					imgAlt: "",
-					imgWidth: "430",
-					imgHeight: "448",
+					imgWidth: 430,
+					imgHeight: 448,
 				},
 				{
-					subheading: "<strong>What if we made delivering care a little easier?</strong>",
+					subheading:
+						"<strong>What if we made delivering care a little easier?</strong>",
 					text:
 						"<p>This is for providers who know their communities best. We know you're not just treating symptoms — you’re navigating a system that wasn’t built for high-needs, underserved populations.</p>" +
 						"<p>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. Yet, your commitment never wavers.</p>",
@@ -92,16 +75,17 @@ const SideBySide = ({ page, num }) => {
 		};
 	} else if (page == "patients") {
 		content = {
-			bgShape: PatientsShape,
+			bgShape: "/images/scrolljacking--patients.svg",
 			columns: [
 				{
-					image: PatientsImg,
+					image: "/images/AssistingElderly.jpg",
 					imgAlt: "",
-					imgWidth: "430",
-					imgHeight: "448",
+					imgWidth: 430,
+					imgHeight: 448,
 				},
 				{
-					subheading: "<strong>What if getting care didn’t feel so hard?</strong>",
+					subheading:
+						"<strong>What if getting care didn’t feel so hard?</strong>",
 					text:
 						"<p>For too many people, healthcare feels out of reach — it can seem like no one is truly looking out for you.</p>" +
 						"<p>Long wait times, complicated paperwork, and a system that wasn’t built for real life make it difficult to get the help you deserve.</p>" +
@@ -111,16 +95,17 @@ const SideBySide = ({ page, num }) => {
 		};
 	} else if (page == "partners") {
 		content = {
-			bgShape: PartnersShape,
+			bgShape: "/images/scrolljacking--partners.svg",
 			columns: [
 				{
-					image: PartnersImg,
+					image: "/images/BedsideVisit.jpg",
 					imgAlt: "",
-					imgWidth: "430",
-					imgHeight: "448",
+					imgWidth: 430,
+					imgHeight: 448,
 				},
 				{
-					subheading: "<strong>Healthcare has been failing the most vulnerable</strong>",
+					subheading:
+						"<strong>Healthcare has been failing the most vulnerable</strong>",
 					text:
 						"<p>High-needs individuals are too often reactively served, leading to preventable hospitalizations, rising costs, and poor outcomes. CINQCARE is changing that — shifting from fragmented care to integrated, home-first, whole-person health for every generation.</p>" +
 						"<p>We partner with health plans, state governments, and mission-aligned organizations to reach high-needs individual, Healthy babies, fresh starts, and aging with grace — CINQCARE is building strong health communities</p>",
@@ -132,10 +117,10 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: false,
 			columns: [
 				{
-					image: AboutImg,
+					image: "/images/WomanSmiling-about.jpg",
 					imgAlt: "",
-					imgWidth: "665",
-					imgHeight: "440",
+					imgWidth: 665,
+					imgHeight: 440,
 				},
 				{
 					subheading: "<em>Care is a Calling</em>",
@@ -163,10 +148,10 @@ const SideBySide = ({ page, num }) => {
 						"<p>We offer care for your family that goes beyond your medical needs, with specialized services including for dementia, mobility challenges, time off for caregivers, and coordination with your doctors, and nurses.</p>",
 				},
 				{
-					image: GraceImg,
+					image: "/images/NurseHuggingWoman.jpg",
 					imgAlt: "",
-					imgWidth: "509",
-					imgHeight: "339",
+					imgWidth: 509,
+					imgHeight: 339,
 				},
 			],
 		};
@@ -175,10 +160,10 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: true,
 			columns: [
 				{
-					image: Grace2Img,
+					image: "/images/NurseFrontDoor.jpg",
 					imgAlt: "",
-					imgWidth: "665",
-					imgHeight: "440",
+					imgWidth: 665,
+					imgHeight: 440,
 				},
 				{
 					heading: "What Makes <br/><em>Grace at Home</em> Different?",
@@ -192,10 +177,10 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: false,
 			columns: [
 				{
-					image: MomsImg,
+					image: "/images/WomenPregnancyTest.jpg",
 					imgAlt: "",
-					imgWidth: "622",
-					imgHeight: "650",
+					imgWidth: 622,
+					imgHeight: 650,
 				},
 				{
 					heading: "Why CINQCARE for Moms?",
@@ -211,10 +196,10 @@ const SideBySide = ({ page, num }) => {
 			bgGradient: true,
 			columns: [
 				{
-					image: Moms2Img,
+					image: "/images/Babymother.jpg",
 					imgAlt: "",
-					imgWidth: "665",
-					imgHeight: "440",
+					imgWidth: 665,
+					imgHeight: 440,
 				},
 				{
 					heading: "Your Health, <em>Your Way</em>",
@@ -238,14 +223,16 @@ const SideBySide = ({ page, num }) => {
 				${page === "partners" ? styles.lane : undefined}
 			`}
 			style={{
-				backgroundImage: `
-					linear-gradient(180deg, rgba(255, 230, 199, 0) 0%, rgba(255, 230, 199, 0) 70%, #FFF 100%),
-					url(${content.bgShape.src}),
-					linear-gradient(180deg, #ffe6c7 0%, #FFF 100%)
-				`,
+				backgroundImage: content.bgShape
+					? `
+						linear-gradient(180deg, rgba(255, 230, 199, 0) 0%, rgba(255, 230, 199, 0) 70%, #FFF 100%),
+						url(${content.bgShape}),
+						linear-gradient(180deg, #ffe6c7 0%, #FFF 100%)
+					`
+					: undefined,
 			}}
 		>
-			<div className={`${styles.container_sideBySide} ${" wrapper"}`}>
+			<div className={`${styles.container_sideBySide} wrapper`}>
 				<div className={styles.columnContainer}>
 					{content.columns &&
 						content.columns.map((column, columnIndex) => (
