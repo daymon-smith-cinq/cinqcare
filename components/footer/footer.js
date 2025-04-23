@@ -49,7 +49,7 @@ const Footer = () => {
 							</div>
 
 							<div>
-								<header>Our Services</header>
+								<header>Services</header>
 								<ul>
 									<li>
 										{/* <a href="https://grace-at-home.care/" target="_blank">

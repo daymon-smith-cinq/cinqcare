@@ -73,7 +73,7 @@ const Header = ({ headerBg }) => {
 										</ul>
 									</li>
 									<li className={styles.hasSubmenu}>
-										<a aria-expanded="false">Our Services</a>
+										<a aria-expanded="false">Services</a>
 										<ul className={styles.submenu}>
 											<li>
 												{/* <a href="https://grace-at-home.care/" target="_blank">
