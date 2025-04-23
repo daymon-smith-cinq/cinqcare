@@ -38,7 +38,7 @@ const LogoBar = ({ page }) => {
 			/>
 			<div className={styles.container_LogoBar}>
 				{content.logos?.map((item, index) => (
-					<div key={index}>
+					<div>
 						<img
 							src={item.logo}
 							alt={`Logo ${index + 1}`}

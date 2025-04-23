@@ -33,7 +33,6 @@
 		display: flex;
 		align-items: center;
 		gap: 100px;
-		transition: all .7s ease;
 
 		@include respond-to("mobile-landscape") {
 			padding: 45px;
@@ -64,13 +63,13 @@
 
 			@include respond-to("tablet-landscape") {
 				background: url("../../public/backgrounds/t-stripe.svg") no-repeat 70px
-						0/contain,
+						0,
 					$yellow;
 			}
 
 			@include respond-to("tablet") {
 				background: url("../../public/backgrounds/t-stripe.svg") no-repeat 70px
-						0/contain,
+						0,
 					$yellow;
 			}
 
@@ -82,45 +81,26 @@
 		&.orange {
 			background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat 120px
 					0,
-				#FD9E2C;
+				$orange;
 
 			@include respond-to("tablet-landscape") {
 				background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat
-						70px 0/contain,
-					#FD9E2C;
+						70px 0,
+					$orange;
 			}
 
 			@include respond-to("tablet") {
 				background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat
-						70px 0/contain,
-					#FD9E2C;
-			}
-		}
-
-		.col_Testimonials {
-			display: flex;
-			flex-flow: column nowrap;
-			gap: 20px;
-			justify-content: flex-start;
-			
-			@include respond-to("tablet") {
-				gap: 0;
-			}
-
-			h4 {
-				font-weight: 600;
-
-				@include respond-to("tablet") {
-					text-align: center;
-				}
+						70px 0,
+					$orange;
 			}
 		}
 
 		.slideWrapper {
-			animation: slideIn 0.7s ease;
 			display: flex;
 			align-items: center;
 			gap: 100px;
+			animation: slideIn 0.4s ease;
 
 			@include respond-to("tablet-landscape") {
 				gap: 60px;
@@ -174,7 +154,6 @@
 		.content_Testimonials {
 			flex-grow: 0;
 			flex-shrink: 1;
-
 			h3 {
 				color: var(--colors-text-text-primary-900, #101828);
 				font-family: "Sohne", Arial, sans-serif;

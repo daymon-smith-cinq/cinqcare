@@ -42,6 +42,9 @@ const BackgroundContainer = ({ page, children }) => {
 		};
 	}
 
+	console.log("Page:", page);
+	console.log("Content:", content);
+
 	return (
 		<section
 			className={`${styles.section_BackgroundContainer} ${
