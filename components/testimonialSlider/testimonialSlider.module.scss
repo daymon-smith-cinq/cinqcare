@@ -64,13 +64,13 @@
 
 			@include respond-to("tablet-landscape") {
 				background: url("../../public/backgrounds/t-stripe.svg") no-repeat 70px
-						0/contain,
+						0 / contain,
 					$yellow;
 			}
 
 			@include respond-to("tablet") {
 				background: url("../../public/backgrounds/t-stripe.svg") no-repeat 70px
-						0/contain,
+						0 / contain,
 					$yellow;
 			}
 
@@ -86,13 +86,13 @@
 
 			@include respond-to("tablet-landscape") {
 				background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat
-						70px 0/contain,
+						70px 0 / contain,
 					#FD9E2C;
 			}
 
 			@include respond-to("tablet") {
 				background: url("../../public/backgrounds/t-stripe-2.svg") no-repeat
-						70px 0/contain,
+						70px 0 / contain,
 					#FD9E2C;
 			}
 		}
