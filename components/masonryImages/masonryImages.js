@@ -9,10 +9,10 @@ const MasonryImages = () => {
     <section className={styles.home__masonry}>
       <div className={`${styles.masonry__header} ${" wrapper"}`}>
         <header>
-          <h2 className="period">Going <em>Beyond</em> Medical Care</h2>
+          <h2 className="period">A Doctor Who Comes <em>to You</em></h2>
         </header>
         <div>
-          <p>Whether you need primary care, urgent visits, medications, mobility, food access, caregiver support, or help managing chronic conditions, we create a plan just for you.</p>
+          <p>No waiting rooms. No drives. Care that comes to your door.</p>
 
           <p>Covered by Medicare and Most Insurance — We believe quality care should be accessible to everyone who needs it.</p>
         </div>

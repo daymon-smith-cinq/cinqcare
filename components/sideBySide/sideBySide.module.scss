@@ -24,6 +24,55 @@
 		background: linear-gradient(180deg, #ffe6c7 0%, #ffca8b 100%);
 	}
 
+	&.shape {
+		background-size: auto, auto 90%, auto;
+		background-repeat: no-repeat;
+		background-position: 100%, 25% 50%, 100%;
+		padding-top: 150px;
+		padding-bottom: 150px;
+
+		@include respond-to("tablet") {
+			padding-top: 100px;
+			padding-bottom: 30px;
+		}
+
+		&.circle {
+			background-size: auto, auto 90%, auto;
+			background-position: 100%, calc(50% - 390px) 50%, 100%;
+
+			@include respond-to("tablet") {
+				background-size: auto, auto 60%, auto;
+				background-position: 100%, 50% 5%, 100%;
+			}
+
+			@include respond-to("mobile") {
+				background-size: auto, auto 40%, auto;
+			}
+		}
+
+		&.loop {
+			background-size: auto, 50% auto, auto;
+			background-position: 100%, bottom 0 right 100%, 100%;
+
+
+			@include respond-to("tablet") {
+				background-size: auto, 130%, auto;
+				background-position: 100%, 50% 5%, 100%;
+			}
+		}
+
+		&.lane {
+			background-size: auto, 120%, auto;
+			background-position: 100%, top 70% left 90%, 100%;
+
+
+			@include respond-to("laptop") {
+				background-size: auto, cover, auto;
+				background-position: 100%, top -10% left 100%, 100%;
+			}
+		}
+	}
+
 	.columnContainer {
 		display: flex;
 		justify-content: space-around;
@@ -48,6 +97,8 @@
 
 			img {
 				border-radius: $br;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			big {
@@ -68,8 +119,6 @@
 
 			h4 {
 				line-height: 1.5em;
-				margin-bottom: 10px;
-				font-weight: 500;
 			}
 
 			p {

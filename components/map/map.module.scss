@@ -34,10 +34,20 @@
 				flex: 1 0 40%;
 			}
 
-			.text p em {
-				font-family: "PP Editorial New", Times, serif;
-				font-size: inherit;
-				font-style: italic;
+			.text {
+				p em {
+					font-family: "PP Editorial New", Times, serif;
+					font-size: inherit;
+					font-style: italic;
+				}
+
+				a {
+					transition: all 0.3s;
+
+					&:hover {
+						color: $orange;
+					}
+				}
 			}
 
 			.finePrint {
