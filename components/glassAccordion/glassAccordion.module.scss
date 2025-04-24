@@ -151,7 +151,7 @@
 			background: $blur-bg;
 			backdrop-filter: $blur;
 			-webkit-backdrop-filter: $blur;
-			transition: height 0.2s linear;
+			transition: all 0.3s ease-in-out;
 			cursor: pointer;
 
 			@include respond-to("tablet") {
@@ -205,9 +205,13 @@
 			}
 
 			.accordion_Content {
-				overflow: hidden;
-				height: 0;
-				transition: height 0.2s lienar;
+				display: grid;
+				grid-template-rows: 0fr;
+				transition: grid-template-rows 0.3s ease-out;
+
+				.accordion_hiddenContainer {
+					overflow: hidden;
+				}
 
 				p {
 					color: rgba(255, 255, 255, 0.7);

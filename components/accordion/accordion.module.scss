@@ -75,7 +75,7 @@
 			border-radius: 10px;
 			padding: 30px 40px;
 			background-color: #ffce4c;
-			transition: height 0.2s linear;
+			transition: all 0.4s ease-in-out, background-color 0.3s linear;
 			cursor: pointer;
 
 			@include respond-to("tablet-landscape") {
@@ -110,9 +110,13 @@
 			}
 
 			.accordion_Content {
-				overflow: hidden;
-				height: 0;
-				transition: height 0.2s lienar;
+				display: grid;
+				grid-template-rows: 0fr;
+				transition: grid-template-rows 0.3s ease-out;
+
+				.accordion_hiddenContainer {
+					overflow: hidden;
+				}
 
 				p {
 					color: rgba(2, 14, 10, 0.6);
@@ -136,7 +140,7 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				cursor: inherit;
-				transition: transform 0.2s linear;
+				transition: none;
 
 				@include respond-to("tablet-landscape") {
 					top: 30px;
