@@ -38,13 +38,13 @@ const Video = ({ page, vid }) => {
 	// Communities
 	if (page == "communities" && vid == "alan") {
 		content = {
-			heading: "Alan’s <em>recovery</em> story",
+			heading: "A <em>Healthy Start</em> Story",
 			headingPeriod: false,
 			quote:
 				'"A lot of the members that we have are a part of our community… It’s just nice to know that you’ve helped somebody achieve their goals and that you were a part of their journey."',
-			name: "– Denee Tidwell, CINQCARE care manager",
-			videoId: "CZBLageaqCbp50002wblg6fbJxqmaxN5vIVCeKMDgYzOw",
-			videoTitle: "Alan's Story",
+			name: "– Denee, CINQCARE care manager",
+			videoId: "n1ybMAbdtTSIthhr4t3hpCtCAXlLkvh02ZKkE5024vGs00",
+			videoTitle: "Healthy Start Interview",
 		};
 	} else if (page == "communities" && vid == "buffalo") {
 		content = {
