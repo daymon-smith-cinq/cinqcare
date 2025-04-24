@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef} from "react";
 import styles from "./accordion.module.scss";
 
 const Accordion = ({ page }) => {
@@ -237,17 +237,6 @@ const Accordion = ({ page }) => {
 						}
 					};
 
-					useEffect(() => {
-						const el = contentRef.current;
-						if (el) {
-							if (isOpen) {
-								el.style.height = el.scrollHeight + "px";
-							} else {
-								el.style.height = "0px";
-							}
-						}
-					}, [isOpen]);
-
 					return (
 						<div
 							key={index}
@@ -269,12 +258,13 @@ const Accordion = ({ page }) => {
 								role="region"
 								aria-labelledby={`accordion-button-${index}`}
 								style={{
-									overflow: "hidden",
-									height: isOpen ? "auto" : "0px",
-									transition: "height 0.2s linear",
+									gridTemplateRows: isOpen ? "1fr" : "0fr",
+									transition: "all 0.3s ease-in-out",
 								}}
 							>
-								<p>{item.paragraph}</p>
+								<div className={styles.accordion_hiddenContainer}>
+									<p>{item.paragraph}</p>
+								</div>
 							</div>
 
 							<div className={styles.plusMinus}></div>

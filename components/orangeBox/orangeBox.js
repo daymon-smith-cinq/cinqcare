@@ -21,10 +21,10 @@ const OrangeBox = ({ page }) => {
 			foregroundImg: ImgHome,
 			foregroundImgAlt: "",
 			text:
-				"<h4>Our Approach</h4>" +
-				"<h3>Too often, the people who need care most — especially at home — don't get it. In high-needs, urban and rural communities, the system isn't working. It's too hard to get an appointment. Too expensive to get a nurse visit. Too confusing to find the support you qualify for.</h3>" +
-				"<h4>We’re Changing That</h4>" +
-				"<h3>CINQCARE delivers health and care — better, simpler, and closer to home. Because your health shouldn’t depend on your zip code.</h3>",
+				"<h3><strong>Our Approach</strong></h3>" +
+				"<h4>Too often, the people who need care most — especially at home — don't get it. In high-needs, urban and rural communities, the system isn't working. It's too hard to get an appointment. Too expensive to get a nurse visit. Too confusing to find the support you qualify for.</h4>" +
+				"<h4><strong>We’re Changing That</strong></h4>" +
+				"<h4>CINQCARE delivers health and care — better, simpler, and closer to home. Because your health shouldn’t depend on your zip code.</h4>",
 		};
 	} else if (page == "grace-at-home") {
 		content = {

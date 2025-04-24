@@ -32,7 +32,7 @@ const Hero = ({ page }) => {
 			buttonLink: "/join-our-family",
 			blockquoteBorder: false,
 			quoteText:
-				"“CINQCARE isn't just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- Dr. Wilfred Herard, MD — CEO of Proactive Care IPA</span>",
+				"“CINQCARE isn't just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- CEO of an IPA</span>",
 		};
 	}
 
