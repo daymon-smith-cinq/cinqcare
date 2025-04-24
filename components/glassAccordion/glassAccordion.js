@@ -129,7 +129,7 @@ const GlassAccordion = ({ page }) => {
 		content = {
 			bgImgSrc: "images/Ultrasound.jpg",
 			darkenAccordionBg: true,
-			heading: "Care for Every Stage of <em>Motherhood</em>",
+			heading: "Care for Every Stage of <em>Maternity</em>",
 			paragraph:
 				"<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
 			buttonLink: "https://gracewomenscenter.cinq.care/",

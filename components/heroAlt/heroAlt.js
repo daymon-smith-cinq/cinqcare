@@ -28,7 +28,8 @@ const HeroAlt = ({ page }) => {
 			h1: "<span>CINQCARE for Moms</span> Motherhood, with the <em>Support You Deserve</em>",
 			h1Period: false,
 			paragraph:
-				"You're always there for everyone else. <br> We're here for you.",
+				"<p>You're always there for everyone else. <br> We're here for you.</p>" +
+				"<p>We’re helping today in Buffalo, NY— and coming to more regions soon.</p>",
 			buttonText: "Visit Site",
 			buttonLink: "https://gracewomenscenter.cinq.care/",
 			buttonTarget: "_blank",
@@ -41,7 +42,7 @@ const HeroAlt = ({ page }) => {
 			h1: "<span>Care Medical Practice</span> Trusted Care, Right in Your Neighborhood",
 			h1Period: false,
 			paragraph:
-				"Comprehensive, quality primary and specialty care — delivered with compassion and convenience. <span>Find expert medical care close to home, designed to keep you well and thriving.</span>",
+				"<p>Comprehensive, quality primary and specialty care — delivered with compassion and convenience. <span>Find expert medical care close to home, designed to keep you well and thriving.</span></p>",
 			buttonText: "",
 			buttonLink: "",
 		};
@@ -52,7 +53,7 @@ const HeroAlt = ({ page }) => {
 			heroImage: "images/Family.jpg",
 			h1: "<b>Thank you</b> for <em>your interest!</em>",
 			h1Period: false,
-			paragraph: "We will be in contact soon.",
+			paragraph: "<p>We will be in contact soon.</p>",
 			buttonText: "",
 			buttonLink: "",
 		};
@@ -67,7 +68,7 @@ const HeroAlt = ({ page }) => {
 						dangerouslySetInnerHTML={{ __html: content.h1 }}
 					></h1>
 					{content?.paragraph && (
-						<p dangerouslySetInnerHTML={{ __html: content.paragraph }}></p>
+						<div dangerouslySetInnerHTML={{ __html: content.paragraph }}></div>
 					)}
 					{content?.buttonLink && (
 						<Button
