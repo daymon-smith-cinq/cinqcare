@@ -49,7 +49,7 @@ const SideBySide = ({ page, num }) => {
 					heading:
 						"<big>A culture of care, anchored in <em>core values</em></big>",
 					headingPeriod: false,
-					buttonLink: "/about",
+					buttonLink: "/about#purpose",
 					buttonText: "Our Purpose",
 				},
 			],

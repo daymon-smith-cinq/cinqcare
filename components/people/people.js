@@ -78,12 +78,12 @@ const People = ({ page, group }) => {
 				},
 				{
 					portrait: BarbaraR,
-					name: "Barbara Rhoden",
+					name: "Barbara Rhoden, PhD",
 					title: "Chief Brand and Marketing Officer",
 				},
 				{
 					portrait: NatalieL,
-					name: "Natalie O. Ludaway",
+					name: "Natalie O. Ludaway, JD",
 					title: "Chief Legal & External Affairs Officer",
 				},
 				{
@@ -103,7 +103,7 @@ const People = ({ page, group }) => {
 				},
 				{
 					portrait: CherylRW,
-					name: "Cheryl Rucker Whitaker",
+					name: "Cheryl Rucker Whitaker, MD",
 					title: "President, Central and Southeast Regions",
 				},
 				{
@@ -127,7 +127,7 @@ const People = ({ page, group }) => {
 			people: [
 				{
 					portrait: RodneyA,
-					name: "Rodney Armstead",
+					name: "Rodney Armstead, MD",
 				},
 				{
 					portrait: BillH,

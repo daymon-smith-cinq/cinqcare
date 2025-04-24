@@ -7,7 +7,6 @@ const TestimonialSlider = ({ page }) => {
 	if (page === "providers") {
 		content = {
 			heading: "Voices of the CINQCARE practice network",
-			heading: "Voices of the CINQCARE practice network",
 			paragraph: "",
 			subtext: "",
 			testimonials: [
@@ -16,14 +15,14 @@ const TestimonialSlider = ({ page }) => {
 					image: "/images/oldFriends.jpg",
 					quote:
 						'"We are not a sick-care system, where we only want to see you when you\'re sick. <em>We are in it for the long haul</em> with our patients and the community."',
-					name: "Parinda Khatri, PhD, Chief Clinical Officer of Cherokee Health Systems",
+					name: "Chief Clinical Officer, Large Health System",
 				},
 				{
 					color: "orange",
 					image: "/images/oldFriends.jpg",
 					quote:
 						"\"With CINQCARE, we're not just improving metrics—<em>we're improving lives.</em> The impact on our patients and our practice has been transformational.\"",
-					name: "Ms. Deborah Forbes — VP of Operations, Doral Health and Wellness",
+					name: "VP of Operations, Health System",
 				},
 			],
 		};
@@ -38,14 +37,14 @@ const TestimonialSlider = ({ page }) => {
 					image: "/images/homeVisit.jpg",
 					quote:
 						'"I used to miss my doctor\'s appointments because I had no way to get there. I worried about my health, but I felt stuck. Then, CINQCARE stepped in. Now, a nurse comes to me, checks on me, and helps me manage my diabetes. <em>I feel healthier, and I finally have the support I needed.</em>"',
-					name: "Linda M., CINQCARE Family Member",
+					name: "CINQCARE Family Member",
 				},
 				{
 					color: "yellow",
 					image: "/headshots/headshot-4.png",
 					quote:
 						"\"After my stroke, I didn't know how I was going to manage. CINQCARE's team checked on me at home, made sure I had food, and helped me recover. Now, I feel stronger every day.\"",
-					name: "James W., CINQCARE Family Member",
+					name: "CINQCARE Family Member",
 				},
 			],
 		};

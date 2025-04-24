@@ -1,8 +1,7 @@
 import styles from "./stats.module.scss";
-import Image from "next/image";
-import Stat1 from "/public/images/stat-1.svg";
-import Stat2 from "/public/images/stat-2.svg";
-import Stat3 from "/public/images/stat-3.svg";
+import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Stats = ({ page }) => {
 
@@ -16,11 +15,27 @@ const Stats = ({ page }) => {
 		content = {
 			heading: "Health and care that treats you <em>like family</em> where you live",
 			headingPeriod: true,
-			stat1alt: "A graph of many dots, 50% of which are orange. The text reads: '1 in 2 Americans lives with chronic disease today - we need a change.'",
-			stat2alt: "A graph depicting an upward trend. The text reads: '80% of your health is tied to factors outside of a hospital or clinic.",
-			stat3alt: "A graph depicitng many orange dots. The text reads: 'Reducing repeat trips to the hospital for members by 52%.'",
+			stats: [
+				{
+					img: "images/stat-1.svg",
+					alt: "A graph of many dots, 50% of which are orange. The text reads: '1 in 2 Americans lives with chronic disease today - we need a change.'",
+				},
+				{
+					img: "images/stat-2.svg",
+					alt: "A graph depicting an upward trend. The text reads: '80% of your health is tied to factors outside of a hospital or clinic.'",
+				},
+				{
+					img: "images/stat-3.svg",
+					alt: "A graph depicitng many orange dots. The text reads: 'Reducing repeat trips to the hospital for members by 52%.'",
+				},
+			],
 		};
 	}
+
+	// Initialize animations
+	useEffect(() => {
+		AOS.init();
+	}, [])
 
 	return (
 		<section className={styles.section_stats}>
@@ -30,9 +45,20 @@ const Stats = ({ page }) => {
 					dangerouslySetInnerHTML={{ __html: content.heading }}
 				></h3>
 				<div className={styles.stats} >
-					<Image priority={false} src={Stat1} alt={content.stat1alt} width={385} height={311} />
-					<Image priority={false} src={Stat2} alt={content.stat2alt} width={385} height={311} />
-					<Image priority={false} src={Stat3} alt={content.stat3alt} width={385} height={311} />
+					{content.stats &&
+						content.stats.map((stat, statIndex) => (
+						<img 
+							key={statIndex}
+							src={stat.img} 
+							alt={stat.alt} 
+							width={385} 
+							height={311} 
+							loading="lazy"
+							data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-delay={statIndex * 100}
+						/>
+					))}
 				</div>
 			</div>
 		</section>

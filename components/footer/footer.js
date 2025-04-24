@@ -63,11 +63,11 @@ const Footer = () => {
 									<li>
 										<a href="/care-medical-practice">Care Medical Practice</a>
 									</li>
-									<li>
+									{/*<li>
 										<a href="https://aco.cinq.care/" target="_blank">
 											ACO REACH
 										</a>
-									</li>
+									</li>*/}
 								</ul>
 							</div>
 

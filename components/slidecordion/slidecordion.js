@@ -55,7 +55,7 @@ const Slidecordion = ({ page }) => {
 	// About
 	if (page == "about") {
 		content = {
-			heading: "What makes CINQCARE <em>different</em>",
+			heading: "<a id='purpose' name='purpose'></a>What makes CINQCARE <em>different</em>",
 			headingPeriod: false,
 			slides: [
 				{
