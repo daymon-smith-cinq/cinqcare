@@ -1,5 +1,4 @@
 import Head from "next/head";
-import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
@@ -15,12 +14,13 @@ export default function Careers() {
 	const metaDescription =
 		"Join CINQCARE’s mission to deliver health and care to high-needs communities. Answer the call to make a difference—explore careers today.";
 	const pageURL = "https://cinq.care/careers-with-a-calling";
+	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
 		<>
 			<Head>
 				<meta name="description" content={metaDescription} />
-				<meta property="og:image" content={OpengraphImg.src} />
+				<meta property="og:image" content={opengraphImg} />
 				<meta property="og:title" content={title} />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content={pageURL} />

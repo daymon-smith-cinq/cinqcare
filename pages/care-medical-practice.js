@@ -1,5 +1,4 @@
 import Head from "next/head";
-import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import HeroAlt from "../components/heroAlt/heroAlt";
@@ -21,12 +20,13 @@ export default function CareMedicalPractice() {
 	const metaDescription =
 		"Care Medical Practice offers primary, specialty, and mental health care in your community. Find expert, compassionate care near you.";
 	const pageURL = "https://cinq.care/care-medical-practice";
+	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
 		<>
 			<Head>
 				<meta name="description" content={metaDescription} />
-				<meta property="og:image" content={OpengraphImg.src} />
+				<meta property="og:image" content={opengraphImg} />
 				<meta property="og:title" content={title} />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content={pageURL} />

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Header from "../components/header/header";
 import Hero from "../components/hero/hero";
 import SideBySide from "../components/sideBySide/sideBySide";
@@ -25,12 +24,13 @@ export default function Providers() {
 	const metaDescription =
 		"Join CINQCARE’s network to enhance community-based care with expert support, value-based incentives, and data-driven tools for providers.";
 	const pageURL = "https://cinq.care/for-providers";
+	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
 		<>
 			<Head>
 				<meta name="description" content={metaDescription} />
-				<meta property="og:image" content={OpengraphImg.src} />
+				<meta property="og:image" content={opengraphImg} />
 				<meta property="og:title" content={title} />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content={pageURL} />
