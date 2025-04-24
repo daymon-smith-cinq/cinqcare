@@ -2,8 +2,8 @@ import styles from "./people.module.scss";
 import Image from "next/image";
 
 import TonyW from "/public/portraits/tony-welters.jpg";
-import BillH from "/public/portraits/bill-hagan.jpg";
-import DeniseC from "/public/portraits/denise-christian.jpg";
+import BillH from "/public/portraits/bill-hagan.jpg"
+import JessicaHB from "/public/portraits/jessica-henderson-boyd.jpg";
 import ErnieM from "/public/portraits/ernie-monfiletto.jpg";
 import KristyD from "/public/portraits/kristy-duffey.jpg";
 import JessicaG from "/public/portraits/jessica-gamzon.jpg";
@@ -17,6 +17,7 @@ import TraciM from "/public/portraits/traci-miller.jpg";
 import CherylRW from "/public/portraits/cheryl-rucker-whitaker.jpg";
 import AngeliqueKL from "/public/portraits/angelique-kelly-lara.jpg";
 
+import DeniseC from "/public/portraits/denise-christian.jpg";
 import GlenisS from "/public/portraits/glenis-strachan.jpg";
 import JesslynP from "/public/portraits/jesslyn-perry.jpg";
 import KellyM from "/public/portraits/kelly-mclean.jpg";
@@ -62,8 +63,8 @@ const People = ({ page, group }) => {
 					title: "Founder & CEO",
 				},
 				{
-					portrait: DeniseC,
-					name: "Denise Christian, MD",
+					portrait: JessicaHB,
+					name: "Dr. Jessica Henderson Boyd",
 					title: "Chief Medical Officer",
 				},
 				{
@@ -125,6 +126,10 @@ const People = ({ page, group }) => {
 			centeredHeading: true,
 			bgGradient: false,
 			people: [
+				{
+					portrait: DeniseC,
+					name: "Denise Christian, MD",
+				},
 				{
 					portrait: RodneyA,
 					name: "Rodney Armstead, MD",

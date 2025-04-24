@@ -1,5 +1,4 @@
 import Head from "next/head";
-import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import HeroAlt from "../components/heroAlt/heroAlt";
@@ -22,12 +21,13 @@ export default function ForMoms() {
 	const metaDescription =
 		"CINQCARE for Moms offers pregnancy and postpartum care with dedicated support, from medical visits to social services, tailored for you.";
 	const pageURL = "https://cinq.care/for-moms";
+	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
 		<>
 			<Head>
 				<meta name="description" content={metaDescription} />
-				<meta property="og:image" content={OpengraphImg.src} />
+				<meta property="og:image" content={opengraphImg} />
 				<meta property="og:title" content={title} />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content={pageURL} />

@@ -21,12 +21,13 @@ export default function About() {
   const title = "About Us | CINQCARE";
   const metaDescription = "Discover CINQCARE’s mission to deliver health and care where it’s needed most, driven by purpose and a commitment to communities.";
   const pageURL = "https://cinq.care/about";
+  const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
   return (
     <>
       <Head>
         <meta name="description" content={metaDescription} />
-        //<meta property="og:image" content="/cinqcare-opengraph.jpg" />
+        <meta property="og:image" content={opengraphImg} />
         <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageURL} />

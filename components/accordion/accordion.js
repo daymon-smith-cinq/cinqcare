@@ -86,7 +86,7 @@ const Accordion = ({ page }) => {
 				{
 					heading: "Do I need insurance to receive care from CINQCARE?",
 					paragraph:
-						"CINQCARE works with many insurance plans, including Medicare and Medicaid. If you’re unsure about your coverage, we can help you navigate your options.",
+						"CINQCARE works with many insurance plans, including Medicare. If you’re unsure about your coverage, we can help you navigate your options. If you are a Medicaid member, you might be eligible to become a part of the CINQCARE Health Home community.",
 				},
 				{
 					heading: "Can I get care at home, or do I need to visit a clinic?",
