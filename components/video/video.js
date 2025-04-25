@@ -29,7 +29,7 @@ const Video = ({ page, vid }) => {
 			headingPeriod: true,
 			quote:
 				"“It’s like a family circle, they don’t hesitate to do anything for you. It makes me feel comfortable.”",
-			name: "— Kenneth Glass, CINQCARE/Cherokee Health Systems patient",
+			name: "— Kenneth, CINQCARE/Cherokee Health Systems patient",
 			videoId: "rFHXoYNkoBiLCy5kCjrwDjVMK1ku8Dz6RQs3U9GvMWI",
 			videoTitle: "CINQCARE Partnership with Cherokee Health Systems",
 		};
