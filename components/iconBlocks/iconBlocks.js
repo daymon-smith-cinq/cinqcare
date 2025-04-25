@@ -5,7 +5,7 @@ const IconBlocks = ({ page }) => {
 
 	if (page === "providers") {
 		content = {
-			heading: "Why <span>trust</span> CINQCARE as your practice's partner?",
+			heading: "Why <span>trust</span> CINQCARE?",
 			paragraph: "",
 			subtext:
 				"CINQCARE supports providers with practice facilitation, care coordination, and value-based program support. All medical decisions remain with licensed healthcare providers within our network.",
@@ -15,7 +15,7 @@ const IconBlocks = ({ page }) => {
 					icon: "icons/Award.svg",
 					heading: "A network rooted in purpose",
 					paragraph:
-						"Join a growing movement of purpose-aligned, community-based providers working to transform care since 2020.",
+						"Join a growing movement of purpose-aligned, community-based providers working to transform care since 2022.",
 				},
 				{
 					icon: "icons/Graph.svg",

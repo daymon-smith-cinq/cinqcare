@@ -18,7 +18,7 @@ const GlassAccordion = ({ page }) => {
 				{
 					heading: "Care coordination",
 					paragraph:
-						"We work alongside your practice, integrating our clinical team and practice facilitators to ensure smooth transitions, proactive Family Member engagement, and high-quality outcomes.",
+						"We work alongside your practice, integrating our clinical team to ensure smooth transitions, proactive Family Member engagement, and high-quality outcomes.",
 				},
 				{
 					heading: "Advanced risk stratification and population health",

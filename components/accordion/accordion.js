@@ -20,7 +20,7 @@ const Accordion = ({ page }) => {
 					heading:
 						"What are the general terms of your contracts? For Duals? For ACO REACH?",
 					paragraph:
-						"Our contracts are structured to align quality and cost improvements with financial incentives. We can engage in full-risk arrangements where providers share in savings while benefiting from wraparound care services. We partner to drive better outcomes through advanced primary care models and risk-sharing agreements, ensuring financial sustainability for participating providers.",
+						"Our contracts are structured to align quality and cost improvements with financial incentives. We can engage in full-risk arrangements where providers share in savings while benefiting from wraparound care services. We partner to drive better outcomes through advanced primary care models and risk-sharing agreements, ensuring financial sustainability for participating providers. Note: providers are not required to take risk in contracts.",
 				},
 				{
 					heading:
