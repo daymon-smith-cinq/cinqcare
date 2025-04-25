@@ -121,17 +121,17 @@ const Accordion = ({ page }) => {
 				{
 					heading: "What kinds of help is available for caregivers?",
 					paragraph:
-						"Our expert team will assess your most pressing challenges and pain points to understand your unique situation and work together to build an actionable, tailored support plan for meeting your caregiving goals. We offer a Caregiver Navigation Support Specialist who can assist caregivers on a moment’s notice and are specifically trained in helping caregivers navigating complex situations like insurance, home care, and housing. Specialists are based out of the communities they serve; caregivers can always be assured that support is grounded in a localized understanding. Plus, an education platform curated with resources, training, and expert guidance to support caregivers and their loved ones, giving caregivers with 24/7 access to expertise on critical areas such as legal support, financial planning, and care management.",
+						"Our expert team will assess your most pressing challenges and pain points to understand your unique situation and work together to build an actionable, tailored support plan for meeting your goals. We offer a Caregiver Navigation Support Specialist for you as the family member, or your caregiver, to help navigate complex situations like insurance, home care, and housing. Specialists are based out of the communities they serve; you or your caregiver can always be assured that support is grounded in a localized understanding. You and your caregiver are provided an education platform with resources, training, and expert guidance, as well as 24/7 access to legal support, financial planning, and care management.",
 				},
 				{
 					heading: "What does a care coordinator do?",
 					paragraph:
-						"This role acts as your quarterback for coordinating and navigating care both away and at home, facilitating communication across clinical care teams, family members, and other caregivers.",
+						"This role acts as your quarterback for coordinating and navigating care to support both you and your caregiver, both away and at home, facilitating communication across care teams, support services and your medical providers.",
 				},
 				{
 					heading: "Can you help me stay in my home?",
 					paragraph:
-						"Our collaborative of nurses, occupational therapists, and handymen can work alongside you and your caregivers to identify and overcome functional barriers impairing everyday living in your current home. We can also assist through critical decisions around what choices you have for where to live based on your condition, needs, and resources.",
+						"Our collaborative of in-home support services, clinicians, and handymen can work alongside you and your caregivers to identify and overcome functional, social, and medical barriers that may impede everyday living in your current home. Our goal is to help you remain in your home safely for as long as possible. We are also committed to helping you make a smooth transition if the time comes where an alternative living situation becomes necessary.",
 				},
 			],
 		};
