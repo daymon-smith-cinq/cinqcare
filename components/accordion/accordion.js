@@ -55,7 +55,7 @@ const Accordion = ({ page }) => {
 					heading:
 						"Will there be administrative burdens with reporting requirements?",
 					paragraph:
-						"CINQCARE minimizes administrative burdens by automating data collection and reporting where possible. In fact, participation in our <a href='https://aco.cinq.care/' target='_blank'>ACO REACH</a> program may eliminate your Merit-based Incentive Payment System (MIPS) reporting requirement.",
+						"CINQCARE minimizes administrative burdens by automating data collection and reporting where possible. In fact, participation in our <a href='https://aco.cinq.care/' target='_blank'>ACO REACH</a> program may eliminate your Merit-based Incentive Payment System (MIPS) reporting requirement. You can also learn more about our <a href='https://advancedillnesspartners.org/' target='_blank'>Advanced Illness Partners program here</a>.",
 				},
 				{
 					heading:
