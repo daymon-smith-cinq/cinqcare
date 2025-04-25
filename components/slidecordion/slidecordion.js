@@ -40,7 +40,7 @@ const Slidecordion = ({ page }) => {
 						"A simple illustrated map of a county with health center locations marked.",
 				},
 				{
-					title: "Partners",
+					title: "Payers",
 					text: "<p>We share a vision to lower costs, increase Family Member satisfaction, and deliver better outcomes in high-needs, urban and rural communities across the US.</p>",
 					buttonText: "See More",
 					buttonLink: "/for-partnerships",

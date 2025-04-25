@@ -14,7 +14,7 @@ const Accordion = ({ page }) => {
 				{
 					heading: "What are the benefits of being associated with CINQCARE?",
 					paragraph:
-						"CINQCARE is committed to improving health and care outcomes for high-needs communities. As a member of our network, providers gain access to value-based care contracts, financial incentives tied to quality and cost outcomes, advanced analytics, and an integrated care model designed to improve patient engagement and outcomes. Our network also supports providers with care coordination, quality improvement programs, in-home care services and administrative simplification to help practices succeed in value-based care arrangements.",
+						"CINQCARE is committed to improving health and care outcomes for high-needs, urban and rural communities. As a member of our network, providers gain access to value-based care contracts, financial incentives tied to quality and cost outcomes, advanced analytics, and an integrated care model designed to improve patient engagement and outcomes. Our network also supports providers with care coordination, quality improvement programs, in-home care services and administrative simplification to help practices succeed in value-based care arrangements.",
 				},
 				{
 					heading:

@@ -38,7 +38,7 @@ const OrangeBox = ({ page }) => {
 			bgImgSrc: "images/orangeBox-stripes-moms.png",
 			text:
 				"<h3>“I felt like I was doing this alone—until I found CINQCARE.”</h3>" +
-				"<h3>Tasha W. - CINQCARE Mom</h3>",
+				"<h3>CINQCARE Mom</h3>",
 		};
 	} else if (page == "communities") {
 		content = {
