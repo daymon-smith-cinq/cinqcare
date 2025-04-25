@@ -68,7 +68,8 @@ const SideBySide = ({ page, num }) => {
 					subheading:
 						"<strong>What if we made delivering care a little easier?</strong>",
 					text:
-						"<p>This is for providers who know their communities best. We know you're not just treating symptoms — you’re navigating a system that wasn’t built for high-needs, underserved populations.</p>" +
+						"<p>What if we made delivering care a little easier for the providers who know their communities best?</p>" +
+						"<p>You’re not just treating symptoms — you’re navigating a system that wasn’t built for high-needs populations.</p>" + 
 						"<p>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. Yet, your commitment never wavers.</p>",
 				},
 			],
@@ -105,10 +106,11 @@ const SideBySide = ({ page, num }) => {
 				},
 				{
 					subheading:
-						"<strong>Healthcare has been failing the most vulnerable</strong>",
+						"<strong>A Healthcare System that Fails Those Who Need Care the Most</strong>",
 					text:
 						"<p>High-needs individuals are too often reactively served, leading to preventable hospitalizations, rising costs, and poor outcomes. CINQCARE is changing that — shifting from fragmented care to integrated, home-first, whole-person health for every generation.</p>" +
-						"<p>We partner with health plans, state governments, and mission-aligned organizations to reach high-needs individual, Healthy babies, fresh starts, and aging with grace — CINQCARE is building strong health communities</p>",
+						"<p>We partner with health plans, state governments, and mission-aligned organizations to reach high-needs individuals.</p>" +
+						"<p>Healthy babies, fresh starts, and aging with grace — CINQCARE is building strong health communities</p>",
 				},
 			],
 		};
@@ -205,7 +207,7 @@ const SideBySide = ({ page, num }) => {
 					heading: "Your Health, <em>Your Way</em>",
 					headingPeriod: false,
 					text:
-						"<p>CINQCARE for Moms is built on partnerships with trusted practitioners and community-based care. At Grace Women’s Health Center in Buffalo, women receive pregnancy, postpartum, and reproductive care with dignity and support.</p>" +
+						"<p>CINQCARE for Moms is built on partnerships with trusted practitioners and community-based care. At Grace Women’s Center in Buffalo, women receive pregnancy, postpartum, and reproductive care with dignity and support.</p>" +
 						"<p>Located at Jefferson Ave., Buffalo, NY</p>",
 				},
 			],

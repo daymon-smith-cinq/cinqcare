@@ -118,7 +118,7 @@
 					overflow: hidden;
 				}
 
-				p {
+				p, a {
 					color: rgba(2, 14, 10, 0.6);
 					font-family: "Sohne", Arial, sans-serif;
 					font-size: 16px;
@@ -127,6 +127,14 @@
 					line-height: 27px; /* 168.75% */
 					margin-top: 18px;
 					margin-bottom: 0;
+				}
+
+				a {
+					color: $dark-orange;
+				}
+
+				a:hover {
+					text-decoration: underline;
 				}
 			}
 

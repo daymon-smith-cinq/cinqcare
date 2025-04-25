@@ -86,7 +86,7 @@ const Accordion = ({ page }) => {
 				{
 					heading: "Do I need insurance to receive care from CINQCARE?",
 					paragraph:
-						"CINQCARE works with many insurance plans, including Medicare. If you’re unsure about your coverage, we can help you navigate your options. If you are a Medicaid member, you might be eligible to become a part of the CINQCARE Health Home community.",
+						"CINQCARE works with many insurance plans, including Medicare. If you’re unsure about your coverage, we can help you navigate your options. If you are a Medicaid member, you might be eligible to become a part of the <a href='https://cinqcarehealthhome.com/' target='_blank'>CINQCARE Health Home</a> community.",
 				},
 				{
 					heading: "Can I get care at home, or do I need to visit a clinic?",
@@ -142,7 +142,7 @@ const Accordion = ({ page }) => {
 			headingPeriod: true,
 			paragraph: "Expand to see common questions about CINQCARE for Moms.",
 			finePrint: 
-				"<p class='fine-print'>Grace Women’s Health Center is an independently owned and operated medical practice that contracts with CINQ Connect for administrative and operational support. CINQCARE does not provide medical care or make clinical decisions.</p>",
+				"<p class='fine-print'>Grace Women’s Center is an independently owned and operated medical practice that contracts with CINQ Connect for administrative and operational support. CINQCARE does not provide medical care or make clinical decisions.</p>",
 			accordionContent: [
 				{
 					heading: "What kind of care does CINQCARE for Moms provide?",
@@ -263,7 +263,7 @@ const Accordion = ({ page }) => {
 								}}
 							>
 								<div className={styles.accordion_hiddenContainer}>
-									<p>{item.paragraph}</p>
+									<p dangerouslySetInnerHTML={{ __html: item.paragraph }}></p>
 								</div>
 							</div>
 
