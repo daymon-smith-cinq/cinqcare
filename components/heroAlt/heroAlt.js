@@ -28,8 +28,7 @@ const HeroAlt = ({ page }) => {
 			h1: "<span>CINQCARE for Moms</span> Motherhood, with the <em>Support You Deserve</em>",
 			h1Period: false,
 			paragraph:
-				"<p>You're always there for everyone else. <br> We're here for you.</p>" +
-				"<p>We’re helping today in Buffalo, NY— and coming to more regions soon.</p>",
+				"<p>You're always there for everyone. <br/>We're here for you.</p>",
 			buttonText: "Visit Site",
 			buttonLink: "https://gracewomenscenter.cinq.care/",
 			buttonTarget: "_blank",
