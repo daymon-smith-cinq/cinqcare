@@ -38,9 +38,9 @@ const Cards = ({ page }) => {
 		content = {
 			heading: "Find <em>Care</em> Near You",
 			paragraph:
-				"<b>Coming Soon</b><br>Washington, DC & additional Maryland regions.",
+				"Give your family a healthy start. Our services are free, regardless of income, and with no insurance required.",
 			buttonLink: "https://gracewomenscenter.cinq.care/",
-			buttonText: "Request a Visit",
+			buttonText: "Meet the team in Buffalo today",
 			finePrint: "",
 			cardContent: [
 				{
@@ -48,13 +48,13 @@ const Cards = ({ page }) => {
 					address: ``,
 					image: buffaloMap.src,
 					paragraph:
-						"On-site lab services, specialty care, and integrated support",
+						"HRSA-funded program &amp; Grace Women’s Center",
 				},
 				{
 					heading: "<em>Baltimore</em>, MD",
 					address: ``,
 					image: brooklynMap.src,
-					paragraph: "Coming Soon",
+					paragraph: "MedStar Healthy Choice<br/><br/>Washington, DC &amp; additional Maryland regions",
 				},
 			],
 		};
