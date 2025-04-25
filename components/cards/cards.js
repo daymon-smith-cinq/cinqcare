@@ -40,9 +40,9 @@ const Cards = ({ page }) => {
 			heading: "Find <em>Care</em> Near You",
 			paragraph:
 				"Meet our two areas of purpose on Jefferson Avenue in Buffalo today.",
-			buttonLink: "https://healthystartbuffalo.cinq.care/",
-			buttonText: "Learn More",
-			buttonTarget: "_blank",
+			buttonLink: "",
+			buttonText: "",
+			buttonTarget: "",
 			finePrint: "And <a href='/join-our-family'>contact us</a> to learn more about the programs in Baltimore, MD.",
 			cardContent: [
 				{
@@ -51,7 +51,7 @@ const Cards = ({ page }) => {
 					image: buffaloMap.src,
 					paragraph:
 						"We’re here to give families the education, support, and care they need to have a healthy start for their babies — at no cost.<br/><br/>" +
-						"<a href='https://healthystartbuffalo.cinq.care/' target='_blank'>Learn More</a>",
+						"<a href='https://healthystartbuffalo.cinq.care/' target='_blank'>Visit Site</a>",
 				},
 				{
 					heading: "Grace Women’s Center",
@@ -60,7 +60,7 @@ const Cards = ({ page }) => {
 					imageOffset: true,
 					paragraph: 
 						"We’re going beyond medical care —ensuring women’s voices are heard, their experiences are validated, and their health and care needs are met.<br/><br/>" +
-						"<a href='https://gracewomenscenter.cinq.care/' target='_blank'>Learn More</a>",
+						"<a href='https://gracewomenscenter.cinq.care/' target='_blank'>Visit Site</a>",
 				},
 			],
 		};
