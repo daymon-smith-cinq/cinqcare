@@ -39,26 +39,28 @@ const Cards = ({ page }) => {
 		content = {
 			heading: "Find <em>Care</em> Near You",
 			paragraph:
-				"Give your family a healthy start. Our services are free, regardless of income, and with no insurance required.",
-			buttonLink: "https://healthystartbuffalo.cinq.care/",
-			buttonText: "Meet the team in Buffalo today",
-			buttonTarget: "_blank",
-			finePrint: "",
+				"Meet our two areas of purpose on Jefferson Avenue in Buffalo today.",
+			buttonLink: "",
+			buttonText: "",
+			buttonTarget: "",
+			finePrint: "And <a href='/join-our-family'>contact us</a> to learn more about the programs in Baltimore, MD.",
 			cardContent: [
 				{
-					heading: "<em>Buffalo</em>, NY",
+					heading: "Healthy Start For Buffalo",
 					address: ``,
 					image: buffaloMap.src,
 					paragraph:
-						"HRSA-funded program &amp; Grace Women’s Center",
+						"We’re here to give families the education, support, and care they need to have a healthy start for their babies — at no cost.<br/><br/>" +
+						"<a href='https://healthystartbuffalo.cinq.care/' target='_blank'>Visit Site</a>",
 				},
 				{
-					heading: "<em>Baltimore</em>, MD",
+					heading: "Grace Women’s Center",
 					address: ``,
 					image: marylandMap.src,
 					imageOffset: true,
-					paragraph: "MedStar Healthy Choice &amp; Grace Women’s Center<br/><br/>" +
-					"<strong>Coming Soon:</strong> Washington, DC & additional Maryland regions",
+					paragraph: 
+						"We’re going beyond medical care —ensuring women’s voices are heard, their experiences are validated, and their health and care needs are met.<br/><br/>" +
+						"<a href='https://gracewomenscenter.cinq.care/' target='_blank'>Visit Site</a>",
 				},
 			],
 		};
@@ -84,7 +86,10 @@ const Cards = ({ page }) => {
 							/>
 						)}
 						{content.finePrint && (
-							<p className="fine-print">{content.finePrint}</p>
+							<p 
+								className="fine-print"
+								dangerouslySetInnerHTML={{ __html: content.finePrint }} 
+							/>
 						)}
 					</header>
 				)}
