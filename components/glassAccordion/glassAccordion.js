@@ -132,8 +132,9 @@ const GlassAccordion = ({ page }) => {
 			heading: "Care for Every Stage of <em>Maternity</em>",
 			paragraph:
 				"<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
-			buttonLink: "https://gracewomenscenter.cinq.care/",
+			buttonLink: "https://healthystartbuffalo.cinq.care/",
 			buttonText: "See How CINQCARE Supports Moms",
+			buttonTarget: "_blank",
 			accordionContent: [
 				{
 					heading: "A Dedicated Team by Your Side",
@@ -197,7 +198,13 @@ const GlassAccordion = ({ page }) => {
 						<div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
 					)}
 					{content.buttonLink && (
-						<Button link={content.buttonLink} text={content.buttonText} />
+						<Button 
+							link={content.buttonLink} 
+							text={content.buttonText} 
+							target={
+								content.buttonTarget ? `${content.buttonTarget}` : "_self"
+							}
+						/>
 					)}
 				</div>
 			)}

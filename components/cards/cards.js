@@ -40,8 +40,9 @@ const Cards = ({ page }) => {
 			heading: "Find <em>Care</em> Near You",
 			paragraph:
 				"Give your family a healthy start. Our services are free, regardless of income, and with no insurance required.",
-			buttonLink: "https://gracewomenscenter.cinq.care/",
+			buttonLink: "https://healthystartbuffalo.cinq.care/",
 			buttonText: "Meet the team in Buffalo today",
+			buttonTarget: "_blank",
 			finePrint: "",
 			cardContent: [
 				{
