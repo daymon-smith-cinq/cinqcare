@@ -1,6 +1,7 @@
 import styles from "./cards.module.scss";
 import buffaloMap from "../../public/cards--buffalo.svg";
 import brooklynMap from "../../public/cards--brooklyn.svg";
+import marylandMap from "../../public/cards--maryland.svg";
 import Button from "../button/button";
 
 const Cards = ({ page }) => {
@@ -53,8 +54,10 @@ const Cards = ({ page }) => {
 				{
 					heading: "<em>Baltimore</em>, MD",
 					address: ``,
-					image: brooklynMap.src,
-					paragraph: "MedStar Healthy Choice<br/><br/>Washington, DC &amp; additional Maryland regions",
+					image: marylandMap.src,
+					imageOffset: true,
+					paragraph: "MedStar Healthy Choice &amp; Grace Women’s Center<br/><br/>" +
+					"<strong>Coming Soon:</strong> Washington, DC & additional Maryland regions",
 				},
 			],
 		};
@@ -87,7 +90,7 @@ const Cards = ({ page }) => {
 
 				{content.cardContent?.map((card, i) => (
 					<div className={styles.card__item} key={i}>
-						<header>
+						<header className={card.imageOffset ? `${styles.offset}` : undefined}>
 							<div>
 								<h2 dangerouslySetInnerHTML={{ __html: card.heading }} />
 								<address dangerouslySetInnerHTML={{ __html: card.address }} />
