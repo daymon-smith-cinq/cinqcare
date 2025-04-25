@@ -70,6 +70,20 @@
 			flex-direction: column;
 			gap: 60px;
 		}
+
+		&.offset {
+			flex-flow: column;
+			gap: 0;
+
+			div {
+				gap: 30px;
+			}
+
+			img {
+				align-self: flex-end;
+				max-width: 220px;
+			}
+		}
 	}
 
 	h2 {

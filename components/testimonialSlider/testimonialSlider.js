@@ -95,7 +95,7 @@ const TestimonialSlider = ({ page }) => {
 		};
 	} else if (page === "communities") {
 		content = {
-			heading: "Real people, Real Care",
+			heading: "Real People, Real Care",
 			paragraph: "",
 			subtext: "",
 			testimonials: [
