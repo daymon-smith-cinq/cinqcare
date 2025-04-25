@@ -8,7 +8,8 @@ const IconBlocks = ({ page }) => {
 			heading: "Why <span>trust</span> CINQCARE?",
 			paragraph: "",
 			subtext:
-				"CINQCARE supports providers with practice facilitation, care coordination, and value-based program support. All medical decisions remain with licensed healthcare providers within our network.",
+				"CINQCARE supports providers with care coordination and value-based program support. All medical decisions remain with licensed healthcare providers within our network.<br/><br/>" +
+				"CINQCARE is a sponsor of the <a href='https://www.aahcm.org/' target='_blank'>American Academy of Home Care Medicine (AAHCM)</a>",
 			fourBlocks: false,
 			iconBlocks: [
 				{

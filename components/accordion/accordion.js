@@ -55,7 +55,7 @@ const Accordion = ({ page }) => {
 					heading:
 						"Will there be administrative burdens with reporting requirements?",
 					paragraph:
-						"CINQCARE minimizes administrative burdens by automating data collection and reporting where possible. In fact, participation in our ACO REACH program may eliminate your Merit-based Incentive Payment System (MIPS) reporting requirement.",
+						"CINQCARE minimizes administrative burdens by automating data collection and reporting where possible. In fact, participation in our <a href='https://aco.cinq.care/' target='_blank'>ACO REACH</a> program may eliminate your Merit-based Incentive Payment System (MIPS) reporting requirement.",
 				},
 				{
 					heading:
