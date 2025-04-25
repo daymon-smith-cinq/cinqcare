@@ -42,9 +42,9 @@ export default function GraceAtHome() {
 				<HeroAlt page={currentPage} />
 				<OrangeBox page={currentPage} />
 				<Map page={currentPage} />
-				{/* <SideBySide page={currentPage} num="first" />
+				<SideBySide page={currentPage} num="first" />
 				<IconBlocks page={currentPage} />
-				<SideBySide page={currentPage} num="second" /> */}
+				<SideBySide page={currentPage} num="second" />
 				<CTA
 					type="tertiary"
 					buttonText="Find Care Near You"
