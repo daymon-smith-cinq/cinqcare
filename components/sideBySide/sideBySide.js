@@ -68,7 +68,7 @@ const SideBySide = ({ page, num }) => {
 					subheading:
 						"<strong>What if we made delivering care a little easier for the providers who know their communities best?</strong>",
 					text:
-						"<p>You’re not just treating symptoms — you’re navigating a system that wasn’t built for high-needs urban and rural populations.</p>" + 
+						"<p>You’re not just treating symptoms — you’re navigating a system that wasn’t built for high-needs, urban and rural populations.</p>" + 
 						"<p>Administrative burdens grow, care models shift, and reimbursements remain unpredictable. Yet, your commitment never wavers.</p>",
 				},
 			],
