@@ -1,5 +1,161 @@
 @use "./styles/abstracts" as *;
 
+.notificationBar {
+	height: 64px;
+	background: linear-gradient(61deg, #D65503 9.56%, #FD9242 76.56%);
+	overflow: hidden;
+
+	@include respond-to("mobile-landscape") {
+		height: auto;
+	}
+
+	.wrapper {
+		position: relative;
+		padding: 17px 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: #FFF;
+
+		@include respond-to("mobile-landscape") {
+			padding: 10px 0;
+		}
+	
+		&::before {
+			content: "";
+			display: block;
+			width: 344px;
+			height: 100%;
+			background: url("../../public/backgrounds/notification-bar.svg") right top/100% 100% no-repeat;
+			position: absolute;
+			top: 0;
+			right: -85px;
+			z-index: 0;
+		}
+
+		span { 
+			color: #FFF;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 30px;
+
+			@include respond-to("laptop") {
+				font-size: 16px;
+			}
+
+			@include respond-to("mobile") {
+				font-size: 14px;
+			}
+		}
+
+		.info {
+			display: flex;
+			flex-direction: row;
+			gap: 20px;
+			z-index: 1;
+
+			@include respond-to("tablet-landscape") {
+				gap: 10px;
+				max-width: 100%;
+			}
+
+			.category {
+				padding: 0 13px;
+				border: 1px solid #fff;
+				border-radius: 65px;
+
+				@include respond-to("tablet-landscape") {
+					padding: 0 10px;
+				}
+
+				@include respond-to("tablet") {
+					display: none;
+				}
+
+				span {
+					font-size: 12px;
+					font-weight: 700;
+					position: relative;
+					top: -1px;
+				}
+			}
+
+			.title {
+				display: block;
+				max-width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+
+			.date {
+				border-left: 1px solid #fff;
+				padding-left: 20px;
+
+				@include respond-to("tablet-landscape") {
+					padding-left: 10px;
+				}
+
+				@include respond-to("tablet-landscape") {
+					display: none;
+				}
+			}
+			
+			@include respond-to("mobile-landscape") {
+				&::after {
+					content: "";
+					display: inline-block;
+					width: 10px;
+					height: 13px;
+					background: url("../../public/images/arrow-white.svg") left top/100% 100% no-repeat;
+					position: relative;
+					left: 0;
+					top: 10px;
+					transition: all 0.15s ease-in;
+				}
+			}
+			
+		}
+
+		.link {
+			padding-right: 7px;
+			z-index: 1;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 6px;
+				height: 9px;
+				background: url("../../public/images/arrow-white.svg") left top/100% 100% no-repeat;
+				position: relative;
+				left: 5px;
+				transition: all 0.15s ease-in;
+			}
+
+			@include respond-to("mobile-landscape") {
+				display: none;
+			}
+		}
+	}
+
+	&:hover {
+		.link::after {
+			left: 8px;
+		}
+
+		@include respond-to("mobile-landscape") {
+			.info::after {
+				left: 4px;
+			}
+		}
+	}
+
+	&:hover .link::after {
+		left: 8px;
+	}
+
+}
+
 .no_scroll {
 	overflow: hidden;
 }
