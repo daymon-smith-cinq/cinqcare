@@ -27,6 +27,20 @@ const Header = ({ headerBg }) => {
 
 	return (
 		<>
+			{currentPath !== "/join-our-family" && (
+				<a href="#" target="_blank">
+					<div className={`${styles.notificationBar} ${" notificationBar"}`}>
+						<div className={`${styles.wrapper} ${" wrapper"}`}>
+							<div className={styles.info}>
+								<div className={styles.category}><span>CINQCARE NEWS</span></div>
+								<div className={styles.title}><span>CINQCARE Announces Dr. Jessica Henderson Boyd as CMO</span></div>
+								<div className={styles.date}><span>April 23, 2025</span></div>
+							</div>
+							<div className={styles.link}><span>Read More</span></div>
+						</div>
+					</div>
+				</a>
+			)}
 			<header id="header" className={`${styles.header} ${bgColor}`}>
 				<div className={`${styles.wrapper} ${" wrapper"}`}>
 					<div className={styles.headerNav}>
