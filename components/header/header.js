@@ -28,7 +28,7 @@ const Header = ({ headerBg }) => {
 	return (
 		<>
 			{currentPath !== "/join-our-family" && (
-				<a href="#" target="_blank">
+				<a href="https://www.prnewswire.com/news-releases/cinqcare-announces-dr-jessica-henderson-boyd-as-cmo-302435110.html" target="_blank">
 					<div className={`${styles.notificationBar} ${" notificationBar"}`}>
 						<div className={`${styles.wrapper} ${" wrapper"}`}>
 							<div className={styles.info}>
