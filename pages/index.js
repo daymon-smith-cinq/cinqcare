@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Header from "../components/header/header";
-import Image from "next/image";
+import ColumnAccordion from "@/components/columnAccordionRevised/columnAccordionRevised";
 import Hero from "../components/hero/hero";
 import OrangeBox from "../components/orangeBox/orangeBox";
 import Slidecordion from "../components/slidecordion/slidecordion";
-import ColumnAccordion from "../components/columnAccordion/columnAccordion";
+import ColumnAccordionRevised from "@/components/columnAccordionRevised/columnAccordionRevised";
 import Stats from "../components/stats/stats";
 import SideBySide from "../components/sideBySide/sideBySide";
 import Video from "../components/video/video";
@@ -43,7 +43,7 @@ export default function Home() {
 				<Hero page={currentPage} />
 				<OrangeBox page={currentPage} />
 				<Slidecordion page={currentPage} />
-				<ColumnAccordion page={currentPage} />
+				<ColumnAccordionRevised page={currentPage} />
 				<Stats page={currentPage} />
 				<SideBySide page={currentPage} />
 				<Video page={currentPage} />
