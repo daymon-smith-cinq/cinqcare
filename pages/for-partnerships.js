@@ -19,7 +19,7 @@ export default function Partners() {
 	// SEO
 	const title = "For Payers | CINQCARE";
 	const metaDescription =
-		"CINQCARE works with healthcare leaders to improve care delivery, enhance outcomes, and reduce costs in high-need communities using value-based solutions.";
+		"CINQCARE works with healthcare leaders to improve care delivery, enhance outcomes, and reduce costs in high-need, urban, and rural communities using value-based solutions.";
 	const pageURL = "https://cinq.care/for-partnerships";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
@@ -41,7 +41,7 @@ export default function Partners() {
 			<main>
 				<Hero page={currentPage} />
 
-				<SideBySide page={currentPage} />
+				<SideBySide page={currentPage} num="first" />
 				{/*<ScrollJacking
 					page={currentPage}
 					bg={scrollJackingImage}
@@ -101,6 +101,7 @@ export default function Partners() {
 						build healthier communities — together.
 					</p>
 				</CTA>
+				<SideBySide page={currentPage} num="second"/>
 			</main>
 
 			<Footer />

@@ -74,7 +74,7 @@ const Hero = ({ page }) => {
 			buttonLink: "",
 			blockquoteBorder: true,
 			quoteText:
-				"Caregivers are born to care. It’s more than a job—it’s a calling. We’re committed to delivering health, care, and well-being to those who need it most, especially in high-needs communities.",
+				"Caregivers are born to care. It’s more than a job—it’s a calling. We’re committed to delivering health, care, and well-being to those who need it most, especially in high-needs, urban, and rural communities.",
 		};
 	}
 

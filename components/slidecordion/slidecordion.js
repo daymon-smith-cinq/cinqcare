@@ -60,7 +60,7 @@ const Slidecordion = ({ page }) => {
 			slides: [
 				{
 					title: "Purpose",
-					text: "<p>The health and well-being of those who need care the most, where they live–with a deep commitment to high-need, urban and rural communities.</p>",
+					text: "<p>The health and well-being of those who need care the most, where they live–with a deep commitment to high-needs, urban and rural communities.</p>",
 					imgSrc: ImgPurpose,
 					imgAlt: "",
 				},

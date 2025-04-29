@@ -9,14 +9,15 @@ const ColumnAccordionRevised = ({ page }) => {
 	// Homepage
 	if (page == "home") {
 		content = {
-			heading: "How we deliver Health and Care",
+			heading: "How We Deliver Health and Care",
 			paragraph:
-				"At CINQCARE, we deliver trusted, culturally-informed care across multiple settings - where you live, how you live, and as your needs change.",
+				"<p>At CINQCARE, we deliver trusted, culturally-informed care across multiple settings - where you live, how you live, and as your needs change.</p>" +
+				"<p>Explore our models of care and signature programs:</p>",
 			headingPeriod: false,
 			columns: [
 				{
 					title: "Grace at Home",
-					text: "<p>Connecting virtual and in-home care in coordination with your local primary care team.</p>",
+					text: "<p>In-home, virtual, and community-based services - including Active Aging support for older adults and dementia care.</p>",
 					buttonText: "Learn More",
 					buttonLink: "https://grace-at-home.care/",
 					imgSrc: "images/NursePatient.jpg",
@@ -24,7 +25,7 @@ const ColumnAccordionRevised = ({ page }) => {
 				},
 				{
 					title: "Care Medical Practice",
-					text: "<p>Delivering high-quality primary and specialty care—with compassion.</p>",
+					text: "<p>In-person clinical care at trusted local practices.</p>",
 					buttonText: "Learn More",
 					buttonLink: "/care-medical-practice",
 					imgSrc: "images/Nurse.jpg",
@@ -32,7 +33,7 @@ const ColumnAccordionRevised = ({ page }) => {
 				},
 				{
 					title: "CINQCARE for Moms",
-					text: "<p>Meeting women where they are and making sure they have the care, advocacy, and support they deserve.</p>",
+					text: "<p>Personalized care and wellness for moms and families - from pregnancy through postpartum.</p>",
 					buttonText: "Learn More",
 					buttonLink: "/for-moms",
 					imgSrc: "images/MotherChild.jpg",
@@ -49,7 +50,7 @@ const ColumnAccordionRevised = ({ page }) => {
 					<h2 dangerouslySetInnerHTML={{ __html: content.heading }}></h2>
 				)}
 				{content.paragraph && (
-					<p dangerouslySetInnerHTML={{ __html: content.paragraph }}></p>
+					<div dangerouslySetInnerHTML={{ __html: content.paragraph }}></div>
 				)}
 				<div className={styles.columnContainer}>
 					{content.columns &&
