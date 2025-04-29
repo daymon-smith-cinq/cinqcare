@@ -103,6 +103,7 @@
 				.textBox {
 					width: 450px;
 					height: 100%;
+					background: $blur-bg;
 				}
 
 				@include respond-to("tablet") {
@@ -129,7 +130,7 @@
 				height: 40%;
 				padding: 20px;
 				border-radius: $br;
-				background: $blur-bg;
+				background: $blur-bg-orange;
 				backdrop-filter: $blur;
 				-webkit-backdrop-filter: $blur;
 				position: relative;

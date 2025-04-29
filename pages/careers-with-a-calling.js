@@ -12,7 +12,7 @@ export default function Careers() {
 	// SEO
 	const title = "Careers | CINQCARE";
 	const metaDescription =
-		"Join CINQCARE’s mission to deliver health and care to high-needs communities. Answer the call to make a difference—explore careers today.";
+		"Join CINQCARE’s mission to deliver health and care to high-needs, urban, and rural communities. Answer the call to make a difference—explore careers today.";
 	const pageURL = "https://cinq.care/careers-with-a-calling";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 

@@ -30,7 +30,7 @@ const OrangeBox = ({ page }) => {
 		content = {
 			bgImgSrc: "images/orangeBox-stripes-care.png",
 			text:
-				"<h4>Our healthcare system can be hard to navigate and even harder to access. Wouldn’t it be nice if you could have help with the little things that make the biggest difference for keeping you healthy.</h4>" +
+				"<h4>Our healthcare system can be hard to navigate and even harder to access. Wouldn’t it be nice if you could have help with the little things that make the biggest difference for keeping you healthy?</h4>" +
 				"<h4>We <em>meet you where you are,</em> listening to what you need, finding creative solutions, and making sure you get the highest-quality care — so you can focus on living well.</h4>",
 		};
 	} else if (page == "for-moms") {

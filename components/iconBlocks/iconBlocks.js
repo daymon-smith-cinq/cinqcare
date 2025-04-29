@@ -7,16 +7,14 @@ const IconBlocks = ({ page }) => {
 		content = {
 			heading: "Why <span>trust</span> CINQCARE?",
 			paragraph: "",
-			subtext:
-				"CINQCARE supports providers with care coordination and value-based program support. All medical decisions remain with licensed healthcare providers within our network.<br/><br/>" +
-				"CINQCARE is a sponsor of the <a href='https://www.aahcm.org/' target='_blank'>American Academy of Home Care Medicine (AAHCM)</a>",
+			subtext: "",
 			fourBlocks: false,
 			iconBlocks: [
 				{
 					icon: "icons/Award.svg",
 					heading: "A network rooted in purpose",
 					paragraph:
-						"Join a growing movement of purpose-aligned, community-based providers working to transform care since 2022.",
+						"Join a mission-driven health and care delivery system dedicated to serving those who need care the most-offering providers the opportunity to participate in value-based care through our IPA, <a href='https://aco.cinq.care/' target='_blank'>ACO REACH</a>, MSSP and <a href='https://advancedillnesspartners.org/' target='_blank'>High Needs ACO</a> programs.",
 				},
 				{
 					icon: "icons/Graph.svg",
@@ -26,7 +24,7 @@ const IconBlocks = ({ page }) => {
 				},
 				{
 					icon: "icons/Health.svg",
-					heading: "Aligned Incentives for smarter practice growth",
+					heading: "Rewarding Your Commitment to Care",
 					paragraph:
 						"We help ensure that the dedicated care you deliver is recognized and rewarded through value-based payment opportunities.",
 				},
@@ -48,7 +46,7 @@ const IconBlocks = ({ page }) => {
 		content = {
 			heading: "Why <span>trust</span> CINQCARE?",
 			paragraph:
-				"This is for the communities that raised us. At CINQCARE, we're giving back to the cities and towns where we came from — with the kind of care we want for our own families.",
+				"At CINQCARE, we’re giving back to the cities and towns where we came from — with the kind of care we want for our own families.",
 			subtext: "",
 			fourBlocks: false,
 			iconBlocks: [
@@ -83,8 +81,7 @@ const IconBlocks = ({ page }) => {
 			heading: "Why partner with <span>us</span>?",
 			paragraph:
 				"We’re working with healthcare organizations leading lasting change in high-needs, urban, and rural communities, including Medicare & Dual Special Needs Plans (D-SNPs), State Medicaid & Managed Care Organizations (MCOs), ACO REACH, and risk-based payer models, as well as state and federal health programs.",
-			subtext:
-				"CINQCARE partners with payers and government agencies to provide care coordination, operational expertise, and non-clinical support. All medical care is delivered by independently owned and operated medical practices within the CINQCARE network.",
+			subtext: "",
 			fourBlocks: false,
 			iconBlocks: [
 				{

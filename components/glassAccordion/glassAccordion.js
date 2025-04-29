@@ -82,7 +82,7 @@ const GlassAccordion = ({ page }) => {
 				{
 					heading: "Specialized expertise",
 					paragraph:
-						"Our approach is informed by decades of sector leadership and lived experience in high-need, urban, and rural communities.",
+						"Our approach is informed by decades of sector leadership and lived experience in high-needs, urban, and rural communities.",
 				},
 				{
 					heading: "Precision Engagement Engine",
@@ -119,7 +119,7 @@ const GlassAccordion = ({ page }) => {
 						"Through quality care, personal engagement, and support services.",
 				},
 				{
-					heading: "For Partners",
+					heading: "For Payers",
 					paragraph:
 						"Through lower costs, increased Family Member satisfaction, and innovative care approaches.",
 				},

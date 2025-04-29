@@ -16,7 +16,7 @@ export default function Communities() {
 	// SEO
 	const title = "Communities | CINQCARE";
 	const metaDescription =
-		"CINQCARE supports high-need urban and rural communities with health, care, and well-being. Hear their stories and connect with us.";
+		"CINQCARE supports high-need, urban, and rural communities with health, care, and well-being. Hear their stories and connect with us.";
 	const pageURL = "https://cinq.care/communities";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 

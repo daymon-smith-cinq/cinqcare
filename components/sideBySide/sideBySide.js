@@ -93,7 +93,7 @@ const SideBySide = ({ page, num }) => {
 				},
 			],
 		};
-	} else if (page == "partners") {
+	} else if (page == "partners" && num == "first") {
 		content = {
 			bgShape: "/images/scrolljacking--partners.svg",
 			columns: [
@@ -110,6 +110,19 @@ const SideBySide = ({ page, num }) => {
 						"<p>High-needs individuals are too often reactively served, leading to preventable hospitalizations, rising costs, and poor outcomes. CINQCARE is changing that — shifting from fragmented care to integrated, home-first, whole-person health for every generation.</p>" +
 						"<p>We partner with health plans, state governments, and mission-aligned organizations to reach high-needs individuals.</p>" +
 						"<p>Healthy babies, fresh starts, and aging with grace — CINQCARE is building strong health communities.</p>",
+				},
+			],
+		};
+	} else if (page == "partners" && num == "second") {
+		content = {
+			bgShape: "",
+			columns: [
+				{
+					text:
+						"<p class='fine-print'>CINQCARE partners with payers and government agencies to provide care coordination, operational expertise, and non-clinical support. All medical care is delivered by independently owned and operated medical practices within the CINQCARE network.</p>",
+				},
+				{
+					
 				},
 			],
 		};

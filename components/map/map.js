@@ -56,7 +56,7 @@ const SideBySide = ({ page }) => {
 			buttonText: "Contact Us",
 			buttonLink: "/join-our-family",
 			finePrint:
-				"<p>Grace at Home is a medical practice delivering in-home and virtual care. CINQCARE serves as the Management Services Organization (MSO), providing operational, administrative, and non-clinical support. CINQCARE does not practice medicine or direct patient care.</p>",
+				"",
 			image: CareMap,
 			imgAlt:
 				"A stylized map of the United States, made from a grid of many dots. Some dots have pinpoints with the CINQCARE logomark, highlighting the CINQCARE community locations across the United States.",

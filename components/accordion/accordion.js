@@ -10,6 +10,9 @@ const Accordion = ({ page }) => {
 				"Answers to <span>your questions</span> about joining the network",
 			headingPeriod: true,
 			paragraph: "",
+			finePrint: 
+				"CINQCARE supports providers with care coordination and value-based program support. All medical decisions remain with licensed healthcare providers within our network.<br/><br/>" +
+				"CINQCARE is a sponsor of the <a href='https://www.aahcm.org/' target='_blank'>American Academy of Home Care Medicine (AAHCM)</a>",
 			accordionContent: [
 				{
 					heading: "What are the benefits of being associated with CINQCARE?",
@@ -111,12 +114,22 @@ const Accordion = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "partners") {
+		content = {
+			heading: "",
+			headingPeriod: false,
+			paragraph: "",
+			finePrint: 
+				"<p class='fine-print'>CINQCARE partners with payers and government agencies to provide care coordination, operational expertise, and non-clinical support. All medical care is delivered by independently owned and operated medical practices within the CINQCARE network.</p>"
+		};
 	} else if (page === "grace-at-home") {
 		content = {
 			heading:
 				"Answers to <span>your questions</span> about <br/>Grace at Home",
 			headingPeriod: true,
 			paragraph: "",
+			finePrint: 
+				"<p class='fine-print'>Grace at Home is a medical practice delivering in-home and virtual care. CINQCARE serves as the Management Services Organization (MSO), providing operational, administrative, and non-clinical support. CINQCARE does not practice medicine or direct patient care.</p>",
 			accordionContent: [
 				{
 					heading: "What kinds of help is available for caregivers?",
@@ -178,6 +191,8 @@ const Accordion = ({ page }) => {
 				"Answers to <span>your questions</span> about <br/>Care Medical Practice",
 			headingPeriod: true,
 			paragraph: "",
+			finePrint: 
+				"<p class='fine-print'>Care Medical Practices are independent medical groups that partner with CINQCARE for administrative and operational support. CINQCARE does not provide medical services or direct patient care.</p>",
 			accordionContent: [
 				{
 					heading: "What does it mean to coordinate my care?",
@@ -275,7 +290,7 @@ const Accordion = ({ page }) => {
 
 			{content.finePrint && (
 				<div 
-					className={styles.finePrint}
+					className={`${styles.finePrint} fine-print`}
 					dangerouslySetInnerHTML={{ __html: content.finePrint }}
 				/>
 			)}

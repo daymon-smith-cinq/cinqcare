@@ -84,7 +84,7 @@ const People = ({ page, group }) => {
 				},
 				{
 					portrait: NatalieL,
-					name: "Natalie O. Ludaway, JD",
+					name: "Natalie O. Ludaway",
 					title: "Chief Legal & External Affairs Officer",
 				},
 				{
