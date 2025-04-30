@@ -19,7 +19,7 @@ const ColumnAccordionRevised = ({ page }) => {
 					title: "Grace at Home",
 					text: "<p>In-home, virtual, and community-based services - including Active Aging support for older adults and dementia care.</p>",
 					buttonText: "Learn More",
-					buttonLink: "https://grace-at-home.care/",
+					buttonLink: "/grace-at-home",
 					imgSrc: "images/NursePatient.jpg",
 					imgAlign: "center",
 				},
