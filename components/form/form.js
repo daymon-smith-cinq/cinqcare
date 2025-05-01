@@ -9,7 +9,7 @@ const Form = ({ page }) => {
 			image: "images/ManWomanHugging.jpg",
 			paragraph:
 				"Every day, we’re committed to your health and well-being—<em>because to us, you’re family.</em> <br> We’ll provide you with personalized care, ensuring you have access to medical, mental health, and community services.",
-			form: "https://form.jotform.com/250975989384076",
+			form: "https://form.jotform.com/251200129131135",
 			class: "family",
 		};
 	}
