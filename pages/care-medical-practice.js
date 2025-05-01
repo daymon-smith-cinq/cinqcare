@@ -46,7 +46,11 @@ export default function CareMedicalPractice() {
 
 				<People page={currentPage} />
 
-				<CTA type="tertiary" buttonText="Learn More" link="/join-our-family">
+				<CTA
+					type="tertiary"
+					buttonText="Learn More"
+					link="https://caremedicalpractice.care/book-care-options/"
+				>
 					<Image
 						priority={false}
 						src={logoCareMedical}
@@ -68,7 +72,7 @@ export default function CareMedicalPractice() {
 				<CTA
 					type="primary"
 					buttonText="Find a Care Medical Practice Near You"
-					link="/join-our-family"
+					link="https://caremedicalpractice.care/book-care-options/"
 				>
 					<header>
 						<h2>

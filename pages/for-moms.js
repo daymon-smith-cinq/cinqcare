@@ -10,7 +10,7 @@ import CTA from "../components/cta/cta";
 import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
 import logoForMoms from "/public/logo-cinqcare-for-moms.svg";
-import Cards from "@/components/cards/cards";
+import Cards from "../components/cards/cards";
 
 export default function ForMoms() {
 	// Define current page

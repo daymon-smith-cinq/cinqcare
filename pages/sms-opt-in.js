@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/header/header";
-import Form from "@/components/form/form";
-import TestimonialSlider from "@/components/testimonialSlider/testimonialSlider";
-import BackgroundContainer from "@/components/backgroundContainer/backgroundContainer";
+import Form from "../components/form/form";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
+import BackgroundContainer from "../components/backgroundContainer/backgroundContainer";
 import Footer from "../components/footer/footer";
 
 export default function JoinOurFamily() {

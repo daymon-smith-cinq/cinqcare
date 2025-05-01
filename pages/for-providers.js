@@ -12,7 +12,7 @@ import GlassAccordion from "../components/glassAccordion/glassAccordion";
 import LogoBar from "../components/logoBar/logoBar";
 import CTA from "../components/cta/cta";
 import Accordion from "../components/accordion/accordion";
-import BackgroundContainer from "@/components/backgroundContainer/backgroundContainer";
+import BackgroundContainer from "../components/backgroundContainer/backgroundContainer";
 import Footer from "../components/footer/footer";
 
 export default function Providers() {

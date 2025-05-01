@@ -6,8 +6,8 @@ import Video from "../components/video/video";
 import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
-import MasonryCommunities from "@/components/masonry/masonry-communities";
-import Spacer from "@/components/spacer/spacer";
+import MasonryCommunities from "../components/masonry/masonry-communities";
+import Spacer from "../components/spacer/spacer";
 
 export default function Communities() {
 	// Define current page

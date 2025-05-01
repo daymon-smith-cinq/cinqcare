@@ -1,15 +1,14 @@
 import Head from "next/head";
 import Header from "../components/header/header";
-import ColumnAccordion from "@/components/columnAccordionRevised/columnAccordionRevised";
 import Hero from "../components/hero/hero";
 import OrangeBox from "../components/orangeBox/orangeBox";
 import Slidecordion from "../components/slidecordion/slidecordion";
-import ColumnAccordionRevised from "@/components/columnAccordionRevised/columnAccordionRevised";
+import ColumnAccordionRevised from "../components/columnAccordionRevised/columnAccordionRevised";
 import Stats from "../components/stats/stats";
 import SideBySide from "../components/sideBySide/sideBySide";
 import Video from "../components/video/video";
 import CTA from "../components/cta/cta";
-import MasonryCommunities from "@/components/masonry/masonry-communities";
+import MasonryCommunities from "../components/masonry/masonry-communities";
 import Footer from "../components/footer/footer";
 import Spacer from "../components/spacer/spacer";
 
