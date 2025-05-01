@@ -20,10 +20,10 @@ export default function Providers() {
 	const currentPage = "providers";
 
 	// SEO
-	const title = "For Providers | CINQCARE";
+	const title = "Providers | CINQCARE";
 	const metaDescription =
 		"Join CINQCARE’s network to enhance community-based care with expert support, value-based incentives, and data-driven tools for providers.";
-	const pageURL = "https://cinq.care/for-providers";
+	const pageURL = "https://cinq.care/providers";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (

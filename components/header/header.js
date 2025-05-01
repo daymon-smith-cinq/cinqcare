@@ -33,7 +33,7 @@ const Header = ({ headerBg }) => {
 						<div className={`${styles.wrapper} ${" wrapper"}`}>
 							<div className={styles.info}>
 								<div className={styles.category}><span>NEWS</span></div>
-								<div className={styles.title}><span>CINQCARE Announces Dr. Jessica Henderson Boyd as CMO</span></div>
+								<div className={styles.title}><span>Announcing Dr. Jessica Henderson Boyd as Chief Medical Officer</span></div>
 								<div className={styles.date}><span>April 23, 2025</span></div>
 							</div>
 							{/*<div className={styles.link}><span>Read More</span></div>*/}
@@ -76,13 +76,13 @@ const Header = ({ headerBg }) => {
 										<a aria-expanded={ariaExpanded}>Who We Serve</a>
 										<ul className={styles.submenu}>
 											<li>
-												<a href="/for-providers">For Providers</a>
+												<a href="/providers">Providers</a>
 											</li>
 											<li>
-												<a href="/for-patients">For Patients</a>
+												<a href="/patients">Patients</a>
 											</li>
 											<li>
-												<a href="/for-partnerships">For Payers</a>
+												<a href="/payers">Payers</a>
 											</li>
 										</ul>
 									</li>
@@ -96,7 +96,7 @@ const Header = ({ headerBg }) => {
 												<a href="/grace-at-home">Grace at Home</a>
 											</li>
 											<li>
-												<a href="/for-moms">CINQCARE for Moms</a>
+												<a href="/moms">CINQCARE for Moms</a>
 											</li>
 											<li>
 												<a href="/care-medical-practice">

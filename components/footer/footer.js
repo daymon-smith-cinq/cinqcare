@@ -37,13 +37,13 @@ const Footer = () => {
 								<header>Who We Serve</header>
 								<ul>
 									<li>
-										<a href="/for-providers">Providers</a>
+										<a href="/providers">Providers</a>
 									</li>
 									<li>
-										<a href="/for-patients">Patients</a>
+										<a href="/patients">Patients</a>
 									</li>
 									<li>
-										<a href="/for-partnerships">Payers</a>
+										<a href="/payers">Payers</a>
 									</li>
 								</ul>
 							</div>
@@ -58,7 +58,7 @@ const Footer = () => {
 										<a href="/grace-at-home">Grace at Home</a>
 									</li>
 									<li>
-										<a href="/for-moms">CINQCARE for Moms</a>
+										<a href="/moms">CINQCARE for Moms</a>
 									</li>
 									<li>
 										<a href="/care-medical-practice">Care Medical Practice</a>
@@ -97,8 +97,7 @@ const Footer = () => {
 						<div className={styles.footer__hero}>
 							<header>
 								<h2>
-									<em>More Than Healthcare</em> — A Movement for Those Who Need
-									It Most.
+									<em>More Than Healthcare</em> — A Mission for Those Who Need it Most.
 								</h2>
 							</header>
 							<Button link="/join-our-family" text="Join Our Family" />
@@ -160,8 +159,7 @@ const Footer = () => {
 					<div className={styles.footer__hero}>
 						<header>
 							<h2>
-								<em>More Than Healthcare</em> — A Movement for Those Who Need It
-								Most.
+								<em>More Than Healthcare</em> — A Mission for Those Who Need it Most.
 							</h2>
 						</header>
 						<Button link="/join-our-family" text="Join Our Family" />

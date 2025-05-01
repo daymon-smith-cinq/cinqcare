@@ -20,7 +20,7 @@ export default function ForMoms() {
 	const title = "CINQCARE for Moms | CINQCARE";
 	const metaDescription =
 		"CINQCARE for Moms offers pregnancy and postpartum care with dedicated support, from medical visits to social services, tailored for you.";
-	const pageURL = "https://cinq.care/for-moms";
+	const pageURL = "https://cinq.care/moms";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (

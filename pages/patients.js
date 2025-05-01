@@ -18,10 +18,10 @@ export default function Patients() {
 	const currentPage = "patients";
 
 	// SEO
-	const title = "For Patients | CINQCARE";
+	const title = "Patients | CINQCARE";
 	const metaDescription =
 		"CINQCARE provides trusted providers, community support, and tailored care services to improve your health where you live.";
-	const pageURL = "https://cinq.care/for-patients";
+	const pageURL = "https://cinq.care/patients";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
