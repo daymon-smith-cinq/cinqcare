@@ -35,7 +35,7 @@ const ColumnAccordionRevised = ({ page }) => {
 					title: "CINQCARE for Moms",
 					text: "<p>Personalized care and wellness for moms and families - from pregnancy through postpartum.</p>",
 					buttonText: "Learn More",
-					buttonLink: "/for-moms",
+					buttonLink: "/moms",
 					imgSrc: "images/MotherChild.jpg",
 					imgAlign: "right 35%",
 				},

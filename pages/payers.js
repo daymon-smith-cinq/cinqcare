@@ -17,10 +17,10 @@ export default function Partners() {
 	const currentPage = "partners";
 
 	// SEO
-	const title = "For Payers | CINQCARE";
+	const title = "Payers | CINQCARE";
 	const metaDescription =
 		"CINQCARE works with healthcare leaders to improve care delivery, enhance outcomes, and reduce costs in high-need, urban, and rural communities using value-based solutions.";
-	const pageURL = "https://cinq.care/for-partnerships";
+	const pageURL = "https://cinq.care/payers";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (

@@ -11,7 +11,7 @@ const nextConfig = {
 			},
 			{
 				source: "/individuals",
-				destination: "/for-patients",
+				destination: "/patients",
 				permanent: true,
 			},
 			{

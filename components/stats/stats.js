@@ -13,7 +13,7 @@ const Stats = ({ page }) => {
 	// Homepage
 	if (page == "home") {
 		content = {
-			heading: "Health and care that treats you <em>like family</em> where you live",
+			heading: "Health and care that treats you <em>like family</em>, right where you live",
 			headingPeriod: true,
 			stats: [
 				{

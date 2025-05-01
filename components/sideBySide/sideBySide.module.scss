@@ -103,6 +103,7 @@
 
 			big {
 				font-size: 60px;
+				text-wrap: pretty;
 
 				@include respond-to("tablet-landscape") {
 					font-size: 48px;
