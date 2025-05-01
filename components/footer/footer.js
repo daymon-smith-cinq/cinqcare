@@ -23,7 +23,7 @@ const Footer = () => {
 						isJoinPage ? styles.minimalLayout : ""
 					}`}
 				>
-					<a href="/" className={styles.container__logo}>
+					<a href="https://cinq.care/" className={styles.container__logo}>
 						<img
 							src={logo.src}
 							alt="Footer logo"

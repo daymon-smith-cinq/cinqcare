@@ -18,7 +18,7 @@ const Hero = ({ page }) => {
 			buttonLink: "/join-our-family",
 			blockquoteBorder: false,
 			quoteText:
-				"“We see the community as our family…we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.”<span>- Deborah Forbes, VP of Operations, Doral Health and Wellness, part of the CINQCARE network</span>",
+				"“We see the community as our family…we want to make a difference, from their medical needs, social needs, eligibility needs, financial needs — every patient is treated as an individual. These are people who truly care.”<span>- VP of Operations, Health and Wellness Center, part of the CINQCARE network</span>",
 		};
 	}
 
@@ -32,7 +32,7 @@ const Hero = ({ page }) => {
 			buttonLink: "/join-our-family",
 			blockquoteBorder: false,
 			quoteText:
-				"“CINQCARE isn't just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- Dr. Wilfred Herard, MD — CEO of Proactive Care IPA</span>",
+				"“CINQCARE isn't just another network. They truly walk alongside providers, giving us the support we need to succeed in value-based care while keeping patient relationships at the center.”<span>- CEO of an IPA</span>",
 		};
 	}
 
@@ -74,7 +74,7 @@ const Hero = ({ page }) => {
 			buttonLink: "",
 			blockquoteBorder: true,
 			quoteText:
-				"Caregivers are born to care. It’s more than a job—it’s a calling. We’re committed to delivering health, care, and well-being to those who need it most, especially in high-needs communities.",
+				"Caregivers are born to care. It’s more than a job—it’s a calling. We’re committed to delivering health, care, and well-being to those who need it most, especially in high-needs, urban, and rural communities.",
 		};
 	}
 

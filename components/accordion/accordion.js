@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef} from "react";
 import styles from "./accordion.module.scss";
 
 const Accordion = ({ page }) => {
@@ -10,17 +10,20 @@ const Accordion = ({ page }) => {
 				"Answers to <span>your questions</span> about joining the network",
 			headingPeriod: true,
 			paragraph: "",
+			finePrint: 
+				"CINQCARE supports providers with care coordination and value-based program support. All medical decisions remain with licensed healthcare providers within our network.<br/><br/>" +
+				"CINQCARE is a sponsor of the <a href='https://www.aahcm.org/' target='_blank'>American Academy of Home Care Medicine (AAHCM)</a>",
 			accordionContent: [
 				{
 					heading: "What are the benefits of being associated with CINQCARE?",
 					paragraph:
-						"CINQCARE is committed to improving health and care outcomes for high-needs communities. As a member of our network, providers gain access to value-based care contracts, financial incentives tied to quality and cost outcomes, advanced analytics, and an integrated care model designed to improve patient engagement and outcomes. Our network also supports providers with care coordination, quality improvement programs, in-home care services and administrative simplification to help practices succeed in value-based care arrangements.",
+						"CINQCARE is committed to improving health and care outcomes for high-needs, urban and rural communities. As a member of our network, providers gain access to value-based care contracts, financial incentives tied to quality and cost outcomes, advanced analytics, and an integrated care model designed to improve patient engagement and outcomes. Our network also supports providers with care coordination, quality improvement programs, in-home care services and administrative simplification to help practices succeed in value-based care arrangements.",
 				},
 				{
 					heading:
 						"What are the general terms of your contracts? For Duals? For ACO REACH?",
 					paragraph:
-						"Our contracts are structured to align quality and cost improvements with financial incentives. We can engage in full-risk arrangements where providers share in savings while benefiting from wraparound care services. We partner to drive better outcomes through advanced primary care models and risk-sharing agreements, ensuring financial sustainability for participating providers.",
+						"Our contracts are structured to align quality and cost improvements with financial incentives. We can engage in full-risk arrangements where providers share in savings while benefiting from wraparound care services. We partner to drive better outcomes through advanced primary care models and risk-sharing agreements, ensuring financial sustainability for participating providers. Note: providers are not required to take risk in contracts.",
 				},
 				{
 					heading:
@@ -55,7 +58,7 @@ const Accordion = ({ page }) => {
 					heading:
 						"Will there be administrative burdens with reporting requirements?",
 					paragraph:
-						"CINQCARE minimizes administrative burdens by automating data collection and reporting where possible. In fact, participation in our ACO REACH program may eliminate your Merit-based Incentive Payment System (MIPS) reporting requirement.",
+						"CINQCARE minimizes administrative burdens by automating data collection and reporting where possible. In fact, participation in our <a href='https://aco.cinq.care/' target='_blank'>ACO REACH</a> program may eliminate your Merit-based Incentive Payment System (MIPS) reporting requirement. You can also learn more about our <a href='https://advancedillnesspartners.org/' target='_blank'>Advanced Illness Partners program here</a>.",
 				},
 				{
 					heading:
@@ -86,7 +89,7 @@ const Accordion = ({ page }) => {
 				{
 					heading: "Do I need insurance to receive care from CINQCARE?",
 					paragraph:
-						"CINQCARE works with many insurance plans, including Medicare and Medicaid. If you’re unsure about your coverage, we can help you navigate your options.",
+						"CINQCARE works with many insurance plans, including Medicare. If you’re unsure about your coverage, we can help you navigate your options. If you are a Medicaid member, you might be eligible to become a part of the <a href='https://cinqcarehealthhome.com/' target='_blank'>CINQCARE Health Home</a> community.",
 				},
 				{
 					heading: "Can I get care at home, or do I need to visit a clinic?",
@@ -111,12 +114,48 @@ const Accordion = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "partners") {
+		content = {
+			heading: "",
+			headingPeriod: false,
+			paragraph: "",
+			finePrint: 
+				"<p class='fine-print'>CINQCARE partners with payers and government agencies to provide care coordination, operational expertise, and non-clinical support. All medical care is delivered by independently owned and operated medical practices within the CINQCARE network.</p>"
+		};
+	} else if (page === "grace-at-home") {
+		content = {
+			heading:
+				"Answers to <span>your questions</span> about <br/>Grace at Home",
+			headingPeriod: true,
+			paragraph: "",
+			finePrint: 
+				"<p class='fine-print'>Grace at Home is a medical practice delivering in-home and virtual care. CINQCARE serves as the Management Services Organization (MSO), providing operational, administrative, and non-clinical support. CINQCARE does not practice medicine or direct patient care.</p>",
+			accordionContent: [
+				{
+					heading: "What kinds of help is available for caregivers?",
+					paragraph:
+						"Our expert team will assess your most pressing challenges and pain points to understand your unique situation and work together to build an actionable, tailored support plan for meeting your goals. We offer a Caregiver Navigation Support Specialist for you as the family member, or your caregiver, to help navigate complex situations like insurance, home care, and housing. Specialists are based out of the communities they serve; you or your caregiver can always be assured that support is grounded in a localized understanding. You and your caregiver are provided an education platform with resources, training, and expert guidance, as well as 24/7 access to legal support, financial planning, and care management.",
+				},
+				{
+					heading: "What does a care coordinator do?",
+					paragraph:
+						"This role acts as your quarterback for coordinating and navigating care to support both you and your caregiver, both away and at home, facilitating communication across care teams, support services and your medical providers.",
+				},
+				{
+					heading: "Can you help me stay in my home?",
+					paragraph:
+						"Our collaborative of in-home support services, clinicians, and handymen can work alongside you and your caregivers to identify and overcome functional, social, and medical barriers that may impede everyday living in your current home. Our goal is to help you remain in your home safely for as long as possible. We are also committed to helping you make a smooth transition if the time comes where an alternative living situation becomes necessary.",
+				},
+			],
+		};
 	} else if (page === "for-moms") {
 		content = {
 			heading:
-				"Answers to <span>your questions</span> about CINQCARE for Moms",
+				"Answers to <span>your questions</span> about <br/>CINQCARE for Moms",
 			headingPeriod: true,
 			paragraph: "Expand to see common questions about CINQCARE for Moms.",
+			finePrint: 
+				"<p class='fine-print'>Grace Women’s Center is an independently owned and operated medical practice that contracts with CINQ Connect for administrative and operational support. CINQCARE does not provide medical care or make clinical decisions.</p>",
 			accordionContent: [
 				{
 					heading: "What kind of care does CINQCARE for Moms provide?",
@@ -146,6 +185,43 @@ const Accordion = ({ page }) => {
 				},
 			],
 		};
+	} else if (page === "care-medical-practice") {
+		content = {
+			heading:
+				"Answers to <span>your questions</span> about <br/>Care Medical Practice",
+			headingPeriod: true,
+			paragraph: "",
+			finePrint: 
+				"<p class='fine-print'>Care Medical Practices are independent medical groups that partner with CINQCARE for administrative and operational support. CINQCARE does not provide medical services or direct patient care.</p>",
+			accordionContent: [
+				{
+					heading: "What does it mean to coordinate my care?",
+					paragraph:
+						"Life often gets in the way of getting the health and care you need. Sometimes the problem is confusing paperwork or an issue with language translation or even housing. You may not be aware of important benefits for which you are eligible. Care Medical Practice, which has partnered in purpose with CINQCARE, works with you to navigate these barriers so you can access the care you need. Services can include: translation help for those who have limited English proficiency, help with navigating the health insurance system, referrals to other healthcare providers or community resources for additional services or support, and patient education to help you advocate for your health needs.",
+				},
+				{
+					heading: "What is special about your approach to diagnosis and treatment plans?",
+					paragraph:
+						"When healthcare providers assume they know you, your background and your lifestyle, their diagnosis and treatment plans can lack the effectiveness you deserve. We start with you - the patient and your caregiver - to understand your needs. Our clinical team - which includes nurses, nurse practitioners, social workers, pharmacists, and physicians - seeks to understand you, not just the symptoms of your illness or condition, when making a diagnosis and proposing a treatment plan for your health and recovery. Services can include: access to a state-of-the-art onsite laboratory, x-rays, EKGs for heart related problems, drug screenings, pregnancy testing, preoperative testing, vaccinations, work-related services, and a mobile health clinic that comes to your neighborhood.",
+				},
+				{
+					heading: "What is a check-up like with Care Medical Practice?",
+					paragraph:
+						"In communities with high-needs, higher rates of chronic disease or a lack of cultural fluency among healthcare providers, even a regular check-up cannot be routine. That’s why we provide compassionate, culturally-responsive care in everything we do. Services can include: a detailed review of your medical history, physical exam, lab tests, health risk assessments, lifestyle counseling, vaccinations, and specialist referrals when needed.",
+				},
+				{
+					heading:
+						"Can you help me manage my medications?",
+					paragraph:
+						"Often-overlooked factors can influence how well a certain prescription or medication works. There is no ‘one size fits all’ medication solution for people and communities that come in all shapes and sizes. That’s why we take a different approach to matching you to your medications and care plan. We aim for prescriptions and medications that are based on you, not statistics. Services can include: medication management, refill authorizations, medical education, and collaboration with your pharmacy.",
+				},
+				{
+					heading: "Can behavioral health treatment and therapy be included?",
+					paragraph:
+						"Providing a range of treatments and therapies for medical health and substance use disorders is an important part of caring for the whole you — not just the physical part. Care Medical Practice works to help our Family Members understand and manage their symptoms, improve overall mental well-being, and achieve treatment goals. Services can include: mental health assessments, individual therapy, medication management, specialist referrals, and patient education.",
+				},
+			],
+		};
 	}
 
 	const [activeIndex, setActiveIndex] = useState(0);
@@ -157,7 +233,7 @@ const Accordion = ({ page }) => {
 	return (
 		<section className={styles.section_Accordion}>
 			<div className={styles.container_Heading}>
-				<h2
+				<h3
 					className={content.headingPeriod ? "period" : undefined}
 					dangerouslySetInnerHTML={{ __html: content.heading }}
 				/>
@@ -176,17 +252,6 @@ const Accordion = ({ page }) => {
 						}
 					};
 
-					useEffect(() => {
-						const el = contentRef.current;
-						if (el) {
-							if (isOpen) {
-								el.style.height = el.scrollHeight + "px";
-							} else {
-								el.style.height = "0px";
-							}
-						}
-					}, [isOpen]);
-
 					return (
 						<div
 							key={index}
@@ -199,7 +264,7 @@ const Accordion = ({ page }) => {
 							aria-controls={`accordion-panel-${index}`}
 							id={`accordion-button-${index}`}
 						>
-							<h3>{item.heading}</h3>
+							<h4>{item.heading}</h4>
 
 							<div
 								id={`accordion-panel-${index}`}
@@ -208,12 +273,13 @@ const Accordion = ({ page }) => {
 								role="region"
 								aria-labelledby={`accordion-button-${index}`}
 								style={{
-									overflow: "hidden",
-									height: isOpen ? "auto" : "0px",
-									transition: "height 0.2s linear",
+									gridTemplateRows: isOpen ? "1fr" : "0fr",
+									transition: "all 0.3s ease-in-out",
 								}}
 							>
-								<p>{item.paragraph}</p>
+								<div className={styles.accordion_hiddenContainer}>
+									<p dangerouslySetInnerHTML={{ __html: item.paragraph }}></p>
+								</div>
 							</div>
 
 							<div className={styles.plusMinus}></div>
@@ -221,6 +287,13 @@ const Accordion = ({ page }) => {
 					);
 				})}
 			</div>
+
+			{content.finePrint && (
+				<div 
+					className={`${styles.finePrint} fine-print`}
+					dangerouslySetInnerHTML={{ __html: content.finePrint }}
+				/>
+			)}
 		</section>
 	);
 };

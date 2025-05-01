@@ -73,6 +73,10 @@ em {
 	font-style: oblique;
 }
 
+strong {
+	font-weight: 600;
+}
+
 /************/
 /* Globals */
 /**********/
@@ -161,7 +165,8 @@ main > section {
 
 main > section,
 body > div > header,
-body > div > footer {
+body > div > footer,
+body > div .notificationBar {
 	padding-left: 20px;
 	padding-right: 20px;
 	
@@ -223,7 +228,18 @@ h1.period::after {
 .fine-print, 
 .fine-print p {
 	font-size: 16px;
+	line-height: 1.3;
 	color: $gray;
+}
+
+.fine-print a {
+	font-size: 16px;
+	line-height: 1.3;
+	color: $dark-orange;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 /* Separator */

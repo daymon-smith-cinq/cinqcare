@@ -1,6 +1,7 @@
 import styles from "./cards.module.scss";
 import buffaloMap from "../../public/cards--buffalo.svg";
 import brooklynMap from "../../public/cards--brooklyn.svg";
+import marylandMap from "../../public/cards--maryland.svg";
 import Button from "../button/button";
 
 const Cards = ({ page }) => {
@@ -14,8 +15,7 @@ const Cards = ({ page }) => {
 			buttonLink: "https://caremedicalpractice.care/book-care-options/",
 			buttonText: "Book Care Now",
 			buttonTarget: "_blank",
-			finePrint:
-				"Care Medical Practices are independent medical groups that partner with CINQCARE for administrative and operational support. CINQCARE does not provide medical services or direct patient care.",
+			finePrint: "",
 			cardContent: [
 				{
 					heading: "<em>Buffalo</em>, NY",
@@ -38,23 +38,28 @@ const Cards = ({ page }) => {
 		content = {
 			heading: "Find <em>Care</em> Near You",
 			paragraph:
-				"<b>Coming Soon</b><br>Washington, DC & additional Maryland regions.",
-			buttonLink: "https://gracewomenscenter.cinq.care/",
-			buttonText: "Request a Visit",
-			finePrint: "",
+				"Meet our two areas of purpose on Jefferson Avenue in Buffalo today.",
+			buttonLink: "",
+			buttonText: "",
+			buttonTarget: "",
+			finePrint: "And <a href='/join-our-family'>contact us</a> to learn more about the programs in Baltimore, MD.",
 			cardContent: [
 				{
-					heading: "<em>Buffalo</em>, NY",
+					heading: "Healthy Start For Buffalo",
 					address: ``,
 					image: buffaloMap.src,
 					paragraph:
-						"On-site lab services, specialty care, and integrated support",
+						"We’re here to give families the education, support, and care they need to have a healthy start for their babies — at no cost.<br/><br/>" +
+						"<a href='https://healthystartbuffalo.cinq.care/' target='_blank'>Visit Site</a>",
 				},
 				{
-					heading: "<em>Baltimore</em>, MD",
+					heading: "Grace Women’s Center",
 					address: ``,
-					image: brooklynMap.src,
-					paragraph: "Coming Soon",
+					image: marylandMap.src,
+					imageOffset: true,
+					paragraph: 
+						"We’re going beyond medical care —ensuring women’s voices are heard, their experiences are validated, and their health and care needs are met.<br/><br/>" +
+						"<a href='https://gracewomenscenter.cinq.care/' target='_blank'>Visit Site</a>",
 				},
 			],
 		};
@@ -80,14 +85,17 @@ const Cards = ({ page }) => {
 							/>
 						)}
 						{content.finePrint && (
-							<p className="fine-print">{content.finePrint}</p>
+							<p 
+								className="fine-print"
+								dangerouslySetInnerHTML={{ __html: content.finePrint }} 
+							/>
 						)}
 					</header>
 				)}
 
 				{content.cardContent?.map((card, i) => (
 					<div className={styles.card__item} key={i}>
-						<header>
+						<header className={card.imageOffset ? `${styles.offset}` : undefined}>
 							<div>
 								<h2 dangerouslySetInnerHTML={{ __html: card.heading }} />
 								<address dangerouslySetInnerHTML={{ __html: card.address }} />

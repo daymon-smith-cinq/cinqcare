@@ -23,9 +23,9 @@ const Slidecordion = ({ page }) => {
 			slides: [
 				{
 					title: "Providers",
-					text: "<p>We embrace local physicians, practitioners, nurses and clinic leaders who are aligned with our work to remove barriers to health and well-being. Together, we serve our communities.</p>",
+					text: "<p>We embrace local physicians, practitioners, nurses and clinic leaders who are aligned with our purpose to remove barriers to health and well-being. Together, we serve our communities.</p>",
 					buttonText: "See More",
-					buttonLink: "/for-providers",
+					buttonLink: "/providers",
 					imgSrc: ImgProviders,
 					imgAlt:
 						"A graphic of a dotted line connecting a patient to a care provider. An example alert shows the text 'General Check-in' with the date and time.",
@@ -34,16 +34,16 @@ const Slidecordion = ({ page }) => {
 					title: "Patients",
 					text: "<p>We don’t have patients or customers – we have Family Members. Our culture of care starts with understanding your needs and your plans. It is the cornerstone for how we deliver care, where you live.</p>",
 					buttonText: "See More",
-					buttonLink: "/for-patients",
+					buttonLink: "/patients",
 					imgSrc: ImgPatients,
 					imgAlt:
 						"A simple illustrated map of a county with health center locations marked.",
 				},
 				{
-					title: "Partners",
+					title: "Payers",
 					text: "<p>We share a vision to lower costs, increase Family Member satisfaction, and deliver better outcomes in high-needs, urban and rural communities across the US.</p>",
 					buttonText: "See More",
-					buttonLink: "/for-partners",
+					buttonLink: "/payers",
 					imgSrc: ImgPartners,
 					imgAlt:
 						"A line graph illustrating a patient's blood pressure readings over time.",
@@ -55,12 +55,12 @@ const Slidecordion = ({ page }) => {
 	// About
 	if (page == "about") {
 		content = {
-			heading: "What makes CINQCARE <em>different</em>",
+			heading: "<a id='purpose' name='purpose'></a>What makes CINQCARE <em>different</em>",
 			headingPeriod: false,
 			slides: [
 				{
 					title: "Purpose",
-					text: "<p>The health and well-being of those who need care the most, where they live–with a deep commitment to high-need, urban and rural communities.</p>",
+					text: "<p>The health and well-being of those who need care the most, where they live–with a deep commitment to high-needs, urban and rural communities.</p>",
 					imgSrc: ImgPurpose,
 					imgAlt: "",
 				},

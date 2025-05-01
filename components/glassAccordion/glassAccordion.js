@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef} from "react";
 import styles from "./glassAccordion.module.scss";
 import Button from "../button/button";
 
@@ -18,7 +18,7 @@ const GlassAccordion = ({ page }) => {
 				{
 					heading: "Care coordination",
 					paragraph:
-						"We work alongside your practice, integrating our clinical team and practice facilitators to ensure smooth transitions, proactive Family Member engagement, and high-quality outcomes.",
+						"We work alongside your practice, integrating our clinical team to ensure smooth transitions, proactive Family Member engagement, and high-quality outcomes.",
 				},
 				{
 					heading: "Advanced risk stratification and population health",
@@ -82,7 +82,7 @@ const GlassAccordion = ({ page }) => {
 				{
 					heading: "Specialized expertise",
 					paragraph:
-						"Our approach is informed by decades of sector leadership and lived experience in high-need, urban, and rural communities.",
+						"Our approach is informed by decades of sector leadership and lived experience in high-needs, urban, and rural communities.",
 				},
 				{
 					heading: "Precision Engagement Engine",
@@ -119,7 +119,7 @@ const GlassAccordion = ({ page }) => {
 						"Through quality care, personal engagement, and support services.",
 				},
 				{
-					heading: "For Partners",
+					heading: "For Payers",
 					paragraph:
 						"Through lower costs, increased Family Member satisfaction, and innovative care approaches.",
 				},
@@ -129,11 +129,12 @@ const GlassAccordion = ({ page }) => {
 		content = {
 			bgImgSrc: "images/Ultrasound.jpg",
 			darkenAccordionBg: true,
-			heading: "Care for Every Stage of <em>Motherhood</em>",
+			heading: "Care for Every Aspect of <em>Women’s Health</em>",
 			paragraph:
 				"<p>CINQCARE for Moms provides wraparound care, designed for you.</p>",
-			buttonLink: "https://gracewomenscenter.cinq.care/",
+			buttonLink: "https://healthystartbuffalo.cinq.care/",
 			buttonText: "See How CINQCARE Supports Moms",
+			buttonTarget: "_blank",
 			accordionContent: [
 				{
 					heading: "A Dedicated Team by Your Side",
@@ -179,6 +180,14 @@ const GlassAccordion = ({ page }) => {
 					: undefined
 			}
 		>
+			{content.bgImgSrc && (
+				<div className={styles.mobileImg}>
+					<img
+						src={content.bgImgSrc}
+						alt=""
+					/>
+				</div>
+			)}	
 			{content.heading && (
 				<div className={styles.container_Heading}>
 					<h2
@@ -189,7 +198,13 @@ const GlassAccordion = ({ page }) => {
 						<div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
 					)}
 					{content.buttonLink && (
-						<Button link={content.buttonLink} text={content.buttonText} />
+						<Button 
+							link={content.buttonLink} 
+							text={content.buttonText} 
+							target={
+								content.buttonTarget ? `${content.buttonTarget}` : "_self"
+							}
+						/>
 					)}
 				</div>
 			)}
@@ -206,17 +221,6 @@ const GlassAccordion = ({ page }) => {
 								toggleAccordion(index);
 							}
 						};
-
-						useEffect(() => {
-							const el = contentRef.current;
-							if (el) {
-								if (isOpen) {
-									el.style.height = el.scrollHeight + "px";
-								} else {
-									el.style.height = "0px";
-								}
-							}
-						}, [isOpen]);
 
 						return (
 							<div
@@ -244,12 +248,13 @@ const GlassAccordion = ({ page }) => {
 										role="region"
 										aria-labelledby={`accordion-button-${index}`}
 										style={{
-											overflow: "hidden",
-											height: isOpen ? "auto" : "0px",
-											transition: "height 0.2s linear",
+											gridTemplateRows: isOpen ? "1fr" : "0fr",
+											transition: "all 0.3s ease-in-out",
 										}}
 									>
-										<p>{item.paragraph}</p>
+										<div className={styles.accordion_hiddenContainer}>
+											<p>{item.paragraph}</p>
+										</div>
 									</div>
 								)}
 

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import OpengraphImg from "../public/cinqcare-opengraph.jpg";
 import Image from "next/image";
 import Header from "../components/header/header";
 import HeroAlt from "../components/heroAlt/heroAlt";
@@ -9,6 +8,7 @@ import SideBySide from "../components/sideBySide/sideBySide";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
 import CTA from "../components/cta/cta";
 import MasonryImages from "../components/masonryImages/masonryImages";
+import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
 import logoGraceAtHome from "/public/logo-grace-at-home.svg";
 
@@ -20,13 +20,14 @@ export default function GraceAtHome() {
 	const title = "Grace at Home | CINQCARE";
 	const metaDescription =
 		"Grace at Home brings expert primary, urgent, and chronic care to you. Quality health support tailored to your needs, right at home.";
-	const pageURL = "https://grace-at-home.care/";
+	const pageURL = "https://getgraceathome.care";
+	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
 		<>
 			<Head>
 				<meta name="description" content={metaDescription} />
-				<meta property="og:image" content={OpengraphImg.src} />
+				<meta property="og:image" content={opengraphImg} />
 				<meta property="og:title" content={title} />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content={pageURL} />
@@ -47,7 +48,7 @@ export default function GraceAtHome() {
 				<CTA
 					type="tertiary"
 					buttonText="Find Care Near You"
-					link="/join-our-family"
+					link="https://cinq.care/join-our-family"
 				>
 					<Image
 						priority={false}
@@ -65,12 +66,14 @@ export default function GraceAtHome() {
 
 				<MasonryImages page={currentPage} />
 
-				<CTA type="primary" buttonText="Find Care Near You" link="/">
+				<CTA type="primary" buttonText="Find Care Near You" link="https://cinq.care/join-our-family">
 					<header>
 						<h2>Ready to Get Started?</h2>
 					</header>
-					<p>Take the first step toward better care. Find support today.</p>
+					<p>Take the first step toward better health. Find support today.</p>
 				</CTA>
+
+				<Accordion page={currentPage} />
 			</main>
 
 			<Footer />

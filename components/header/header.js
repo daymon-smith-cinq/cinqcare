@@ -30,7 +30,7 @@ const Header = ({ headerBg }) => {
 			<header id="header" className={`${styles.header} ${bgColor}`}>
 				<div className={`${styles.wrapper} ${" wrapper"}`}>
 					<div className={styles.headerNav}>
-						<a href="/" className={styles.logo}>
+						<a href="https://cinq.care/" className={styles.logo}>
 							<Image priority={true} src={logoSrc} alt="Cinqcare Logo" />
 						</a>
 						{currentPath !== "/" &&

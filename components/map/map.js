@@ -51,12 +51,12 @@ const SideBySide = ({ page }) => {
 			heading: "Find <em>Grace at Home</em> Near You",
 			headingPeriod: true,
 			text:
-				"<p>Indiana | New York | California</p>" +
+				"<p><a href='https://grace-at-home.com/' target='_blank'>Indiana</a> | New York | California</p>" +
 				"<p>More locations are coming soon! Need help finding care?</p>",
 			buttonText: "Contact Us",
-			buttonLink: "/join-our-family",
+			buttonLink: "https://cinq.care/join-our-family",
 			finePrint:
-				"<p>Grace at Home is a medical practice delivering in-home and virtual care. CINQCARE serves as the Management Services Organization (MSO), providing operational, administrative, and non-clinical support. CINQCARE does not practice medicine or direct patient care.</p>",
+				"",
 			image: CareMap,
 			imgAlt:
 				"A stylized map of the United States, made from a grid of many dots. Some dots have pinpoints with the CINQCARE logomark, highlighting the CINQCARE community locations across the United States.",

@@ -59,10 +59,19 @@
 			font-weight: 400;
 			line-height: 26px; /* 162.5% */
 			margin-bottom: 0;
+
+			a {
+				color: $dark-orange;
+
+				&:hover {
+					color: $dark-orange;
+					text-decoration: underline;
+				}
+			}
 		}
 	}
 
-	.subtext_IconBlocks {
+	.subtext_IconBlocks, a {
 		color: rgba(0, 0, 0, 0.5);
 		font-family: "Sohne", Arial, sans-serif;
 		font-size: 16px;
@@ -70,6 +79,14 @@
 		font-weight: 400;
 		line-height: 26px; /* 162.5% */
 		max-width: 800px;
+
+		a {
+			color: $dark-orange;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	.container_IconBlocks {
@@ -158,6 +175,15 @@
 				font-weight: 400;
 				line-height: 26px; /* 162.5% */
 				margin-bottom: 0;
+
+				a {
+					color: $dark-orange;
+	
+					&:hover {
+						color: $dark-orange;
+						text-decoration: underline;
+					}
+				}
 			}
 		}
 	}

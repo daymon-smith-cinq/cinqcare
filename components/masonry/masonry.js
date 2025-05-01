@@ -14,9 +14,7 @@ const Masonry = () => {
 				</header>
 				<div className={styles.container_ParaButton}>
 					<p>
-						We are working together with our communities to change that.
-						<br />
-						It's our calling to deliver care where you live.{" "}
+						Together with our communities, we are working to change that. It's our calling to deliver care where you live.{" "}
 					</p>
 					<Button link="/about" text="About Us" />
 				</div>

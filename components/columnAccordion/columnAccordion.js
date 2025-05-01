@@ -1,7 +1,6 @@
 import styles from "./columnAccordion.module.scss";
 
 const ColumnAccordion = ({ page }) => {
-
 	// *******
 	// Content
 	// *******
@@ -26,7 +25,7 @@ const ColumnAccordion = ({ page }) => {
 					title: "CINQCARE for Moms",
 					text: "<p>Meeting women where they are and making sure they have the care, advocacy, and support they deserve.</p>",
 					buttonText: "Learn More",
-					buttonLink: "/for-moms",
+					buttonLink: "/moms",
 					imgSrc: "images/MotherChild.jpg",
 					imgAlign: "right center",
 					comingSoon: false,
@@ -35,7 +34,7 @@ const ColumnAccordion = ({ page }) => {
 					title: "Grace at Home",
 					text: "<p>Connecting virtual and in-home care in coordination with your local primary care team.</p>",
 					buttonText: "Learn More",
-					buttonLink: "/grace-at-home",
+					buttonLink: "https://getgraceathome.care",
 					imgSrc: "images/NursePatient.jpg",
 					imgAlign: "center",
 					comingSoon: false,
@@ -54,7 +53,13 @@ const ColumnAccordion = ({ page }) => {
 	}
 
 	function toggleAccordion(event) {
-		if (event.type === "click" || event.type === "mouseenter" || event.type === "mouseleave" || event.key === "Enter" || event.key === " ") {
+		if (
+			event.type === "click" ||
+			event.type === "mouseenter" ||
+			event.type === "mouseleave" ||
+			event.key === "Enter" ||
+			event.key === " "
+		) {
 			// Close all accordion items
 			const allButtons = document.querySelectorAll(
 				`.${styles.accordion_button}`
@@ -91,57 +96,56 @@ const ColumnAccordion = ({ page }) => {
 			<div className={`${styles.container_ColumnAccordion} ${" wrapper"}`}>
 				<div className={styles.columnContainer}>
 					{content.columns &&
-					content.columns.map((column, columnIndex) => (
-						<div 
-							key={columnIndex} 
-							className={`no-select ${styles.accordion_button} ${styles.column}`}
-							id={`column-accordion-button-${columnIndex}`}
-							role="button"
-							tabIndex="0"
-							aria-controls={`column-accordion-panel-${columnIndex}`}
-							aria-expanded={columnIndex === 0 ? "true" : "false"} // Set aria-expanded for the first item
-							onMouseEnter={toggleAccordion}
-							onMouseLeave={toggleAccordion}
-							onKeyUp={toggleAccordion}
-							style={{
-								backgroundImage: `url(${column.imgSrc})`,
-								backgroundPosition: `${column.imgAlign}`,
-							}}
-						>
-							<div className={styles.textBox}>
-								<h4 
-									className={styles.columnTitle}
-									dangerouslySetInnerHTML={{ __html: column.title }}
-								></h4>
+						content.columns.map((column, columnIndex) => (
+							<div
+								key={columnIndex}
+								className={`no-select ${styles.accordion_button} ${styles.column}`}
+								id={`column-accordion-button-${columnIndex}`}
+								role="button"
+								tabIndex="0"
+								aria-controls={`column-accordion-panel-${columnIndex}`}
+								aria-expanded={columnIndex === 0 ? "true" : "false"} // Set aria-expanded for the first item
+								onMouseEnter={toggleAccordion}
+								onMouseLeave={toggleAccordion}
+								onKeyUp={toggleAccordion}
+								style={{
+									backgroundImage: `url(${column.imgSrc})`,
+									backgroundPosition: `${column.imgAlign}`,
+								}}
+							>
+								<div className={styles.textBox}>
+									<h4
+										className={styles.columnTitle}
+										dangerouslySetInnerHTML={{ __html: column.title }}
+									></h4>
 
-								<div
-									id={`column-accordion-panel-${columnIndex}`}
-									role="region"
-									aria-labelledby={`column-accordion-button-${columnIndex}`}
-									className={`${styles.accordion_toggle} ${
-										columnIndex === 0 ? styles.show : ""
-									}`} // Add show class for the first item
-								>
-									<div 
-										className={styles.columnText} 
-										dangerouslySetInnerHTML={{ __html: column.text }}
-									></div>
-									{column?.buttonLink && (
-										<a 
-											className={styles.columnLink} 
-											href={column.buttonLink}
-										>
-											{column.buttonText}
-										</a>
+									<div
+										id={`column-accordion-panel-${columnIndex}`}
+										role="region"
+										aria-labelledby={`column-accordion-button-${columnIndex}`}
+										className={`${styles.accordion_toggle} ${
+											columnIndex === 0 ? styles.show : ""
+										}`} // Add show class for the first item
+									>
+										<div
+											className={styles.columnText}
+											dangerouslySetInnerHTML={{ __html: column.text }}
+										></div>
+										{column?.buttonLink && (
+											<a className={styles.columnLink} href={column.buttonLink}>
+												{column.buttonText}
+											</a>
+										)}
+									</div>
+
+									{column?.comingSoon && (
+										<div className={styles.comingSoon}>
+											<span>Coming soon</span>
+										</div>
 									)}
 								</div>
-
-								{column?.comingSoon && (
-									<div className={styles.comingSoon}><span>Coming soon</span></div>
-								)}
 							</div>
-						</div>
-					))}	
+						))}
 				</div>
 			</div>
 		</section>

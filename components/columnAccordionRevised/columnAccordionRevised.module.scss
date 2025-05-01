@@ -1,0 +1,224 @@
+@use "./styles/abstracts" as *;
+
+.accordion_toggle {
+	display: grid;
+	grid-template-rows: 1fr;
+	opacity: 1;
+	transition: all 0.5s;
+	transition-delay: 0.4s;
+
+	.accordion_toggle_show {
+		overflow: hidden;
+	}
+}
+
+.section_ColumnAccordion {
+	padding-bottom: 100px;
+
+	@include respond-to("tablet-landscape") {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 80px;
+	}
+
+	@include respond-to("tablet") {
+		padding-bottom: 60px;
+	}
+
+	@include respond-to("mobile-landscape") {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.container_ColumnAccordion {
+		h2 {
+			color: #000;
+			font-family: "Sohne", Arial, sans-serif;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130%; /* 41.6px */
+			margin-bottom: 20px;
+		}
+
+		p {
+			color: rgba(0, 0, 0, 0.7);
+			font-family: "Sohne", Arial, sans-serif;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 41px; /* 181.814% */
+			margin-bottom: 20px;
+			max-width: 780px;
+		}
+	}
+
+	.columnContainer {
+		margin-top: 60px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+		gap: 40px;
+
+		@include respond-to("tablet") {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		@include respond-to("tablet-landscape") {
+			gap: 20px;
+		}
+
+		@include respond-to("mobile-landscape") {
+			flex-direction: column;
+		}
+
+		.column {
+			min-height: 560px;
+			border-radius: $br;
+			padding: 20px;
+			display: flex;
+			align-items: flex-end;
+			transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: right center;
+			position: relative;
+
+			&:nth-of-type(1),
+			&:nth-of-type(2) {
+				width: calc(50% - 20px);
+
+				@include respond-to("tablet-landscape") {
+					width: calc(50% - 10px);
+				}
+			}
+
+			&:nth-of-type(3) {
+				min-height: unset;
+				height: 300px;
+				width: 100%;
+
+				.textBox {
+					width: 450px;
+					height: 100%;
+					background: $blur-bg;
+				}
+
+				@include respond-to("tablet") {
+					height: auto !important;
+				}
+			}
+
+			p {
+				max-width: 380px;
+			}
+
+			@include respond-to("tablet-landscape") {
+				padding: 10px;
+			}
+
+			@include respond-to("tablet") {
+				min-height: auto;
+				padding-top: 300px;
+				width: 100% !important;
+			}
+
+			.textBox {
+				width: 100%;
+				height: 40%;
+				padding: 20px;
+				border-radius: $br;
+				background: $blur-bg-orange;
+				backdrop-filter: $blur;
+				-webkit-backdrop-filter: $blur;
+				position: relative;
+				bottom: 0;
+
+				@include respond-to("tablet-landscape") {
+					height: 45%;
+					padding: 15px;
+				}
+
+				@include respond-to("tablet") {
+					height: auto !important;
+					width: 100% !important;
+				}
+
+				h4 {
+					color: $white;
+
+					@include respond-to("tablet-landscape") {
+						font-size: 22px;
+					}
+				}
+
+				p,
+				a,
+				span {
+					color: $white;
+					font-size: 16px;
+					line-height: 1.8;
+				}
+
+				.columnLink {
+					position: absolute;
+					bottom: 20px;
+					font-weight: 500;
+
+					@include respond-to("tablet") {
+						position: relative;
+						bottom: 0;
+					}
+
+					&::after {
+						content: "\2192";
+						margin-left: 6px;
+						transition: all 0.2s;
+					}
+
+					&:hover::after {
+						margin-left: 10px;
+					}
+				}
+
+				.comingSoon {
+					position: absolute;
+					bottom: 25px;
+
+					@include respond-to("laptop") {
+						left: 16px;
+					}
+
+					@include respond-to("tablet-landscape") {
+						left: 10px;
+					}
+
+					@include respond-to("tablet") {
+						position: relative;
+						left: 0;
+						bottom: 5px;
+						margin-top: 5px;
+					}
+
+					span {
+						display: inline;
+						padding: 5px 15px;
+						border-radius: 20px;
+						background: rgba(255, 255, 255, 0.1);
+						font-weight: 500;
+
+						@include respond-to("laptop") {
+							padding: 5px 10px;
+						}
+
+						@include respond-to("tablet-landscape") {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

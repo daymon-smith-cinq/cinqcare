@@ -8,6 +8,18 @@
 	justify-content: center;
 	min-height: 780px;
 
+	@include respond-to("tablet-landscape") {
+		min-height: 600px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@include respond-to("tablet") {
+		min-height: 500px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
 	&::before,
 	&::after {
 		content: "";
@@ -24,11 +36,19 @@
 	&::before {
 		min-width: 815px;
 		max-width: 55%;
+
+		@include respond-to("tablet") {
+			min-width: 611px;
+		}
 	}
 
 	&::after {
 		min-width: 650px;
 		max-width: 45%;
+
+		@include respond-to("tablet") {
+			min-width: 488px;
+		}
 	}
 
 	.wrapper {
@@ -50,7 +70,7 @@
 	}
 
 	h2 {
-		font-size: toem(48px);
+		font-size: clamp(1rem, 4vw + 1.25rem, 3rem);
 		line-height: 1.2;
 	}
 
