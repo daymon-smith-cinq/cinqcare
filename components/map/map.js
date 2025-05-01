@@ -54,7 +54,7 @@ const SideBySide = ({ page }) => {
 				"<p><a href='https://grace-at-home.com/' target='_blank'>Indiana</a> | New York | California</p>" +
 				"<p>More locations are coming soon! Need help finding care?</p>",
 			buttonText: "Contact Us",
-			buttonLink: "/join-our-family",
+			buttonLink: "https://cinq.care/join-our-family",
 			finePrint:
 				"",
 			image: CareMap,

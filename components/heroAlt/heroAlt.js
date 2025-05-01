@@ -14,9 +14,9 @@ const HeroAlt = ({ page }) => {
 			h1: "<span>Grace at Home</span> Bringing <em>Health and Care</em> to You",
 			h1Period: false,
 			paragraph: "",
-			buttonText: "Visit Site",
-			buttonLink: "#", // Need final link
-			buttonTarget: "_blank",
+			buttonText: "",
+			buttonLink: "",
+			buttonTarget: "",
 			quoteText:
 				"“At Grace at Home, we believe health and care should come to you, not the other way around.” <span>— Traci Miller, President, Grace at Home</span>",
 		};

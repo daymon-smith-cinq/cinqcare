@@ -90,10 +90,9 @@ const Header = ({ headerBg }) => {
 										<a aria-expanded="false">Services</a>
 										<ul className={styles.submenu}>
 											<li>
-												{/* <a href="https://grace-at-home.care/" target="_blank">
+												<a href="https://getgraceathome.care" target="_blank">
 													Grace at Home
-												</a> */}
-												<a href="/grace-at-home">Grace at Home</a>
+												</a>
 											</li>
 											<li>
 												<a href="/moms">CINQCARE for Moms</a>

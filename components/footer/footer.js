@@ -52,10 +52,9 @@ const Footer = () => {
 								<header>Services</header>
 								<ul>
 									<li>
-										{/* <a href="https://grace-at-home.care/" target="_blank">
+										<a href="https://getgraceathome.care" target="_blank">
 											Grace at Home
-										</a> */}
-										<a href="/grace-at-home">Grace at Home</a>
+										</a>
 									</li>
 									<li>
 										<a href="/moms">CINQCARE for Moms</a>
@@ -147,7 +146,7 @@ const Footer = () => {
 
 						<nav className={styles.footer__policy}>
 							<a href="/privacy-policy">Privacy Policy</a>
-							<a href="/privacy-policy-grace-at-home">
+							<a href="https://getgraceathome.care/privacy-policy">
 								Grace at Home Privacy Policy
 							</a>
 						</nav>
