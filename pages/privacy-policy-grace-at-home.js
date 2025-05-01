@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
 	const title = "Privacy Policy - Grace At Home | CINQCARE";
 	const metaDescription =
 		"CINQCARE’s Privacy Policy details how we collect, use, disclose, and protect your personal information securely.";
-	const pageURL = "https://getgraceathome.care/privacy-policy";
+	const pageURL = "https://getgraceathome.care/privacy-policy-grace-at-home";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
