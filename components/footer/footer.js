@@ -146,7 +146,7 @@ const Footer = () => {
 
 						<nav className={styles.footer__policy}>
 							<a href="/privacy-policy">Privacy Policy</a>
-							<a href="https://getgraceathome.care/privacy-policy">
+							<a href="https://getgraceathome.care/privacy-policy-grace-at-home">
 								Grace at Home Privacy Policy
 							</a>
 						</nav>

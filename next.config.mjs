@@ -36,7 +36,7 @@ const nextConfig = {
 			// },
 			{
 				source: "/care-at-home-privacy-policy",
-				destination: "https://getgraceathome.care/privacy-policy",
+				destination: "https://getgraceathome.care/privacy-policy-grace-at-home",
 				permanent: true,
 			},
 			{
