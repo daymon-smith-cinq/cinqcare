@@ -34,7 +34,7 @@ const ColumnAccordion = ({ page }) => {
 					title: "Grace at Home",
 					text: "<p>Connecting virtual and in-home care in coordination with your local primary care team.</p>",
 					buttonText: "Learn More",
-					buttonLink: "https://grace-at-home.care/",
+					buttonLink: "https://getgraceathome.care",
 					imgSrc: "images/NursePatient.jpg",
 					imgAlign: "center",
 					comingSoon: false,

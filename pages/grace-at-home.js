@@ -20,7 +20,7 @@ export default function GraceAtHome() {
 	const title = "Grace at Home | CINQCARE";
 	const metaDescription =
 		"Grace at Home brings expert primary, urgent, and chronic care to you. Quality health support tailored to your needs, right at home.";
-	const pageURL = "https://cinq.care/grace-at-home";
+	const pageURL = "https://getgraceathome.care";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
@@ -48,7 +48,7 @@ export default function GraceAtHome() {
 				<CTA
 					type="tertiary"
 					buttonText="Find Care Near You"
-					link="/join-our-family"
+					link="https://cinq.care/join-our-family"
 				>
 					<Image
 						priority={false}
@@ -66,7 +66,7 @@ export default function GraceAtHome() {
 
 				<MasonryImages page={currentPage} />
 
-				<CTA type="primary" buttonText="Find Care Near You" link="/">
+				<CTA type="primary" buttonText="Find Care Near You" link="https://cinq.care/join-our-family">
 					<header>
 						<h2>Ready to Get Started?</h2>
 					</header>
