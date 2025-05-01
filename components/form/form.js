@@ -9,8 +9,8 @@ const Form = ({ page }) => {
 			image: "images/ManWomanHugging.jpg",
 			paragraph:
 				"Every day, we’re committed to your health and well-being—<em>because to us, you’re family.</em> <br> We’ll provide you with personalized care, ensuring you have access to medical, mental health, and community services.",
-			form: "https://form.jotform.com/250985428512159",
-			height: "592px",
+			form: "https://form.jotform.com/250975989384076",
+			class: "family",
 		};
 	}
 
@@ -20,7 +20,7 @@ const Form = ({ page }) => {
 			image: "",
 			paragraph: "",
 			form: "https://form.jotform.com/250985721672162",
-			height: "1075px",
+			class: "sms",
 		};
 	}
 
@@ -42,11 +42,7 @@ const Form = ({ page }) => {
 						id="JotFormIFrame"
 						allowFullScreen
 						src={content.form}
-						style={{
-							width: "100%",
-							height: content.height, // adjust based on form length
-							// border: "none",
-						}}
+						className={styles[content.class]}
 					/>
 				</div>
 			</div>
