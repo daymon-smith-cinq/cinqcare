@@ -12,14 +12,14 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow", // Background Color, only yellow and orange are supported rn.
-					image: "/images/oldFriends.jpg",
+					image: "/images/Quote-MenFriends.jpg",
 					quote:
 						'"We are not a sick-care system, where we only want to see you when you\'re sick. <em>We are in it for the long haul</em> with our patients and the community."',
 					name: "Chief Clinical Officer, Large Health System",
 				},
 				{
 					color: "orange",
-					image: "/images/oldFriends.jpg",
+					image: "/images/Quote-MenFriends.jpg",
 					quote:
 						"\"With CINQCARE, we're not just improving metrics—<em>we're improving lives.</em> The impact on our patients and our practice has been transformational.\"",
 					name: "VP of Operations, Health System",
@@ -34,14 +34,14 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow",
-					image: "/images/homeVisit.jpg",
+					image: "/images/Quote-WomenLaughing.jpg",
 					quote:
 						'"I used to miss my doctor\'s appointments because I had no way to get there. I worried about my health, but I felt stuck. Then, CINQCARE stepped in. Now, a nurse comes to me, checks on me, and helps me manage my diabetes. <em>I feel healthier, and I finally have the support I needed.</em>"',
 					name: "CINQCARE Family Member",
 				},
 				{
 					color: "yellow",
-					image: "/headshots/headshot-4.png",
+					image: "/headshots/Quote-WomenLaughing.jpg",
 					quote:
 						"\"After my stroke, I didn't know how I was going to manage. CINQCARE's team checked on me at home, made sure I had food, and helped me recover. Now, I feel stronger every day.\"",
 					name: "CINQCARE Family Member",
@@ -56,7 +56,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow",
-					image: "/images/SmilingNurseAndPatient.jpg",
+					image: "/images/Quote-NursePatient.jpg",
 					quote:
 						'"By combining our expertise and resources, Optum and CINQCARE hope to make significant strides in improving the health and well-being of the diverse population of dually eligible Medicare and Medicaid members we serve."',
 					name: "Steve Swift, Chief Financial Officer CINQCARE",
@@ -71,7 +71,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow",
-					image: "/images/happyNurseWithPatient.jpg",
+					image: "/images/Quote-NursePatientHugging.jpg",
 					quote:
 						'"At my Care Medical Practice, I feel like more than just a number. My doctor really listens and works with me to improve my health."',
 					name: "Family Member, Buffalo, NY",
@@ -86,7 +86,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow",
-					image: "/images/motherWildChildOutside.jpg",
+					image: "/images/Quote-MotherBaby.jpg",
 					quote:
 						'"I felt like someone finally <em>saw me.</em><br/><br/>"CINQCARE for Moms gave me more than just medical care. They made sure I had everything I needed to feel safe, supported, and strong — <em>before and after my baby arrived.</em>"',
 					name: "CINQCARE for Moms Family Member",
@@ -101,21 +101,21 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "yellow",
-					image: "/images/lakeDoctor.jpg",
+					image: "/images/Quote-NursePatientPark.jpg",
 					quote:
 						'"The group I am working with has worked in the neighborhood and outreached regularly. Meeting the community through their eyes has made the experience even more closer to home."',
 					name: "CINQCARE care coordinator",
 				},
 				{
 					color: "orange",
-					image: "/headshots/headshot-9.png",
+					image: "/headshots/Quote-NursePatientPark.jpg",
 					quote:
 						'"The experience has been nothing but amazing, being able to communicate with the community and being out here with family members who actually need our help."',
 					name: "CINQCARE care coordinator",
 				},
 				{
 					color: "yellow",
-					image: "/headshots/headshot-6.png",
+					image: "/headshots/Quote-NursePatientPark.jpg",
 					quote:
 						'"We are not a sick care system where we only want to see you when you are sick — we are in it for the long haul with our patients and the community… CINQCARE has been open, honest and transparent…that means the world to us."',
 					name: "CEO, Large Health System",
