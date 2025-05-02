@@ -36,7 +36,7 @@ const ColumnAccordionRevised = ({ page }) => {
 					text: "<p>Personalized care and wellness for moms and families - from pregnancy through postpartum.</p>",
 					buttonText: "Learn More",
 					buttonLink: "/moms",
-					imgSrc: "images/MotherChild.jpg",
+					imgSrc: "images/columns-for-moms.jpg",
 					imgAlign: "right 35%",
 				},
 			],

@@ -96,7 +96,8 @@ const Footer = () => {
 						<div className={styles.footer__hero}>
 							<header>
 								<h2>
-									<em>More Than Healthcare</em> — A Mission for Those Who Need it Most.
+									<em>More Than Healthcare</em> — A Mission for Those Who Need
+									it Most.
 								</h2>
 							</header>
 							<Button link="/join-our-family" text="Join Our Family" />
@@ -146,9 +147,9 @@ const Footer = () => {
 
 						<nav className={styles.footer__policy}>
 							<a href="/privacy-policy">Privacy Policy</a>
-							<a href="https://getgraceathome.care/privacy-policy-grace-at-home">
+							{/* <a href="https://getgraceathome.care/privacy-policy-grace-at-home">
 								Grace at Home Privacy Policy
-							</a>
+							</a> */}
 						</nav>
 
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>
@@ -158,7 +159,8 @@ const Footer = () => {
 					<div className={styles.footer__hero}>
 						<header>
 							<h2>
-								<em>More Than Healthcare</em> — A Mission for Those Who Need it Most.
+								<em>More Than Healthcare</em> — A Mission for Those Who Need it
+								Most.
 							</h2>
 						</header>
 						<Button link="/join-our-family" text="Join Our Family" />
