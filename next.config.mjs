@@ -34,11 +34,11 @@ const nextConfig = {
 			// 	destination: "https://getgraceathome.care",
 			// 	permanent: true,
 			// },
-			{
-				source: "/care-at-home-privacy-policy",
-				destination: "https://getgraceathome.care/privacy-policy-grace-at-home",
-				permanent: true,
-			},
+			// {
+			// 	source: "/care-at-home-privacy-policy",
+			// 	destination: "https://getgraceathome.care/privacy-policy-grace-at-home",
+			// 	permanent: true,
+			// },
 			{
 				source: "/aco/thankyou",
 				destination: "/thank-you",

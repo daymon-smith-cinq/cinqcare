@@ -36,7 +36,7 @@ const BackgroundContainer = ({ page, children }) => {
 			margin: "",
 			padding: "",
 			background:
-				"linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 90%, rgba(255,255,255,1) 90%), url(/backgrounds/PathwayNoGradient.svg) 120% 700px no-repeat",
+				"linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 85%, rgba(255,255,255,1) 85%, white 100%), url(/backgrounds/PathwayNoGradient.svg) 120% 700px no-repeat",
 			backgroundPos: "calc(100% + 250px) 400px",
 			backgroundSize: "700px 100%",
 		};
