@@ -59,7 +59,7 @@ const SideBySide = ({ page, num }) => {
 			bgShape: "/circle.svg",
 			columns: [
 				{
-					image: "/images/WomanSmilingPortrait.jpg",
+					image: "/images/ElderlyWoman.jpg",
 					imgAlt: "",
 					imgWidth: 430,
 					imgHeight: 448,
@@ -98,7 +98,7 @@ const SideBySide = ({ page, num }) => {
 			bgShape: "/images/scrolljacking--partners.svg",
 			columns: [
 				{
-					image: "/images/BedsideVisit.jpg",
+					image: "/images/ManMedicine.jpg",
 					imgAlt: "",
 					imgWidth: 430,
 					imgHeight: 448,

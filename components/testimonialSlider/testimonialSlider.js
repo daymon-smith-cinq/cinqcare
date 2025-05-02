@@ -130,7 +130,7 @@ const TestimonialSlider = ({ page }) => {
 			testimonials: [
 				{
 					color: "orange",
-					image: "/images/DoctorsTalking.jpg",
+					image: "/images/Quote-DoctorsTalking.jpg",
 					quote:
 						'"With CINQCARE, we’re not just improving metrics—<span>we’re improving lives.</span> The impact on our patients and our practice has been transformational."',
 					name: "VP of Operations, Large Health System",
