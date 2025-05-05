@@ -99,7 +99,7 @@ const MasonryCommunities = () => {
 										<p className={styles.name}>
 											<strong>Dr. Denise Christian</strong>
 											<br />
-											CINQCARE Cheif Medical Officer
+											CINQCARE Chief Medical Officer
 										</p>
 									</div>
 									<img src={buffaloMap.src} alt="" />
