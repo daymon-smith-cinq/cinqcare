@@ -32,7 +32,7 @@ const Footer = () => {
 					</a>
 
 					{currentPath !== "/" &&
-						currentPath !== "/privacy-policy-grace-at-home" && (
+						currentPath !== "/privacy-policy-care-medical-practice" && (
 							<nav className={styles.footer__nav}>
 								<div>
 									<header>Who We Serve</header>
@@ -92,7 +92,7 @@ const Footer = () => {
 							</nav>
 						)}
 					{currentPath !== "/" &&
-						currentPath !== "/privacy-policy-grace-at-home" && (
+						currentPath !== "/privacy-policy-care-medical-practice" && (
 							<div className={styles.footer__hero}>
 								<header>
 									<h2>
@@ -146,14 +146,14 @@ const Footer = () => {
 						</nav>
 
 						<nav className={styles.footer__policy}>
-							<a href="/privacy-policy-grace-at-home">Privacy Policy</a>
+							<a href="/privacy-policy-care-medical-practice">Privacy Policy</a>
 						</nav>
 
 						<p>© {new Date().getFullYear()} CINQCARE. All rights reserved.</p>
 					</div>
 				</div>
 				{currentPath !== "/" &&
-					currentPath !== "/privacy-policy-grace-at-home" && (
+					currentPath !== "/privacy-policy-care-medical-practice" && (
 						<div className={styles.footer__hero}>
 							<header>
 								<h2>

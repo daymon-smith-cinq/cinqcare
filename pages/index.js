@@ -2,25 +2,24 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/header/header";
 import HeroAlt from "../components/heroAlt/heroAlt";
-import OrangeBox from "../components/orangeBox/orangeBox";
-import Map from "../components/map/map";
-import SideBySide from "../components/sideBySide/sideBySide";
+import Cards from "../components/cards/cards";
 import IconBlocks from "../components/iconBlocks/iconBlocks";
+import People from "../components/people/people";
+import TestimonialSlider from "../components/testimonialSlider/testimonialSlider";
 import CTA from "../components/cta/cta";
-import MasonryImages from "../components/masonryImages/masonryImages";
 import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
-import logoGraceAtHome from "/public/logo-grace-at-home.svg";
+import logoCareMedical from "/public/logo-care-medical-practice.svg";
 
-export default function GraceAtHome() {
+export default function CareMedicalPractice() {
 	// Define current page
-	const currentPage = "grace-at-home";
+	const currentPage = "care-medical-practice";
 
 	// SEO
-	const title = "Grace at Home | CINQCARE";
+	const title = "Care Medical Practice | CINQCARE";
 	const metaDescription =
-		"Grace at Home brings expert primary, urgent, and chronic care to you. Quality health support tailored to your needs, right at home.";
-	const pageURL = "https://getgraceathome.care";
+		"Care Medical Practice offers primary, specialty, and mental health care in your community. Find expert, compassionate care near you.";
+	const pageURL = "https://caremedicalpractice.care";
 	const opengraphImg = "https://cinq.care/cinqcare-opengraph.jpg";
 
 	return (
@@ -40,37 +39,46 @@ export default function GraceAtHome() {
 
 			<main>
 				<HeroAlt page={currentPage} />
-				<OrangeBox page={currentPage} />
-				<Map page={currentPage} />
-				<SideBySide page={currentPage} num="first" />
+
+				<Cards page={currentPage} />
+
 				<IconBlocks page={currentPage} />
-				<SideBySide page={currentPage} num="second" />
+
+				<People page={currentPage} />
+
 				<CTA
 					type="tertiary"
-					buttonText="Find Care Near You"
-					link="https://cinq.care/join-our-family"
+					buttonText="Learn More"
+					link="https://caremedicalpractice.care/book-care-options/"
 				>
 					<Image
 						priority={false}
-						src={logoGraceAtHome}
-						alt="Grace at Home logo"
-						width="271"
-						height="34"
+						src={logoCareMedical}
+						alt="Care Medical Practice logo"
+						width="154"
+						height="65"
 					/>
 					<header>
 						<h3>
-							Ready to see if <em>Grace at Home</em> is right for you?
+							Ready to see if <br />
+							<em>Care Medical Practice</em> <br />
+							is right for you?
 						</h3>
 					</header>
 				</CTA>
 
-				<MasonryImages page={currentPage} />
+				<TestimonialSlider page={currentPage} />
 
-				<CTA type="primary" buttonText="Find Care Near You" link="https://cinq.care/join-our-family">
+				<CTA
+					type="primary"
+					buttonText="Find a Care Medical Practice Near You"
+					link="https://caremedicalpractice.care/book-care-options/"
+				>
 					<header>
-						<h2>Ready to Get Started?</h2>
+						<h2>
+							Take the <em>first step</em> toward better care.
+						</h2>
 					</header>
-					<p>Take the first step toward better health. Find support today.</p>
 				</CTA>
 
 				<Accordion page={currentPage} />

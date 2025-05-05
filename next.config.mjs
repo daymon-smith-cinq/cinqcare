@@ -4,11 +4,7 @@ const nextConfig = {
 
 	async redirects() {
 		return [
-			{
-				source: "/privacy-policy",
-				destination: "/privacy-policy-grace-at-home",
-				permanent: true,
-			},
+			
 		];
 	},
 };
