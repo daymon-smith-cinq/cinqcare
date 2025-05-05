@@ -64,7 +64,7 @@ const Accordion = ({ page }) => {
 					heading:
 						"How does CINQCARE define and measure quality, cost, and health outcomes?",
 					paragraph:
-						"We use industry-standard and proprietary measures to assess patient outcomes, cost savings, and health equity improvements. Metrics include avoidable hospitalizations, readmissions, total cost of care, and disparities in care access and outcomes. The specific measures are contract-dependent.",
+						"We use industry-standard and proprietary measures to assess patient outcomes, cost savings, and health improvements. Metrics include avoidable hospitalizations, readmissions, total cost of care, and disparities in care access and outcomes. The specific measures are contract-dependent.",
 				},
 				{
 					heading:
