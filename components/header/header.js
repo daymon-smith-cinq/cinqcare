@@ -34,11 +34,11 @@ const Header = ({ headerBg }) => {
 							<Image priority={true} src={logoSrc} alt="Cinqcare Logo" />
 						</a>
 						{currentPath !== "/" &&
-							currentPath !== "/privacy-policy-grace-at-home" && (
+							currentPath !== "/privacy-policy-care-medical-practice" && (
 								<div className={styles.spacer}></div>
 							)}
 						{currentPath !== "/" &&
-							currentPath !== "/privacy-policy-grace-at-home" && (
+							currentPath !== "/privacy-policy-care-medical-practice" && (
 								<label
 									htmlFor="responsiveMenuToggle"
 									className={`${styles.responsiveMenuToggleLabel} ${bgColor}`}
@@ -47,7 +47,7 @@ const Header = ({ headerBg }) => {
 								</label>
 							)}
 						{currentPath !== "/" &&
-							currentPath !== "/privacy-policy-grace-at-home" && (
+							currentPath !== "/privacy-policy-care-medical-practice" && (
 								<input
 									type="checkbox"
 									id="responsiveMenuToggle"
@@ -55,7 +55,7 @@ const Header = ({ headerBg }) => {
 								/>
 							)}
 						{currentPath !== "/" &&
-							currentPath !== "/privacy-policy-grace-at-home" && (
+							currentPath !== "/privacy-policy-care-medical-practice" && (
 								<nav id="nav" role="navigation" aria-label="Main">
 									<ul id="menu" className={styles.menu}>
 										<li
@@ -102,7 +102,7 @@ const Header = ({ headerBg }) => {
 								</nav>
 							)}
 						{currentPath !== "/" &&
-							currentPath !== "/privacy-policy-grace-at-home" && (
+							currentPath !== "/privacy-policy-care-medical-practice" && (
 								<a className={styles.menu_cta} href="/join-our-family">
 									Join Our Family
 								</a>
