@@ -2,7 +2,7 @@ import styles from "./people.module.scss";
 import Image from "next/image";
 
 import TonyW from "/public/portraits/tony-welters.jpg";
-import BillH from "/public/portraits/bill-hagan.jpg"
+import BillH from "/public/portraits/bill-hagan.jpg";
 import JessicaHB from "/public/portraits/jessica-henderson-boyd.jpg";
 import ErnieM from "/public/portraits/ernie-monfiletto.jpg";
 import KristyD from "/public/portraits/kristy-duffey.jpg";
@@ -11,7 +11,7 @@ import BrianB from "/public/portraits/brian-benjamin.jpg";
 import RitaJM from "/public/portraits/rita-johnson-mills.jpg";
 import RodneyA from "/public/portraits/rodney-armstead.jpg";
 import NatalieL from "/public/portraits/natalie-o-ludaway.jpg";
-import SteveS from "/public/portraits/steve-swift.jpg";
+import SteveS from "/public/portraits/SteveSwift.jpg";
 import BarbaraR from "/public/portraits/barbara-rhoden.jpg";
 import TraciM from "/public/portraits/traci-miller.jpg";
 import CherylRW from "/public/portraits/cheryl-rucker-whitaker.jpg";
@@ -26,7 +26,6 @@ import PamelaB from "/public/portraits/pamela-burton.jpg";
 import StevenL from "/public/portraits/steven-liverpool.jpg";
 
 const People = ({ page, group }) => {
-
 	// *******
 	// Content
 	// *******
@@ -151,7 +150,8 @@ const People = ({ page, group }) => {
 		content = {
 			heading: "Meet Our Providers",
 			headingPeriod: false,
-			subheading: "<p>Your health starts with a provider who understands your needs.</p>",
+			subheading:
+				"<p>Your health starts with a provider who understands your needs.</p>",
 			centeredHeading: false,
 			people: [
 				{
@@ -195,12 +195,22 @@ const People = ({ page, group }) => {
 	}
 
 	return (
-		<section className={`${styles.section_people} ${content.bgGradient ? (`${styles.gradient}`) : undefined}`}>
+		<section
+			className={`${styles.section_people} ${
+				content.bgGradient ? `${styles.gradient}` : undefined
+			}`}
+		>
 			<div className={`${styles.container_people} ${" wrapper"}`}>
-				<div className={`${styles.headingContainer} ${content.centeredHeading ? (`${styles.centered}`) : undefined}`}>
+				<div
+					className={`${styles.headingContainer} ${
+						content.centeredHeading ? `${styles.centered}` : undefined
+					}`}
+				>
 					{content?.heading && (
 						<h3
-							className={`${styles.heading} ${content.headingPeriod ? ("period") : undefined}`}
+							className={`${styles.heading} ${
+								content.headingPeriod ? "period" : undefined
+							}`}
 							dangerouslySetInnerHTML={{ __html: content.heading }}
 						></h3>
 					)}
@@ -213,36 +223,33 @@ const People = ({ page, group }) => {
 				</div>
 				<div className={styles.peopleContainer}>
 					{content.people &&
-					content.people.map((person, peopleIndex) => (
-						<div 
-							key={peopleIndex}
-							className={styles.person}
-						>
-							{person?.portrait && (
-								<div className={styles.portrait}>
-									<Image 
-										priority={false} 
-										src={person.portrait} 
-										alt={`${"A professional portrait of "} ${person.name}`}
-										width="363"
-										height="451"
-									/>
-								</div>
-							)}
-							<div className={styles.textContainer}>
-								{person?.name && (
-									<h4
-										className={styles.name}
-										dangerouslySetInnerHTML={{ __html: person.name }}
-									></h4>
+						content.people.map((person, peopleIndex) => (
+							<div key={peopleIndex} className={styles.person}>
+								{person?.portrait && (
+									<div className={styles.portrait}>
+										<Image
+											priority={false}
+											src={person.portrait}
+											alt={`${"A professional portrait of "} ${person.name}`}
+											width="363"
+											height="451"
+										/>
+									</div>
 								)}
-								{person?.title && (
-									<p
-										className={styles.title}
-										dangerouslySetInnerHTML={{ __html: person.title }}
-									></p>
-								)}
-								{/*
+								<div className={styles.textContainer}>
+									{person?.name && (
+										<h4
+											className={styles.name}
+											dangerouslySetInnerHTML={{ __html: person.name }}
+										></h4>
+									)}
+									{person?.title && (
+										<p
+											className={styles.title}
+											dangerouslySetInnerHTML={{ __html: person.title }}
+										></p>
+									)}
+									{/*
 								{person?.info && (
 									<p
 										className={styles.info}
@@ -256,9 +263,9 @@ const People = ({ page, group }) => {
 									></blockquote>
 								)}
 								*/}
+								</div>
 							</div>
-						</div>
-					))}	
+						))}
 				</div>
 			</div>
 		</section>
