@@ -1,0 +1,75 @@
+@use "@/styles/abstracts" as *;
+
+.customBannerContainer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 88%;
+}
+
+.topBanner {
+  background: linear-gradient(90deg, #f26722, #f7931e);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+
+    strong {
+      display: block;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @include respond-to("tablet") {
+    padding: 15px 10px;
+
+    p {
+      font-size: 14px;
+
+      strong {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.bannerFlexWrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  @include respond-to("mobile") {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+.logoContainer {
+  width: 24%;
+  display: flex;
+  justify-content: center;
+
+  @include respond-to("mobile") {
+    width: 100%;
+  }
+}
+
+.textContainer {
+  width: 80%;
+  text-align: left;
+
+  @include respond-to("mobile") {
+    width: 100%;
+    text-align: center;
+  }
+}
