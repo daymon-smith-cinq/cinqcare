@@ -10,7 +10,8 @@ import Video from "../components/video/video";
 import CTA from "../components/cta/cta";
 import MasonryCommunities from "../components/masonry/masonry-communities";
 import Footer from "../components/footer/footer";
-import Spacer from "../components/spacer/spacer";
+import logoGraceAtHome from "/public/logo-grace-at-home.svg";
+import Banner from "../components/banner/banner";
 
 export default function Home() {
 	// Define current page
@@ -35,8 +36,8 @@ export default function Home() {
 				<meta name="twitter:site" content="@carecinq" />
 				<title>{title}</title>
 			</Head>
-
-			<Header headerBg="dark" />
+			<Banner page={currentPage} />
+			<Header headerBg="light" />
 
 			<main>
 				<Hero page={currentPage} />
