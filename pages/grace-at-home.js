@@ -11,6 +11,7 @@ import MasonryImages from "../components/masonryImages/masonryImages";
 import Accordion from "../components/accordion/accordion";
 import Footer from "../components/footer/footer";
 import logoGraceAtHome from "/public/logo-grace-at-home.svg";
+import Banner from "../components/banner/banner";
 
 export default function GraceAtHome() {
 	// Define current page
@@ -36,6 +37,7 @@ export default function GraceAtHome() {
 				<title>{title}</title>
 			</Head>
 
+			<Banner page={currentPage} />
 			<Header headerBg="light" />
 
 			<main>
