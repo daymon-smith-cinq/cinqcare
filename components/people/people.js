@@ -211,7 +211,7 @@ const People = ({ page, group }) => {
 						></div>
 					)}
 				</div>
-				<div className={styles.peopleContainer}>
+				<div className={`${styles.peopleContainer} flex justify-center`}>
 					{content.people &&
 					content.people.map((person, peopleIndex) => (
 						<div 
@@ -219,13 +219,14 @@ const People = ({ page, group }) => {
 							className={styles.person}
 						>
 							{person?.portrait && (
-								<div className={styles.portrait}>
+								<div className={`${styles.portrait} w-[20rem]`}>
 									<Image 
 										priority={false} 
 										src={person.portrait} 
 										alt={`${"A professional portrait of "} ${person.name}`}
 										width="363"
 										height="451"
+										className={`h-[25rem]  object-cover`}
 									/>
 								</div>
 							)}
